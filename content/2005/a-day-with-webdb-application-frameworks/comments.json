@@ -1,0 +1,18 @@
+[
+ {
+  "id": 874,
+  "author": "vee",
+  "url": "",
+  "date": "2005-07-18T20:43:00+07:00",
+  "html": "<p>พวก Java นี่ต้องทำภาษาที่ supportdynamic binding ขึ้นมาบน JVM อีกที ทุก project เลยใช่เปล่าครับ?Web hosting ในญี่ปุ่นจะ support Ruby บ้างเปล่า? ( เพียงแต่จินตนาการ ) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 875,
+  "author": "polawat phetra",
+  "url": "",
+  "date": "2005-07-18T22:37:00+07:00",
+  "html": "<p>feedback จากการเข้าไปดูคร่าวๆ django หน้าจอที่แสดงใน tutorial เขาออกแบบหน้าจอสวยดีนะ (มีกลิ่นอายของ mac)ตัว model มีการประกาศ meta data ไว้ชัดเจนกว่า rails(sqlobject  ก็มีแนวทางเดียวกัน)ที่น่าสนใจก็คือ ใน tutorial มีพูดถึงประเด็นการ initialize databaseซึ่งจะมีการสร้าง core database tables  ของ django ขึ้นมาด้วยน่าสนใจตรงที่ว่า ตรงนี้จะใช้เก็บอะไร cake เหมือนฝาแฝดของ rail เลยไม่ว่าจะเป็น directory structure, การตั้งชื่อ, urlgrails มาตาม style ของพวก java (ซับซ้อน)ดูซับซ้อนเมื่อเทียบกับ railsมี layer ของ service เพิ่มขึ้นมาอีกชั้น และใช้ concept injection ในการ assign serviceให้กับ controller ด้วยtrailsเคย load มาลองเล่นเหมือนกันแต่ดูเหมือนจะทำได้แค่ crud ง่ายๆ (ไม่ยืนยันนะ เพราะเห็นแต่เอกสาร tutorialซึ่งยังไม่ได้พูดถึงประเด็น customize เลย) </p>\n",
+  "replies": []
+ }
+]

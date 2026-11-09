@@ -1,0 +1,34 @@
+[
+ {
+  "id": 1059,
+  "author": "mk",
+  "url": "",
+  "date": "2005-11-16T04:47:00+07:00",
+  "html": "<p>เขียนสคริปต์ทำ replicate database เอง?น่าจะมีคนทำแล้ว </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1060,
+  "author": "lulu",
+  "url": "",
+  "date": "2005-11-16T05:16:00+07:00",
+  "html": "<p>อ่านแล้วนึกถึง  usenet ที่ใช้ web interface หรือว่าใช้ desktop client ที่มี host list เยอะ ๆ.. </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1061,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-11-16T06:50:00+07:00",
+  "html": "<p>อืมม&#8230; usenet แต่อันนั้นคือ ผู้ใช้ต้องรู้ host address เองด้วย&#8230;พูดถึงทำ IM ตัวนึงขึ้นมา (หรือโปรแกรมออนไลน์อะไรซักอย่าง)แจกฟรี ทำให้ไงก็ได้ให้คนใช้เยอะ ๆแล้วต่อมาก็แปะฟังก์ชั่นเรื่องตีพิมพ์เนื้อหาเข้าไป &#8230; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1062,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2005-11-16T18:08:00+07:00",
+  "html": "<p>ระบบ communityที่post เข้าได้หลายทาง(node/server)หลายวิธี (mail/web/..etc)แล้ว replicate ข้อมูลกันbackup ซึ่งกันและกันมี thread / topicและยังให้ต้นทาง มีสิทธิdeletepostและแบ่งได้เป็นกลุ่มๆแต่ละnode เลือกได้ว่าจะ replicateกลุ่มไหนบ้างมีมานานแล้วเรียกว่า &quot;UseNet News&quot; ที่ใช้ protocal NNTP นี่แหละclients (เช่นmoz) สามารถดึงข้อมูลเฉพาะgroupที่สนใจไปไปอ่านofflineได้เวลาส่งก็ส่งเข้าserverไหนก็ได้ ขอให้ส่งถูกgroupแต่NNTP ดันมี web interface ที่ห่วยมาก เลยโดน webboard ตีกระจุย ในยุค browser 10ปีหลังมานี้LTN webboard เคยก็ใช้ nntp backend replicate กะ nectec&#039;s news แล้วก็ web พี่ฮุ้ยdensin Roy. </p>\n",
+  "replies": []
+ }
+]

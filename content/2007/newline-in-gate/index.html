@@ -1,0 +1,34 @@
+---
+title: "Newline in GATE"
+date: "2007-01-08T16:00:00+07:00"
+lastmod: "2011-05-13T12:07:50+07:00"
+type: "post"
+url: "/2007/newline-in-gate/"
+description: "ใน GATE, ถ้าเราอยากรู้ว่า เอกสารที่เรากำลังทำงานอยู่เนี่ย มันใช้ อักขระขึ้นบรรทัดใหม่ (newline) แบบไหน ก็เรียกดูได้จากฟีเจอร์ที่ชื่อ “docNewLineType” โดย docNewLineType นี้ เป็น String มีค่าได้ 4 อย่าง: { “CR”, “LF”, “CRLF”, “LFCR” } CR คือ Carriage Return — ปัดแคร่(ไปซ้ายสุด) (\\r ในหลายภาษาโปรแกรม)"
+categories: ["coling"]
+tag: ["gate", "natural-language-processing", "newline", "text-processing"]
+lang: "th"
+wpid: 1849
+---
+<p>ใน <a title="General Architecture for Text Engineering" href="http://gate.ac.uk/">GATE</a>, ถ้าเราอยากรู้ว่า เอกสารที่เรากำลังทำงานอยู่เนี่ย มันใช้ อักขระขึ้นบรรทัดใหม่ (<a href="http://en.wikipedia.org/wiki/Newline">newline</a>) แบบไหน ก็เรียกดูได้จากฟีเจอร์ที่ชื่อ “docNewLineType”<br />
+โดย docNewLineType นี้ เป็น String มีค่าได้ 4 อย่าง: { &#8220;CR&#8221;, &#8220;LF&#8221;, &#8220;CRLF&#8221;, &#8220;LFCR&#8221; }</p>
+<p>CR คือ <a href="http://en.wikipedia.org/wiki/Carriage_return">Carriage Return</a> — ปัดแคร่(ไปซ้ายสุด) (<tt>\r</tt> ในหลายภาษาโปรแกรม),<br />
+LF คือ <a href="http://en.wikipedia.org/wiki/Line_feed">Line Feed</a> — เลื่อนบรรทัดใหม่ (<tt>\n</tt>)</p>
+<p>เพื่อขึ้นบรรทัดใหม่ เครือญาติ UNIX อย่าง Linux กับ Mac OS X ใช้ LF ตัวเดียว,<br />
+ใน Mac OS (จนถึงรุ่น 9) ใช้ CR ตัวเดียว,<br />
+ส่วนเพื่อนรัก Windows ของเรา เป็นเด็กนอย ใช้มันสองตัวเลย CRLF กันเหนียว*, DOS ก็เช่นกัน<br />
+(* พูดจริง ๆ แล้ว DOS/Windows ทำตัวเลียนแบบเครื่องพิมพ์ดีดจักรกลได้เหมือนที่สุด คือต้องปัดแคร่ไปซ้ายสุดก่อน จากนั้นจึงค่อยเลื่อนกระดาษไปหนึ่งบรรทัดได้ เป็นการเริ่มบรรทัดใหม่)</p>
+<p>นอกเรื่องซะไกล อ่ะ เขียนโค้ดได้อย่างนี้ (ตรงที่เป็นตัวหนา)</p>
+<pre><code>
+int nllen = 1;
+<strong>String nl = (String) document.getFeatures().get("docNewLineType");</strong>
+if (nl.equals("CRLF") || nl.equals("LFCR")) {
+  nllen = 2;
+}
+</code></pre>
+<p>ผมหาเจ้าความยาวของอักขระขึ้นบรรทัดใหม่ (nllen) นี่ไป เพื่อไปชดเชยออฟเซตเวลาประมวลผลเอกสาร<br />
+คือ ผมใช้เมทธอด readLine() ในคลาส *Reader ซึ่งมันจะอ่านทีละบรรทัดให้อัตโนมัติ สบายดี<br />
+แต่เวลานับตำแหน่งเนี่ย ต้องอย่าลืมนับเจ้าตัวอักขระขึ้นบรรทัดใหม่เข้าไปด้วย ไม่งั้นตำแหน่งมันจะคลาดกัน<br />
+ก็เลยต้องรู้ว่า ใช้อักขระขึ้นบรรทัดใหม่แบบไหน จะได้ชดเชยถูก</p>
+<p><small>technorati tags: <a rel="tag" href="http://technorati.com/tag/GATE">GATE</a>, <a rel="tag" href="http://technorati.com/tag/text+processing">text processing</a>, <a rel="tag" href="http://technorati.com/tag/newline">newline</a></small></p>
+

@@ -1,0 +1,77 @@
+---
+title: "Using dictionary with ICU4J BreakIterator"
+date: "2006-12-27T20:29:00+07:00"
+lastmod: "2011-05-13T12:22:58+07:00"
+type: "post"
+url: "/2006/icu4j-breakiterator-dictionary/"
+description: "การสร้างและเรียกใข้พจนานุกรมสำหรับตัดคำ ใน ICU4J จดวิธีการตัดคำด้วย DictionaryBasedBreakIterator ของ ICU4J และการสร้างพจนานุกรมตัดคำเอง (เฮ้! นี่คือ “จาวา” ขวัญอ่อน? รักสวยรักงาม? .. ระวังถูกงับมือ! เราเตือนคุณแล้วนะ :P) การสร้างไฟล์พจนานุกรมสำหรับตัดคำ ใช้โปรแกรม BuildDictionaryFile สร้างไฟล์พจนานุ"
+categories: ["coling"]
+tag: ["icu", "icu4j", "java", "natural-language-processing", "programming", "text-processing", "thai", "tokenization", "word-break"]
+lang: "th"
+wpid: 1817
+---
+<h2>การสร้างและเรียกใข้พจนานุกรมสำหรับตัดคำ ใน ICU4J</h2>
+<p>จดวิธีการตัดคำด้วย <a title="com.ibm.icu.text.DictionaryBasedBreakIterator" href="http://icu.sourceforge.net/apiref/icu4j/com/ibm/icu/text/DictionaryBasedBreakIterator.html">DictionaryBasedBreakIterator</a> ของ <a href="http://icu.sourceforge.net/">ICU4J</a> และการสร้างพจนานุกรมตัดคำเอง</p>
+<p>(เฮ้! นี่คือ “จาวา” ขวัญอ่อน? รักสวยรักงาม? .. ระวังถูกงับมือ! เราเตือนคุณแล้วนะ :P)</p>
+<hr />
+<h3>การสร้างไฟล์พจนานุกรมสำหรับตัดคำ</h3>
+<p>ใช้โปรแกรม BuildDictionaryFile สร้างไฟล์พจนานุกรม, วิธีใช้คือ:</p>
+<pre><code>BuildDictionaryFile input [encoding] [output] [list]</code></pre>
+<ul>
+<li>input = ข้อมูลเข้า ไฟล์พจนานุกรม เป็นไฟล์ชนิดข้อความ หนึ่งคำต่อหนึ่งบรรทัด</li>
+<li>encoding = รหัสตัวอักษรของไฟล์พจนานุกรม เช่น TIS-620, UTF-8 (ถ้าไม่ใส่จะใช้ค่าปริยาย คือ UTF-8)</li>
+<li>output = ข้อมูลออก ผลลัพธ์ เป็นไฟล์ชนิดไบนารี (จะใช้เป็นอินพุตของคอนสตรัคเตอร์ของคลาส DictionaryBasedBreakIterator ต่อไป)</li>
+<li>list = ข้อมูลออก รายการคำที่ถูกบรรจุในพจนานุกรม (output) เป็นไฟล์ชนิดข้อความ หนึ่งคำต่อหนึ่งบรรทัด ใช้รหัสตัวอักษร UTF-8 (ไม่ใส่ก็ได้)</li>
+</ul>
+<p>เช่น ถ้าไฟล์ข้อความที่เราจะแปลงเป็นพจนานุกรมตัดคำ ชื่อ tdict.txt ก็สั่ง:</p>
+<pre><code># java com.ibm.icu.dev.tools.rbbi.BuildDictionaryFile tdict.txt \
+    TIS-620 tdict.dic tdict-list.txt</code></pre>
+<p>รอซักพัก เราก็จะได้ไฟล์ tdict.dic ไปใช้ละ</p>
+<p>การใช้โปรแกรม BuildDictionaryFile จำเป็นต้องมีไลบรารี ICU4J อยู่ใน classpath (ใช้ออปชั่น -cp ก็ได้)</p>
+<p>ซอร์สโค้ด BuildDictionaryFile.java นั้น ไม่ได้เผยแพร่ออกมาพร้อมกับตัว ICU4J แต่หาดาวน์โหลดได้ในอินเทอร์เน็ต (<em>update 2011.05.13:</em> ไฟล์ <a href="http://bugs.icu-project.org/trac/browser/icu4j/trunk/tools/misc/src/com/ibm/icu/dev/tool/rbbi/BuildDictionaryFile.java">BuildDictionaryFile.java</a> ที่ ICT Trac) (<a href="http://www.google.co.th/search?q=BuildDictionaryFile.java">ค้นอินเทอร์เน็ต</a>ด้วยคำว่า “BuildDictionaryFile.java” แล้วพยายามหาไฟล์รุ่นที่ใหม่ที่สุด ตัวที่ผมใช้อยู่นี้ อยู่ในแพคเกจ com.ibm.icu.dev.tools.rbbi ถ้ารุ่นเก่ากว่านี้มันจะอยู่ในแพคเกจ com.ibm.tools.rbbi คิดว่าเค้ามีการปรับแพคเกจใหม่นิดหน่อย)</p>
+<p>การคอมไพล์ ต้องมีไลบรารี ICU4J อยู่ใน classpath (ใช้คลาส com.ibm.icu.util.CompactByteArray, com.ibm.icu.text.UnicodeSet และ com.ibm.icu.impl.Utility)</p>
+<hr />
+<h3>การใช้ไฟล์พจนานุกรมในการตัดคำ</h3>
+<p>คลาสที่เราใช้ในการตัดคำด้วยพจนานุกรม ใน ICU4J คือ คลาส DictionaryBasedBreakIterator ในแพคเกจ com.ibm.icu.text<br />
+(DictionaryBasedIterator นี้ เป็นซับคลาสของคลาส <a title="com.ibm.icu.text.RuleBasedBreakIterator" href="http://icu.sourceforge.net/apiref/icu4j/com/ibm/icu/text/RuleBasedBreakIterator.html">RuleBasedBreakIterator</a> ซึ่งเป็นอินพลีเมนเตชันของแอบสแตรคคลาส BreakIterator อีกที)</p>
+<p>คอนสตรัคเตอร์ของ DictionaryBasedBreakIterator ที่เราจะใช้ ต้องการพารามิเตอร์สองตัว<br />
+คือ กฎการตัดคำ (String) และ พจนานุกรม (InputStream)</p>
+<p>ผมไม่รู้จะหากฎมาจากไหนดี ก็เลยไปเอามาจากที่เค้ามีอยู่แล้วละกัน อย่างนี้</p>
+<pre><code>String rules = (RuleBasedBreakIterator.getWordInstance(new Locale ("th"))).toString();</code></pre>
+<p>คำสั่งนี้ จะไปเรียกเอาตัวตัดคำด้วยกฎ (สำหรับคำภาษาไทย) มาจากคลาส RuleBasedBreakIterator<br />
+ซึ่งจริง ๆ ผมก็ไม่รู้แน่ ว่ามันมีอยู่หรือไม่ อย่างไรก็ตาม หากตัว RuleBasedBreakIterator ไม่มีตัวตัดคำสำหรับโลแคล (locale) ใด มันก็จะส่งคืนตัวตัดคำปริยาย (มาตรฐาน) มาให้เรา เอาเป็นว่าไม่ต้องห่วงละกัน (ยังนึกวิธีดี ๆ ไม่ออกน่ะ :P)<br />
+— <strong>Update:</strong> 2006.12.28 พี่ป๊อกไขขาน สร้างความกระจ่างเรื่องที่ว่า กฎมันมาจากไหน ดูได้ที่ <strong><a title="InputStream rules = ICUData.getStream(&quot;data/icudt36b/brkitr/word.brk&quot;);" href="http://pphetra.blogspot.com/2006/12/icu4j.html">เสริม ICU4J</a></strong> ในนั้นยังแสดงวิธีการดึงกฎจากไฟล์กฎอีกด้วย (แต่จะสร้างไฟล์กฎยังไงหว่า? .. ต้องศึกษากันต่อไป)</p>
+<p>หลังจากได้ตัวตัดคำด้วยกฎมาแล้ว เราก็ดึงกฎการตัดออกมาซะ ด้วยเมทธอด toString()<br />
+(ง่าย ๆ อย่างนี้แหละ .. แต่หาอยู่นาน &#8211; -&#8220;)</p>
+<p>จากนั้น เราก็เตรียมพจนานุกรม ก็ไม่มีอะไรมาก แค่ชี้ไปหาไฟล์ที่เราสร้างมาจากโปรแกรม BuildDictionaryFile ตะกี้</p>
+<pre><code>InputStream dict = new FileInputStream("tdict.dic");</code></pre>
+<p>เท่านี้ล่ะ</p>
+<p>จากนั้นเราก็สามารถสร้างอินสแตนซ์ของ DictionaryBasedBreakIterator ได้แล้ว</p>
+<pre><code>BreakIterator iter = DictionaryBasedBreakIterator(rules, dict);</code></pre>
+<p>การใช้งานก็เหมือนกับ BreakIterator ปกติ (ซึ่งก็คล้ายกับ iterator ทั่วไป)<br />
+โดยเริ่มแรกเราต้องส่งข้อความที่จะตัดไปให้ตัว BreakIterator เสียก่อน ด้วยเมธทอด setText()<br />
+จากนั้นเราก็ให้ iterator มันวนไปเรื่อย ๆ ด้วยเมทธอด next() จนกว่าจะจบข้อความ</p>
+<p>โค้ดด้านล่างจะทำการพิมพ์คำที่ตัดได้ ตามด้วยตัวอักษร &#8220;|&#8221; ทีละคำ ๆ วนไปจนกว่าจะจบข้อความ</p>
+<pre><code>
+String text = "ข้อความที่จะตัดในนี้";
+
+iter.setText(text); // iter คือ BreakIterator มาจากข้างบน
+
+int start = iter.first();
+for (int end = iter.next();
+      end != BreakIterator.DONE;
+      start = end, end = iter.next()) {
+  System.out.print(text.substring(start,end));
+  System.out.print("|");
+}</code></pre>
+<p>เอ แล้วเราทำ serialization ตัวตัดคำ+พจนานุกรมที่สร้างขึ้นมาแล้วได้รึเปล่านะ ?</p>
+<hr />
+<p>ข้อจำกัดของพจนานุกรมสำหรับตัดคำใน ICU4J อย่างหนึ่งที่พบ ก็คือ<br />
+ขนาดของพจนานุกรมไม่สามารถใหญ่กว่า 32,767 คำได้<br />
+<em><strong>คาดว่า</strong></em> ในซอร์สโค้ดอาจจะใช้ตัวแปรชนิด <a href="http://en.wikipedia.org/wiki/Integer_%28computer_science%29">short</a> (Java short ใช้ 16 บิต) ในการอ้างอิงตำแหน่งคำ<br />
+จึงสามารถอ้างอิงตำแหน่งได้สูงสุดเท่ากับตัวเลขที่ใหญ่ที่สุดที่ (signed) short เก็บได้ ซึ่งก็คือ 32,767 นั่นเอง<br />
+(หากต้องการให้พจนานุกรมใหญ่กว่านี้ อาจลองแก้ไข คลาส BuildDictionaryFile และ DictionaryBasedBreakIterator แต่ก็อาจพบผลข้างเคียงได้ ในคลาสที่เรียกใช้หรือสืบทอดคลาสเหล่านี้)</p>
+<p><a title="ICU4J JavaDoc" href="http://icu.sourceforge.net/apiref/icu4j/">ICU4J API References</a></p>
+<p><small>technorati tags: <a rel="tag" href="http://technorati.com/tag/Java">Java</a>, <a rel="tag" href="http://technorati.com/tag/tokenization">tokenization</a>, <a rel="tag" href="http://technorati.com/tag/word_break">word break</a>, <a rel="tag" href="http://technorati.com/tag/Thai">Thai</a>, <a rel="tag" href="http://technorati.com/tag/ICU4J">ICU4J</a>, <a rel="tag" href="http://technorati.com/tag/ICU">ICU</a><br />
+</small></p>
+

@@ -1,0 +1,22 @@
+---
+title: "OpenURL COinS: A Convention to Embed Bibliographic Metadata in HTML"
+date: "2011-05-26T14:38:00+07:00"
+lastmod: "2011-07-20T23:43:57+07:00"
+type: "post"
+url: "/2011/openurl-coins/"
+description: "ทำความรู้จักกับ markup ที่ชื่อว่า COinS เอาไว้สำหรับระบุข้อมูล metadata ทรัพยากรห้องสมุดลงในหน้าเว็บ HTML ธรรมดา ๆ"
+categories: ["informatics", "internet"]
+tag: ["bibliographic", "contextobjects", "html", "information-and-library-sciences", "metadata", "openurl", "semantic-web"]
+lang: "th"
+wpid: 2522
+---
+<blockquote><p><a href="http://ocoins.info/">COinS</a> (ContextObjects in Spans) is a simple, ad hoc community specification for publishing OpenURL references in HTML.</p></blockquote>
+<p><a href="https://secure.wikimedia.org/wikipedia/en/wiki/OpenURL">OpenURL</a> นั้นเป็นรูปแบบสำหรับที่อยู่ทรัพยากร ใช้มากในระบบห้องสมุด หน้าตาก็ประมาณนี้:</p>
+<blockquote><p>http://resolver.example.edu/cgi?url_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.isbn=0836218310&amp;rft.btitle=The+Far+Side+Gallery+3</p></blockquote>
+<p>เพื่อที่จะฝังข้อมูล OpenURL ลงไปใน HTML ธรรมดา ๆ COinS ใช้วิธีเอาข้อมูล OpenURL ดังกล่าว ยัดลงในแอตทริบิวต์ <em>title</em> ของอิลิเมนต์ <code>&lt;span class="Z3988"&gt;&lt;/span&gt;</code></p>
+<p>โดยอิลิเมนต์ <code>&lt;span&gt;&lt;/span&gt;</code> นี้ จะเป็นอิลิเมนต์เปล่า ๆ (empty span) ก็ได้ หรือจะใส่ข้อความลงไปด้วยก็ได้ (เพื่อให้ผู้ใช้สามารมองเห็นได้ / เพื่อป้องกัน span ที่ว่าง ถูกลบโดย HTML processor บางตัว)</p>
+<p>Z3988 ที่เป็นชื่อคลาส มาจากหมายเลขมาตรฐาน <a href="http://standards-catalogue.ukoln.ac.uk/index/Z3988-2004">NISO Z39.88</a> ของ OpenURL, &#8216;Z&#8217; ในชื่อคลาส ต้องเป็นตัวพิมพ์ใหญ่, และ <code>&lt;span&gt;&lt;/span&gt;</code> ต้องไม่ถูก minimized เป็น <code>&lt;span /&gt;</code> เพื่อคงความเข้ากันได้กับ HTML ไว้</p>
+<p>ลองเล่นกะ <a href="http://generator.ocoins.info/">generator </a>ดูก่อนได้</p>
+<p>เว็บไซต์ ที่ฝัง COinS ลงไปในหน้าเว็บ เช่น Wikipedia, Physical Review Online Archive, CiteULike, Citebase, Open WorldCat ฯลฯ</p>
+<p>ส่วนซอฟต์แวร์ที่อ่าน COinS ได้ เช่น Mendeley, VuFind, ฯลฯ ซึ่งมันจะอ่าน OpenURL metadata ที่อยู่ใน COinS ออกมาได้ ทำให้เราไม่ต้องนั่งพิมพ์ citation/bibliographic metadata พวกนี้เอง</p>
+

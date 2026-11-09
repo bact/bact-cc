@@ -1,0 +1,3 @@
+---
+title: "Kukrit Pramoj"
+---

@@ -1,33 +1,30 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Code coverage profiles and other test artifacts
-*.out
-coverage.*
-!coverage.go
-*.coverprofile
-profile.cov
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# env file
+# --- Hugo build output / caches ---
+/public/
+/resources/_gen/
+/.hugo_build.lock
+# --- WordPress export working dir (raw dumps; regenerate with tools/wp_export.py) ---
+/_export/
+# --- Secrets & local config: NEVER commit ---
 .env
-
-# Editor/IDE
-# .idea/
-# .vscode/
+.env.*
+*.env
+.dev.vars
+.wrangler/
+*.pem
+*.key
+*.sql
+*.sql.gz
+wp-config.php
+*.wpress
+*.xml.bak
+# wp WXR exports contain emails/hashes of users and commenters
+/*.xml
+# --- Editors / OS ---
+.idea/
+.vscode/
+.DS_Store
+node_modules/
+# Over Cloudflare Pages' 25 MiB per-file limit — host elsewhere (see README)
+/static/f/2020/04/20171215-good-man-concluding-present.pdf
+/static/f/2020/10/fcem-media-governance-report-bangkok-new-media-agenda.zip
+/static/f/2022/10/202012-ai-gov-framework-dga.pdf

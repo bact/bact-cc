@@ -1,0 +1,42 @@
+[
+ {
+  "id": 3014,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2008-04-05T02:12:00+07:00",
+  "html": "<p>ha, you got a typo too 😛<i>Update code to use WP&#039;s wp_get_cookie_login(), instead of get_currentuserinfo(), as suggested by[&#8230;]</i>It&#039;s the other way round 😉 </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3015,
+  "author": "Jan Wessely",
+  "url": "",
+  "date": "2008-04-05T02:14:00+07:00",
+  "html": "<p>hm, I had javascript disabled. above comment was by me. </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3016,
+  "author": "Jan Wessely",
+  "url": "",
+  "date": "2008-04-05T02:23:00+07:00",
+  "html": "<p>One more thing: I still had to disable magic quotes, to get rid of the backslash bugs.In .htaccess:<i>php_value       magic_quotes_gpc        Off</i> </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3017,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2008-04-05T02:29:00+07:00",
+  "html": "<p>haha, we all live with typo &#8211; nice catch! :Dhmm, i really got lost in this magic quotes thing. </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3018,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2008-04-05T02:33:00+07:00",
+  "html": "<p>useful tips from Christopher Smith (posted in dokuwiki mailing list) fyi &#8230;Its possible to modify the login form by handling its associated form-output event in an action plugin.  If you do that you preserve the integrity of your DW installation for future updates.  ie. you won&#039;t need to reapply the modifications to inc/html.php.Also see the login redirector plugin.- Chris&#8212;-login redirector plugin<a href=\"http://wiki.splitbrain.org/plugin:login_redirector\" rel=\"nofollow\"></a><a href=\"http://wiki.splitbrain.org/plugin:login_redirecto\" rel=\"nofollow ugc\">http://wiki.splitbrain.org/plugin:login_redirecto</a>&#8230; </p>\n",
+  "replies": []
+ }
+]

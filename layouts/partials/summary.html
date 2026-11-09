@@ -1,0 +1,5 @@
+<article class="summary">
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="meta">{{ partial "meta.html" . }}</p>
+  {{ with .Description }}<p lang="{{ $.Params.lang }}">{{ . }}</p>{{ end }}
+</article>

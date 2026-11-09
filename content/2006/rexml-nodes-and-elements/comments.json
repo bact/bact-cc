@@ -1,0 +1,18 @@
+[
+ {
+  "id": 1366,
+  "author": "polawat phetra",
+  "url": "",
+  "date": "2006-04-04T08:32:00+07:00",
+  "html": "<p>งงๆ ตาม bact&#039; ไปด้วย(ว่า text เป็น element)แวบไปดู javadoc org.w3c.dom มาก็เลยกระจ่าง==================interface Text extends Nodeinterface Element extends Node==================เสริมอีกนิดClass Element มัน extend จาก class Parent ซึ่งมัน include Enumerable ด้วยทำให้เราใช้อย่างนี้ได้ด้วยelement.each do |node|  puts node.inspectend </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1367,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2006-04-04T09:46:00+07:00",
+  "html": "<p>แป่ววววว ใช้ #each ตั้งแต่แรกก็หมดเรื่องแย้ววว &#8211; -&quot;เออ เนอะ หัวเราคงยังไม่เป็น Ruby จริง ๆ ด้วยไม่งั้นคงต้องลอง each ไปก่อนเปิด api doc แล้วขอบคุณครับว่าแต่ &#8230; ฮ่ะ ๆ javadoc rulez ! </p>\n",
+  "replies": []
+ }
+]

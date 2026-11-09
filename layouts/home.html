@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ $pages := where site.RegularPages "Type" "post" }}
+{{ range (.Paginate $pages).Pages }}{{ partial "summary.html" . }}{{ end }}
+{{ partial "pagination.html" . }}
+{{ end }}

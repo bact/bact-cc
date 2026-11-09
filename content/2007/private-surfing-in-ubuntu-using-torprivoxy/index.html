@@ -1,0 +1,53 @@
+---
+title: "Private surfing in Ubuntu – using Tor+Privoxy"
+date: "2007-05-26T02:16:00+07:00"
+lastmod: "2011-04-29T05:26:07+07:00"
+type: "post"
+url: "/2007/private-surfing-in-ubuntu-using-torprivoxy/"
+description: "ท่องเว็บเงียบ ๆ ในอูบุนตูลีนุกซ์ (สำหรับวินโดวส์ ดูที่ http://wonam.exteen.com/20060923/tor ) Tor (ตอร์) เป็นเครือข่ายและโปรแกรมช่วยเพิ่มความเป็นส่วนตัวในการท่องเว็บ นอกจากนี้ยังอาจช่วยให้เราสามารถเข้าเว็บที่ถูกบล็อกได้อีกด้วย Privoxy (ไพรว็อกซี่) เป็นโปรแกรมพร็อกซี่ที่ช่วยเพิ่มความเป็นส่วนตัวในการท"
+categories: ["internet", "politics", "freedom"]
+tag: ["anonymity", "circumvention", "how-to", "internet-censorship", "linux", "privacy", "tor", "ubuntu"]
+lang: "th"
+wpid: 2095
+---
+<p>ท่องเว็บเงียบ ๆ ในอูบุนตูลีนุกซ์</p>
+<p>(สำหรับวินโดวส์ ดูที่ <a href="http://wonam.exteen.com/20060923/tor">http://wonam.exteen.com/20060923/tor</a> )</p>
+<p><strong><a href="http://th.wikipedia.org/wiki/Tor">Tor</a></strong> (ตอร์) เป็นเครือข่ายและโปรแกรมช่วยเพิ่มความเป็นส่วนตัวในการท่องเว็บ นอกจากนี้ยังอาจช่วยให้เราสามารถเข้าเว็บที่ถูกบล็อกได้อีกด้วย</p>
+<p><strong><a href="http://en.wikipedia.org/wiki/Privoxy">Privoxy</a></strong> (ไพรว็อกซี่) เป็นโปรแกรมพร็อกซี่ที่ช่วยเพิ่มความเป็นส่วนตัวในการท่องเว็บเช่นกัน โดยสามารถดักจับ <a href="http://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B8%E0%B8%81%E0%B8%81%E0%B8%B5%E0%B9%89_%28%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%99%E0%B9%87%E0%B8%95%29" title="cookie">&#8216;คุกกี้&#8217;</a> และกรองเนื้อหาบางอย่าง เช่น โฆษณา ออกไปได้</p>
+<h3>ติดตั้ง Tor และ Privoxy ใน Ubuntu</h3>
+<p>1 &#8211; ติดตั้งแพคเกจ &ldquo;tor&rdquo; และ &ldquo;privoxy&rdquo;<br />
+จะใช้เมนู System -> Administration -> Synaptic Package Manager<br />
+หรือจะใช้คำสั่งที่คอมมานด์ไลน์ก็ได้ คือ:</p>
+<p><code>sudo apt-get install tor privoxy</code></p>
+<p>2 &#8211; ปรับตั้งค่าของ Privoxy โดยแก้ไฟล์ /etc/privoxy/config:</p>
+<p><code>sudo gedit /etc/privoxy/config</code></p>
+<p>3 &#8211; เพิ่มบรรทัดนี้เข้าไป  (รวม จุด ตรงท้ายสุดด้วย):</p>
+<p><code>forward-socks4a / localhost:9050 .</code></p>
+<p>โดยจะเพิ่มเข้าไปที่ไหนของไฟล์ก็ได้<br />
+(เพื่อความอ่านง่าย แนะนำให้เพิ่มแถว ๆ ส่วนที่ชื่อว่า &ldquo;FORWARDING&rdquo; / &ldquo;forward-socks4&rdquo;)</p>
+<p>4 &#8211; (ทำหรือไม่ก็ได้) หากไม่ต้องการให้บันทึกปูมการทำงานของโปรแกรม (log) ให้ใส่ # หน้าบรรทัดที่เขียนว่า &ldquo;logfile logfile&rdquo;</p>
+<p>5 &#8211; (ทำหรือไม่ก็ได้) หากไม่ต้องการให้บันทึกคุกกี้ที่ถูกดักจับ ให้ใส่ # หน้าบรรทัดที่เขียนว่า &ldquo;jarfile jarfile&rdquo;</p>
+<p>6 &#8211; รีสตาร์ท Privoxy ใหม่ โดยใช้คำสั่ง:</p>
+<p><code>sudo /etc/init.d/privoxy restart</code></p>
+<hr />
+<h3>ตั้งค่า Firefox ให้ใช้งาน Tor</h3>
+<p>ในที่นี้ จะใช้ปลั๊กอิน <a href="https://addons.mozilla.org/en-US/firefox/addon/2275">Torbutton</a> เนื่องจากไม่ซับซ้อน ติดตั้งง่าย.<br />
+ปลั๊กอินอื่น ๆ ที่ใช้ได้เช่นกัน โดยอาจมีลูกเล่นมากกว่า/ซับซ้อนกว่า เช่น <a href="https://addons.mozilla.org/en-US/firefox/addon/2464">FoxyProxy</a></p>
+<p>1 &#8211; ติดตั้ง Torbutton โดยไปที่หน้าเว็บ: <a href="https://addons.mozilla.org/en-US/firefox/addon/2275">https://addons.mozilla.org/en-US/firefox/addon/2275</a></p>
+<p>2 &#8211; ปิดไฟร์ฟ็อกซ์ และเปิดใหม่</p>
+<p>3 &#8211; ที่มุมล่างขวา จะเห็นข้อความว่า &ldquo;Tor Disabled&rdquo; (ตอร์ปิดใช้งาน)</p>
+<p>4 &#8211; เมื่อต้องการความเป็นส่วนตัวมากขึ้น หรือต้องการเข้าเว็บที่ถูกบล็อก ให้คลิกที่ข้อความข้างต้น มันจะเปลี่ยนเป็นคำว่า &ldquo;Tor Enabled&rdquo; (ตอร์เปิดใช้งาน)</p>
+<p>5 &#8211; ท่องเว็บได้ 🙂</p>
+<hr />
+<p>เรียบเรียงจาก <a href="http://ubuntuforums.org/showthread.php?p=2702743">Step by step with Tor</a> ที่ Ubuntu Forums<br />
+ลีนุกซ์ดิสโทรอื่น ๆ ทำคล้าย ๆ กัน แต่จะแตกต่างกันเรื่องตำแหน่งไฟล์ตั้งค่า (คอนฟิก)</p>
+<p>updated 2007.05.30: เอกสารโดยละเอียด (ภาษาอังกฤษ) ดูที่:<br />
+<a href="http://security.ngoinabox.org/Documentation/Misc/tor.eff.org/doc/tor-doc-unix.html">Running the Tor client on Linux/BSD/Unix</a> &#8211; ติดตั้ง client (สำหรับใช้งานดูเว็บ); และ<br />
+<a href="http://security.ngoinabox.org/Documentation/Misc/tor.eff.org/doc/tor-doc-server.html">Configuring a Tor server</a> &#8211; ติดตั้ง server (เพื่อช่วยให้คนอื่นดูเว็บได้ดีขึ้น &#8211; ยิ่งมี Tor server เยอะ ก็ยิ่งทำให้เครือข่าย Tor มีประสิทธิภาพดี)</p>
+<p>updated 2007.05.31: เพิ่งเห็นว่า ที่ <a href="http://ubuntuclub.com/node/35" title="วิธีติด Tor บน Ubuntu">ubuntuclub ก็มีลงไปแล้ว</a></p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/Tor" rel="tag">Tor</a>,<br />
+<a href="http://technorati.com/tag/Privoxy" rel="tag">Privoxy</a>,<br />
+<a href="http://technorati.com/tag/Ubuntu" rel="tag">Ubuntu</a><br />
+</small></p>
+

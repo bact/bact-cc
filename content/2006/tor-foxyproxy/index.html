@@ -1,0 +1,32 @@
+---
+title: "Tor + FoxyProxy"
+date: "2006-09-01T04:57:00+07:00"
+lastmod: "2011-04-29T05:56:46+07:00"
+type: "post"
+url: "/2006/tor-foxyproxy/"
+description: "One of the fundamental contrasts between free democratic societies and totalitarian systems is that the totalitarian government [or other totalitarian organization] relies on secrecy for the regime but high surveillance and disclosure for all other groups, whereas in the civic culture of liberal dem"
+categories: ["internet", "freedom"]
+tag: ["anonymity", "circumvention", "free-softwares", "internet-censorship", "open-source", "privacy", "software", "surveillance", "tor"]
+lang: "th"
+wpid: 1626
+---
+<blockquote cite="http://joi.ito.com/static/emergentdemocracy.html#_ftnref6">
+<p>One of the fundamental contrasts between free democratic societies and totalitarian systems is that the totalitarian government [or other totalitarian organization] relies on secrecy for the regime but high surveillance and disclosure for all other groups, whereas in the civic culture of liberal democracy, the position is approximately the reverse.<br />
+&mdash; Geoffrey de Q Walker <sup><a href="http://joi.ito.com/static/emergentdemocracy.html#_ftnref6">*</a></sup></p>
+<p>(หนึ่งในความแตกต่างพื้นฐาน ระหว่าง สังคมเสรีประชาธิปไตย และ ระบอบเผด็จการ ก็คือ การดำรงอยู่ของ รัฐบาลเผด็จการ [หรือองค์กรเผด็จการอื่น ๆ] นั้น ขึ้นอยู่กับ การปกปิดความลับของฝ่ายบริหาร แต่กลับตรวจตราและเปิดโปงอย่างเข้มข้นกับกลุ่มอื่น ๆ, ในขณะที่ ในวัฒนธรรมพลเมืองของระบอบเสรีประชาธิปไตยนั้น ตำแหน่งที่ว่า เกือบจะกลับกัน)</p>
+</blockquote>
+<p>เมื่อวานและวันนี้ ลองใช้ <a href="http://tor.eff.org/">Tor</a> + <a href="http://foxyproxy.mozdev.org/">FoxyProxy extension</a> ร่วมกับ Firefox ท่องเน็ตดู<br />
+ทดสอบเทคโนโลยีเพื่อความเป็นส่วนตัวบนโลกออนไลน์</p>
+<p>เต่าเกือบจะกัดยาง &#8230; เน็ตอืดลงอย่างเห็นได้ชัด แต่ยังพอรับได้<br />
+คิดไม่ออกว่า ถ้าไปเล่นที่เมืองไทย ซึ่งเน็ตคงช้ากว่าที่นี่ (ตอนนี้ใช้ DSL 6 Mbits) มันจะอืดกว่านี้แค่ไหน</p>
+<p>อีกอย่างคือ ถ้าเปิดเว็บหลาย ๆ ที่พร้อมกัน บางทีมันจะเปิดไม่ได้ เนื่องจากมันเปิืด connection ไม่ทัน</p>
+<p>คือเท่าที่เข้าใจ Tor มันใช้วิธี &#8220;ฝาก&#8221; คำร้อง (request) ของเรา ไปยัง Tor node อื่น ๆ หลาย ๆ ต่อ ก่อนจะส่งข้อมูลที่ร้องขอย้่อนกลับมาให้เรา เพื่อพรางต้นตอของคำร้อง &#8230; นี่ก็จุดแรกของความช้า เพราะมันหลายต่อ<br />
+อีกจุดก็คือ ถ้าเกิด node มันน้อย เรา(และคนอื่น ๆ)ก็มีโอกาสที่จะขอไปยัง node เดิมซ้ำ ๆ ซึ่ง 1) node นั้นมันก็จะรับไม่ไหว (เป็นที่มาของ failed connection) 2) โอกาสที่จะถูกตามรอยกลับมันก็ง่ายขึ้น</p>
+<p>จากที่คิดเอาเอง คาดว่า ถ้าเกิดมีคนใช้ Tor กันมาก ๆ เข้า ความเร็ว+ความเป็นส่วนตัว มันคงดีขึ้นแน่</p>
+<p>ตัวติดตั้งของ Tor รุ่นปัจจุบัน มีแบบขายยกชุดด้วย (Tor &amp; Privoxy &amp; Vidalia bundle) ซึ่งก็ใช้สะดวกดี ผมปิด Privoxy ทิ้ง เพราะเหมือนมันจะตีกับ FoxyProxy (ผมเซตไม่ค่อยเป็น) ส่วนตัว Vidalia นี่ดีมาก ทำให้เซต Tor ได้ง่ายขึ้นจมเลย เป็น GUI หมด แนะนำให้ดาวน์โหลดชุดนี้</p>
+<p>เราเดินไปซื้อหนังสืออะไรในร้านมาอ่าน ก็ไม่มีใครคอยมาเช็ค/มีโอกาสได้เช็คน้อย (เว้นว่าเราจ่ายด้วยบัตรเครดิต/เดบิตที่เป็นชื่อเราเองหรือคนใกล้ชิด อันนี้ก็ง่ายเลย)<br />
+แต่ทำไมเราจะเข้าไปดูเว็บไหน ต้องเปิดโอกาสให้ใครมาตามรอยด้วย ?</p>
+<p><strong>Wikipedia:</strong> <a href="http://en.wikipedia.org/wiki/Surveillance_state" rel="tag">surveillance state</a> (?) | <a href="http://en.wikipedia.org/wiki/Civil_liberties" rel="tag">civil liberties</a> (เสรีภาพพลเมือง?)</p>
+<p><strong>tags:</strong><br />
+<a href="http://technorati.com/tag/privacy" rel="tag">privacy</a>, <a href="http://technorati.com/tag/civil+liberties" rel="tag">civil liberties</a>. <a href="http://technorati.com/tag/internet" rel="tag">Internet</a>, <a href="http://technorati.com/tag/ความเป็นส่วนตัว" rel="tag">ความเป็นส่วนตัว</a>, <a href="http://technorati.com/tag/เสรีภาพพลเมือง" rel="tag">เสรีภาพพลเมือง</a>, <a href="http://technorati.com/tag/surveillance" rel="tag">surveillance</a>, <a href="http://technorati.com/tag/tor" rel="tag">Tor</a>, <a href="http://technorati.com/tag/proxy" rel="tag">proxy</a></p>
+

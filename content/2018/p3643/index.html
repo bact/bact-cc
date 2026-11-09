@@ -1,0 +1,57 @@
+---
+title: "ทำเว็บ ทำแอป ให้รองรับหลายภาษา หลากวัฒนธรรม"
+date: "2018-01-22T20:16:51+07:00"
+lastmod: "2018-01-22T20:20:17+07:00"
+type: "post"
+url: "/2018/ทำเว็บ-ทำแอป-ให้รองรับหล/"
+description: "ไลบรารี/เฟรมเวิร์กสำหรับการทำให้แอป/เว็บไซต์รองรับหลายภาษา/วัฒนธรรม หรือที่เรียกว่า “internationalization” ทั้งส่วนหน้าตาและการประมวลผลอื่นๆ เช่น เรียงลำดับตามพจนานุกรม ปฏิทิน รูปแบบวันเวลา สกุลเงิน โพสต์เรื่องนี้ไปที่กรุ๊ปสมาคมโปรแกรมเมอร์ไทยและใน Medium ขอโพสต์ซ้ำที่นี่ อะไรคือ Internationalizatio"
+categories: ["computer", "misc"]
+tag: ["accessibility", "internationalization", "locale", "localization"]
+lang: "th"
+wpid: 3643
+---
+<p><em>ไลบรารี/เฟรมเวิร์กสำหรับการทำให้แอป/เว็บไซต์รองรับหลายภาษา/วัฒนธรรม หรือที่เรียกว่า “internationalization” ทั้งส่วนหน้าตาและการประมวลผลอื่นๆ เช่น เรียงลำดับตามพจนานุกรม ปฏิทิน รูปแบบวันเวลา สกุลเงิน</em></p>
+<p>โพสต์เรื่องนี้ไปที่<a href="https://www.facebook.com/groups/ThaiPGAssociateSociety/permalink/803135036564434/">กรุ๊ปสมาคมโปรแกรมเมอร์ไทย</a>และใน <a href="https://medium.com/@bact/%E0%B8%97%E0%B8%B3%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-i18n-91120722714c">Medium</a> ขอโพสต์ซ้ำที่นี่</p>
+<h2>อะไรคือ Internationalization?</h2>
+<p>หลักๆ ในเรื่องนี้มี 2 คำ คือ <strong>internationalization (i18n)</strong> กับ <strong>localization (L10n)</strong></p>
+<p>ส่วนของโค้ดจะเป็นการทำ internationalization รองรับไว้ คือเตรียมให้รองรับหลายภาษา/วัฒนธรรม ไม่ hardcode ภาษาลงในโค้ด คนเขียนโค้ดไม่ทึกทักเรื่องเกี่ยวกับภาษาและวัฒนธรรมไปเอง</p>
+<p>สำหรับข้อความ/ข้อมูลสำหรับแต่ละภาษาแต่ละประเทศจะเก็บเป็นก้อนๆ เอาไว้ เรียกว่า <a href="https://en.wikipedia.org/wiki/Locale_(computer_software)"><strong>locale</strong></a></p>
+<p>การจัดเตรียมข้อมูล locale พวกนี้เรียกว่า localization ซึ่งมีทั้งการแปลข้อความ และการเตรียมข้อมูลที่เจาะจงกับประเทศ/เขตการปกครอง/วัฒนธรรม</p>
+<p>(ตัวย่อ i18n และ L10n มาจากอักษรแรกสุด+จำนวนตัวอักษรระหว่างอักษรแรกสุดกับอักษรท้ายสุด+อักษรท้ายสุด ใช้ i ตัวเล็ก และ L ตัวใหญ่ เพื่อให้เห็นแตกต่างจากเลขหนึ่ง 1)</p>
+<h2>ข้อมูลจำเพาะท้องถิ่น (locale)</h2>
+<p>ข้อความที่เจาะจงกับแอปในภาษานั้นๆ ก็ต้องแปลเอา ซึ่งมีเครื่องมือให้ช่วยแปลผ่านเว็บหลายตัว ตัวที่นิยมกันมากคือ <a href="https://www.transifex.com/"><em>Transifex</em></a> (ใช้ฟรีสำหรับโครงการโอเพนซอร์ส) หรือจะใช้โปรแกรมอื่นๆ ก็มี โดยมาตรฐานการเก็บข้อความอันหนึ่งก็คือ <a href="https://www.gnu.org/software/gettext/"><em>gettext</em></a></p>
+<p>ส่วนข้อมูลที่เป็นพื้นฐานสำหรับแต่ละภาษาแต่ละประเทศ ที่ไม่ขึ้นกับแอป มีคนทำเอาไว้แล้วที่โครงการ <em><a href="http://cldr.unicode.org/">Unicode Common Locale Data Repository (CLDR)</a></em></p>
+<p>เฟรมเวิร์กเกือบทั้งหมดรองรับการดึงข้อมูลจาก CLDR นี้ (และเราไม่ควรคิดใช้อะไรที่ต่างไปจาก CLDR ถ้าไม่ชัวร์จริงๆ ว่าคิดดีแล้ว)</p>
+<p>ชื่อเรียก locale มีมาตรฐานกำหนดวิธีเรียกไว้ อยู่ในรูปแบบ:</p>
+<ul>
+<li><strong>รหัสภาษาตัวพิมพ์เล็ก_รหัสประเทศตัวพิมพ์ใหญ่</strong></li>
+<li><strong>รหัสภาษาตัวพิมพ์เล็ก-รหัสประเทศตัวพิมพ์ใหญ่</strong></li>
+</ul>
+<p>เช่น th_TH คือภาษาไทยที่ใช้ในประเทศไทย, en_GB คือภาษาอังกฤษที่ใช้ในสหราชอาณาจักร, en_MY ภาษาอังกฤษที่ใช้ในมาเลเซีย, my_MM “ภาษาเมียนมาร์” ที่ใช้ในประเทศเมียนมาร์</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">รหัสภาษา</a>และ<a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">รหัสประเทศ​</a> โดยทั่วไปแล้วจะใช้ตามมาตรฐาน ISO ซึ่งจะมีทั้งแบบ 2 ตัวอักษร และแบบ 3 ตัวอักษร — โปรดสังเกตว่า รหัสภาษาและรหัสประเทศอาจจะแตกต่างกัน เช่น ภาษาญี่ปุ่นคือ ja ส่วนประเทศญี่ปุ่นคือ JP, หรือ MY ถ้าเป็นประเทศคือมาเลเซีย แต่ถ้าภาษา my คือ “ภาษาในเมียนมาร์”</p>
+<p>บางทีเราจะเห็นชื่อ locale ในรูปแบบ รหัสภาษา_รหัสประเทศ_รหัสประเทศ อันนี้ต้องไปอ่านเอกสารของเฟรมเวิร์กนั้นๆ อีกทีว่าหมายความว่าอะไร เพราะมันไม่ใช่มาตรฐาน</p>
+<p>เช่น <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html">th_TH_TH</a> ใน Java จะหมายถึง ภาษาไทย, ในประเทศไทย, และใช้เลขไทยด้วย หรือ ja_JP_JP จะหมายถึง ภาษาญี่ปุ่น, ในประเทศญี่ปุ่น, และใช้การนับปีปฎิทินแบบญี่ปุ่น (Imperial calendar)</p>
+<p>(ภาษาบางภาษาไม่มีโค้ดแบบ 2 ตัวอักษร แต่มีโค้ดแบบ 3 ตัวอักษร เช่น bur คือภาษาพม่า)</p>
+<h2>การทำงานของโค้ดที่ถูก internationalized แล้ว</h2>
+<p>ในการทำงานของโค้ด หลังจากโค้ดทราบภาษา/ประเทศของผู้ใช้ (จากที่ผู้ใช้ตั้งค่าเอง หรือจากการ detect/เดา หรือใช้ค่าจากระบบปฏิบัติการ) ตัวโค้ดก็จะไปดึงข้อมูลที่ตรงกันมาใช้ เพื่อกำหนดการแสดงผลหรือประมวลผล</p>
+<p>เช่นถ้าทราบว่าเป็นผู้ใช้ภาษาอังกฤษ (en) ที่อยู่ในประเทศไทย (TH) ก็จะโหลด locale en_TH ขึ้นมาใช้ ซึ่งในการทำงานก็เป็นไปได้ว่า หน้าจอจะแสดงเป็นภาษาอังกฤษ แต่วันหยุดต่างๆ ใช้ตามปฏิทินของไทย</p>
+<p>ส่วนข้อความที่แสดงผล (บนหน้าเว็บหรือทางอื่น) ตัวเฟรมเวิร์กจะกำหนดวิธีการแยกตัวโค้ดกับข้อความออกจากกัน ทำให้เราจัดการกับส่วนข้อความได้สะดวกขึ้น</p>
+<p>โค้ดสามารถโหลดข้อมูล locale ได้จากทั้งฐานข้อมูล ใน string array ใน JSON หรือในแฟ้มต่างหาก อันนี้ก็ต้องไปตัดสินใจกันว่าทำงานแบบไหนสะดวกกว่า</p>
+<h2>i18n Library / Framework</h2>
+<p>ไลบรารี/เฟรมเวิร์กสำหรับ JavaScript ที่พบตอนนี้มีดังนี้</p>
+<ul>
+<li><strong>FormatJS</strong> จาก Yahoo ใช้ร่วมกับ React และไลบรารีอื่นๆ ได้ <a href="https://formatjs.io">https://formatjs.io</a></li>
+<li><strong>Globalize</strong> จาก jQuery (Twitter ใช้ตัวนี้) <a href="https://github.com/globalizejs/globalize">https://github.com/globalizejs/globalize</a></li>
+<li><strong>Polyglot</strong> จาก Airbnb <a href="http://airbnb.io/polyglot.js/">http://airbnb.io/polyglot.js/</a></li>
+<li><strong>jquery.i18n</strong> จาก MediaWiki <a href="https://github.com/wikimedia/jquery.i18n/">https://github.com/wikimedia/jquery.i18n/</a></li>
+<li><strong>i18next</strong> ตัวนี้เชื่อมกับเว็บช่วยแปลด้วย <a href="https://github.com/i18next/i18next/">https://github.com/i18next/i18next/</a></li>
+</ul>
+<p>มีคนทำตารางเปรียบเทียบไว้ <a href="https://github.com/rxaviers/javascript-globalization/blob/master/README.md">https://github.com/rxaviers/javascript-globalization/blob/master/README.md</a></p>
+<p>สำหรับ PHP มีคนแนะนำวิธีต่างๆ ไว้ <a href="https://lingohub.com/blog/2013/06/php-internationalization-i18n-mechanisms-tutorial/">https://lingohub.com/blog/2013/06/php-internationalization-i18n-mechanisms-tutorial/</a></p>
+<p>สำหรับ Ruby on Rails มีตัวนี้อีกตัว <a href="https://github.com/fnando/i18n-js">https://github.com/fnando/i18n-js</a> คุณ Vittayasak Rujivorakul แนะนำมา</p>
+<p>จบดื้อๆ แค่นี้ มีอะไรไปคุยกันได้ในเฟซบุ๊กกรุ๊ป <em>สมาคมโปรแกรมเมอร์ไทย</em> ครับ <a href="https://www.facebook.com/groups/ThaiPGAssociateSociety/">https://www.facebook.com/groups/ThaiPGAssociateSociety/</a></p>
+<h2>โพสต์(อาจจะ)ที่เกี่ยวข้อง</h2>
+<ul>
+<li><a href="/2013/localization/">มากกว่าการแปล, localization คือการปรับเข้าถิ่น</a></li>
+</ul>
+

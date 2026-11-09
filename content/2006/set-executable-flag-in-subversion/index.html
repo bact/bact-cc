@@ -1,0 +1,19 @@
+---
+title: "set executable flag in Subversion"
+date: "2006-01-18T23:44:00+07:00"
+lastmod: "2006-01-18T23:44:00+07:00"
+type: "post"
+url: "/2006/set-executable-flag-in-subversion/"
+description: "เพิ่งจะรู้ วิธีบอกให้ Subversion มันจำเอาไว้ ว่าไฟล์นี้น่ะ รันได้นะเฟ้ย (executable) svn propset svn:executable ” filename ไม่อย่างนั้น หลังจากอัพเดท/หรือเช็คเอาท์ เพอมิสชั่นต่าง ๆ มันจะหายไปหมดเลย ต้องเซตกันใหม่ (แต่พร็อพเพอตี้นี้ ก็ใช้ได้แค่ executable อ่ะ ไม่เกี่ยวกะ read / write ใช้กะไดเรกทอรีไม"
+categories: ["something"]
+lang: "th"
+wpid: 1197
+---
+<p>เพิ่งจะรู้ วิธีบอกให้ Subversion มันจำเอาไว้ ว่าไฟล์นี้น่ะ รันได้นะเฟ้ย (executable)</p>
+<p><code>svn propset svn:executable '' filename</code></p>
+<p>ไม่อย่างนั้น หลังจากอัพเดท/หรือเช็คเอาท์ เพอมิสชั่นต่าง ๆ มันจะหายไปหมดเลย ต้องเซตกันใหม่ (แต่พร็อพเพอตี้นี้ ก็ใช้ได้แค่ executable อ่ะ ไม่เกี่ยวกะ read / write ใช้กะไดเรกทอรีไม่ได้ด้วย)</p>
+<ul>
+<li><a href="http://svnbook.red-bean.com/en/1.1/ch07s02.html">Subversion properties</a></li>
+<li><a href="http://svnbook.red-bean.com/en/1.0/re23.html">propset command</a>, also links to propget, proplist, propedit, propdel, &#8230;</li>
+</ul>
+

@@ -1,0 +1,45 @@
+---
+title: "XMLHttpRequest with \"lese-majeste\" in the url got blocked as well – Holy CS Loxinfo"
+date: "2009-02-06T14:26:00+07:00"
+lastmod: "2011-04-29T05:21:37+07:00"
+type: "post"
+url: "/2009/xmlhttprequest-with-lese-majeste-in-the-url-got-blocked-as-well-holy-cs-loxinfo/"
+description: "อัปเดตต่อจากกรณี Mashable.com got blocked – ความมั่วของ CS Loxinfo กับการบล็อคเว็บ จากการทดลองเพิ่มเติม พบว่า web api request (ซึ่งทำผ่าน url) ก็จะใช้ไม่ได้เช่นกัน เช่น ผมลองใช้บริการย่อลิงก์ ของ bit.ly โดยใช้ url : http://klongofconsciousness.wordpress.com/2009/01/23/dozing-german-arrested-for-lese"
+categories: ["internet", "politics"]
+tag: ["ajax", "cinema", "internet-censorship", "lese-majeste", "programming", "web-2-0"]
+lang: "th"
+wpid: 2431
+---
+<p>อัปเดตต่อจากกรณี <a href="http://bact.blogspot.com/2009/02/mashablecom-got-blocked-cs-loxinfo.html">Mashable.com got blocked &#8211; ความมั่วของ CS Loxinfo กับการบล็อคเว็บ</a></p>
+<p>จากการทดลองเพิ่มเติม พบว่า web api request (ซึ่งทำผ่าน url) ก็จะใช้ไม่ได้เช่นกัน</p>
+<p>เช่น ผมลองใช้บริการย่อลิงก์ ของ <a href="http://bit.ly/">bit.ly</a> โดยใช้ url :</p>
+<blockquote>
+<p><a href="http://klongofconsciousness.wordpress.com/2009/01/23/dozing-german-arrested-for-lese-majeste/" title="Dozing German arrested for Lèse Majesté">http://klongofconsciousness.wordpress.com/2009/01/23/dozing-german-arrested-for-<em>lese-majeste</em>/</a><sup>*</sup></p>
+</blockquote>
+<p>ปรากฎว่า bit.ly มันเงียบครับ ไม่แสดงผลลัพธ์อะไร (ตามปกติมันจะแสดงผลลัพธ์ลิงก์ที่ถูกย่อ ในช่อง “Shortened URL”)</p>
+<p>เมื่อตรวจสอบดูก็พบว่า เมื่อกดปุ่ม “Shorten” ตัวหน้าเว็บ จะส่ง XMLHttpRequest ไปที่ <a href="http://bit.ly/api">http://bit.ly/api</a> เรียกใช้บริการที่เซิร์ฟเวอร์ของ bit.ly เพื่อรับผลลัพธ์ (ตามลักษณะการเขียนโปรแกรมแบบ AJAX ซึ่งปัจจุบันนี้นิยมทั่วไป)</p>
+<p>โดยในการส่ง request ที่ว่านี้ ก็จะทำในรูปของการเรียก url ปกติ ซึ่งกรณีนี้ ก็จะเป็นในรูปแบบนี้ :</p>
+<blockquote>
+<p><a href="http://bit.ly/api?method=shorten&amp;long_url=http%3A%2F%2Fklongofconsciousness.wordpress.com%2F2009%2F01%2F23%2Fdozing-german-arrested-for-lese-majeste%2F&amp;keyword=&amp;history=1&amp;t=1233903997567">http://bit.ly/api?method=shorten&amp;<strong>long_url=http%3A%2F%2Fklongofconsciousness.wordpress.com%2F2009%2F01%2F23%2Fdozing-german-arrested-for-<em>lese-majeste</em>%2F</strong>&amp;keyword=&amp;history=1&amp;t=1233903997567</a></p>
+</blockquote>
+<p>method=shorten นั้นคือระบุว่า ใช้เรียกใช้เมธทอดที่ชื่อ shorten; <strong>long_url=&#8230; ก็ระบุว่าจะย่อลิงก์อะไร;</strong> ที่เหลือก็เป็นพารามิเตอร์ต่าง ๆ</p>
+<p>จะเห็นว่าปัญหาอยู่ตรงที่ว่า long_url นั้นไม่ได้เข้ารหัส ดังนั้นถ้าใส่ลิงก์ที่มีคำว่า “lese-majeste” เข้าไปให้ bit.ly ย่อให้หน่อย<br />
+คำเดียวกันนี้ก็จะปรากฏอยู่ในพารามิเตอร์ที่จะส่ง XMLHttpRequest ซึ่งก็จะไปปรากฏอยู่ใน url — แล้วก็จะถูกบล็อคทันที (อย่างน้อยที่ทราบโดยไอเอสพีหนึ่งแห่ง คือ CS Loxinfo)</p>
+<p><strong>ดังนั้นสิ่งที่ request ดัง url ข้างต้น (หรือ url ใด ๆ ที่มีคำว่า “lese-majeste” หรือ “lesemajeste”)<br />
+จะได้รับ respond กลับมา<br />
+ก็จะเป็นหน้า <a href="http://bact.blogspot.com/2009/02/mashablecom-got-blocked-cs-loxinfo.html">“404 หลอก”</a> ซึ่งไม่ใช่รูปแบบข้อมูลอย่างที่โปรแกรมคาดหวังไว้ (เช่น XML หรือ JSON) โปรแกรมจึงทำงานต่อไม่ได้ &#8230; ก็เลยเงียบ</strong></p>
+<p>เจ๋งไหม ?</p>
+<p>(<sup>*</sup> เป็นข่าวเมื่อ 22 ม.ค. 2552 Klaus Brehmer ชายชาวเยอรมันคนหนึ่งนั่งในโรงหนังที่เวิลด์เทรด แล้วในขณะนั้นมีเพลงสรรเสริญบรรเลง คนในโรงหนังเลยโห่ ตะโกน และเอาน้ำราดหัวเขา จากนั้นตำรวจก็มาจับเขาไป &#8211; โอ้ อารยะประเทศ)</p>
+<hr />
+<p>ใครที่เขียนโปรแกรมบนเว็บ/โปรแกรมที่ทำงานกับเว็บ แล้วมีผู้ใช้บริการหรือลูกค้า แจ้งมาว่าโปรแกรมทำงานผิดปกติ ลองเช็คเรื่องการบล็อคเว็บด้วย ถ้าคุณทำ request ใด ๆ ผ่านเว็บ ก็มีโอกาสจะโดนบล็อคได้เสมอ (หลายครั้งเกิดจากความมั่ว ๆ &#8211; Mashable.com ยังโดนได้เลย) ลองถามผู้ใช้บริการของคุณ ว่าใช้เน็ตยี่ห้อไหน ถ้าเป็นไปได้ ก็แนะนำให้เขาเปลี่ยนยี่ห้อไอเอสพีไปเลย ตัดปัญหา</p>
+<p><strong>ส่วนใครที่บล็อคเว็บแบบเหมารวม-มักง่ายแบบนี้ ไม่ว่าจะเป็นรัฐ หน่วยงานราชการ สถานศึกษา หรือไอเอสพี ก็ขอความกรุณาปรับปรุงการทำงานด้วย ถ้ามีคำสั่งศาลมาให้บล็อคก็บล็อคตาม url ที่ศาลสั่งมาไป ไม่ใช่ใช้ keyword filtering แบบนี้ มันกระทบกับคนอื่นเว็บอื่นที่ไม่ได้เกี่ยวข้องด้วย</strong></p>
+<p><big></big><big><strong><u>อย่ามักง่าย</u></strong></big></p>
+<hr />
+<p>อัปเดต : ผมดันไปตั้งชื่อหัวข้อของโพสต์นี้มีคำว่า &ldquo;lese majeste&rdquo;, ใน url ของโพสต์นี้ ก็เลยมีคำนั้นไปด้วย ใครใช้ CS Loxinfo ก็จะกดเข้ามาดูโพสต์นี้ตรง ๆ ไม่ได้นะครับ. ถ้าใช้โปรแกรมอ่าน feed ที่ทำงานที่ฝั่งไคลเอนต์ก็อาจจะไม่ได้ด้วย &#8211; เพราะใน <a href="http://feeds.feedburner.com/%7Er/bact/%7E3/533175999/xmlhttprequest-with-lese-majeste-in-url.html" title="http://feeds.feedburner.com/~r/bact/~3/533175999/xmlhttprequest-with-lese-majeste-in-url.html">feed</a> ของโพสต์นี้ ซึ่งใช้ Feedburner มันก็มีชื่อหัวข้ออยู่ด้วย (<a href="http://feeds.feedburner.com/%7Er/bact/%7E3/533175999/xmlhttprequest-with-lese-majeste-in-url.html">http://feeds.feedburner.com/%7Er/bact/%7E3/533175999/xmlhttprequest-with-<em>lese-majeste</em>-in-url.html</a>). อย่างไรก็ตาม ยังสามารถอ่านได้ในหน้ารวมของบล็อก หรืออ่านผ่าน feed reader ที่ทำงานฝั่งเซิร์ฟเวอร์ อย่าง Google Reader. ลุ่มลึกดีครับ อารยะประเทศ.</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/XMLHttpRequest" rel="tag">XMLHttpRequest</a>,<br />
+<a href="http://technorati.com/tag/lese+majeste" rel="tag">lese majeste</a>,<br />
+<a href="http://technorati.com/tag/Klaus+Brehmer" rel="tag">Klaus Brehmer</a>,<br />
+<a href="http://technorati.com/tag/bit.ly" rel="tag">bit.ly</a><br />
+</small></p>
+

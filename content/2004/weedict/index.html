@@ -1,0 +1,39 @@
+---
+title: "WeeDict"
+date: "2004-12-17T01:03:00+07:00"
+lastmod: "2004-12-17T01:03:00+07:00"
+type: "post"
+url: "/2004/weedict/"
+description: "WeeDict 0.3.2 เป็นพจนานุกรม ไทย-อังกฤษ อังกฤษ-ไทย สำหรับ J2ME ที่พัฒนาต่อจาก LekLekDict 0.3.1 โดย อ. พฤษภ์ บุญมา เป็นโครงการที่ทำเล่น ๆ หลังจากส่งดิสเซอ แล้วว่างงาน เบื่อโคตร (ถามพี่โอ๋ รุ่นน้องอ.พฤษภ์ ได้) ก็เลยอยากศึกษาการเขียนโปรแกรมภาษาไทยบนมือถือ โดยใช้ J2ME บ้าง (โดยตั้งใจไว้ว่า จะใช้เวลาว่างจ"
+tag: ["dictionary", "free-softwares", "java", "java-me", "open-source", "sony-ericsson", "weedict"]
+lang: "th"
+wpid: 501
+---
+<p><strong>WeeDict 0.3.2</strong> เป็นพจนานุกรม ไทย-อังกฤษ อังกฤษ-ไทย สำหรับ J2ME ที่พัฒนาต่อจาก <strong><a href="http://project-ile.net/lulu/leklekdict/">LekLekDict 0.3.1</a></strong> โดย <a href="http://project-ile.net/lulu/">อ. พฤษภ์ บุญมา</a></p>
+<p>เป็นโครงการที่ทำเล่น ๆ หลังจากส่งดิสเซอ แล้วว่างงาน เบื่อโคตร (ถาม<a href="http://thanyalukj.blogspot.com/" title="Thanyaluk Jirapech-Umpai">พี่โอ๋</a> รุ่นน้องอ.พฤษภ์ ได้)<br />
+ก็เลยอยากศึกษาการเขียนโปรแกรมภาษาไทยบนมือถือ โดยใช้ J2ME บ้าง (โดยตั้งใจไว้ว่า จะใช้เวลาว่างจากการกินเบียร์และดูบอล -_-&#8220;)<br />
+เริ่มจากการดาวน์โหลดโค้ด LekLekDict รุ่นล่าสุดในตอนนั้น คือ 0.3.1 มาลองเล่นดู<br />
+แก้ไปแก้มา เปลี่ยนโค้ดไปพอสมควร ก็ออกมาเป็น WeeDict ตัวนี้</p>
+<p><em>wee</em> เป็นภาษาสก็อต (<a href="http://en.wikipedia.org/wiki/Scots_language">Scots</a>) <a href="http://www.scots-online.org/dictionary/search.htm">แปลว่า</a> เล็ก ๆ (tiny, little)</p>
+<p>หลัก ๆ ที่ลองเล่นก็คือ ในส่วนของโค้ด ลองยุบคลาสและเมธทอดต่าง ๆ ที่คล้าย ๆ กันเข้าด้วยกัน<br />
+ในส่วนของการใช้งาน หลังจากผู้ใช้กดเลือกคำศัพท์จากรายการ เพื่อดูความหมาย เมื่อกด Back แล้ว สามารถกลับมาที่หน้ารายการเดิมได้ทันที (แทนที่จะกลับไปยังหน้าป้อนคำศัพท์)<br />
+นอกนั้นก็เป็นการแก้นู่นแก้นี่ ลองผิดลองถูก ไม่ค่อยมีสาระเท่าไหร่<br />
+คือหน้าตาของโค้ดเปลี่ยนไปเยอะใช้ได้ แต่การทำงานจริง ๆ ก็ยังคล้าย ๆ เดิม คือแก้ไปงั้นแหละ</p>
+<p>อ๋อ อีกอันใหญ่ ๆ ที่เปลี่ยนก็คือ พยายามยุบการใช้ <code>String</code> และ <code>byte[]</code> ที่ปน ๆ กัน<br />
+ให้เป็น <strong><code>MiniString</code></strong> (คลาสใหม่) อันเดียว เพื่อลด overhead ในการแปลงไปแปลงมา<br />
+(จากการทำ profiling ดู พบว่าเวลาส่วนใหญ่หมดไปกับการ <code>getBytes()</code>)<br />
+หลังยุบรวม ก็พบว่าลด cpu clock ไปได้พอสมควร แต่ไม่ถึงขนาดที่ผู้ใช้จะรู้สึกได้<br />
+(สรุปว่าเป็นการ optimize ที่ไม่ค่อยจะจำเป็นเท่าไหร่ คือเธอทำเอามันนั่นเอง)</p>
+<p>น่าจะใช้ได้กับมือถือที่รองรับ MIDP 1.0 และ CLDC 1.0<br />
+ทดสอบกับ Sony Ericsson k700i ของตัวเอง ใช้งานได้ดี (ไม่เคยลองกับเครื่องอื่น รุ่นอื่น)</p>
+<p><a href="http://siit.net/members/art/playground/weedict/WeeDict.jad">WeeDict.jad</a> | <a href="http://siit.net/members/art/playground/weedict/WeeDict.jar">WeeDict.jar</a> | <a href="http://siit.net/members/art/playground/weedict/weedict-0.3.2-src.zip">source code</a> | <a href="http://siit.net/members/art/playground/weedict/README.TXT">Readme</a><br />
+ใช้หนังสืออนุญาตแบบ GPL ตาม LekLekDict</p>
+<p>ตัว LekLekDict ต้นฉบับนั้น ตอนนี้พัฒนาไปถึงรุ่น 0.3.3 แล้ว<br />
+โดยมีความสามารถเพิ่มเติมหลายอย่าง พร้อมพจนานุกรมตัวใหม่<br />
+อ่านรายละเอียดได้ที่ <a href="http://project-ile.net/lulu/leklekdict/">เว็บของ LekLekDict</a><br />
+โดยที่ความสามารถใหม่ ๆ เหล่านั้น ยังไม่มีใน WeeDict รุ่น 0.3.2 (จริง ๆ คือ ไม่รู้เมื่อไหร่จะมี)</p>
+<p>ลองเล่นกันได้ครับ<br />
+ขอขอบคุณ อ.พฤษภ์ และ <a href="http://sis.ex.nii.ac.jp/~vuthi/">อ.วุฒิชัย</a> (น่าจะสะกดแบบนี้) สำหรับโค้ดต้นฉบับด้วย</p>
+<p>หมายเหตุ:<br />
+ทำใน <a href="http://netbeans.org/">NetBeans</a> 4.0 RC2, ตอนนี้ 4.0 ตัวจริงออกแล้ว</p>
+

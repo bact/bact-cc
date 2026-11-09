@@ -1,0 +1,42 @@
+---
+title: "change JRE/JDK default version in Mac OS X to Java SE 6 (1.6)"
+date: "2009-05-14T10:15:00+07:00"
+lastmod: "2011-05-17T14:27:28+07:00"
+type: "post"
+url: "/2009/change-jrejdk-default-version-in-mac-os-x-to-java-se-6-1-6/"
+description: "(Update 2009.05.16: add JAVA_JVM_VERSION setting) To build Nutch 1.0, you need JDK 1.6. Unless you’ll got [javac] class file has wrong version 50.0, should be 49.0 error message. For a system that has more than one version of JDK installed. It is possible to change to a desired version only at the t"
+categories: ["computer"]
+tag: ["development", "how-to", "java", "jdk", "mac-os-x"]
+lang: "th"
+wpid: 2451
+---
+<p><span style="color: red;">(Update 2009.05.16: add JAVA_JVM_VERSION setting)</span></p>
+<p>To build <a title="Apache Nutch" href="http://lucene.apache.org/nutch/">Nutch 1.0</a>, you need JDK 1.6. Unless you&#8217;ll got <em><q>[javac] class file has wrong version 50.0, should be 49.0</q> error message.</em></p>
+<p>For a system that has more than one version of JDK installed.<br />
+It is possible to change to a desired version only at the time you need it (look for <q>j16</q> script in <a title="Can't build Nutch" href="http://www.nabble.com/Can%27t-build-Nutch-td23133734.html">this thread</a>). I found myself more convenient with just changed the default version.</p>
+<p>เปลี่ยนรุ่นปริยายของ Java Runtime และ JDK ใน Mac OS X ให้เป็น Java SE 6 (1.6)</p>
+<ol>
+<li>Install Java SE 6 first. ก่อนอื่น ถ้ายังไม่มี Java SE 6 ในเครื่อง ก็ให้ติดตั้งก่อน.<br />
+โดย Java SE 6 จะอยู่ใน <strong><a href="http://support.apple.com/downloads/Java_for_Mac_OS_X_10_5_Update_2">Java for Mac OS X 10.5 Update 2</a></strong>, ดาวน์โหลดได้ที่เว็บไซต์ <a href="http://developer.apple.com/java/">developer.apple.com/java</a>.<br />
+หรือจะปรับรุ่นผ่าน Software Update ก็ได้.</li>
+<li>Run <strong>Java Preferences</strong> app to set the default version. หลังจากติดตั้งเรียบร้อยแล้ว ก็เรียกโปรแกรม Java Preferences ขึ้นมา <small>(อยู่ใน /Applications/Utilities/Java/ หรือพิมพ์ชื่อลง spotlight เลยก็ได้)</small> เพื่อเลือกว่าจะใช้รุ่นไหนก่อนหลัง. ใช้วิธี ลาก วาง. เสร็จแล้วก็ออกจากโปรแกรม.</li>
+<li>Point <strong>CurrentJDK</strong> dynamic link to 1.6. ไปตั้ง dynamic link ของไดเรกทอรี CurrentJDK ให้ชี้ไปหารุ่นที่ต้องการด้วย. เช่น ถ้าอยากให้ 1.6 เป็นรุ่นปริยาย ก็ทำแบบนี้ :
+<pre>cd /System/Library/Frameworks/JavaVM.framework/Versions
+sudo rm CurrentJDK
+sudo ln -s 1.6 CurrentJDK</pre>
+</li>
+<li>Set <strong>JAVA_JVM_VERSION</strong> environment variable. ใน <em>~/.profile</em> ตั้งค่าตัวแปรสภาพแวดล้อม JAVA_JVM_VERSION เป็นรุ่นที่ต้องการ โดยเพิ่มบรรทัดนี้เข้าไป :
+<pre>export JAVA_JVM_VERSION=1.6</pre>
+</li>
+<li>[optional ไม่ทำก็ได้] Set <strong>JAVA_HOME</strong> environment variable. ใน <em>~/.profile</em> อาจจะตั้งค่าตัวแปรสภาพแวดล้อม JAVA_HOME ไว้ด้วย เพิ่มบรรทัดนี้เข้าไป :
+<pre>export JAVA_HOME=/Library/Java/Home</pre>
+</li>
+<li>[optional แล้วแต่] Set <strong>Applet Preferences</strong>. ถ้าอยากแก้อะไรกุ๊ก ๆ กิ๊ก ๆ เกี่ยวกับการรันแอปเพล็ต ก็เข้าไปแก้ได้ที่แฟ้ม <em>~/Library/Caches/Java/deployment.properties</em>. ดูวิธีที่ <a href="http://support.apple.com/kb/HT3210">Java for Mac OS X 10.5 Update 2: Setting Java Applet preferences</a>. เช่น อาจแก้ให้ใช้ font-smoothing/anti-alias กับทุกแอปเพล็ตเลย ก็เพิ่มบรรทัดนี้เข้าไป :
+<pre>javaplugin.smoothText=true</pre>
+</li>
+</ol>
+<p>เสร็จแว้ว</p>
+<p>แถม : สำหรับคนที่ใช้ <a href="http://www.macports.org/">MacPorts</a>, <a href="http://porticus.alittledrop.com/">Porticus</a> เป็น GUI ที่สะดวกดี. (ประมาณ apt กับ Synaptic Package Manager, แต่ Porticus โง่กว่านิดนึง)</p>
+<p><small>technorati tags: <a rel="tag" href="http://technorati.com/tag/default">default</a>, <a rel="tag" href="http://technorati.com/tag/Mac+OS+X">Mac OS X</a>, <a rel="tag" href="http://technorati.com/tag/Java">Java</a><br />
+</small></p>
+

@@ -1,0 +1,34 @@
+[
+ {
+  "id": 1439,
+  "author": "bpitk",
+  "url": "",
+  "date": "2006-04-21T10:03:00+07:00",
+  "html": "<p>รู้สึกว่า Sun จะกั๊กไว้บางอย่างครับMozilla Rhino คอมไพล์ .js เป็น .class ได้เลย (มีแค่ JRE+Rhino ก็สร้างไฟล์ .class ได้)แต่ Jrunscript (in Java6)คอมไพล์เป็น .class ไม่ได้้ล่าสุดเขาลองแล้วใช้ได้อีก 13 Script Lang.เลยhttp://scripting.dev.java.net/ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1440,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2006-04-21T10:12:00+07:00",
+  "html": "<p>ในสไลด์ก็ว่าไว้อย่างนั้นเหมือนกันครับฟีเจอร์ใน Rhino ที่ไม่ได้รวมเข้ามา ก็มี E4X, compiler/optimizer, shell, debuggerเข้าใจว่า คงเป็นเพราะมันซ้ำซ้อนกับสิ่งที่ Java API/SDK มีให้อยู่แล้ว/เอามาผสมกันไม่ลงตัวตัว javax.script นี่คงเน้นที่ integration/ใช้ร่วมกับตัวโปรแกรมภาษา Java มากกว่าจะให้ภาษาสคริปต์มาแทนที่ภาษา Java น่ะครับGroovy, Python, Ruby, XPath, XSLT พวกนี้น่าสน 🙂 </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1441,
+  "author": "Mk",
+  "url": "",
+  "date": "2006-04-21T14:06:00+07:00",
+  "html": "<p>ถ้าจำไม่ผิด Rhino นี่เขียนด้วย java ไว้สำหรับ Grendel (Java Thunderbird) ที่สุดท้ายโครงการล่มไป แต่ตัว Rhino ก็เสร็จทัน ไม่รู้นอกจากนี้มีใครเอาไปใช้เยอะแค่ไหนแต่ engine javascript หลักคือ SpiderMonkey ที่เขียนด้วย C และยังใช้ในโปรแกรมของ Mozilla ทุกตัว </p>\n",
+  "replies": []
+ },
+ {
+  "id": 1442,
+  "author": "bpitk",
+  "url": "",
+  "date": "2006-04-21T18:40:00+07:00",
+  "html": "<p>ผมเคย D/L jython_21.class (ตัวinstall) มาลงใน Fedora Core 5 (64bit)ใช้ java6 เปิดแล้วมันลงไม่ได้ครับ ( บน WinXP+Java6ก็ลงไม่ได้ javaที่มากับ Linux ก็ลงไม่ได้ )  ไม่รู้เป็นอะไรมันฟ้องว่าException in thread &quot;main&quot; java.lang.ClassFormatError: Extra bytes at the end of class file jython_21ต้อง D/L Java5 มาลงก่อนถึงใช้เปิด jython_21.class ได้แต่พอ install ได้แล้วเรียกใช้ด้วย Java6ได้ดีทั้ง Linux ,WinXPถ้าสนใจลองใช้ Python บน Java6 แนะนำให้ลองอันนี้ครับhttp://artenum.libresource.net/projects/jyconsoleGUI Jython console + Jython2.1 มาเรียบร้อยGUI Jython console อันอื่นที่น่าสนใจก็เช่นhttp://don.freeshell.org/jython/http://www.nano.geo.uni-muenchen.de/~fxj/jcrust.htmlhttp://sourceforge.net/projects/pycrust/ </p>\n",
+  "replies": []
+ }
+]

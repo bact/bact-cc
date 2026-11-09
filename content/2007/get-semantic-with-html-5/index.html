@@ -1,0 +1,29 @@
+---
+title: "get semantic with HTML 5"
+date: "2007-12-06T00:04:00+07:00"
+lastmod: "2011-01-12T09:17:25+07:00"
+type: "post"
+url: "/2007/get-semantic-with-html-5/"
+description: "Lachlan Hunt รีวิว HTML 5 ให้เราดูกันว่าจะมีอะไรเปลี่ยนแปลงไปในข้อกำหนด HTML รุ่นต่อไปบ้าง พร้อมตัวอย่างและภาพประกอบ (โดย Kevin Cornell) เข้าใจง่าย เมื่อเทียบกับ HTML 4 (รุ่นปัจจุบัน) แล้ว HTML 5 นอกจากจะมีแท็กใหม่ ๆ ที่รองรับเทคโนโลยีเว็บที่พัฒนาขึ้น เช่นแท็กเกี่ยวกับไฟล์ภาพเคลื่อนไหวและเสียงแล้ว อ"
+categories: ["design"]
+tag: ["html", "markup-languages", "semantic-web", "semantics", "web-design"]
+lang: "th"
+wpid: 2222
+---
+<p>Lachlan Hunt <strong><a href="http://www.alistapart.com/articles/previewofhtml5" title="A Preview of HTML 5">รีวิว HTML 5</a></strong> ให้เราดูกันว่าจะมีอะไรเปลี่ยนแปลงไปในข้อกำหนด HTML รุ่นต่อไปบ้าง พร้อมตัวอย่างและภาพประกอบ (โดย Kevin Cornell) เข้าใจง่าย</p>
+<p>เมื่อเทียบกับ HTML 4 (รุ่นปัจจุบัน) แล้ว <a href="http://www.w3.org/html/wg/html5/">HTML 5</a> นอกจากจะมีแท็กใหม่ ๆ ที่รองรับเทคโนโลยีเว็บที่พัฒนาขึ้น เช่นแท็กเกี่ยวกับไฟล์ภาพเคลื่อนไหวและเสียงแล้ว อีกจุดสำคัญของ HTML 5 ก็คือ มันจะมี <strong>โครงสร้าง</strong> (structure) และ <strong>ความหมาย</strong> (semantic) ที่ชัดเจนขึ้นด้วย</p>
+<p>เมนู ที่ปรากฎอยู่บนจอ ก็จะถูกระบุว่าเป็นเมนู ไม่ใช่แค่ตารางที่วางอยู่ด้านขวาของจอ<br />
+ชื่อหนังสือ ที่ปรากฎอยู่บนจอ ก็จะถูกระบุว่าเป็นชื่อหนังสือ ไม่ใช่แค่ข้อความอันหนึ่งที่อยู่หลังคำว่า &ldquo;ชื่อหนังสือ:&rdquo;</p>
+<p>ปัจจุบันนี้ นักออกแบบ/พัฒนาเว็บส่วนหนึ่ง พยายามที่จะเขียนโค้ดหน้าเว็บที่แยกเอา <strong>หน้าตา</strong> (presentation) ออกมาจาก <strong>เนื้อหา</strong> (content) ไม่ให้ปะปนกัน โดยส่วนของหน้าตาจะนำไปใส่ใน <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">Cascading Style Sheets</a> (CSS) ส่วนเนื้อหาก็จะอยู่ในเซตย่อยของ HTML ที่ไม่ใช้แท็กที่เกี่ยวข้องกับหน้าตาเช่น center, b, i (โดยถ้าอยากเน้นข้อความไหน ก็ให้ใช้ strong และ em แทน)</p>
+<p>นอกจากการแยกหน้าตากับเนื้อหาออกจากกันแล้ว ก็ยังมีความพยายามที่จะเขียนโค้ด HTML ที่มีโครงสร้างเป็นระบบขึ้น โดยอาศัยแท็กจำพวก h1, div และ li เป็นต้น และพยายามใส่ความหมายเข้าไปในโค้ด โดยอาศัยแอตทริบิวต์จำพวก class, rel และ id โดยกลุ่มนี้จะเรียกรวม ๆ ว่า <a href="http://en.wikipedia.org/wiki/Semantic_HTML">Semantic HTML</a> โดยมีแนวคิดหลักอย่างน้อยสองแบบคือ <a href="http://en.wikipedia.org/wiki/Plain_Old_Semantic_HTML" title="Plain Old Semantic HTML">POSH</a> และ <a href="http://microformats.org/">Microformats</a> ซึ่งทั้งสองอย่างนี้สามารถใช้ร่วมกันได้ โดยอย่างแรกจะเป็นคำแนะนำกว้าง ๆ สำหรับหน้าเว็บทั้งหมด ส่วนอย่างหลังจะเป็นข้อกำหนดที่ชัดเจนสำหรับข้อมูลแต่ละประเภทไปเลย &mdash; กล่าวโดยรวมคือ ทั้งหมดนี้เป็นการประยุกต์ใช้ HTML รุ่นปัจจุบันที่มีอยู่ ให้บันทึกความหมายบางอย่างได้</p>
+<p>HTML 5 จะช่วยให้รูปแบบการเขียนโค้ดลักษณะ POSH เป็นไปด้วยความสะดวกมากขึ้น เขียนได้ตรง ๆ ขึ้น (ลองดูตัวอย่างจาก <a href="http://www.alistapart.com/articles/previewofhtml5">A Preview of HTML 5</a>)</p>
+<p>ร่างข้อกำหนดของ HTML 5 เริ่มพัฒนามาตั้งแต่ พ.ศ. 2547 และปัจจุบันยังอยู่ในระหว่างการพัฒนาโดยคณะทำงานสองกลุ่มคือ <a href="http://www.w3.org/html/">W3C HTML WG</a> และ <a href="http://www.whatwg.org/">WHATWG</a> ร่วมมือกัน &mdash; โดยคาดว่าจะสามารถประกาศเป็น W3C Recommendation ได้ประมาณปี พ.ศ. 2565 (อีกประมาณ 15 ปี! &ndash; ดู <a href="http://wiki.whatwg.org/wiki/FAQ#When_will_HTML_5_be_finished.3F">FAQ</a>)<br />
+อย่างไรก็ตาม ความสามารถของ HTML 5 จะค่อย ๆ ถูกนำไปใช้ในเว็บเบราว์เซอร์และเว็บไซต์ต่าง ๆ ทีละน้อย ๆ ตัวอย่างเช่นเว็บเบราว์เซอร์จำนวนหนึ่งในปัจจุบันก็รองรับแท็ก canvas หรือความสามารถด้าน autodiscovery แล้ว</p>
+<p>ถ้าสนใจเรื่อง <a href="http://en.wikipedia.org/wiki/Category:Semantic_HTML">Semantic HTML</a> (ซึ่งคุณสามารถนำแนวคิดนี้ไปใช้ได้ตั้งแต่ตอนนี้เลย ไม่ต้องมาตรฐานใหม่ ไม่ต้องรอเบราว์เซอร์ใหม่) ลองไปดูที่เว็บไซต์ <a href="http://semantichtml.org/">semantichtml.org</a> หรือค้นเว็บด้วยว่า &ldquo;<a href="http://www.google.com/search?q=semantic+html">semantic html</a>&rdquo; ดู จะพบเว็บไซต์มากมาย ที่แนะนำและพูดคุยเกี่ยวกับเรื่องนี้</p>
+<p>ผลพลอยได้อย่างหนึ่ง ที่น่าจะได้จากการเขียนหน้าเว็บตามแนว Semantic HTML ก็คือ <a href="http://en.wikipedia.org/wiki/Screen_reader">โปรแกรมอ่านหน้าจอ</a> (screen reader) <a href="http://bact.blogspot.com/2007/10/web-accessibility-thailand.html">สำหรับผู้พิการทางสายตา</a> น่าจะทำงานได้ดียิ่งขึ้น เพราะมีข้อมูลมาช่วยตัดสินใจมากขึ้นในการอ่าน (คิดง่าย ๆ ว่า Semantic HTML เน้นว่าเนื้อหา<strong>หมายความว่าอะไร</strong> ไม่ใช่ว่าเนื้อหาจะถูก<strong>วาดยังไง</strong> การ&lsquo;อ่าน&rsquo;โดยตรงจากเนื้อหาจริง ๆ ย่อมง่ายและถูกต้องกว่าการอ่าน+ตีความจากภาพวาดอยู่แล้ว)</p>
+<p>[ ลิงก์ <a href="http://www.alistapart.com/articles/previewofhtml5" title="A Preview of HTML 5">A List Apart</a> | ผ่าน <a href="http://osnews.com/story.php/19006/A-Preview-of-HTML-5" title="A Preview of HTML 5">OSNews.com</a> ]</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/semantic+html" rel="tag">Semantic HTML</a>,<br />
+<a href="http://technorati.com/tag/html5" rel="tag">HTML 5</a><br />
+</small></p>
+

@@ -1,0 +1,95 @@
+---
+title: "playing around Thai blog corpus with NLTK"
+date: "2009-04-24T21:10:00+07:00"
+lastmod: "2011-05-22T11:18:44+07:00"
+type: "post"
+url: "/2009/playing-around-thai-blog-corpus-with-nltk/"
+description: "อยากจะลองเล่น NLTK กับข้อมูลภาษาไทยดู คิดไปคิดมา เอาข้อมูลจาก foosci.com มาลองดูละกัน เขาเปิดให้ใช้ เป็น ครีเอทีฟคอมมอนส์ แสดงที่มา-อนุญาตแบบเดียวกัน (CC by-sa) แต่ไม่อยากไปดึงมาเอง ขี้เกียจ เห็นว่าโครงการโรตี (อัลฟ่า) โดย Opendream ดูดบล็อกไทยจำนวนหนึ่งมาเก็บไว้ได้ระยะหนึ่งแล้ว เพื่อใช้ในการแนะนำลิ"
+categories: ["coling", "internet"]
+tag: ["corpora", "creative-commons", "foosci", "libthai", "linguistic-resources", "natural-language-processing", "nltk", "opendream", "programming", "python", "roti", "thai"]
+lang: "th"
+wpid: 2446
+---
+<p>อยากจะลองเล่น <a href="http://www.nltk.org/">NLTK</a> กับข้อมูลภาษาไทยดู คิดไปคิดมา เอาข้อมูลจาก <a href="http://foosci.com/">foosci.com</a> มาลองดูละกัน เขาเปิดให้ใช้ เป็น <a title="Creative Commons Thailand" href="http://cc.in.th/">ครีเอทีฟคอมมอนส์</a> แสดงที่มา-อนุญาตแบบเดียวกัน (CC by-sa)</p>
+<p>แต่ไม่อยากไปดึงมาเอง ขี้เกียจ เห็นว่าโครงการ<a href="http://roti.me/">โรตี</a> (อัลฟ่า) โดย <a href="http://opendream.co.th/">Opendream</a> ดูดบล็อกไทยจำนวนหนึ่งมาเก็บไว้ได้ระยะหนึ่งแล้ว เพื่อใช้ในการแนะนำลิงก์ (ดูตัวอย่างที่ <a href="http://keng.ws/">keng.ws</a> ที่ท้ายแต่ละโพสต์) ก็เลยเอาจากตรงนั้นมาใช้ละกัน</p>
+<p>ข้อมูลที่มีเป็น XML ที่ dump มาจาก MySQL เราก็เขียนสคริปต์ก๊อก ๆ แก๊ก ๆ ดึงเฉพาะที่อยากได้ออกมา ด้วย xml.etree.cElementTree (ตอนแรกใช้ <a href="http://docs.python.org/library/xml.etree.elementtree.html">ElementTree</a> แตน ๆ แต่อืดเกิน เนื่องจากแฟ้มมันใหญ่)<br />
+เอา HTML tags ออกด้วย <a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> แล้วตัดคำด้วย <a href="http://bact.blogspot.com/2009/04/encodeutf-8-ignore-python.html">python-libthai</a> ตัดประโยคแบบถึก ๆ ด้วย .split(&#8216;\n&#8217;) จะได้ข้อมูลออกมาหน้าตาประมาณนี้ (จะเห็นว่าข้อมูลมันไม่ได้สมบูรณ์มาก มีแท็ก HTML โผล่มาด้วย-อันนี้เป็นที่ข้อมูลป้อนเข้าที่ dump มา) :</p>
+<pre><code>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;roti&gt;
+  &lt;entry id="4947" url="http://www.foosci.com/node/401" ...&gt;
+    &lt;tags&gt; &lt;tag&gt;LHC&lt;/tag&gt; &lt;tag&gt;quantum physics&lt;/tag&gt; ... &lt;/tags&gt;
+    &lt;title&gt; &lt;w&gt;บิดา&lt;/w&gt; &lt;w&gt;ของ&lt;/w&gt; &lt;w&gt;อนุภาค&lt;/w&gt; ... &lt;/title&gt;
+    &lt;content&gt;
+      &lt;s&gt; &lt;w&gt;p&lt;/w&gt; &lt;w&gt;นัก&lt;/w&gt; &lt;w&gt;วิทยาศาสตร์&lt;/w&gt; ... &lt;/s&gt;
+      &lt;s&gt; &lt;w&gt;pcenter&lt;/w&gt; &lt;w space="1"&gt; &lt;/w&gt; &lt;w&gt;ภาพ&lt;/w&gt; ... &lt;/s&gt;
+      ...
+    &lt;/content&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    ...
+&lt;/roti&gt;
+</code></pre>
+<p>ใน w คือ <q>คำ</q>, ใน s คือ <q>ประโยค</q></p>
+<p>ดาวน์โหลดข้อมูล : <a href="http://culturelab.in.th/files/foosci-mini-corpus.tar.bz2">foosci-20090424.tar.bz2</a> (สัญญาอนุญาต CC by-sa เช่นเดียวกับเนื้อหาใน foosci.com)<br />
+ข้างในจะมีสองแฟ้ม foosci00.xml และ foosci01.xml ให้ก๊อปปี้ไปใส่ในไดเรกทอรีข้อมูลของ NLTK (NLTK_DATA) <a href="http://www.nltk.org/data">$NLTK_DATA</a>/corpora/rotibc ตัวโมดูลที่จะพูดถึงต่อจากนี้จะวิ่งมาหาที่ตำแหน่งนี้</p>
+<p>ได้ข้อมูลมาแล้ว จะเอาเข้าไปใช้ใน NLTK ยังไง ? ก็ต้องเขียนตัว corpus reader ขึ้นมาก่อน ซึ่งกรณนี้ เราจะทำต่อมาจาก <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.corpus.reader.xmldocs.XMLCorpusReader-class.html">XMLCorpusReader</a> (เรียกว่า inherit ไหม?) โดยไอเดียไม่มีอะไรมาก ก็ implement ตัวฟังก์ชั่น .words() เพื่อส่งกลับรายการคำ และฟังก์ชั่น .sents() เพื่อส่งกลับรายการประโยค โดยดูตัวอย่างจาก <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.corpus.reader.bnc-pysrc.html#BNCCorpusReader.__init__">BNCCorpusReader</a></p>
+<p>ที่ต้องทำเพิ่มเติมก็คือ สร้างแฟ้ม __init__.py ใส่ไว้ใน package เพื่อที่ว่าตอนโหลด มันจะได้โหลดเอาตัวข้อมูลขึ้นมาให้เราอัตโนมัติเลย (ซึ่งไม่ต้องกลัวอึด เพราะว่าโหลดแบบ lazy คือยังไม่ได้โหลดข้อมูลจริง ๆ จนกว่าจะใช้)</p>
+<p>ตอนทำ __init__.py นี้ ทำให้รู้ว่า ทุกไดเรกทอรีที่เราจะใส่โมดูลอะไรลงไป จะต้องมีแฟ้มนี้ ไม่งั้นตอน build มันจะไม่นับไดเรกทอรีนั้นเป็น package จะข้ามไป เพราะงั้นถึงไม่ได้จะโหลดจะทำอะไร ก็ต้องใส่แฟ้มว่าง ๆ ไว้ (ดูเอกสาร <a href="http://docs.python.org/tutorial/modules.html">Python Tutorial &#8211; Modules</a>)</p>
+<p>ใน __init__.py ไม่มีอะไรมาก แค่โหลดข้อมูลเฉย ๆ :<br />
+<code>foosci = LazyCorpusLoader('rotibc', RotiCorpusReader, r'foosci\d+\.xml')</code></p>
+<p>ดาวน์โหลดแพคเกจ roti.corpus : <a href="http://culturelab.in.th/files/rotibc-0.1.tar.gz">rotibc-0.1.tar.gz</a><br />
+แตกออกมาแล้ว ก็ลงด้วยคำสั่ง :<br />
+<code>sudo python setup.py install</code><br />
+(ดูวิธีสร้าง setup.py มาจากเอกสาร <a href="http://docs.python.org/distutils/sourcedist.html">Distutils &#8211; Creating a Source Distribution</a>)</p>
+<p>โอเค ครบละ ข้อมูล โปรแกรมอ่าน คราวนี้มาเล่นกัน ลองใน interpreter shell ของ Python ก็ได้</p>
+<pre><code>
+&gt;&gt;&gt; from roti.corpus import foosci
+&gt;&gt;&gt; foosci.fileids() #แสดงรายชื่อแฟ้มในคลังข้อความ
+['foosci00.xml', 'foosci01.xml']
+&gt;&gt;&gt; foosci.words() #แสดงรายการคำ
+['p', u'\u0e19\u0e31\u0e01', ...]
+&gt;&gt;&gt; for w in foosci.words()[0:5]: #พิมพ์คำจากรายการ ตำแหน่ง 0-5
+...     print w,
+...
+p นัก วิทยาศาสตร์ อังกฤษ ที่
+&gt;&gt;&gt;
+&gt;&gt;&gt; foosci.sents() #แสดงรายการประโยค
+[['p', u'\u0e19\u0e31\u0e01', ...],
+['pcenterimg', ' ', 'src=http://', ...], ...]
+&gt;&gt;&gt;
+</code></pre>
+<p>จะเห็นว่า เราพอจะเล่นอะไรกับมันได้ละ ถ้าจะเล่นมากกว่านี้ ลองดูตัวอย่างที่ <a href="http://www.nltk.org/getting-started">Getting Started (NLTK)</a></p>
+<p>ตัวอย่างหนึ่งจาก <a href="http://www.nltk.org/book">NLTK Book</a> <a href="http://nltk.googlecode.com/svn/trunk/doc/book/ch02.html">บทที่ 2 Accessing Text Corpora and Lexical Resources</a> เขาลองเล่นกับ conditional frequency distribution เอามาสร้างประโยคมั่ว ๆ เล่น จากโมเดล<a title="bigram" href="http://en.wikipedia.org/wiki/Bigram">ไบแกรม</a> ด้วยโค้ดด้านล่างนี้ :</p>
+<pre><code>
+def generate_model(cfdist, word, num=15):
+    for i in range(num):
+        print word,
+        word = cfdist[word].max()
+
+words = foosci.words()
+bigrams = nltk.bigrams(words)
+cfd = nltk.ConditionalFreqDist(bigrams)
+</code></pre>
+<p>ลองใส่คำอะไรสักคำให้มันดู มันจะสร้างประโยคมาให้</p>
+<pre><code>
+&gt;&gt;&gt; generate_model(cfd, u'คอมพิวเตอร์')
+คอมพิวเตอร์ ที่ มี ความ เสี่ยง มะเร็ง เต้า นม   href=http:// www. physorg. com/ ~r/ foosci/
+</code></pre>
+<p>การสร้างประโยคนั้น generate_model() ใช้วิธีเลือกเอาคำที่น่าจะเกิดต่อจากคำข้างหน้ามากที่สุด มาเรียงต่อกัน</p>
+<p>ลองเล่นต่ออีกนิดหน่อยกับติวอันนี้ <a href="http://www.inf.ed.ac.uk/teaching/courses/fnlp/lectures/2/tutorial.html">Working with corpora: Character Ngrams</a></p>
+<p>ถ้ามีคลังข้อความที่น่ารัก ๆ กว่านี้ ก็น่าจะใช้ NLTK นี้ไปใช้เรียนสอน <a href="http://en.wikipedia.org/wiki/Natural_language_processing">NLP</a> หรือ<a href="http://en.wikipedia.org/wiki/Corpus_linguistics">ภาษาศาสตร์คลังข้อมูล</a>ง่าย ๆ ได้</p>
+<p>ปัญหาอย่างนึงที่เจอตอนนี้คือ <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.text.Text-class.html">nltk.text.Text()</a> ใช้กับ unicode ไม่ได้ คือมันจะพยายามแปลงข้อความไปเป็น ascii ซึ่งแปลงไม่ได้ แล้วก็จะตาย nltk.text.Text() นี่มีฟังก์ชั่นน่าใช้สำหรับการเรียนรู้เรื่องภาษาศาสตร์เยอะพอดู เช่น .concordance() .collocations() .similar()</p>
+<p><span style="color: red;"><strong>&lt;อัปเดต 2009.04.25&gt;</strong></span> ใช้กับ nltk.Text() ได้แล้ว (แก้ตาม<a title="&lt;br &gt;&lt;/a&gt; use Unicode text with nltk.text.Text()" href="http://groups.google.com/group/nltk-users/browse_thread/thread/53bd48fb6850c549">คำแนะนำ</a>จากเมลกลุ่ม nltk-users) โดยต้องให้คำใน list เป็น <code>str</code> (&#8220;&#8221;) ที่ encode ด้วย utf-8 แทนที่จะใส่เป็นสตริงแบบ <code>unicode</code> (u&#8221;&#8221;) ทำได้โดยแก้สองฟังก์ชั่น <code>_elt_to_words()</code> และ <code>_elt_to_sents()</code> ในแฟ้ม roti/corpus/rotibc.py ตรง <code>.append(w.text)</code> ให้เป็น<code>.append(w.text.encode("utf-8", "replace"))</code> เดี๋ยวจะปรับตัวแพคเกจใหม่ <span style="color: red;"><strong>&lt;/อัปเดต&gt;</strong></span></p>
+<p>ลองเล่นดูครับ เอาไปโมต่อตามสบาย โค้ดทั้งหมดเป็น public domain</p>
+<p>ใช้ NLTK แล้วพบปัญหา คุยกับผู้ใช้รายอื่น ๆ ได้ที่เมลกลุ่ม <a href="http://groups.google.com/group/nltk-users">nltk-users</a> หรือถ้าอยากคุยกับคนไทย ลองกลุ่ม <a title="Thai Human Language Technology Alliance " href="http://naist.cpe.ku.ac.th/thlta_wiki/index.php/THLTA">THLTA</a></p>
+<hr />
+<p>แถม : <strong>Open License และคลังข้อมูลภาษา</strong></p>
+<p>ในงาน NAC 2009 โดยสวทช.ที่ผ่านมา ได้มีโอกาสแลกเปลี่ยนประเด็น open content, open license และ คลังข้อมูลภาษา กับคนในวงการ NLP จำนวนหนึ่ง ซึ่งก็มีความคิดเห็นหลาย ๆ อย่าง หลาย ๆ มุมก้นไป</p>
+<p>เกือบทุกคนเห็นด้วยว่า เป็นเรื่องสำคัญที่ควรจะมีอะไรที่มันแชร์กันได้ ที่มัน open แต่ความหมายของคำว่า open สำหรับแต่ละคนก็ดูจะไม่เท่ากัน บางคนบอกว่า คลังอันนั้นอันนี้ฟรี ตัวนั้นตัวนี้โอเพ่นซอร์ส แต่พอไปดูเอาจริง ๆ ในรายละเอียด ก็พบว่า จำเป็นต้องลงทะเบียนก่อนบ้างหรือไม่ได้อัปเดตนานแล้วบ้าง (พจนานุกรม <a href="http://lexitron.nectec.or.th/">Lexitron</a>) หรือลิงก์ดาวน์โหลดหายไปบ้าง (ORCHID Corpus &#8211; ดาวน์โหลดได้ที่ <a href="http://culturelab.in.th/files/orchid.html">backup site</a>) หรือก่อนหน้านี้เรื่องของฟอนต์หลาย ๆ ตัว ที่เอามาใช้ได้ฟรี แต่ไม่รู้ว่าจะโมได้ไหม redistribute ได้ไหม</p>
+<p>ความเห็นของผมก็คือ จะเปิดหรือจะปิด อย่างไรก็ได้ เป็นสิทธิของเจ้าของข้อมูลที่เขาลงแรงลงเวลาไป<br />
+แต่ถ้าจะบอกว่าเปิด ก็ขอให้บอกให้ชัดเจนหน่อย ว่าในเงื่อนไขอะไร แล้วจะเอามาใช้จริง ๆ ได้ยังไง การบอกว่า <q>เปิด</q> เฉย ๆ โดยไม่ได้ให้รายละเอียดอะไรเลย ในทางปฏิบัติก็แทบจะเหมือนการไม่เปิด หน้า <a href="http://naist.cpe.ku.ac.th/thlta_wiki/index.php/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B7%E0%B8%AD&lt;br &gt;&lt;/a&gt; ">การแลกเปลี่ยนทรัพยากรและเครื่องมือ</a> ที่ THLTA ก็อาจจะเป็นความพยายามหนึ่งที่จะทำให้เรื่องพวกนี้เคลียร์</p>
+<p>สิ่งที่ผมคิดว่าน่าสนใจ และเป็นคุณสมบัติสำคัญของ open licenses ทั้งหลาย ไม่ว่าจะเป็น copyleft, GNU หรือ Creative Commons ก็คือ <span style="text-decoration: underline;"><strong>การไม่ต้องขออนุญาต</strong></span> ผมคิดว่าการไม่ต้องขออนุญาตนี้ทำให้ ข้อมูล โค้ด ไอเดีย ต่าง ๆ มันไหลเวียนได้อย่างอิสระ-ทันที ใครอยากจะเล่นอะไรก็เอา เต็มที่ ตามเงื่อนไขที่ประกาศไว้ชัดเจนล่วงหน้า ไม่ต้องรอไปรอมา ไม่ต้องตกอยู่ในภาวะไม่แน่ใจ</p>
+<p>ซึ่งจริง ๆ แล้วเรื่องของความชัดเจนนี้ แม้จะเป็น closed content, closed source หรืออะไรก็ตาม ก็สามารถจะชัดเจนเรื่องนี้ได้ เพียงประกาศให้ชัดเจน — ไม่ใช่แค่บอกเฉย ๆ ว่า <q>เปิด</q> แล้วก็ทิ้งให้งง ให้เดาใจกันเล่น ๆ ว่า ตกลงจะเปิดแบบไหน เปิดยังไง</p>
+<p><small>technorati tags:<a rel="tag" href="http://technorati.com/tag/NLTK"> NLTK</a>,<a rel="tag" href="http://technorati.com/tag/corpus+linguistics"> corpus linguistics</a>,<a rel="tag" href="http://technorati.com/tag/Thai"> Thai</a>,<a rel="tag" href="http://technorati.com/tag/Python"> Python</a></small></p>
+

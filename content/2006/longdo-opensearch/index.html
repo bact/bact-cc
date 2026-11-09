@@ -1,0 +1,66 @@
+---
+title: "Longdo OpenSearch"
+date: "2006-07-19T23:56:00+07:00"
+lastmod: "2006-07-19T23:56:00+07:00"
+type: "post"
+url: "/2006/longdo-opensearch/"
+description: "Thai OpenSearch plugins นั่งทำอยู่ซักพัก เป็นปลั๊กอินเปิดพจนานุกรม Longdo โดยใช้ OpenSearch ลองทดสอบกันดูครับ มีแนะคำโดยใช้ Google Suggest ช่วยด้วย(!) ควรจะใช้งานได้กับทั้ง Mozilla Firefox 2 และ Internet Explorer 7 (ผมไม่ได้ลองกะ IE7) ไม่รู้ Opera ได้รึเปล่า สำหรับ Firefox 2 ตัวเบราว์เซอร์มันควรจะ d"
+tag: ["dictionary", "me", "search-engines"]
+lang: "th"
+wpid: 1563
+---
+<p><a href="http://siit.net/members/art/searchplugins/" rel="tag">Thai OpenSearch plugins</a></p>
+<p>นั่งทำอยู่ซักพัก เป็นปลั๊กอินเปิดพจนานุกรม <a href="http://dict.longdo.org/">Longdo</a> โดยใช้ <a href="http://en.wikipedia.org/wiki/OpenSearch">OpenSearch</a> ลองทดสอบกันดูครับ<br />
+มีแนะคำโดยใช้ <a href="http://labs.google.com/suggest/faq.html">Google Suggest</a> ช่วยด้วย(!)</p>
+<p>ควรจะใช้งานได้กับทั้ง Mozilla Firefox 2 และ Internet Explorer 7 (ผมไม่ได้ลองกะ IE7) ไม่รู้ Opera ได้รึเปล่า<br />
+สำหรับ Firefox 2 ตัวเบราว์เซอร์มันควรจะ detect ปลั๊กอินให้อัตโนมัติ ให้สังเกตว่ารูปแว่นขยายมันจะเปลี่ยนเป็นสีส้ม ๆ ลองกดดู จะมีคำว่า &#8220;Add Longdo&#8221; ให้เลือก (พี่อ็อท: ก็อปโค้ดไปแปะ HTML head ของเว็บ Longdo ได้เลยครับ อันนี้:</p>
+<pre><code>&lt;link rel="search" title="Longdo"
+href="http://siit.net/members/art/searchplugins/longdo.xml"
+type="application/opensearchdescription+xml"&gt;</code></pre>
+<p>ข้างล่างนี้คือเอกสารที่อ่านตอนทำ ตอนแรกงง ๆ หน่อย เพราะ MozSearch มันตีกะ OpenSearch (ใครว่า Mozilla ชอบมาตรฐานเปิด? &#8211; -&#8220;):</p>
+<ul>
+<li><a href="http://developer.mozilla.org/en/docs/Creating_MozSearch_plugins" rel="tag">Creating MozSearch plugins</a> (+OpenSearch)</li>
+<li><a href="http://developer.mozilla.org/en/docs/Supporting_search_suggestions_in_search_plugins" rel="tag">Supporting search suggestions in search plugins</a></li>
+<li><a href="http://developer.mozilla.org/en/docs/Adding_search_engines_from_web_pages" rel="tag">Adding search engines from web pages</a></li>
+<li>แถม: <a href="http://www.unto.net/unto/opensearch/an-opensearch-icon/">OpenSearch Icon (a proposal, Feed Icon-like)</a></li>
+</ul>
+<p>OpenSearch กับ MozSearch นั้นคล้ายกันมาก แต่ดู MozSearch จะเขียนง่ายกว่า และเจ้าฟังก์ชั่น<br />
+suggestions นี่ ใน OpenSearch ยังไม่มี (<a href="http://www.unto.net/wiki/OpenSearch_suggestions_extension">กำลังเสนออยู่ โดยอิง MozSearch</a>)</p>
+<p>Longdo OpenSearch <small>(เป็นคำประกอบ หมายถึงปลั๊กอินค้นหาแบบ OpenSearch สำหรับบริการพจนานุกรม Longdo ไม่ได้เป็นชื่อเฉพาะ &#8220;Longdo OpenSearch&#8221; นะ เพราะจะผิด<a href="http://dict.longdo.org/download/license.txt">สัญญาอนุญาตของ Longdo</a> น่ะ)</small> นั้น ตั้งใจเขียนให้เป็น OpenSearch แต่มีใช้ suggestions ด้วย &mdash; ซึ่งมันยังไม่มีใน<a href="http://opensearch.a9.com/spec/1.1/">ข้อกำหนด OpenSearch</a> &mdash;<br />
+แต่ก็ไม่น่าจะเป็นปัญหา เพราะว่าฟังก์ชั่นนี้เรียกใช้โดยการระบุอีเลเมนต์ Url เพิ่มอีกหนึ่งชุด<br />
+โดยกำหนดแอตทริบิวต์ type เป็น &#8220;application/x-suggestions+json&#8221;<br />
+ซึ่งอีเลเมนต์ Url นั้น อยู่ใน <a href="http://opensearch.a9.com/spec/1.1/description/">schema ของ OpenSearch</a> อยู่แล้ว (= XML ยัง valid)</p>
+<p>และโดยข้อกำหนดถ้าตัว application ไม่รองรับ type แบบไหน ก็จะข้ามไป ไม่สนใจ จึงไม่น่าจะมีปัญหากับ IE คือ IE ก็แค่ไม่มีความสามารถเรื่องแนะคำเฉย ๆ อย่างอื่นยังใช้ได้ (แต่ผมยังไม่ได้ทดสอบอยู่ดี เมื่อคืนลง IE7 เสร็จ เปิดมาแล้วแฮงค์ตลอด ใช้ไม่ได้เลย ลองเป็นสิบรอบแล้ว แค่้จะเปิดโปรแกรมยังไม่ได้ &#8230; beta quality จริง ๆ &#8211; -&#8220;)</p>
+<p>ตอนเขียนก็ดู ๆ เอกสาร ประกอบกับตัวอย่าง google.xml ที่มากับ Firefox 2</p>
+<p>ตรงส่วนอีเลเมนต์ Image นั้น ในตัวอย่าง google.xml (ซึ่งเป็น MozSearch) ใช้เป็น base64 เก็บข้อมูลตรง ๆ เลย:</p>
+<pre><code>&lt;Image width="16"
+height="16"&gt;data:image/x-icon;base64,(ข้อมูลรูปภาพ)&lt;/Image&gt;</code></pre>
+<p>แต่ใน <a href="http://opensearch.a9.com/spec/1.1/description/">ตัวอย่างที่เว็บ OpenSearch</a> เห็นใช้เป็นลิงก์:</p>
+<pre><code>&lt;Image height="64" width="64"
+type="image/png"&gt;http://example.com/websearch.png&lt;/Image&gt;</code></pre>
+<p>(ตรง type จะเป็นภาพแบบไหนก็ได้ gif, jpg, png, ico)</p>
+<p>ตัว Longdo OpenSearch นี่ ใช้ base64 😛 โดยข้อมูลรูปภาพนั้น ก็ก็อปมาจากปลั๊กอินเก่า</p>
+<p>คือใน Firefox 2 นี่ เวลาเราติดตั้งปลั๊กอิน Mycroft มันจะแปลงเป็น MozSearch/OpenSearch<br />
+<small>(root element เป็นของ MozSearch แต่มีใช้ XML namespace OpenSearch ด้วย)</small><br />
+ให้อัตโนมัติ รูปที่เคยเป็นไฟล์แยกต่างหาก มันก็จะแปลงเป็น base64 ยัดลงมาใน XML ให้<br />
+.. เราก็ไปก็อปไอ้ข้อมูลตรงนั้นแหละมาใช้<br />
+แต่ถ้าจะแปลงเองจากรูปโดยตรงเลย ที่เว็บมอซิลล่าเค้าแนะนำให้ใช้เว็บ <a href="http://software.hixie.ch/utilities/cgi/data/data">URI kitchen</a> ช่วยแปลง</p>
+<p>พูดถึงวิธีเก็บรูป ไม่แน่ใจว่า MozSearch กับ OpenSearch มันต่างกันตรงนี้มั๊ย หรือว่าใช้แบบไหนก็ได้ทั้งคู่<br />
+ตรงนี้ถ้ามองว่าอันไหนโปร่งใส/transparent กว่า ก็ต้องบอกว่า เก็บ url รูปน่ะโปร่งใสดูดีกว่า<br />
+แต่ถ้าพูดถึงประสิทธิภาพ รูปไอคอนขนาดเล็ก ๆ แบบนี้ จะให้เปิด connection อีกหนึ่งอันเพื่อดาวน์โหลด มันก็ อืม คงไม่คุ้ม ก็เก็บรวมมันไว้ในไฟล์เดียวเลยละกัน เป็นไบนารี/base64 &#8230; แต่แบบนี้มันก็ ไม่ค่อยจะ XML ?</p>
+<p>ก็แล้วแต่เลือกล่ะ</p>
+<p><strong>จะทำ:</strong> ทำรายการแนะคำจากข้อมูลพจนานุกรมโดยเฉพาะ ?</p>
+<p><strong>ปรับปรุง:</strong></p>
+<ul>
+<li>2006.07.21 &#8211; ชี้แจ้งเรื่องชื่อปลั๊กอิน+สัญญาอนุญาต, เพิ่ม &#8220;จะทำ&#8221;</li>
+<li>2006.07.20 &#8211; เพิ่มข้อมูลเทคนิก</li>
+</ul>
+<p><strong>tags:</strong><br />
+<a href="http://technorati.com/tag/longdo" rel="tag">Longdo</a><br />
+<a href="http://technorati.com/tag/search" rel="tag">search</a><br />
+<a href="http://technorati.com/tag/plugins" rel="tag">plugins</a><br />
+<a href="http://technorati.com/tag/opensearch" rel="tag">OpenSearch</a><br />
+<a href="http://technorati.com/tag/mozsearch" rel="tag">MozSearch</a><br />
+<a href="http://technorati.com/tag/firefox" rel="tag">Firefox</a><br />
+<a href="http://technorati.com/tag/ie7" rel="tag">IE7</a></p>
+

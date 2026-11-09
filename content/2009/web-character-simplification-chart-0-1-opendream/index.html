@@ -1,0 +1,233 @@
+---
+title: "Web Character Simplification Chart 0.1 #opendream"
+date: "2009-12-07T21:00:00+07:00"
+lastmod: "2009-12-07T21:00:00+07:00"
+type: "post"
+url: "/2009/web-character-simplification-chart-0-1-opendream/"
+description: "ก่อนจะประมวลผลข้อความ เราจำเป็นต้องทำความสะอาดข้อความเสียหน่อย ทั่ว ๆ ไปที่จำเป็นต้องทำ ก็เช่น แปลง new line (\\r\\n หรือ \\n), หรือแปลงให้อยู่ในชุดอักขระ (character set) ที่โปรแกรมใน processing pipeline จะทำงานได้ เช่นแปลง ä เป็น ae หรือแปลง “ ” เป็น ” “, หรือการ normalize ลำดับอักขระ เช่น น.หนู+สระอำ"
+tag: ["html", "opendream", "roti", "text-processing", "unicode"]
+lang: "th"
+wpid: 2491
+---
+<p>ก่อนจะประมวลผลข้อความ เราจำเป็นต้องทำความสะอาดข้อความเสียหน่อย ทั่ว ๆ ไปที่จำเป็นต้องทำ ก็เช่น แปลง new line (\r\n หรือ \n), หรือแปลงให้อยู่ในชุดอักขระ (character set) ที่โปรแกรมใน processing pipeline จะทำงานได้ เช่นแปลง ä เป็น ae หรือแปลง &ldquo; &rdquo; เป็น &#8221; &#8220;, หรือการ normalize ลำดับอักขระ เช่น น.หนู+สระอำ+ไม้โท &rarr; น.หนู+ไม้โท+สระอำ, หรือไปถึงขั้นซับซ้อน อย่างแก้ตัวสะกด</p>
+<p>(กรณีเป็นงานลักษณะจดหมายเหตุ หรือ archival ก็อาจจำเป็นต้องเก็บตัว raw text ก่อนแปลงเอาไว้ด้วย เพราะการแปลงอาจจะ(และมักจะ)เป็น lossy คือแปลงไปแล้วแปลงกลับมาได้ไม่เหมือนเดิม เช่นตัวอย่างข้างบน ที่แปลง &ldquo; &rdquo; เป็น &#8221; &#8220;)</p>
+<p>การทำความสะอาดข้อความ หรือ text cleansing นี้ มีจุดประสงค์หลายอย่าง อย่างหนึ่งก็เพื่อเพิ่มความต้องตรงกัน (integrity) ภายในเนื้อข้อความ ซึ่งกรณีถ้าจะเอาข้อความนี้ไปประมวลผลทางสถิติ เช่นเอาไปฝึกเครื่อง (machine learning) ความต้องตรงกันภายในข้อความนี้ ก็มีผลต่อความแม่นยำของตัวแบบที่จะฝึกได้</p>
+<p>จุดประสงค์อีกอย่างของการทำความสะอาดข้อความ ก็เพื่อลดความซับซ้อนของการประมวลผลด้วย ไม่ว่าจะเป็นการลดความซับซ้อนของตัวแบบ หรือการลดความซับซ้อนของเงื่อนไขในโปรแกรม เช่น ทำให้เขียน regular expression ได้สะดวกขึ้น</p>
+<p>สำหรับแอปพลิเคชั่นการค้นหาและการทำดัชนี การทำความสะอาดข้อความ รวมไปถึงการทำให้ข้อความมันซับซ้อนน้อยลง (ไม่ว่าจะในทางลำดับอักษร ซึ่งจะมีผลต่อขนาดของ word set หรือการลดขนาดของ character set ด้วยการยุบตัวอักษรบางตัวเข้าด้วยกัน) จะช่วยให้ดัชนีมีขนาดเล็กลงด้วย และถ้าใช้ประกอบกับตารางการแทนอักษร/คำ (replacement table) ก็จะช่วยให้โอกาสการเจอคำที่ค้นหา มีมากขึ้น เนื่องจากลดผลกระทบจากการสะกดไม่ตรงกัน (spelling variations) (จริง ๆ จะใช้ replacement table อย่างเดียวก็ได้ แต่กรณีนั้น search space ก็จะใหญ่ขึ้น มีผลต่อประสิทธิภาพ)</p>
+<p>ในตอนที่เขียน JavaScript สำหรับใช้กับ <a href="http://roti.me/">Roti</a> ก็คิดไว้าว่าจะเจอปัญหาลักษณะนี้ ซึ่งจะมีผลต่อการคำนวณหาบล็อกโพสต์ที่ใกล้เคียง (ดูตัวอย่างได้ที่ท้ายโพสต์นี้ ตรงที่เขียนว่า &#8216;roti thinks you may like these posts&#8230;&#8217;) เลยให้จาวาสคริปต์ทำความสะอาดข้อความนิดหน่อย ก่อนจะส่งไปเซิร์ฟเวอร์</p>
+<p>เนื่องจาก Roti ทำงานกับเอกสารเว็บ ซึ่งมี &#8216;ปัญหา&#8217; อีกอย่าง คือการใช้ HTML/XML entities แทนตัวอักษร เช่นใช้ &amp;amp; เพื่อแทนอักษร &amp; ดังนั้นก่อนจะทำอะไรกับข้อความ จึงควร decode entities พวกนี้ออกมาก่อน</p>
+<p>กรณีของ HTML entities ถ้าใช้ PHP สามารถใช้ฟังก์ชั่น <a href="http://php.net/manual/en/function.html-entity-decode.php" title="Convert all HTML entities to their applicable characters">html_entity_decode($text)</a> ได้เลย แต่ในจาวาสคริปต์มันไม่มี (หรือผมไม่รู้ว่ามันมี) ก็เลยใช้แทนที่สตริงแบบบ้าน ๆ ไป</p>
+<p>ตารางข้างล่างปรับแก้มาจากตัวจาวาสคริปต์ roticlient.js และใส่รายละเอียดเพิ่มเติมนิดหน่อย ยินดีรับคำแนะนำครับ</p>
+<p>possible replacements ในตารางนั้น เป็นเพียงคำแนะนำตั้งต้น การจะเลือกใช้อะไร ขึ้นอยู่กับแอปพลิเคชั่นด้วย เช่น ตัวเลือกที่เหมาะกับการเอาไปทำดัชนี ก็อาจจะไม่เหมือนกับตัวเลือกที่เหมาะกับการเอาไปแสดงผล เช่น zero-width space ถ้าทำดัชนี การแทนด้วย space น่าจะเหมาะ แต่ถ้าจะเอาไปแสดงผล การลบมันทิ้งไปเลย น่าจะเหมาะกว่า</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<caption>
+<h3>Web Character Simplification Chart 0.1</h3>
+<p>Throw away extra semantics for a simpler text processing. This is only a suggestion. Apply to your needs accordingly.</p>
+</caption>
+<tr>
+<th>Character Name</th>
+<th>Character</th>
+<th>Unicode</th>
+<th>ASCII range?</th>
+<th>HTML Entities</th>
+<th>Possible Replacements</th>
+</tr>
+<tr>
+<td>Space</td>
+<td> </td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Non-breaking_space">Non-breaking space</a></td>
+<td> </td>
+<td>U+00A0</td>
+<td>yes</td>
+<td>&amp;nbsp;</td>
+<td>(space)</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Zero-width_space">Zerowidth space</a></td>
+<td> </td>
+<td>U+200B</td>
+<td> </td>
+<td> </td>
+<td>(space), &lt;delete&gt;</td>
+</tr>
+<tr>
+<td colspan="6"> </td>
+</tr>
+<tr>
+<td>Soft hyphen</td>
+<td> </td>
+<td>U+00AD</td>
+<td>yes</td>
+<td>&amp;shy;</td>
+<td>&lt;delete&gt;</td>
+</tr>
+<tr>
+<td colspan="6"> </td>
+</tr>
+<tr>
+<td>Hyphen-Minus</td>
+<td>&#8211;</td>
+<td>U+002D</td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Hyphen</td>
+<td>&#8211;</td>
+<td>U+2010</td>
+<td> </td>
+<td> </td>
+<td>&#8211; (hyphen-minus)</td>
+</tr>
+<tr>
+<td>Minus sign</td>
+<td>−</td>
+<td>U+2212</td>
+<td> </td>
+<td>&amp;minus;</td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>Figure dash</td>
+<td>‒</td>
+<td>U+2012</td>
+<td> </td>
+<td> </td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>En dash</td>
+<td>–</td>
+<td>U+2013</td>
+<td> </td>
+<td>&amp;ndash;</td>
+<td>-, &#8212;</td>
+</tr>
+<tr>
+<td>Em dash</td>
+<td>—</td>
+<td>U+2014</td>
+<td> </td>
+<td>&amp;mdash;</td>
+<td>-, &#8212;</td>
+</tr>
+<tr>
+<td>Horizontal bar</td>
+<td>―</td>
+<td>U+2015</td>
+<td> </td>
+<td> </td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>Armenian hyphen</td>
+<td>֊</td>
+<td>U+058A</td>
+<td> </td>
+<td> </td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>Hebrew magaf</td>
+<td>־</td>
+<td>U+05BE</td>
+<td> </td>
+<td> </td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>Mongolian todo hyphen</td>
+<td>᠆</td>
+<td>U+1806</td>
+<td> </td>
+<td> </td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>Japanese chōonpu</td>
+<td>ー</td>
+<td>U+30FC</td>
+<td> </td>
+<td> </td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td colspan="6"> </td>
+</tr>
+<tr>
+<td>Hyphen bullet</td>
+<td>⁃</td>
+<td>U+2043</td>
+<td> </td>
+<td> </td>
+<td>* (star), -, &lt;delete&gt;</td>
+</tr>
+<tr>
+<td>Small bullet</td>
+<td>•</td>
+<td>U+2022</td>
+<td> </td>
+<td> </td>
+<td>*, -, &lt;delete&gt;</td>
+</tr>
+<tr>
+<td colspan="6"> </td>
+</tr>
+<tr>
+<td>Tilde</td>
+<td>~</td>
+<td>U+007E</td>
+<td>yes</td>
+<td>&amp;tilde;</td>
+<td> </td>
+</tr>
+<tr>
+<td>Swung dash</td>
+<td>˜</td>
+<td>U+2053</td>
+<td> </td>
+<td> </td>
+<td>~ (tilde)</td>
+</tr>
+<tr>
+<td>Wave dash</td>
+<td>〜</td>
+<td>U+301C</td>
+<td> </td>
+<td> </td>
+<td>~</td>
+</tr>
+<tr>
+<td>Wavy dash</td>
+<td>〰</td>
+<td>U+3030</td>
+<td> </td>
+<td> </td>
+<td>~</td>
+</tr>
+</table>
+<p>ด้านล่างนี้ เป็นตัวอย่างโค้ดที่แทนที่ตัวอักษรต่าง ๆ จาก roticlient.js</p>
+<blockquote><p>
+<code><br />
+return str.replace(/(&amp;nbsp;|&amp;#8208;|&amp;#8210;|&amp;ndash;|&amp;#8211;|&amp;mdash;|&amp;#8212;|&amp;#8213;|&amp;#8275)/g, ' ')<br />
+      .replace(/(&amp;shy;|&amp;#xAD;|&amp;#173;|&amp;#x200B;|&amp;#8203)/g,'')<br />
+      .replace(/[\u200b\u200d\u00ad]/g, '')<br />
+      .replace(/[!\?;:"'`“”^\*\+\-_\(\)\[\]\{\}#@&amp;~\.,\\\/\|]/g, ' ')<br />
+      .replace(/\s+/g, ' ');<br />
+</code>
+</p></blockquote>
+<p>ติดตามการพัฒนา Roti ได้จาก <a href="http://opendream.co.th/blog">Opendream&#8217;s blog</a></p>
+<p>(โพสต์นี้ให้ <a href="http://www.pittaya.com/">@pittaya</a> เนื่องจากเคยถามเอาไว้เมื่อนานเมือกแล้ว)</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/text+processing" rel="tag">text processing</a>,<br />
+<a href="http://technorati.com/tag/Unicode" rel="tag">Unicode</a>,<br />
+<a href="http://technorati.com/tag/HTML" rel="tag">HTML</a><br />
+</small></p>
+

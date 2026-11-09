@@ -1,0 +1,26 @@
+[
+ {
+  "id": 3438,
+  "author": "Pittaya",
+  "url": "",
+  "date": "2009-12-08T16:36:24+07:00",
+  "html": "<p>นานจนจำไม่ได้แล้ว =.=&#039; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3439,
+  "author": "anon.hui",
+  "url": "",
+  "date": "2009-12-15T08:30:46+07:00",
+  "html": "<p>สำหรับ การ decode ผม ใช้ innerHTML (not in DOM standard)decode: node.innerHTML = &quot;&amp;xxx;&#8230;&quot;; return node.firstChild.nodeValueencode: node.firstChild.nodeValue = &quot;&#8230;&quot;; return node.innerHTML; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 7747,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2018-08-08T08:53:31+07:00",
+  "html": "<p>อยากรู้ว่าต้องเริ่มต้นยังไงค่ะ</p>\n",
+  "replies": []
+ }
+]

@@ -1,0 +1,81 @@
+---
+title: "ติดตั้ง HTTPS พร้อมใบรับรองฟรีจาก Let’s Encrypt บน shared host​ (DreamHost)"
+date: "2016-01-06T18:49:34+07:00"
+lastmod: "2016-01-07T04:51:46+07:00"
+type: "post"
+url: "/2016/lets-encrypt-free-https-certificate-on-dreamhost/"
+description: "ติดตั้ง Secure Certificate ฟรีจาก Let’s Encrypt บน Dreamhost shared host"
+categories: ["internet"]
+tag: ["dreamhost", "encryption", "https", "information-security", "lets-encrypt"]
+image: "/f/2016/01/letsencrypt-dreamhost.png"
+lang: "th"
+wpid: 3398
+---
+<p><a href="https://letsencrypt.org/">Let&#8217;s Encrypt</a> เป็นบริการออกใบรับรองการเข้ารหัสเว็บ ที่ให้บริการฟรี ที่ผ่านบริการนี้ต้องเสียเงิน ประมาณ 500 บาทไปจนถึงเกินหมื่นก็มี ซึ่งในทางเทคนิคแล้ว ใบรับรองพวกนี้เหมือนกันหมดไม่ว่าจะฟรีหรือจ่ายเท่าไรก็ตาม</p>
+<p>Let&#8217;s Encrypt ให้บริการฟรีได้ ส่วนหนึ่งเพราะมันทำให้กระบวนการต่างๆ ทำได้ด้วยตัวเองได้โดยผู้ใช้ (มีสคริปต์มาให้รันเองได้ และในอนาคตจะเป็นระบบอัตโนมัติมากขึ้น) ค่าใช้จ่ายก็เลยถูกลง และอีกส่วนหนึ่งเพราะมี<a href="https://letsencrypt.org/sponsors/">องค์กรหลายแห่งสนับสนุนเงินทุน</a> รวมๆ คือคนเหล่านี้อยากเห็นอินเทอร์เน็ตที่มันปลอดภัยขึ้น (ซึ่งพอคนมั่นใจกับการใช้งานอินเทอร์เน็ตมากขึ้น เดี๋ยวธุรกิจอะไรอื่นๆ ที่ทำตังค์ได้ มันจะตามมาเอง)</p>
+<p>อย่างไรก็ตาม ณ ตอนนี้ สคริปต์ของ Let&#8217;s Encrypt นี่มันจะใช้บนเครื่องที่เรามี permission เข้าถึง root ของเซิร์ฟเวอร์ได้เท่านั้น คนใช้ shared host นี่หมดสิทธิ์</p>
+<p>แต่ช้าก่อน &#8212; ถ้าใครใช้ DreamHost หรือเว็บโฮสต์ที่อนุญาตให้เราติดตั้งใบรับรองได้เองทางหน้าเว็บ ก็ไม่ต้องเสียใจ มีวิธีอยู่ คือเรารันสคริปต์นั่นในเครื่องโน๊ตบุ๊กหรือเดสก์ท็อปของเราเองก่อน (บน Linux หรือ OS X) แล้วจากนั้นก็ค่อยเอาไฟล์ต่างๆ ไปใส่ไว้ใน Dreamhost อีกที ผ่านคอนโทรลพาเนลบนหน้าเว็บปกติ</p>
+<p><em>ขั้นตอนวิธีทำเอามาจาก <a href="http://www.velvetcache.org/2015/12/08/using-lets-encrypt-with-dreamhost">Using Let’s Encrypt With Dreamhost</a> โดย jmhobbs</em></p>
+<ol>
+<li>เริ่มจากไปบอก DreamHost ก่อนว่าให้เพิ่ม secure hosting ไปที่ชื่อโดเมนของเรา<br />
+ล็อกอินเข้า <a href="https://panel.dreamhost.com/">DreamHost panel</a> ที่ด้านซ้ายเลือก “Domains” &#8211;&gt; “Secure Hosting” &#8211;&gt; “Add Secure Hosting” (ใครใช้ shared host ยี่ห้ออื่น ลองหาทางดูครับ อาจจะมีคล้ายๆ กัน)<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3402" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/dreamhost-add-secure-hosting/" data-orig-file="/f/2016/01/dreamhost-add-secure-hosting.png" data-orig-size="608,459" data-comments-opened="1" data-image-title="Add secure hosting in Dreamhost" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/dreamhost-add-secure-hosting.png" class="aligncenter size-full wp-image-3402" src="/f/2016/01/dreamhost-add-secure-hosting.png" alt="Add secure hosting in Dreamhost" width="608" height="459" />ตรงนี้เราก็เลือกชื่อโดเมนที่เราต้องการให้มีการเข้ารหัส<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3403" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/dreamhost-add-secure-hosting-2/" data-orig-file="/f/2016/01/dreamhost-add-secure-hosting-2.png" data-orig-size="608,420" data-comments-opened="1" data-image-title="Choose domain name to add secure hosting" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/dreamhost-add-secure-hosting-2.png" class="aligncenter size-full wp-image-3403" src="/f/2016/01/dreamhost-add-secure-hosting-2.png" alt="Choose domain name to add secure hosting" width="608" height="420" /><br />
+จบขั้นนี้ปุ๊บ สิ่งที่เราได้ก็คือ ชื่อโดเมนที่เราเลือก จะมีการเข้ารหัสด้วย HTTPS แล้ว แต่ใบรับรองที่ใช้จะเป็น self-signed (เซ็นรับรองด้วยตัวเราเอง) ซึ่งเวลาใครมาเข้าเว็บไซต์เรา เบราว์เซอร์มันก็จะเตือนว่า ไม่น่าเชื่อถือนะ สิ่งที่เราจะทำต่อไปก็คือ ไปขอใบรับรอง ที่ Let&#8217;s Encrypt (บุคคลที่สาม) เป็นคนเซ็นให้เรา เพื่อให้เบราว์เซอร์มันพอใจ (และคนอุ่นใจ)</li>
+<li>ก่อนจะใช้ Let&#8217;s Encrypt <a href="https://letsencrypt.readthedocs.org/en/latest/using.html">ก็ต้องติดตั้ง</a>มันลงเครื่องโน๊ตบุ๊กหรือเดสก์ท็อปของเรา<br />
+โดยไปดึงสคริปต์มาด้วย git (ถ้ายังไม่มี <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">ก็ติดตั้ง git ก่อน</a>)<a href="https://letsencrypt.readthedocs.org/en/latest/using.html"><br />
+</a></p>
+<pre>git clone https://github.com/letsencrypt/letsencrypt</pre>
+</li>
+<li>จากนั้นก็ ขอใบรับรอง ด้วยสคริปต์ของ Let&#8217;s Encrypt
+<pre>cd letsencrypt
+./letsencrypt-auto certonly --manual --debug</pre>
+<p>คำอธิบายอ็อปชัน</p>
+<ul>
+<li>certonly ระบุเพื่อบอกว่า ให้สร้างใบรับรอง แต่ไม่ต้องติดตั้ง (เดี๋ยวเราติดตั้งเอง &#8211; ผ่านคอนโทรลพาเนลของ Dreamhost)</li>
+<li>&#8211;manual บอกว่า เราจะทำ domain validation ยืนยันว่าเรามีสิทธิ์ในชื่อโดเมนนั้นเอง (ผ่านการเอาข้อความอันนึงไปวางไว้ที่เซิร์ฟเวอร์นั้น)</li>
+<li>&#8211;debug ใส่อ็อปชันนี่ ถ้ารันบน OS X, ถ้าใช้ Linux ก็ไม่ต้องใส่</li>
+</ul>
+<p>ตรงนี้สคริปต์อาจจะติดตั้งโปรแกรมที่จำเป็นลงในเครื่อง เช่น libxml2, python2.7 (ถ้าบน OS X ก็ผ่าน homebrew) ก็ดูๆ ครับ ว่ามันสำเร็จไหม ถ้าไม่มีปัญหาอะไร สคริปต์ก็จะพาเราไปสู่ขั้นที่ 4</li>
+<li>สคริปต์จะถาม <span style="text-decoration: underline;"><strong>อีเมลของเรา</strong></span> (ใช้กรณีกู้กุญแจที่หาย)<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3399" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/letsencrypt-email/" data-orig-file="/f/2016/01/letsencrypt-email.png" data-orig-size="700,250" data-comments-opened="1" data-image-title="Let&amp;#8217;s Encrypt asking for e-mail" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/letsencrypt-email.png" class="aligncenter size-full wp-image-3399" src="/f/2016/01/letsencrypt-email.png" alt="Let's Encrypt asking for e-mail" width="700" height="250" /><br />
+และ <span style="text-decoration: underline;"><strong>ชื่อโดเมนที่เราต้องการใบรับรอง</strong></span><img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3401" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/letsencrypt-domain-name/" data-orig-file="/f/2016/01/letsencrypt-domain-name.png" data-orig-size="700,250" data-comments-opened="1" data-image-title="Let&amp;#8217;s Encrypt asking for domain name" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/letsencrypt-domain-name.png" class="aligncenter size-full wp-image-3401" src="/f/2016/01/letsencrypt-domain-name.png" alt="Let's Encrypt asking for domain name" width="700" height="250" /><br />
+ตรงขั้นนี้มันจะเตือนเราว่าทางระบบจะทำการบันทึก <strong><span style="text-decoration: underline;">ที่อยู่ไอพี (IP address)</span></strong> ที่เราใช้เพื่อขอใบรับรองนะ <strong>เราโอเคไหมที่จะให้คนอื่นรู้ที่อยู่ไอพีที่เรากำลังใช้อยู่ขณะนี้</strong> (ของเครื่องที่เรากำลังใช้อยู่ ไม่ใช่เว็บเซิร์ฟเวอร์) ถ้าเราโอเค ก็ตอบตกลงไป<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3400" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/letsencrypt-ip-address/" data-orig-file="/f/2016/01/letsencrypt-ip-address.png" data-orig-size="700,500" data-comments-opened="1" data-image-title="Let&amp;#8217;s Encrypt warns about IP logging" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/letsencrypt-ip-address.png" class="aligncenter size-full wp-image-3400" src="/f/2016/01/letsencrypt-ip-address.png" alt="Let's Encrypt warns about IP logging" width="700" height="500" /></li>
+<li>ถึงตรงนี้มันจะให้เรายืนยันว่า เรามีสิทธิ์ในชื่อโดเมนที่เราขอไปจริงๆ ด้วยการให้เราสร้างไฟล์ที่มีชื่อตามที่มันกำหนดในไดเรกทอรีที่กำหนด (ตรงสีเขียว) โดยในไฟล์นั้นต้องมีข้อความที่กำหนดด้วย (สีแดง) &#8212; อย่าเพิ่งกด ENTER จนกว่าเราจะสร้างไฟล์ที่ว่าเสร็จ<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3404" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/letsencrypt-domain-validation/" data-orig-file="/f/2016/01/letsencrypt-domain-validation.png" data-orig-size="727,507" data-comments-opened="1" data-image-title="Let&amp;#8217;s Encrypt asking for domain validation" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/letsencrypt-domain-validation.png" class="aligncenter size-full wp-image-3404" src="/f/2016/01/letsencrypt-domain-validation.png" alt="Let's Encrypt asking for domain validation" width="727" height="507" />วิธีสร้างก็ตามนี้ คือ (ในอีกหน้าจอนึง-ล็อกอินเข้าไปที่เซิร์ฟเวอร์ ไม่ได้ทำที่เครื่องเราเองนะ) เข้าไปที่ไดเรกทอรีของเว็บไซต์เราก่อน (อันนี้เป็นการแบ่งไดเรกทอรีในแบบของ Dreamhost ใครใช้โฮสต์อื่นก็ปรับไปนะครับ) จากนั้นก็สร้างไดเรกทอรีที่กำหนด แล้วก็สร้างไฟล์และเอาข้อความที่มันบอกไปใส่ เพื่อบอกว่า นี่ไง เราสร้างได้ เรามีสิทธิ์จริงๆ นะ</p>
+<pre>cd [domain]
+mkdir -p .well-known/acme-challenge/
+echo -n "[RedContent]" &gt; .well-known/acme-challenge/[GreenFilename]</pre>
+<p>พอจัดการเรื่องที่เซิร์ฟเวอร์เสร็จ ก็กลับมาที่หน้าจอที่เครื่องเรา แล้วกด ENTER ได้เลย</p>
+<p>ถ้าระบบมันเจอไฟล์ที่เราสร้างไว้อย่างถูกต้องที่เซิร์ฟเวอร์ ระบบมันจะสร้างใบรับรองให้เรา เก็บไว้ที่ /etc/letsencrypt/live/[domain]<br />
+ข้างในไดเรกทอรีดังกล่าวจะมีไฟล์อยู่ 4 ไฟล์: cert.pem, chain.pem, fullchain.pem, privkey.pem ซึ่งเราจะเอาไปใช้ในขั้นต่อไป<br />
+<strong>**ไฟล์เหล่านี้อย่าให้คนอื่นรู้** ไม่งั้นเขาจะปลอมตัวเป็นเว็บไซต์ของเราได้</strong></li>
+<li>ถึงตรงนี้เราจะเริ่มก๊อปปี้ใบรับรองต่างๆ ไปใส่ในคอนโทรลพาเนลของ Dreamhost<br />
+เริ่มด้วยการคลิก Edit ที่ท้ายชื่อโดเมน ในหน้า “Secure Hosting”<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3407" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/dreamhost-add-certificate/" data-orig-file="/f/2016/01/dreamhost-add-certificate.png" data-orig-size="1039,323" data-comments-opened="1" data-image-title="Add certificate in Dreamhost" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/dreamhost-add-certificate.png" class="aligncenter size-full wp-image-3407" src="/f/2016/01/dreamhost-add-certificate.png" alt="Add certificate in Dreamhost" width="1039" height="323" />จะเจอหน้า &#8220;Certificate Settings&#8221;<br />
+ให้เราเลือก &#8220;Manual configuration&#8221;<br />
+มันจะขึ้นช่องให้เราใส่ใบรับรองต่างๆ อยู่ 4 ช่อง<br />
+<img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3410" data-permalink="/2016/lets-encrypt-free-https-certificate-on-dreamhost/dreamhost-add-certificate-details/" data-orig-file="/f/2016/01/dreamhost-add-certificate-details.png" data-orig-size="979,790" data-comments-opened="1" data-image-title="Add certificate in Dreamhost" data-image-description="" data-image-caption="" data-large-file="/f/2016/01/dreamhost-add-certificate-details.png" class="aligncenter size-full wp-image-3410" src="/f/2016/01/dreamhost-add-certificate-details.png" alt="Add certificate in Dreamhost" width="979" height="790" />4 ช่องนี้ ให้ใส่ดังนี้</p>
+<ul>
+<li>Certificate Signing Request: ลบทิ้งให้ว่าง</li>
+<li>Certificate: เอาข้อความในไฟล์ <span style="text-decoration: underline;">cert.pem</span> มาใส่</li>
+<li>Private Key: แปลง <span style="text-decoration: underline;">privkey.pem</span> เป็นฟอร์แมต RSA ด้วย openssl แล้วนำข้อความมาใส่</li>
+<li>Intermediate Certificate: เอาข้อความในไฟล์ <span style="text-decoration: underline;">chain.pem</span> มาใส่</li>
+</ul>
+<p>วิธีดูข้อความในไฟล์</p>
+<pre>sudo less /etc/letsencrypt/live/[domain]/cert.pem</pre>
+<p>วิธีแปลง privkey.pem เป็นฟอร์แมต RSA แล้วเอาไปเก็บไว้ที่ privkey.key (จากนั้นก็เอาข้อความใน privkey.key ไปใช้)</p>
+<pre>sudo openssl rsa -in /etc/letsencrypt/live/bact.cc/privkey.pem -out privkey.key</pre>
+<p>ใส่ครบทุกช่องแล้ว ก็คลิก &#8220;Save changes now&#8221;</li>
+<li>เท่านี้ก็น่าจะเสร็จแล้ว &#8212; แต่ถ้าอยากให้ทุกครั้งที่เรียก <strong>http</strong>://abc.xyz แล้วให้มัน redirect ไปที่ <strong>http<span style="text-decoration: underline;">s</span></strong>:///abc.xyz อัตโนมัติ ก็ทำขั้นนี้เพิ่มหน่อย &#8212; ใส่โค้ดนี้ลงในไฟล์ <a href="http://wiki.dreamhost.com/Htaccess_tricks">.htaccess</a>
+<pre>RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</pre>
+</li>
+<li>ลองเข้าเว็บไซต์ของเราดู ว่าเข้ารหัสและมีใบรับรองสวยงามอย่างที่หวังไหม หลังการแก้ไขต่างๆ อาจจะต้องรอสักพัก ไม่น่าจะเกิน 15 นาที เพื่อให้ระบบมันรีเฟรช</li>
+<li>ทดสอบความเรียบร้อยอีกที ด้วย <a href="https://www.ssllabs.com/ssltest/">การทดสอบจาก SSL Labs</a> เพื่อดูว่าเรายังขาดตกตรงไหนอีก</li>
+<li>อย่าลืมว่า ใบรับรองของ Let&#8217;s Encrypt จะหมดอายุทุกๆ 3 เดือน ดังนั้นพอใกล้ๆ 3 เดือนก็อย่าลืมทำซ้ำตั้งแต่ขั้นที่ 3 ใหม่นะครับ</li>
+</ol>
+<p><em>ส่วนใครใจไม่ร้อน รอได้ ก็รออีกหน่อย ทาง Dreamhost ประกาศแล้วว่า <a href="https://www.dreamhost.com/blog/2015/12/03/lets-encrypt-and-dreamhost/">จะหาทางให้สามารถใช้ Let&#8217;s Encrypt บน Dreamhost ได้แบบง่ายๆ</a> แค่คลิกๆ ก็เสร็จ</em></p>
+

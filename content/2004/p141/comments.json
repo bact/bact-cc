@@ -1,0 +1,42 @@
+[
+ {
+  "id": 38,
+  "author": "Gowza",
+  "url": "",
+  "date": "2004-05-24T15:22:00+07:00",
+  "html": "<p>bloody OpenOffice -_-&#039; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 39,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-05-24T17:51:00+07:00",
+  "html": "<p>ขอถามคุณ bact&#039; หน่อยครับ ไม่ทราบว่าคุณ bact&#039; ทราบหรือเปล่าครับว่าภาษาไทยใน OpenOffice.org 1.1.x ใครเป็นคนแปลครับ Sun หรือ Pladao หรือว่ามาจาก StarOffice ครับ คือผมอยากจะช่วยทำเกี่ยวกับการแปลใน OpenOffice.org นะครับ จะได้ติดต่อหรือประสานงานได้ครับ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 40,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-05-25T02:59:00+07:00",
+  "html": "<p>โครงการปลาดาวออฟฟิศ เป็นคนแปลครับแล้วก็ส่งไปให้ทาง OpenOffice.orgตอนนี้คำแปล(คิดว่าน่าจะของรุ่น 1.0.x ไม่เกินนี้) ก็อยู่ที่ OO.o แล้วครับสำหรับคำแปลที่ใหม่กว่านั้น ต้องไปดึงมาจาก cvs ของ pladao.org ครับ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 44,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-05-25T22:44:00+07:00",
+  "html": "<p>ขอบคุณครับ พอดีตอนนี้เจอคำผิดหลายจุด แล้วก็คำแปลไม่ตรงกับภาษาอังกฤษด้วย เลยอยากจะแก้ไขไปด้วยครับ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 49,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-05-26T17:59:00+07:00",
+  "html": "<p>what do you think about this krub?&#8211;&gt; <a href=\"http://www.blogger.com/r?http%3A%2F%2Fbact.blogspot.com%2F2004%2F05%2Fopenofficeorg-thai-translation.html\" rel=\"nofollow\"> OpenOffice.org Thai translation</a>if we can have a pool for OO.o Thai translation. </p>\n",
+  "replies": []
+ }
+]

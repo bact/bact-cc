@@ -1,0 +1,18 @@
+[
+ {
+  "id": 80,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-06-03T07:45:00+07:00",
+  "html": "<p>แต่ใช้กับหน้าที่อยู่ใน frame ไม่ได้นะครับเช่นที่ <a href=\"http://www.blogger.com/r?http%3A%2F%2Flinux.thai.net\" rel=\"nofollow\">LTN</a> </p>\n",
+  "replies": []
+ },
+ {
+  "id": 81,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-06-03T11:23:00+07:00",
+  "html": "<p>จริงๆ มันก็คือ JavaScript ปกตินี่แหละเอาไปเก็บในช่อง url ของ bookmark(แทนที่จะเป็น <a href=\"http://\" rel=\"ugc\">http://</a>&#8230; ก็เป็น javascript:(&#8230;) )แล้วก็จะเป็นการใช้ JavaScript ไปแก้หน้าตาของหน้าเวบ (ผ่าน &lt;a href=&quot;<a href=\"http://www.blogger.com/r?http%3A%2F%2\" rel=\"nofollow ugc\">http://www.blogger.com/r?http%3A%2F%2</a> <a>Fwww.w3.org%2FDOM%2F&#8221;</a> target=&#8221;_blank&#8221;&gt;DOM)เช่น เอาสีออก เลิกใช้ CSS เอารูปออก เปลี่ยนให้เป็นตัวพิมพ์เล็กหมดแสดงค่าที่ซ่อนในฟอร์ม (hidden) ขยายช่อง textareaนับจำนวนตัวอักษรในฟอร์ม ฯลฯเพื่อให้เราใช้เวบได้สะดวกขึ้น(i.e. ใช้ตามที่เราอยากใช้ ไม่ใช้ตามที่คนออกแบบเวบอยาก)มี 2 รุ่นให้เลือก Internet Explorer, Mozilla(เนื่องจาก JavaScript และ DOM ใน IE กะ Mozillaมันไม่ค่อย compatible กัน)ตัวของ Mozilla ลองกับ Firefox ใช้การได้ดีในเวบเค้าจะมีเขียนไว้ด้วยว่าscript ไหน ใช้กับเวบเบราเซอร์ไหนได้(ie, moz, ns4.x, opera) </p>\n",
+  "replies": []
+ }
+]

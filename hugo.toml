@@ -1,0 +1,57 @@
+baseURL = "https://bact.cc/"
+title = "bact' is a name"
+languageCode = "en"
+timeZone = "Asia/Bangkok"
+enableRobotsTXT = false          # robots.txt is a static file
+disableKinds = []
+# WordPress default was 10 posts per page; keeping it keeps /page/N/ URLs meaningful.
+[pagination]
+  pagerSize = 10
+  path = "page"
+
+[params]
+  description = "humanistic informatics for human freedom"
+  author = "bact'"
+  icon = "/f/2017/03/cropped-pedestrian-600.png"
+
+[taxonomies]
+  category = "categories"   # WordPress categories lived under /on/
+  tag = "tag"               # ... and tags under /tag/
+
+[permalinks.taxonomy]
+  categories = "/on/"
+[permalinks.term]
+  categories = "/on/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML", "RSS"]
+
+[services.rss]
+  limit = 20
+
+[sitemap]
+  changeFreq = "monthly"
+  priority = 0.5
+
+[markup.goldmark.renderer]
+  unsafe = true              # allow raw HTML in (new) Markdown posts
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+[[menus.main]]
+  name = "Courses"
+  url = "/courses/"
+  weight = 2
+[[menus.main]]
+  name = "Media"
+  url = "/media/"
+  weight = 3
+[[menus.main]]
+  name = "Publications"
+  url = "/pub/"
+  weight = 4

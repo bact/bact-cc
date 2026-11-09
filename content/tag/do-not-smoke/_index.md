@@ -1,0 +1,3 @@
+---
+title: "do not smoke"
+---

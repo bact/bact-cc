@@ -1,0 +1,34 @@
+[
+ {
+  "id": 3329,
+  "author": "veer",
+  "url": "",
+  "date": "2009-04-21T07:48:00+07:00",
+  "html": "<p>มันจะมีท่าที่ได้ทั่วไปไม่ต้องแก้ไปแก้มาเปล่าครับ? </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3330,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-04-21T16:10:00+07:00",
+  "html": "<p>เพิ่งเห็นว่า เราสั่งพวกนี้ที่ command line ได้แฮะ <a href=\"http://docs.python.org/distutils/configfile.html\" rel=\"nofollow\">http://docs.python.org/distutils/configfile.html</a>python setup.py build_ext &#8211;include-dirsหรือจะกำหนดในแฟ้ม setup.cfg ก็ได้[build_ext]include-dirs=/opt/local/includeผมยังไม่ได้ลองนะ แต่น่าจะได้แบบนี้ก็ไม่ต้องแก้ setup.py ของวีร์แต่อาจจะเขียนใน doc หน่อยนึง ว่าถ้าลงไม่ได้ ก็ลองท่านี้ดู </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3331,
+  "author": "veer",
+  "url": "",
+  "date": "2009-04-21T18:01:00+07:00",
+  "html": "<p>pkg-config จะมีประโยชน์หรือเปล่าครับ? เผื่อผมเขียนเพิ่มเข้าไป </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3332,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-04-24T03:19:00+07:00",
+  "html": "<p>คือไรอ่ะ ใช้ไม่เป็น :p </p>\n",
+  "replies": []
+ }
+]

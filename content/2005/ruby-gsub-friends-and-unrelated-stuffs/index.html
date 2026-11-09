@@ -1,0 +1,172 @@
+---
+title: "Ruby gsub, friends and unrelated stuffs"
+date: "2005-12-07T00:18:00+07:00"
+lastmod: "2011-05-13T12:01:59+07:00"
+type: "post"
+url: "/2005/ruby-gsub-friends-and-unrelated-stuffs/"
+description: "เราเรียกใช้เมทธอด gsub ของคลาส String (String#gsub) ใน Ruby ได้สองแบบ จาก API doc: คำสั่ง => ผลลัพธ์ str.gsub(pattern, replacement) => new_str str.gsub(pattern) {|match| block } => new_str ตรง pattern นี่ จะเป็น String ธรรมดา ๆ ก็ได้ เค้าให้ตัวอย่างมาแบบนี้ “hello”.gsub(/[aeiou]/, ‘*’) #=> “h*ll*” “"
+categories: ["computer"]
+tag: ["programming", "ruby", "text-processing"]
+lang: "th"
+wpid: 1097
+---
+<p>เราเรียกใช้เมทธอด gsub ของคลาส String (<a href="http://www.rubycentral.com/ref/ref_c_string.html#gsub
+">String#gsub</a>) ใน Ruby ได้สองแบบ<br />
+จาก API doc:<br />
+คำสั่ง =&gt; ผลลัพธ์</p>
+<ol>
+<li><code>str.gsub(pattern, replacement) =&gt; new_str</code></li>
+<li><code>str.gsub(pattern) {|match| block } =&gt; new_str</code></li>
+</ol>
+<p>ตรง pattern นี่ จะเป็น String ธรรมดา ๆ ก็ได้</p>
+<p>เค้าให้ตัวอย่างมาแบบนี้</p>
+<ul>
+<li><code>"hello".gsub(/[aeiou]/, '*')              #=&gt; "h*ll*"</code></li>
+<li><code>"hello".gsub(/([aeiou])/, '&lt;\1&gt;')   #=&gt; "h&lt;e&gt;ll&lt;o&gt;"</code></li>
+<li><code>"hello".gsub(/./) {|s| s[0].to_s + ' '}   #=&gt; "104 101 108 108 111 "</code></li>
+</ul>
+<p>แบบ (1) ใช้เป็นแล้ว ก็เหมือน ๆ กับในภาษาอื่น ๆ<br />
+ส่วนแบบ (2) ที่ผ่าน code block เข้าเมทธอด ยังไม่เคยลอง .. ก็ลองซะคราวนี้</p>
+<p><a href="http://bact.blogspot.com/2005/11/analysing-lexitron-data-files-with.html">โจทย์</a>คือ ผมจะแทนตัวอักษร &amp;, &#8216;, &quot;, &lt; และ &gt; ทั้งหมดในไฟล์ ๆ หนึ่ง<br />
+ด้วย XML Entity &amp;amp;, &amp;apos;, &amp;quot;, &amp;lt; และ &amp;gt;</p>
+<p>ตอนแรกผมทำแบบนี้</p>
+<pre><code>
+ 1: def convert1 (line)
+ 2:  if line != nil
+ 3:   line.gsub!(Re_amp,  Amp)
+ 4:   line.gsub!(Re_apos, Apos)
+ 5:   line.gsub!(Re_quot, Quot)
+ 6:   line.gsub!(Re_lt, Lt)
+ 7:   line.gsub!(Re_gt, Gt)
+ 8:   return line
+ 9:  else
+10:   return line
+11:  end
+12: end
+13:
+14: IO.foreach(ARGV[0]) { |line| puts convert1(line) }
+</code></pre>
+<p>โปรแกรมจะเริ่มทำงานที่บรรทัดสุดท้าย (14) โดยอ่านไฟล์ตามชื่อที่ให้มาทาง command line argument แรก <a href="#notes1" name="1"><sup>1</sup></a><br />
+หลังจากนั้น ในแต่ละบรรทัดของไฟล์ ก็จะทำคำสั่ง <code>puts convert1(line)</code> <a href="#notes2" name="2"><sup>2</sup></a><br />
+อย่างกรณีนี้ก็คือ ทุก ๆ ครั้งที่อ่าน 1 บรรทัด ก็ให้พิมพ์บรรทัดที่ถูกแปลงแล้วออกมา</p>
+<p>เมทธอด <code>foreach</code> ทำให้เราเขียนโค้ดที่อาจจะยาวอย่างน้อยสามสี่บรรทัดในภาษาอื่น ได้เหลือแค่บรรทัดเดียวใน Ruby !</p>
+<ul>
+<li><code>IO.foreach(name, sep_string=$/) {|line| block } =&gt; nil</code></li>
+</ul>
+<p>อย่าเพิ่งนอกเรื่องไปไกล กลับมาที่ gsub ต่อ &#8230;</p>
+<p>โอเค จากบรรทัดที่ 14 จะเห็นว่าเราเรียกใช้ฟังก์ชั่น <code>convert1</code>, ซึ่งประกาศไว้ตรงบรรทัดที่ 1-12 (13 เป็นเลขไม่ดี เราขอไม่ใช้ :P)</p>
+<p>บรรทัด 3-7 จะเห็นว่าเราเรียก <code>gsub!</code> <a href="#notes3" name="3"><sup>3</sup></a> เป็นชุดเลย<br />
+โดยที่ <code>Re_xxx</code> นี่ เป็นออบเจกต์ pattern ที่จะหา &amp;, &#8216;, &#8230; ที่เราเตรียมไว้ล่วงหน้าแล้ว<br />
+และพวก <code>Amp</code>, <code>Apos</code>, &#8230; ก็เป็น constant <a href="#notes4" name="4"><sup>4</sup></a> ที่มีค่า &amp;amp;, &amp;apos;, &#8230;<br />
+(ตรงนี้ผมคิดไปเองว่า ถ้าเราเตรียมแพตเทิร์นและสตริงไว้ล่วงหน้า<br />
+คงจะช่วยให้ Ruby ไม่ต้องสร้างออบเจกต์แพตเทิร์นทุกครั้งใน &#8220;ลูป&#8221; foreach (ทุก ๆ บรรทัด)<br />
+แต่เนื่องจากไม่รู้ว่า ตัว Ruby runtime ทำงานจริง ๆ ยังไง มี optimization อะไรบ้าง เลยไม่แน่ใจว่ามันจะช่วยจริงรึเปล่า<br />
+&#8230; เอาว่าช่วยทางใจละกัน อยากเขียนแบบนี้น่ะ)</p>
+<p>โค้ดของของแพตเทิร์น (regular expression):</p>
+<pre><code>
+Re_amp  = /&amp;(?![-_a-zA-Z0-9]{1,12};)/  # (skip &amp; in &amp;xxx;)
+Re_apos = /\'/
+Re_quot = /\&quot;/
+Re_lt   = /&lt;/
+Re_gt   = /&gt;/
+</code></pre>
+<p>เอาล่ะ ถึงเรื่องที่จะเล่าละ</p>
+<p>ทีนี้ จะเห็นว่า เฮ้ย เราเรียก <code>gsub!</code> ซ้ำ ๆ ตั้งหลายรอบแหน่ะ<br />
+1 gsub! ต่อ 1 คู่ (แพตเทิร์น/ตัวอักษรที่จะแทน) ต่อ 1 บรรทัด<br />
+ดู ๆ ไป <small>(อย่างเด่นชัด, ตามคำแปลของ LEXiTRON)</small> มันน่าจะมีวิธีที่ .. มีประสิทธิภาพมากกว่านี้สิ</p>
+<p>เป็นไปได้รึเปล่า ที่เราจะแทน คู่ (แพตเทิร์น/ตัวอักษร) ได้มากกว่า 1 คู่ ในการเรียก gsub! 1 ครั้ง ?<br />
+คำตอบคือ เป็นไปได้ ด้วยการผ่านโค้ดบล็อกเข้า <code>gsub!</code><br />
+โดยให้ตัวโค้ดบล็อกเป็นตัวตัดสินใจเรื่องการแทนที่</p>
+<pre><code>
+ 1: Re_escapes = /(&amp;(?![-_a-zA-Z0-9]{1,12};))|(\')|(\&quot;)|(&lt;)|(&gt;)/
+ 2:
+ 3: def escape (char)
+ 4:  return case char
+ 5:   when '&'  then Amp
+ 6:   when '\'' then Apos
+ 7:   when '\"' then Quot
+ 8:   when '< '  then Lt
+ 9:   when '>'  then Gt
+10:   else char
+11:  end
+12: end
+13:
+14: def convert2 (line)
+15:  if line != nil
+16:   line.gsub!(Re_escapes) { |match| match = escape(match) }
+17:   return line
+18:  else
+19:   return line
+20:  end
+21: end
+22:
+23: IO.foreach(ARGV[0]) { |line| puts convert2(line) }
+</code></pre>
+<p>ที่โค้ดนี้ จุดที่ <code>convert2</code> ต่างกับ <code>convert1</code> ก็คือ ตรงบรรทัดที่ 16<br />
+จะเห็นว่า แทนที่เราจะส่ง 2 พารามิเตอร์ &mdash; (pattern, replacement)<br />
+เราส่ง 1 พารามิเตอร์ กับ 1 บล็อก แทน &mdash; (pattern) { block }</p>
+<p>โค้ดบล็อก <code>{ |match| match = escape(match) }</code> จะถูกเรียกทุกครั้งที่ <code>gsub!</code> พบแพตเทิร์น <code>Re_escapes</code><br />
+โดย <code>match</code> จะเป็นค่าของสิ่งที่พบ<br />
+เราก็จัดการแปลง <code>match</code> ด้วยฟังก์ชั่น <code>escape</code> ซะ เท่านั้นก็จบ<br />
+เท่ากับว่า เราเรียก <code>gsub!</code> แค่ครั้งเดียว<a href="#notes5" name="5"><sup>5</sup></a></p>
+<p>ในฟังก์ชั่น <code>escape</code> ก็ไม่มีอะไร, แบบว่าจะโชว์การใช้ <code>case ... when</code> น่ะ<br />
+เราสามารถผสม <code>return</code> กับ <code>case ... when</code> ได้ด้วย (แทนที่จะเขียน <code>then return ...</code> ซ้ำ ๆ)</p>
+<p><code>Re_escapes</code> นี่ก็เป็นแพตเทิร์นที่เรายุบรวม <code>Re_amp</code>, &#8230; <code>Re_gt</code> เข้าด้วยกัน ไม่มีอะไรมาก</p>
+<p>สรุปก็คือ แทนที่เราจะหาทีละตัวอักษร แทนทีละตัวอักษร<br />
+เราก็หามันทีละหลาย ๆ ตัวอักษรเลย (ด้วยการผสมแพตเทิร์นเข้าด้วยกัน)<br />
+แล้วจากนั้นก็ค่อยไปดูว่า ที่พบน่ะ ตัวไหน แล้วค่อยแทนด้วยตัวที่ตรงคู่ (ตัดสินใจด้วยโค้ดบล็อก)</p>
+<p>อยากรู้ว่าสองวิธีนี้ (<code>convert1</code> vs <code>convert2</code>) จะให้ประสิทธิภาพต่างกันแค่ไหน<br />
+ลองทดสอบง่าย ๆ ด้วย <code><a href="http://www.ruby-doc.org/core/classes/Benchmark.html">Benchmark#bmbm</a></code></p>
+<pre><code>
+require 'benchmark'
+
+...
+
+Benchmark.bmbm do |x|
+ x.report("convert1:") { IO.foreach(ARGV[0]) { |line| convert1(line) } }
+ x.report("convert2:") { IO.foreach(ARGV[0]) { |line| convert2(line) } }
+end
+</code></pre>
+<p>ลองรัน<a href="#notes6" name="6"><sup>6</sup></a> <code>wellform-demo.rb etlex.xml</code></p>
+<p>ผลลัพธ์:</p>
+<pre><code>
+Rehearsal ---------------------------------------------
+convert1:  23.914000   0.070000  23.984000 ( 24.015000)
+convert2:  22.813000   0.130000  22.943000 ( 22.973000)
+----------------------------------- total: 46.927000sec
+
+                user     system      total        real
+convert1:  23.914000   0.100000  24.014000 ( 24.065000)
+convert2:  22.913000   0.090000  23.003000 ( 23.063000)
+</code></pre>
+<p>กับไฟล์ etlex.xml ขนาดประมาณ 18 MB (668,938 บรรทัด)<br />
+<code>convert2</code> เร็วกว่า <code>convert1</code> ประมาณ 1 วินาที (ประมาณ 4%)</p>
+<p>คุ้มมั๊ยเนี่ย ? 😛</p>
+<p>ก็ .. ถือว่าคุ้มละกัน เพราะได้เรียน Ruby น่ะ 😀</p>
+<hr />
+<p><a name="notes1"><sup>1</sup></a> <strong>ข้อสังเกต:</strong> ตรงนี้จะไม่เหมือน command line argument ในสไตล์ C หรือ Python<br />
+ที่ argument แรก (0) จะหมายถึงชื่อโปรแกรมที่กำลังรันอยู่<br />
+ใน Ruby ถ้าต้องการรู้ชื่อโปรแกรม ให้เรียกจากโลกาตัวแปร (global variable) <code>$0</code> <small><a href="#1">กลับ</a></small></p>
+<p><a name="notes2"><sup>2</sup></a> ตรงนี้เราเรียกว่า <strong>code block</strong><br />
+อย่างบรรทัด 14 นี้คือ เราส่งโค้ดบล็อก {&#8230;} เข้าเมทธอด foreach<br />
+โดย line (ใน | |) เนี่ย ก็เป็นเหมือน argument ของโค้ดบล็อก<br />
+(คิดซะว่า เรากำลังเขียนฟังก์ชั่นอันนึงก็ได้ ทำเหมือน argument ปกติ)<br />
+โดย line จะถูกแทนภายในเมทธอดที่เราส่งโค้ดบล็อกเข้าไป<br />
+(อันนี้คือตามความเข้าใจจากการทดลอง กลไกภาษา Ruby จริง ๆ อาจจะไม่ใช่แบบนี้ก็ได้ ต้องลองอ่านเอกสารดู) <small><a href="#2">กลับ</a></small></p>
+<p><a name="notes3"><sup>3</sup></a> <strong>gsub! ต่างกับ gsub</strong> ตรงที่ มันจะเปลี่ยนแปลงสตริงต้นฉบับเลย;<br />
+ในขณะที่ gsub จะไม่เปลี่ยนแปลงสตริงต้นฉบับ แต่จะคืนสตริงใหม่ออกมา;<br />
+พูดอีกอย่าง: โค้ด x.gsub!(a,b) ให้ผลเหมือน x = x.gsub(a,b)<br />
+ใน Ruby เมทธอดที่ลงท้ายด้วย ! มีลักษณะแบบนี้เหมือนกันหมด <small><a href="#3">กลับ</a></small></p>
+<p><a name="notes4"><sup>4</sup></a> by convention (ตามข้อตกลง), <strong>ค่าคงที่ (constant)</strong> ใน Ruby จะขึ้นต้นด้วยตัวพิมพ์ใหญ่ เช่น Book, Song<br />
+อย่างไรก็ตาม ข้อควรระวังคือ ในโปรแกรม เราสามารถแก้ไขค่าคงที่ได้ และ Ruby runtime ก็ไม่ห้าม<br />
+จะมีก็แค่ขึ้น warning เท่านั้น แต่โปรแกรมจะทำงานต่อไปตามปกติ<br />
+ซึ่งตรงนี้นี่ &#8230; อืมม ผมไม่แน่ใจว่าเป็นความคิดที่ดีรึเปล่า<br />
+อย่างน้อย คนเขียน Java น่ะไม่น่าจะชอบ <small><a href="#4">กลับ</a></small></p>
+<p><a name="notes5"><sup>5</sup></a> ตรงนี้ บางคนอาจจะเห็นว่า บรรทัดที่ 16 กับ 17 น่าจะยุบรวมกันได้<br />
+<strong>ข้อควรระวัง</strong>ก็คือ ถ้าจะยุบ อย่าลืมเปลี่ยน gsub! เป็น gsub<br />
+<code>return line.gsub(Re_escapes) { |match| match = escape(match) }</code><br />
+เพราะในกรณีที่สตริงไม่มีการเปลี่ยนแปลง, gsub! จะคืนค่า nil<br />
+แต่ gsub จะคืนค่าสตริงต้นฉบับ<br />
+สิ่งที่เราอยากได้ ในโปรแกรมนี้ คืออย่างหลัง <small><a href="#5">กลับ</a></small></p>
+<p><a name="notes6"><sup>6</sup></a> ภาษาอังกฤษ &ldquo;long run&rdquo; แปลว่า ในระยะยาว 😛 <small><a href="#6">กลับ</a></small></p>
+

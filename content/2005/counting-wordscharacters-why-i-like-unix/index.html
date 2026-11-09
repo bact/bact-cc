@@ -1,0 +1,34 @@
+---
+title: "Counting words/characters (Why I like Unix)"
+date: "2005-11-10T21:14:00+07:00"
+lastmod: "2005-11-10T21:14:00+07:00"
+type: "post"
+url: "/2005/counting-wordscharacters-why-i-like-unix/"
+description: "(No, not me. Him.) Word frequencies cat hfinn10.txt | tr ‘[:punct:]’ ‘ ‘ | tr ‘ ‘ ‘\\012’ | sort | uniq -c | sort -n | tail -20 Character frequencies cat hfinn10.txt | sed ‘s/./&~/g’ | tr ‘~’ ‘\\012’ | sort -n | uniq -c | sort -n | tail -20 more plumbing magic […]"
+categories: ["something"]
+lang: "en"
+wpid: 1059
+---
+<p>(No, not me. <a href="http://www.ai.rug.nl/~lambert/">Him</a>.)</p>
+<h3>Word frequencies</h3>
+<pre><code>
+cat hfinn10.txt
+  | tr '[:punct:]'  ' '
+  | tr ' ' '\012'
+  | sort
+  | uniq -c
+  | sort -n
+  | tail -20
+</code></pre>
+<h3>Character frequencies</h3>
+<pre><code>
+cat hfinn10.txt
+  | sed 's/./&~/g'
+  | tr '~' '\012'
+  | sort -n
+  | uniq -c
+  | sort -n
+  | tail -20
+</code></pre>
+<p><a href="http://www.ai.rug.nl/~lambert/unix.html">more plumbing magic &#8230;</a></p>
+

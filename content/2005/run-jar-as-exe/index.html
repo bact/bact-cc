@@ -1,0 +1,40 @@
+---
+title: "Run .jar as .exe"
+date: "2005-07-20T21:41:00+07:00"
+lastmod: "2005-07-20T21:41:00+07:00"
+type: "post"
+url: "/2005/run-jar-as-exe/"
+description: "เรียกใช้งานไฟล์ .jar ของจาวา เหมือนเรียกใช้ไฟล์ .exe .com .bat ทั่ว ๆ ไปของวินโดวส์ Run Java jar file from Windows 2000/XP command-line like a native executable. A technique from James Clark (I got it from XML Hacks book). At a command-line, type these two commands: assoc .jar=jarfile ftype jarfile="
+tag: ["how-to", "java", "windows"]
+lang: "en"
+wpid: 902
+---
+<p>เรียกใช้งานไฟล์ .jar ของจาวา เหมือนเรียกใช้ไฟล์ .exe .com .bat ทั่ว ๆ ไปของวินโดวส์</p>
+<p>Run Java jar file from Windows 2000/XP command-line like a native executable. A technique <a href="http://lists.oasis-open.org/archives/relax-ng/200203/msg00037.html">from James Clark</a> (I got it from <a href="http://www.oreilly.com/catalog/xmlhks/">XML Hacks</a> book).</p>
+<p>At a command-line, type these two commands:</p>
+<p><code></p>
+<pre>
+assoc .jar=jarfile
+
+ftype jarfile=<em>(JAVA_HOME)</em>\bin\java -jar %1 %*
+</pre>
+<p></code></p>
+<p>Then, change PATHEXT and PATH environment variables.<br />
+Right-clicking on <em>My Computer</em>, select <em>Properties</em>. Select <em>Advanced</em> tab, then <em>Environment Variables</em>.</p>
+<p>Looking for <em>PATHEXT</em> variable, append &ldquo;<strong><em>.jar</em></strong>&rdquo; to its value.</p>
+<p>Looking for <em>PATH</em> variable, insert &ldquo;<strong><em>.</em></strong>&rdquo; (dot, which means current directory) at the beginning of its value.</p>
+<p>You got it!</p>
+<p>Now try it. Say, if you have a file notepad.jar. To run it, instead of typing:</p>
+<p><code></p>
+<pre>
+java -jar notepad.jar
+</pre>
+<p></code></p>
+<p>you can just type:</p>
+<p><code></p>
+<pre>
+notepad
+</pre>
+<p></code></p>
+<p>Better? 😉</p>
+

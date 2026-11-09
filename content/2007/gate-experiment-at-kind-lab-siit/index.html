@@ -1,0 +1,28 @@
+---
+title: "GATE experiment at KIND Lab, SIIT"
+date: "2007-07-16T18:05:00+07:00"
+lastmod: "2011-05-17T14:37:24+07:00"
+type: "post"
+url: "/2007/gate-experiment-at-kind-lab-siit/"
+description: "งานทดลองสุดสัปดาห์ที่ผ่านมา เมื่อวานทดลองเขียน wrapper ครอบ Stanford Log-linear Part-Of-Speech Tagger ให้กลายเป็นปลั๊กอินสำหรับใช้กับ GATE (หลังจากตั้งท่ามานาน) pipeline ในรูป มี 3 Processing Resources คือ tokensier, splitter และ tagger tokensier คือ net.siit.gate.DictionaryBasedTokeniser เป็นตัวตัด"
+categories: ["coling", "computer"]
+tag: ["gate", "java", "kind", "natural-language-processing", "part-of-speech", "programming", "siit", "thai"]
+lang: "th"
+wpid: 2154
+---
+<p>งานทดลองสุดสัปดาห์ที่ผ่านมา</p>
+<p><a title="Thai POS tagging pipeline in GATE" href="http://www.flickr.com/photos/arthit/818767327/"><img data-recalc-dims="1" loading="lazy" decoding="async" src="https://farm2.static.flickr.com/1195/818767327_da99c8c5c1.jpg" alt="POS-tagged document in GATE" width="500" height="375" /></a></p>
+<p>เมื่อวานทดลองเขียน wrapper ครอบ <a href="http://nlp.stanford.edu/software/tagger.shtml">Stanford Log-linear Part-Of-Speech Tagger</a> ให้กลายเป็นปลั๊กอินสำหรับใช้กับ <a href="http://www.gate.ac.uk/">GATE</a> (หลังจากตั้งท่ามานาน)</p>
+<p>pipeline ในรูป มี 3 Processing Resources คือ tokensier, splitter และ tagger</p>
+<p><strong>tokensier</strong> คือ net.siit.gate.DictionaryBasedTokeniser เป็นตัวตัดคำธรรมดา ๆ ใช้พจนานุกรม<sup>1</sup> และออกแบบให้ตัดได้คำที่ยาวที่สุด (longest-matching) ทำงานกับ AnnotationSet ของ GATE โดยตรง — จะสร้าง AnnotationSet ชื่อ “Token” ขึ้นมา</p>
+<p><strong>splitter</strong> คือ ANNIE Sentence Splitter เป็นตัวแบ่งประโยค โดยใช้กฎ (ภาษา JAPE เป็นลักษณะ regular expression over annotation) ตัวนี้มากับ GATE อยู่แล้ว และไม่ได้ออกแบบมาสำหรับภาษาไทย — เราเอามาใช้ไถ ๆ ไป เพื่อให้สร้าง AnnotationSet ชื่อ “Sentence” เท่านั้น (เป็นการ “สมมติว่ามี” จะได้ทดลองขั้นต่อไปได้)</p>
+<p><strong>tagger</strong> คือ net.siit.gate.StanfordPOSTagger เป็นตัวกำกับชนิดของคำ (Part-of-Speech) เป็น wrapper ไว้เรียกใช้/แปลงข้อมูลจาก edu.stanford.nlp.tagger.maxent.MaxentTagger ซึ่งเป็นตัวกำกับชนิดของคำแบบเรียนรู้จากชุดตัวอย่าง<sup>2</sup> ตัว MaxentTagger จะรับข้อมูลเข้า/ส่งข้อมูลออกเป็น List&lt;Sentence&gt; ก็ต้องแปลงให้กลายเป็น AnnotationSet (เอาคำจากชุด “Token” โดยใช้ชุด “Sentence” ระบุขอบเขตประโยค<sup>3</sup>) เพื่อให้เข้ากับ GATE — ในขั้นตอนสร้าง List&lt;Sentence&gt; ตัว wrapper นี้ จะทึกทักเอาเองว่า Annotation ทั้งหมดใน AnnotationSet นั้น ไม่ทับซ้อนกัน (overlapping), ซึ่งจริง ๆ แล้ว ใน GATE นั้นอนุญาตให้ Annotation มันทับซ้อนกันได้ เช่น ถ้า Token ดันมีซ้อนกันเป็น [ab{cd]efg} แบบนี้ ตอนที่ตัว tagger (wrapper) แปลงเป็น Sentence จะได้ Sentence ที่บรรจุ Word = { &#8220;abcd&#8221;, &#8220;cdefg&#8221; }</p>
+<p>ทั้งหมดเป็น Java (ในส่วนที่พัฒนาเอง ใช้ NetBeans)</p>
+<p>ทั้งหมดนี้ ไม่มีอะไรเป็น “ของใหม่” เป็นเพียงการทดลองหยิบชิ้นส่วนหรืออัลกอริธึมที่คนอื่นทำไว้แล้ว มาลองประกอบเข้าด้วยกันในกรอบ (framework) ของ GATE เท่านั้น (ส่วนที่มีเสริมเข้าไป ก็เพื่อให้ประกอบสนิทกันเท่านั้น)</p>
+<p>แต่คาดหวังว่า การมีกรอบที่ชัดเจนแบบนี้ จะช่วยลดงานที่ไม่จำเป็นในการทดลอง/วิจัยในอนาคตไปได้บ้าง เพื่อจะได้มีเวลาไปเน้นเรื่อง “ใหม่ ๆ” จริง ๆ</p>
+<p><sup>1</sup> สามารถระบุพจนานุกรมตอนสร้าง instance ใหม่ได้ ปัจจุบันคำส่วนหนึ่งมาจากคลังข้อมูลเอกสารการแพทย์ที่ <a href="http://kind.siit.tu.ac.th/">KIND Lab</a>, SIIT ทำร่วมกับ เภสัช ศิลปากร อีกส่วนหนึ่งมาจากตัวตัดคำ KU Wordcut ของเกษตร (สุธี สุดประเสริฐ), ใช้ Trie เป็นโครงสร้างข้อมูลขณะตัดคำ (org.speedblue.util.Trie)</p>
+<p><sup>2</sup> ชุดตัวอย่างนำมาจากคลังข้อความ <a href="http://www.links.nectec.or.th/orchid/">ORCHID</a> โดยเนคเทค (ทดสอบแปลงข้อมูลโดยใช้สคริปต์ <a href="http://groovy.codehaus.org/">Groovy</a> บน JVM)</p>
+<p><sup>3</sup> จริง ๆ แล้ว เราสามารถใส่คำทั้งหมดเข้าไปประมวลผลทีเดียวได้ (คือมี 1 ประโยคใน List&lt;Sentence&gt; และทุกคำในเอกสารบรรจุอยู่ในประโยคนั้น) แต่การทำแบบนั้น คิดว่าน่าจะเปลืองหน่วยความจำ อีกเรื่องคือ ยังไม่ได้ศึกษาโดยละเอียดว่า ขอบเขตของประโยค มีส่วนต่อการคำนวณหาค่าความน่าจะเป็นในการกำกับชนิดของคำของคลาส MaxentTagger หรือไม่ (ตั้งสมมติฐานไว้ว่า น่าจะมี จึงพยายามแบ่งประโยค)</p>
+<p><small>technorati tags: <a rel="tag" href="http://technorati.com/tag/GATE">GATE</a>, <a rel="tag" href="http://technorati.com/tag/natural_language_processing">natural language processing</a>, <a rel="tag" href="http://technorati.com/tag/Thai">Thai</a>, <a rel="tag" href="http://technorati.com/tag/tagger">tagger</a><br />
+</small></p>
+

@@ -1,0 +1,56 @@
+---
+title: "How to install Tahoma font, Ubuntu Studio theme and preload in Ubuntu (+ OpenSolaris 2008.05 debut)"
+date: "2008-05-07T00:22:00+07:00"
+lastmod: "2011-05-05T11:59:39+07:00"
+type: "post"
+url: "/2008/tahoma-theme-preload-ubuntu-opensolaris/"
+description: "from Ubuntu Forums – HOWTO: Tahoma Font in Breezy by Casey ถึงจะใช้โอเพนซอร์ส บางทีเราก็จำเป็นต้อง/ถูกบังคับให้ใช้ฟอนต์ที่ไม่ใช่ซอฟต์แวร์เสรี เช่น รายงานความคืบหน้าการวิจัยของเนคเทค ที่แม้จะระบุให้ใช้ OpenDocument Text (มาตรฐานเปิด-เยี่ยม) แต่ในขณะเดียวกันก็ระบุว่าให้ใช้ฟอนต์ Tahoma (เฉพาะระบบของไมโ"
+categories: ["computer"]
+tag: ["fonts", "free-softwares", "how-to", "linux", "open-source", "opensolaris", "ubuntu"]
+lang: "th"
+wpid: 2343
+---
+<p>from Ubuntu Forums &#8211; <a href="http://ubuntuforums.org/archive/index.php/t-82318.html">HOWTO: Tahoma Font in Breezy</a> by Casey</p>
+<p>ถึงจะใช้โอเพนซอร์ส บางทีเราก็จำเป็นต้อง/ถูกบังคับให้ใช้ฟอนต์ที่ไม่ใช่ซอฟต์แวร์เสรี<br />
+เช่น รายงานความคืบหน้าการวิจัยของเนคเทค ที่แม้จะระบุให้ใช้ OpenDocument Text (มาตรฐานเปิด-เยี่ยม) แต่ในขณะเดียวกันก็ระบุว่าให้ใช้ฟอนต์ Tahoma (เฉพาะระบบของไมโครซอฟท์-เฮ้ย)</p>
+<p>วิธีติดตั้งฟอนต์ Tahoma บน Ubuntu (กนู/ลีนุกซ์ดิสโทรอื่น ๆ ก็ปรับ ๆ เอานะครับ)</p>
+<ol>
+<li>ลงแพคเกจ msttcorefonts ก่อน :<br />
+<code>sudo apt-get install msttcorefonts</code></li>
+<li>ดาวน์โหลดฟอนต์ Tahoma จาก <a href="http://download.microsoft.com/download/ie6sp1/finrel/6_sp1/W98NT42KMeXP/EN-US/IELPKTH.CAB">http://download.microsoft.com/download/ie6sp1/finrel/6_sp1/W98NT42KMeXP/EN-US/IELPKTH.CAB</a> :<br />
+<code>wget http://download.microsoft.com/download/ie6sp1/finrel/6_sp1/W98NT42KMeXP/EN-US/IELPKTH.CAB</code></li>
+<li>แตกแฟ้ม IELPKTH.CAB ออกมา, ในที่นี้เราจะใส่ไว้โฟลเดอร์ชั่วคราว tahomafont :<br />
+<code>cabextract -d tahomafont IELPKTH.CAB</code></li>
+<li>คัดลอกแฟ้มฟอนต์ทั้งหมดไปที่โฟลเดอร์ฟอนต์ msttcorefonts ของ Ubuntu :<br />
+<code>sudo cp tahomafont/*.ttf /usr/share/fonts/truetype/msttcorefonts/</code></li>
+<li>ลบโฟลเดอร์ชั่วคราว tahomafont เมื่อสักครู่นั้นทิ้ง :<br />
+<code>rm -rf tahomafont</code></li>
+</ol>
+<p>เสร็จ</p>
+<p>เกร็ด: น่าสนใจว่าแพคเกจ IELPKTH.CAB นี้ มันคือ Thai Language Pack ของ Internet Explorer ซึ่งนอกจากฟอนต์แล้ว ยังมีผังแป้นพิมพ์ไทย และรหัสอักขระไทย (CP 874) ด้วย</p>
+<hr />
+<p>แถม : <a href="http://ubuntufun.wordpress.com/2007/05/21/%E0%B9%83%E0%B8%8A%E0%B9%89-ubuntu-%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%98%E0%B8%B5%E0%B8%A1-ubuntu-studio/">ลงธีมของ Ubuntu Studio บน Ubuntu ปกติ</a> (เห็นใน twitter)</p>
+<p>ถ้าจะเอาทั้งชุดเลย (รวมหน้าจอล็อกอิน, โปรแกรมเสริมบน desktop) :<br />
+<code>sudo apt-get install ubuntustudio-look</code></p>
+<p>ถ้าจะเอาแค่ธีม ไอคอน พื้นหลัง :<br />
+<code>sudo apt-get install ubuntustudio-theme ubuntustudio-icon-theme ubuntustudio-wallpapers</code></p>
+<p>ลงแล้วสวยดี แต่กับบางโปรแกรมใช้แล้วจะมองไม่ค่อยเห็น ปวดตาหน่อย ๆ<br />
+เช่น Firefox 3 นี่ จะมีปัญหาเรื่องสีกับตรงช่องที่อยู่ address bar คือสีที่ไฟร์ฟ็อกซ์ใช้สำหรับลิงก์ มันเป็นสีเขียว<br />
+แล้วสีของพื้นหลังของ widget ใน Ubuntu Studio นี่มันเป็นสีเทาดำ มันเลยอ่านยากมาก ไม่ดีเท่าไหร่ หรืออย่างเวลาทำไฮไลท์ข้อความในช่องที่อยู่ มันก็ไม่เปลี่ยนสีพื้นหลัง เปลี่ยนแต่สีอักษร ดูยากไปนิดนึง โปรแกรมอื่นไม่เป็นนะ เป็นแต่กับไฟร์ฟ็อกซ์นี่แหละ เข้าว่าเป็นเพราะไม่ได้เป็น GTK+</p>
+<hr />
+<p>แถม 2 (ใจดี) : <strong><a href="http://opensolaris.com/">OpenSolaris 2008.05</a></strong> ออกแล้ว (<a href="http://osnews.com/story/19715/Sun_Debuts_OpenSolaris_2008.05">ข่าวที่ OSNews</a>) เป็นดิสโทรอีกดิสโทรหนึ่งของ OpenSolaris (เอ่อ ชื่อดันเหมือนกันอีก คือนอกจาก OpenSolaris ที่เป็นดิสโทรแล้วเนี่ย ยังมีคนเอาซอร์สโค้ดจาก OpenSolaris.org ไปทำดิสโทรอื่น ๆ อีก เช่น <a href="http://www.nexenta.org/">Nexenta</a>) มี Live CD ด้วย</p>
+<p>ดิสโทร OpenSolaris นี้ ใช้ตัวจัดการแพกเกจตัวใหม่ที่ชื่อว่า <a href="http://opensolaris.org/os/project/pkg/">Image Packaging System</a> (IPS) ซึ่งเจ้า IPS นี่ ใช้ประโยชน์จากระบบแฟ้ม <a href="http://en.wikipedia.org/wiki/ZFS">ZFS</a> เช่นการทำ rollback กรณี โอ๊ะ ติดตั้งแพกเกจใหม่เข้าไปแล้วเจ๊ง จะย้อนกลับ ก็ใช้ความสามารถของ ZFS ทำ (ดิสโทรอย่าง Nexenta นั้นใช้ apt ซึ่งผู้ใช้ลีนุกซ์ค่าย Debian, Ubuntu จะคุ้นเคยกว่า)</p>
+<p><a href="http://blogs.zdnet.com/BTL/?p=8703">รีวิวค่อนข้างดี</a> แต่ก็ยังมีจุดต้องปรับปรุงเช่นเรื่องการแชร์แฟ้มกับ Samba ที่ยุ่งยากเกินไป ในรีวิวนั้นมีภาพจับหน้าจอให้ดูหลายรูป ดูในรูปคล้าย Linux Desktop ทั่วไปมาก เพราะใช้ GNOME 2.22 เหมือน ๆ กัน (ในภาพนั้นใช้<a href="http://www.gnome-look.org/content/show.php/Nimbus+(Ubuntu+and+Debian)?content=54755">ธีม Nimbus</a> แบบเดียวกับที่มี<a href="http://java.sun.com/developer/technicalArticles/javase/java6u10/index.html#nimbus">ใน Java 6 Update 10</a>)</p>
+<p>ถ้าไม่อยากดาวน์โหลด หรืออยากได้แผ่นมาเก็บ <a href="https://www2.sun.de/dct/forms/reg_us_2307_228_0.jsp">สั่งได้</a>นะครับ ฟรี ค่าส่งก็ไม่คิด ผมสั่งไปแล้ว อยากรู้ว่าจะสวยเหมือนโลโก้รึเปล่า 😀</p>
+<hr />
+<p>แถม 3 (ชิงร้อยชิงล้าน) : ในลีนุกซ์ เราสามารถเร่งความเร็วการโหลดโปรแกรมที่เราใช้บ่อย ๆ ได้โดยใช้โปรแกรม <strong><a href="http://pwet.fr/man/linux/administration_systeme/preload" title="man page">preload</a></strong> โปรแกรมนี้มันจะคอยดูพฤติกรรมการใช้งานโปรแกรมของเรา และก็ไปโหลดบางส่วนของโปรแกรมที่เราใช้บ่อย ๆ ขึ้นมารอไว้ในหน่วยความจำล่วงหน้า (เรียกอีกอย่างก็คือ โกง น่ะ) วิธีพวกนี้เราเรียกว่า pre-fetching ใน Windows XP ก็มี</p>
+<p>วิธีติดตั้ง preload บน Ubuntu :<br />
+<code>sudo apt-get install preload</code><br />
+แค่นั้นเลย แล้วมันก็จะทำงานอัตโนมัติอยู่หลังฉาก</p>
+<p>ถ้าอยากดูว่ามันทำอะไรอยู่ ก็ :<br />
+<code>sudo tail -f /var/log/preload.log</code><br />
+หรือถ้าอยากดูละเอียด ๆ เป็นรายแฟ้มเลย ก็ :<br />
+<code>sudo less /var/lib/preload/preload.state</code></p>
+<p>ที่มา : Linux Journal ฉบับล่าสุด (ล่าสุดที่เมืองไทยใน Bookazine นะ ไม่รู้ล่าสุดแค่ไหน), <a href="http://lifehacker.com/software/featured-linux-download/load-programs-faster-with-preload-269625.php">LifeHacker</a>, และ <a href="http://www.techthrob.com/tech/preload.php">Techthrob.com</a> (อันหลังสุดนี่ละเอียดมาก มีวิธีการตั้งค่าโดยละเอียดด้วย)</p>
+<p><small>technorati tags: <a href="http://technorati.com/tag/Ubuntu" rel="tag">Ubuntu</a>, <a href="http://technorati.com/tag/Tahoma" rel="tag">Tahoma</a>, <a href="http://technorati.com/tag/howto" rel="tag">howto</a>, <a href="http://technorati.com/tag/font" rel="tag">font</a>, <a href="http://technorati.com/tag/theme" rel="tag">theme</a>, <a href="http://technorati.com/tag/OpenSolaris" rel="tag">OpenSolaris</a></small></p>
+

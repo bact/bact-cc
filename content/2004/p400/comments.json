@@ -1,0 +1,34 @@
+[
+ {
+  "id": 304,
+  "author": "fat dog father",
+  "url": "",
+  "date": "2004-10-20T23:41:00+07:00",
+  "html": "<p>ลองเข้าเว็บของราชบัณฑิตดูก็ได้ครับ <a href=\"http://rirs3.royin.go.th/coinages/ถ้าไม่ได้ปรับแต่ง\" rel=\"nofollow ugc\">http://rirs3.royin.go.th/coinages/ถ้าไม่ได้ปรับแต่ง</a> MineType ของ  FireFox บน windows ให้ดี แล้วลองค้นคำศัพท์ดูก็จะได้ปรากฎการประหลาด ยังไม่ได้ส่งไปบอกเค้าให้แก้ไข  หมายถึง FireFox ไม่รู้บน Linux เป็นหรือเปล่า ไม่ได้ลอง </p>\n",
+  "replies": []
+ },
+ {
+  "id": 305,
+  "author": "Mk",
+  "url": "",
+  "date": "2004-10-21T00:53:00+07:00",
+  "html": "<p>Mozilla มันมีโหมดเรนเดอร์สองโหมดนะคือโหมด Strict กับ IE Compatabilityผมก็ไม่รู้แล้วว่าเค้าใช้อะไรเป็น default เคยอ่านตอนเค้าทะเลาะกันอยู่ไม่รู้เกี่ยวกับบั้กนี่ป่าวนะ นึกเอา </p>\n",
+  "replies": []
+ },
+ {
+  "id": 306,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-10-21T03:21:00+07:00",
+  "html": "<p>Standard mode กับ &lt;a href=&quot;<a href=\"http://www.blogger.com/r?http%3A%2F%2\" rel=\"nofollow ugc\">http://www.blogger.com/r?http%3A%2F%2</a> <a>Fwww.mozilla.org%2Fdocs%2Fweb-developer%2Fquirks%2Fquirklist.html&#8221;</a> target=&#8221;_blank&#8221;&gt;Quirks mode (IE/Netscape 4.x compat)ใช้ Quirks mode เป็นค่าปริยายสำหรับ general public release ครับ(i.e. จะเอา Standard mode ต้อง build เอง) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 307,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-10-21T03:25:00+07:00",
+  "html": "<p>ยังไงก็ตาม จะบอกว่าเกี่ยวกะ &quot;IE compat&quot; ก็ไม่น่าจะใช่ เพราะถ้า compat จริง แล้วทำไม IE ไม่เห็นเป็นไรเลยล่ะ? </p>\n",
+  "replies": []
+ }
+]

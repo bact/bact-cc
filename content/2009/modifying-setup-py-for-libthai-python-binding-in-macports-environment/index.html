@@ -1,0 +1,54 @@
+---
+title: "modifying setup.py for libthai Python binding in MacPorts environment"
+date: "2009-04-20T11:24:00+07:00"
+lastmod: "2009-04-20T11:24:00+07:00"
+type: "post"
+url: "/2009/modifying-setup-py-for-libthai-python-binding-in-macports-environment/"
+description: "(ปรับปรุง 2009.04.21 พบท่าง่ายกว่าเดิม ดูด้านล่าง) เอา libthai Python binding ที่วีร์ทำเอาไว้มาใช้บน Mac OS X + MacPorts ต้องดัดแปลง setup script นิดนึง เนื่องจากผมติดตั้ง libthai ผ่านทาง MacPorts (ด้วยคำสั่ง sudo port install libthai) ดังนั้นแฟ้มไลบรารี (libthai.a) กับแฟ้ม include (*.h) ทั้งหลาย จึ"
+tag: ["how-to", "libthai", "mac-os-x", "python"]
+lang: "th"
+wpid: 2444
+---
+<p>(ปรับปรุง 2009.04.21 พบท่าง่ายกว่าเดิม ดูด้านล่าง)</p>
+<p>เอา <a href="http://blog.vee-u.com/2009/03/10/%E0%B9%83%E0%B8%8A%E0%B9%89-libthai-%E0%B8%88%E0%B8%B2%E0%B8%81-python/">libthai Python binding</a> ที่<strong>วีร์</strong>ทำเอาไว้มาใช้บน Mac OS X + MacPorts ต้องดัดแปลง setup script นิดนึง</p>
+<p>เนื่องจากผมติดตั้ง <strong><a href="http://linux.thai.net/projects/libthai">libthai</a></strong> ผ่านทาง <a href="http://www.macports.org/">MacPorts</a> (ด้วยคำสั่ง <code>sudo port install libthai</code>) ดังนั้นแฟ้มไลบรารี (libthai.a) กับแฟ้ม include (*.h) ทั้งหลาย จึงไม่ได้อยู่ในตำแหน่งปกติที่ apple-gcc จะวิ่งไปหา (ผมใช้ i686-apple-darwin9-gcc-4.0.1 ลองใช้ gcc-4.2, gcc-mp-4.4 ที่อยู่ในเครื่องแล้ว มันบอกไม่รู้จัก flag  โน้น flag นี้ ผมก็เซ็ตไม่เป็นด้วย เลยใช้ gcc ตัวที่เขาให้มาแต่เดิมนี่แหละ) จึงจำเป็นต้องแก้ไข setup.py นิดหน่อย เพื่อบอกตำแหน่งของ include_dirs และ library_dirs ใหม่ ตามนี้ :</p>
+<pre><code>
+from distutils.core import setup, Extension
+
+setup(name="libthai", version="0.0.1",
+      ext_modules=[ 
+        Extension('libthai', 
+                  <font color="red">include_dirs = ['/opt/local/include'],</font>
+                  libraries = ['thai'],
+                  <font color="red">library_dirs = ['/opt/local/lib'],</font>
+                  sources = ['libthai.c']
+)])
+</code></pre>
+<p>ก็จะสามารถ build และ install ได้ครับ &#8211; ของใครอยู่ที่อื่น ก็แก้ไปตามนั้นครับ &#8211;<br />
+ผมดูตัวอย่างจากเอกสารหน้านี้ : <a href="http://docs.python.org/extending/building.html">3. Building C and C++ Extensions with distutils</a></p>
+<p>หมายเหตุ: libthai ที่ใช้นี้ยังเป็นรุ่น 0.1.9 อยู่ ตอนนี้รุ่นล่าสุดคือ 0.1.11 ออกมาไล่ ๆ กับ libdatrie และ swath ตัวใหม่ ติดตามข่าวได้ที่ <a href="http://linux.thai.net/">linux.thai.net</a> / ขอบคุณคุณวีร์ พี่เทพ และทุกท่าน</p>
+<hr />
+<p>อัปเดต 2009.04.21: เพิ่งเจอท่าที่ง่ายกว่า ไม่ต้องแก้ setup.py คือเรากำหนดไดเรกทอรีได้ที่บรรทัดคำสั่งเลย ตอน build จากนั้นค่อยสั่ง install อีกที เช่น :</p>
+<pre><code>
+$ sudo python setup.py build_ext --include-dirs=/opt/local/include --library-dirs=/opt/local/lib
+$ sudo python setup.py install
+</code></pre>
+<p>หรือจะกำหนดไว้ในแฟ้ม setup.cfg ก็ได้ เผื่อใช้หลายรอบ :</p>
+<pre><code>
+[build_ext]
+include-dirs=/opt/local/include
+library-dirs=/opt/local/lib
+</code></pre>
+<p>ทั้งหมดนี้ ดูตามเอกสาร <a href="http://docs.python.org/distutils/configfile.html">3. Writing the Setup Configuration File</a></p>
+<p>ก่อน build อย่าลืมเปลี่ยน gcc ให้เป็นรุ่นที่เหมาะสม=ใช้แล้วคอมไพล์ผ่าน เช่นกรณีนี้ ผมต้องใช้ gcc 4.0 ก็ให้เลือกด้วย gcc_select (หรือ ln symbolic link เอาเองก็ได้)</p>
+<pre><code>$ sudo gcc_select gcc40</code></pre>
+<p>ถ้าอยากรู้ว่ามีอะไรให้เลือกบ้าง สั่ง gcc_select -l (ไม่ต้องตกใจ ถ้ามันแสดงน้อยกว่าที่เรามี gcc_select มันแสดงเฉพาะตัวที่มันหาเจอเท่านั้น ก็คือที่มี symbolic link อยู่ในไดเรกทอรีเดียวกับตัว gcc_select มันเอง &#8230; กรณีนั้น ก็ แหะ ๆ ใช้ ln ไปตามเดิมครับ &#8211; -&#8220;)</p>
+<p>เช่นเดียวกัน ก่อน install ก็อย่าลืมเปลี่ยน Python ให้เป็นรุ่นที่เหมาะสม=รุ่นที่เราอยากจะติดตั้งตัว extension นี้เข้าไป กรณีผม ผมอยากติดตั้งลงไปใช้กับ Python 2.5 ก็คล้าย ๆ เดิม เลือกด้วย python_select (หรือ ln symbolic link เอาเองก็ได้ เช่นกัน)</p>
+<pre><code>$ sudo python_select python25-apple</code></pre>
+<p>ป.ล. อะไรคือ mp-gcc ?</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/libthai" rel="tag">libthai</a>,<br />
+<a href="http://technorati.com/tag/Python" rel="tag">Python</a>,<br />
+<a href="http://technorati.com/tag/setup.py" rel="tag">setup.py</a><br />
+</small></p>
+

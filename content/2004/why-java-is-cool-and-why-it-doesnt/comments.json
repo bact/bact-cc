@@ -1,0 +1,58 @@
+[
+ {
+  "id": 232,
+  "author": "Mk",
+  "url": "",
+  "date": "2004-08-24T19:29:00+07:00",
+  "html": "<p>สงสัยจะเป็นกับข้อสุดท้ายเนี่ยมั้ง startup time ที่ต้องแตก .jar ก่อน มันเลยช้า (ในความรู้สึก) ของยูเซอร์ (ผมด้วย)รอ mono เสร็จ แล้วใช้ c# ? </p>\n",
+  "replies": []
+ },
+ {
+  "id": 233,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-08-25T01:40:00+07:00",
+  "html": "<p>? .. CLI architecture is not much different from Java in general. It have to be compiled (partly or a whole) at the first place anyway.If you run any app frequently, and feel that .jar is a bottleneck. Just expand it once, jar -xf jarfile.jar. After that, run it directly from a class you want 😛 </p>\n",
+  "replies": []
+ },
+ {
+  "id": 234,
+  "author": "Mk",
+  "url": "",
+  "date": "2004-08-25T18:31:00+07:00",
+  "html": "<p>ไม่ถูกมันควรจะเร็วที่ ordinary case สิเคยเขียน c# นิดหน่อยตอนลองเล่น mono บนคอนโซลคิดว่าคงไม่ต่างกันเท่าไร แต่พอเป็น GUI ตัวใหญ่ๆ หน่อยนี่จาวาก็ไม่ไหวจริงๆ อะ ไม่ค่อยเชี่ยวชาญด้วยไม่รู้เป็นกะอะไร swing รึเปล่า?ป.ล. อีกสาเหตุหนึ่งที่ไม่ชอบจาวา เพราะว่า Blue Metal Theme ของ swing มันน่าเกลียด </p>\n",
+  "replies": []
+ },
+ {
+  "id": 235,
+  "author": "Mk",
+  "url": "",
+  "date": "2004-08-25T19:01:00+07:00",
+  "html": "<p>ไม่ถูกมันควรจะเร็วที่ ordinary case สิเคยเขียน c# นิดหน่อยตอนลองเล่น mono บนคอนโซลคิดว่าคงไม่ต่างกันเท่าไร แต่พอเป็น GUI ตัวใหญ่ๆ หน่อยนี่จาวาก็ไม่ไหวจริงๆ อะ ไม่ค่อยเชี่ยวชาญด้วยไม่รู้เป็นกะอะไร swing รึเปล่า?ป.ล. อีกสาเหตุหนึ่งที่ไม่ชอบจาวา เพราะว่า Blue Metal Theme ของ swing มันน่าเกลียด </p>\n",
+  "replies": []
+ },
+ {
+  "id": 238,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-08-26T00:27:00+07:00",
+  "html": "<p>ที่บอกคือ สถาปัตยกรรมของ .NET/CLI มันไม่ได้ต่างกับ Java/JVM กันแบบคนละเรื่องยังไงก็มาเป็น bytecode ก่อนเกือบทุกคนยอมรับว่า Swing เป็น framework ที่ดีแต่ซับซ้อนเกินไป และบางครั้ง &quot;over-engineered&quot;คือ framework ดี แต่หาคนเข้าใจจริงๆ ได้น้อยทำให้โปรแกรมที่เขียนออกมา ไม่มีประสิทธิภาพเช่น ใช้ component ไม่ถูกกับงาน ฯลฯ.. แต่นี่ไม่ได้หมายความว่า &quot;Swing ไม่ดี&quot;หรือเอาให้แฟร์คือ ไม่ได้หมายความว่า &quot;Swing ไม่ดี อยู่ฝ่ายเดียว&quot;จะภาษาอะไร platform ไหน เจ๋งแค่ไหนถ้าเขียนโปรแกรมห่วยๆ มันก็ช้าJ2SE 5.0 มีธีมใหม่แล้ว </p>\n",
+  "replies": []
+ },
+ {
+  "id": 249,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-09-05T18:19:00+07:00",
+  "html": "<p>ผมว่าประเด็นที่ Performance of Java versus C++ กล่าวถึง JIT ช่วยให้ java เร็วกว่า C/C++ นั้นมันนอกเหนือ language, ถ้าเอา C++ compile เป็น bytecode แล้วไปรันบน VM ก็ทำ JIT ได้เหมือนกัน น่าจะเปรียบเทียบที่ตัวภาษา มากกว่า !?ผมชอบ java ตรงที่ตัวภาษาง่าย, รู้แค่ syntax กับ paradigm ของภาษา ก็เขียน program ได้ชึบชับแล้ว แถมมี data structure ให้ใช้เยอะแยะ.ผมไม่ชอบ java ตรงที่ library มัน design มา resuable/extensible เฮี้ยๆ จนเวลาจะทำอะไรที ต้องดูไปถึงพ่อถึงปู่มัน พอเขียนเสร็จแล้วก็ลืม.. เช่นการ read/write file, socket ผมทำงานกับมันมาหลายต่อหลายครั้ง ตอนนี้ยังจำไม่ได้เลย ว่าจะต้องเขียนยังไงบ้าง แถม มี choice ให้เลือกเยอะอีก ว่า จะใช้ class ไหนในการทำงานกับ stream&#8230;&#8230;.. ซึ่งจริงๆแล้วมันก็ไม่ใช่ความผิด ของ java เพราะภาษาที่เป็น oo เต็มสูบมันก็ต้องอย่างงี้แหละ&#8230; สรุปแล้วคือ แนวคิดเรื่อง OO ไม่ดี ควรกลับไปเขียน structural กัน !?ผมไม่ชอบ java ตรงที่เวลาทำอะไรบางอย่างด้วย java ทำไม่มันยากเย็นจัง เช่น เวลา java ทำ callback, java ตัด multiple inheritance / fuction pointer ออก, เวลาจะทำ callback ทีก็ต้องกำหนด interface แล้ว inherit interface มา implement method ที่จะให้ call แล้ว pass ใส่ caller object, ถ้าเป็น c/c++ แค่ส่ง function pointer ไปก็เสร็จแล้ว.หรือ บางที java ก็ทำให้ code unreadable เช่นการ force ให้ exception ต้องถูก catch มันทำให้เกิด try / catch block เต็มไปหมดใน code ซึ่งจริงๆแล้ว มั่งก็คือ goto ดีๆที่คนเค้าต่อต้านกันนี่เอง..ก่อน version 1.5 java ไม่มี template ใน collection เวลาทำ hash of vector of stack of list จะเอา element ออกมาทีเหนื่อเฮี้ยครับ เพราะมันต้อง cast กันตลอด แล้ววงเล็บก็เต็มไปหมด, 1.5 นี่ดีขึ้นเยอะ ที่เอา template มาใช้กับ collection เพราะคนส่วนใหญ่ไม่ เอา type หลายๆอันไปยัดใน collection อันเดียว อยู่แล้ว (ผมว่าเดี๋ยว C# ก็ทำตาม ตอนนี้ยังลอกไม่ทัน)ผมว่า c++ มัน superer กว่า java ในเรื่อง const, มันทำ const fuction, pass by const reference/pointer, &#8230; ไม่รู้สิผมว่ามันเหนือออก ทำไม java ไม่ทำตามวะเนี่ยเรื่อง casting เนื่องจาก java ผมว่ามันก็ simple มันมีแต่ cast down hierrachy, java เลยไม่ต้องมีพวก static/dynamic/const/reinterpret cast ให้เลอะเทอะ..สุดท้ายผมคิดว่า java เอา C++ มาตัด feature, ถ้า design ไหนไม่ดี ก็แก้ใหม่, C# ลอก java มาทั้งดุ้น แล้วเพิ่ม feature ให้ใช้ง่ายขึ้นevolution ของ static-typed infix languages. </p>\n",
+  "replies": []
+ },
+ {
+  "id": 251,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-09-07T00:10:00+07:00",
+  "html": "<p>&quot;ผมว่าประเด็นที่ Performance of Java versus C++ กล่าวถึง JIT ช่วยให้ java เร็วกว่า C/C++ นั้นมันนอกเหนือ language, ถ้าเอา C++ compile เป็น bytecode แล้วไปรันบน VM ก็ทำ JIT ได้เหมือนกัน น่าจะเปรียบเทียบที่ตัวภาษา มากกว่า !?&quot;How can we compare the SPEED of LANGUAGE !!!??? </p>\n",
+  "replies": []
+ }
+]

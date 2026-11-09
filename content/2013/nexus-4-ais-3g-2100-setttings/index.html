@@ -1,0 +1,57 @@
+---
+title: "ตั้งค่า Nexus 4 ให้ใช้เน็ตบน AIS 3G 2100"
+date: "2013-07-14T14:00:00+07:00"
+lastmod: "2013-07-14T14:09:06+07:00"
+type: "post"
+url: "/2013/nexus-4-ais-3g-2100-setttings/"
+description: "วิธีตั้งค่า Nexus 4 ให้ใช้ mobile internet และ MMS บนเครือข่าย AIS 3G ใหม่"
+categories: ["computer", "internet"]
+tag: ["2100mhz", "3g", "ais", "android", "nexus-4"]
+lang: "th"
+wpid: 3331
+---
+<p>ติดตั้ง APN เพื่อใช้อินเทอร์เน็ต/MMS บนเครือข่ายใหม่ AIS 3G 2100 MHz สำหรับ Nexus 4 (LG, Android 4.2.2) &#8212; <a href="http://www.ais.co.th/3g/setting3g.html">ในเว็บ AIS จะไม่มีข้อมูลรุ่นนี้</a> (โทรถาม call center เขาก็ดูตามในเว็บ) แต่ลองเซ็ตตามนี้แล้วเวิร์กครับ</p>
+<p>ขั้นตอนคร่าวๆ มี 3 สเต็ป</p>
+<ol>
+<li>อันดับแรก ลงทะเบียนใช้บริการก่อน โดยไปที่หน้าจอโทรออก กด <em>*988*เลขที่บัตรประชาชน*1175#</em> แล้วกดโทรออก</li>
+<li>สักพักจะได้รับ SMS ตอบกลับ เมื่อได้รับแล้วก็ปิดเครื่อง เปิดใหม่</li>
+<li>เพิ่ม APN ใหม่ เพื่อให้ใช้เน็ต-รับส่ง MMS บนเครือข่าย 2100 MHz ได้ (เราจะเพิ่ม APN 2 ตัว ตัวนึงของเน็ต อีกตัวของ MMS) โดยไปที่ Settings -> More&#8230; -> Mobile networks -> Access Point Names</li>
+</ol>
+<p>การไปที่หน้า Access Point Names เพื่อเพิ่ม APN ดูตามรูปนี้ (คลิกเพื่อดูรูปใหญ่) ส่วนการใส่ค่าต่างๆ ของแต่ละ APN ดูด้านล่างครับ<br />
+<a href="/f/2013/07/ais-3g-2100-nexus-4-android-lg-settings.png"><img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="3333" data-permalink="/2013/nexus-4-ais-3g-2100-setttings/ais-3g-2100-nexus-4-android-lg-settings/" data-orig-file="/f/2013/07/ais-3g-2100-nexus-4-android-lg-settings.png" data-orig-size="2304,2570" data-comments-opened="1" data-image-title="ตั้งค่า AIS 3G 2100 บน Nexus 4" data-image-description="" data-image-caption="" data-large-file="/f/2013/07/ais-3g-2100-nexus-4-android-lg-settings.png" src="/f/2013/07/ais-3g-2100-nexus-4-android-lg-settings-918x1024.png" alt="ตั้งค่า AIS 3G 2100 บน Nexus 4" width="594" height="662" class="aligncenter size-large wp-image-3333" /></a></p>
+<h2>เพิ่ม APN Internet</h2>
+<p>ในหน้า Access Point Names ที่เมนูมุมขวาบน กดเลือก New APN แล้วใส่ข้อมูลตามนี้</p>
+<dl>
+<dt>Name (ชื่อ)</dt>
+<dd>AIS Internet</dd>
+<dt>APN</dt>
+<dd>internet</dd>
+<dt>Authentication type (ประเภทการรับรอง)</dt>
+<dd>CHAP</dd>
+<dt>APN type (ชนิด APN)</dt>
+<dd>default</dd>
+</dl>
+<p>เสร็จแล้วกด Save (บันทึก)</p>
+<h2>เพิ่ม APN MMS</h2>
+<p>ในหน้า Access Point Names ที่เมนูมุมขวาบน กดเลือก New APN แล้วใส่ข้อมูลตามนี้</p>
+<dl>
+<dt>Name (ชื่อ)</dt>
+<dd>AIS MMS</dd>
+<dt>APN</dt>
+<dd>mms</dd>
+<dt>MMSC</dt>
+<dd>http://mms.ais.co.th</dd>
+<dt>MMS proxy (MMS พร็อกซี)</dt>
+<dd>203.170.229.34</dd>
+<dt>MMS port (พอร์ต MMS)</dt>
+<dd>8080</dd>
+<dt>Authentication type (ประเภทการรับรอง)</dt>
+<dd>CHAP</dd>
+<dt>APN type (ชนิด APN)</dt>
+<dd>mms</dd>
+</dl>
+<p>เสร็จแล้วกด Save (บันทึก)</p>
+<p>เท่านี้ก็น่าจะใช้ได้แล้วครับ</p>
+<p>**ข้อควรระวังสำหรับผู้จะเดินทางไปต่างประเทศและจะใช้ roaming คือ ตอนนี้ตัวเครือข่าย AIS 3G ยังไม่รองรับ roaming ครอบคลุมเท่ากับเครือข่าย AIS เดิม ก่อนเดินทางควรโทรเช็คศูนย์ก่อนครับ</p>
+<p>ข้อมูลจาก <a href="http://www.ais.co.th/3g/setting3g.html">AIS 3G 2100</a> (ใช้ตาม Galaxy Nexus)</p>
+

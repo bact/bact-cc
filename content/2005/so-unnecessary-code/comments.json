@@ -1,0 +1,26 @@
+[
+ {
+  "id": 975,
+  "author": "polawat phetra",
+  "url": "",
+  "date": "2005-08-21T02:04:00+07:00",
+  "html": "<p>อย่างนี้หรือเปล่า=====================var x = [1, 2, 3, 4, 5];function loop (ary, func) { for (i = 0; i &lt; 5; i++) {  func(ary[i]); }}function process (ary, loop, test, trueAction, falseAction) { var func = function innerTest (arg) {  if (test(arg)) {   trueAction(arg);  } else {   falseAction(arg);  } } loop (ary, func);}var t = function test(arg) { if (arg == 3) {  return true; } return false;}var tAct = function trueAction(arg) { println(&quot;yes&quot;);}var fAct = function falseAction(arg) { println(&quot;nop&quot;);}process(x, loop, test, tAct, fAct);=====================ใช้ <a href=\"http://edenti.deis.unibo.it/Ling/2004-2005/rhino/online/JavaScriptIDE.html\" rel=\"nofollow\">JavaScript IDE</a> test นะ ไม่ได้ลองบน browser engine </p>\n",
+  "replies": []
+ },
+ {
+  "id": 977,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-08-22T23:00:00+07:00",
+  "html": "<p>โอ้ว์ โย่ว์ :)(บรรทัดสุดท้ายแก้ test เป็น t แล้วผ่านฉลุย)thx ครับ เดี๋ยวลองเล่นดู ;)คู่วว์ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 978,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-08-22T23:03:00+07:00",
+  "html": "<p><a href=\"http://pphetra.blogspot.com/2005/08/javascript-101.html\" rel=\"nofollow\">pok&#039;s JS 101</a> </p>\n",
+  "replies": []
+ }
+]

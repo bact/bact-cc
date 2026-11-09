@@ -1,0 +1,50 @@
+[
+ {
+  "id": 350,
+  "author": "Thep",
+  "url": "",
+  "date": "2004-11-11T16:33:00+07:00",
+  "html": "<p>You&#039;re damned right. But we need standard-&quot;compliant&quot; web sites, rather than standard-&quot;complaint&quot; ones. The latter should be discouraged. ;-Pแซวครับแซว :Dเห็นด้วยเต็มที่ครับ กับการรณรงค์เรื่องมาตรฐาน </p>\n",
+  "replies": []
+ },
+ {
+  "id": 351,
+  "author": "Mk",
+  "url": "",
+  "date": "2004-11-11T16:58:00+07:00",
+  "html": "<p>แค่ encoding ภาษาไทยยังยากเลยอะtis-620windows-874iso-11iso-1ไม่ใส่ซะงั้นก็มี </p>\n",
+  "replies": []
+ },
+ {
+  "id": 352,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-11-11T17:01:00+07:00",
+  "html": "<p>good article krubTongdee </p>\n",
+  "replies": []
+ },
+ {
+  "id": 353,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-11-11T19:13:00+07:00",
+  "html": "<p>ปล้ำอยู่หลายวันกว่า <a href=\"http://www.blogger.com/r?http%3A%2F%2Fichris.ws\" rel=\"nofollow\">web</a> จะ validate เป็น xhtml 1.0 strict :Pแต่ก่อนปัญหาใหญ่คือ standard (html กับ css) compliant แล้ว แต่ไม่ถูกใจ IE เนี่ยดิ ทำให้หน้าตาไม่เหมือนดูด้วยตัวอื่น จะไม่สนได้มั๊ย ก็ไม่ได้ ตอนนี้เลยมีทริคบ้าบอที่คนคิดขึ้นมา เพื่อให้มันแสดงผลเหมือนกัน ตอนนี้ชินแล้วเลยโอเค แต่ตอนแรกๆ นี่ทำผมร่วงไปหลายสิบเส้นมีคำถาม ถ้าเว็บภาษาไทยหมดเลย มีประโยชน์อะไรรึเปล่าที่จะตั้ง encoding เป็น tis-620 เทียบกับ utf-8? ไฟล์มันเล็กกว่ารึเปล่า หรือว่า font ไทยหาง่ายกว่า font unicodechris </p>\n",
+  "replies": []
+ },
+ {
+  "id": 355,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-11-12T06:47:00+07:00",
+  "html": "<p>ก๊าก สะกดสลับกันตัวเดียว ความหมายเปลี่ยนไปไกล -_-&quot; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 356,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-11-12T06:55:00+07:00",
+  "html": "<p>ถ้าเป็น ภาษาไทยหมดเลย หรือ ภาษาไทยปนอังกฤษ (ใช้ตัวอักษรในช่วง Latin-1) ใช้ TIS-620 จะประหยัดเนื้อที่กว่า UTF-8 ครับ </p>\n",
+  "replies": []
+ }
+]

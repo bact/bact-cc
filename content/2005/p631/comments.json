@@ -1,0 +1,18 @@
+[
+ {
+  "id": 512,
+  "author": "Thep",
+  "url": "",
+  "date": "2005-03-22T05:03:00+07:00",
+  "html": "<p>ข่าวร้ายก็คือ APSL 2.0 license ที่ howl ใช้นั้น debian ถือว่าขัดกับ DFSG ทำให้ howl ถูกย้ายเข้า non-free และพวก GNOME package ทั้งหลายก็ถูก build ใหม่หมด เพื่อตัด howl ออกจาก dependency ทำให้ GNOME บน debian ไม่ได้ใช้ Zeroconf อยู่ดีแต่ก็มี project <a href=\"http://www.freedesktop.org/Software/Avahi\" rel=\"nofollow\">Avahi</a> ที่ fd.o เกิดขึ้นเพื่อแทน howl แล้ว รอให้โตสักพัก ผู้ใช้ debian คงได้ใช้ 😛 </p>\n",
+  "replies": []
+ },
+ {
+  "id": 514,
+  "author": "id",
+  "url": "",
+  "date": "2005-03-22T18:05:00+07:00",
+  "html": "<p>APSL 2.0 ทั้ง OSI ทั้ง FSF ก็ approve แปลกจริงๆ มีประเด็นที่ตัวเองสนใจเป็นพิเศษในกรณีนี้คือเรื่อง service บางทีมันน่าจะบอกแนวคิดคร่าวๆเรื่อง service ของ GPL3 ได้ </p>\n",
+  "replies": []
+ }
+]

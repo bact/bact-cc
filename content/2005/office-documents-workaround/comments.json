@@ -1,0 +1,34 @@
+[
+ {
+  "id": 535,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-03-29T01:45:00+07:00",
+  "html": "<p>mk เคยตอบมา(ก่อนที่จะหายไป)ว่า:&quot;Word Viewer นี่มีนานมากแล้วนะ ตั้งกะ 97 เลยมั้วง&quot; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 536,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-03-29T01:48:00+07:00",
+  "html": "<p>ผิด จริงๆ เค้าไปตอบไว้อีกหัวข้อตะหากปวดหัว -_-&quot; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 542,
+  "author": "win",
+  "url": "",
+  "date": "2005-03-30T05:42:00+07:00",
+  "html": "<p>what do open office applications save their files as.. ? i&#039;m wondering if those files are compatible with existing microsoft office programs ? </p>\n",
+  "replies": []
+ },
+ {
+  "id": 543,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-03-30T06:41:00+07:00",
+  "html": "<p>For its Writer app (MS Word alike)OpenDocument Text (.odt)OpenOffice.org 1.0 Text Document (.sxw)StarWriter 3.0/4.0/5.0 (.sdw)Microsoft Word 6.0/95/97/2000/XP (.doc)Microsoft Word 2003 XML (.xml)HTML Document (.html)Rich Text Format (.rtf)Text (.txt)i.e. MS Word compatible (can import/export .doc)other OO.o apps also compatible with MS Office apps as well.Anyway, do not expect 100% compat.Since what OOo do is kinda reverse-engineering ..but don&#039;t worry &#8212; no major data loss, most of the time is just a cosmetic issue(font size changed, a picture is slightly shifted left from itsoriginal place ..etc) </p>\n",
+  "replies": []
+ }
+]

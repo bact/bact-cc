@@ -1,0 +1,26 @@
+[
+ {
+  "id": 2226,
+  "author": "deans4j",
+  "url": "",
+  "date": "2007-03-02T06:49:00+07:00",
+  "html": "<p>ลองใส่ property 2 ตัวนี้ดู useUnicode = true กับ characterEncoding = utf-8 ใน connection string ติดต่อกับ mySQL </p>\n",
+  "replies": []
+ },
+ {
+  "id": 2227,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2007-03-02T07:30:00+07:00",
+  "html": "<p>เมื่อคืนก็ลองแล้วนะ (ผมใช้ &quot;utf8&quot; นะ ไม่ได้ลอง &quot;utf-8&quot;) แต่ก็ไม่ได้คือใช้ jdbc ปกติเนี่ย ได้เปิด connection เอง ส่ง query เองเนี่ยดึงภาษาไทยมาได้ ไม่มีปัญหาเลยไม่ต้องเซต encoding ใน jdbc url เลยด้วยแต่ถ้าใช้ iBATIS นี่ ยังไงก็ไม่รอดแฮะ ไม่รู้เพราะอะไร(ภาษาอังกฤษไม่มีปัญหา เยี่ยมมาก) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 2228,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2007-03-02T07:36:00+07:00",
+  "html": "<p>ลอง &quot;utf-8&quot; แล้วไม่ได้เหมือนกัน </p>\n",
+  "replies": []
+ }
+]

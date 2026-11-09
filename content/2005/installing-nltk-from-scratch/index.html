@@ -1,0 +1,86 @@
+---
+title: "Installing NLTK \"from scratch\""
+date: "2005-04-09T18:01:00+07:00"
+lastmod: "2005-04-09T18:01:00+07:00"
+type: "post"
+url: "/2005/installing-nltk-from-scratch/"
+description: "Note: This is a unfinished work, will polish it later. เข้าค้าง ๆ มานานละ ไม่เสร็จซะที โพสต์ไปก่อนละกัน เดี๋ยวมาแก้ทีหลัง ไม่งั้นลืมแน่ วิธีติดตั้ง NLTK บน UNIX, Mac OS X, และ cygwin บน Windows (ใครมี gcc และ Python 2.4 แล้ว ก็ข้ามส่วนนั้นไปได้เลย สำหรับคนใช้ cygwin เลือกลง gcc, python ได้จากโปรแกรม"
+tag: ["natural-language-processing", "nltk", "python", "wordnet"]
+lang: "en"
+wpid: 692
+---
+<p>Note: This is a unfinished work, will polish it later.<br />
+เข้าค้าง ๆ มานานละ ไม่เสร็จซะที โพสต์ไปก่อนละกัน เดี๋ยวมาแก้ทีหลัง ไม่งั้นลืมแน่</p>
+<p>วิธีติดตั้ง NLTK บน UNIX, Mac OS X, และ cygwin บน Windows<br />
+(ใครมี gcc และ Python 2.4 แล้ว ก็ข้ามส่วนนั้นไปได้เลย<br />
+สำหรับคนใช้ cygwin เลือกลง gcc, python ได้จากโปรแกรม install ของ cygwin เลย)</p>
+<h2>Install gcc</h2>
+<p>As most UNIX systems already has gcc, I will discussed only about Mac OS X<br /> <br />
+(if your system already has gcc (or Xcode), skip this).</p>
+<ol>
+<li>Install <a href="http://developer.apple.com/tools/xcode/">Xcode 1.5</a>, for a latest gcc from Apple.<br />
+(You need an Apple Developer Connection account to download this)</li>
+<li>Check if your gcc need a patch or not.<br />
+At a command line, type <tt>gcc -v</tt><br />
+If the build number is 1666 or lower, you have to install a <a href="http://developer.apple.com/tools/xcode/">November2004gccupdater</a> package to fix Apple&#8217;s gcc bug.</li>
+</ol>
+<h2>Install Python 2.4 and Tkinter</h2>
+<p>If your system already has Python 2.4 (or newer) and a working Tkinter, skip this.<br />
+To test it, read (7).</p>
+<ol start="3">
+<li>Install <a href="http://homepages.cwi.nl/~jack/macpython/beta.html">PantherPythonFix</a></li>
+<li>Install <a href="http://tcltkaqua.sf.net/">Tcl/Tk Aqua</a></li>
+<li>Install <a href="http://python.org/">Python 2.4 for Mac OS X</a> from source
+<ol>
+<li><a href="">download the source code</a></li>
+<li>unzip it</li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install</li>
+</ol>
+</li>
+<li>change Python path and links
+<ol>
+<li>symbolic links</li>
+<li>set PYTHOHPATH in .profile</li>
+<li>test if the default Python is Python 2.4<br /><tt>python -V</tt></li>
+</ol>
+</li>
+<li>test if the Python + Tcl/Tk works?<br />
+   run Example 2-1 of<br />
+   http://www.pythonware.com/library/tkinter/introduction/hello-tkinter.htm</li>
+</ol>
+<h2>Install NLTK</h2>
+<p>read http://nltk.sourceforge.net/install.html</p>
+<ol>
+<li>install <a href="http://www.stsci.edu/resources/software_hardware/numarray">Numarray</a>
+<ol>
+<li>sudo python setup.py install</li>
+</ol>
+</li>
+<li>install <a href="http://nltk.sourceforge.net/">NLTK</a>
+<ol>
+<li>sudo python setup.py install</li>
+</ol>
+</li>
+<li>install <a href="http://nltk.sourceforge.net/">NLTK Data Package</a>
+<ol>
+<li>extract to &#8230;</li>
+<li>change <i>NLTK_CORPORA</i> environment variable in your <i>.profile</i> file to that path</li>
+</ol>
+</li>
+<li>install <a href="http://nltk.sourceforge.net/">NLTK Contributions Package</a> (optional)</li>
+</ol>
+<h2>Install PyWordNet &amp; WordNet</h2>
+<p>UNIX, Mac OS X: Download <a href="http://wordnet.princeton.edu/">WordNet</a> and install it.</p>
+<p>Cygwin: You can install WordNet from the cygwin setup program, it is in <i>Utils</i> category.</p>
+<p>In cygwin, a WNHOME environment variable should be set as /lib/wnres. You can do this by modify the /etc/profile file.</p>
+<p>WNHOME=/lib/wnres<br />
+export WNHOME</p>
+<p>In general case, it may not necessary to do this.<br />
+But if you also has a WordNet for Windows installed (probably in C:\Program Files\WordNet), you have to set WNHOME in cygwin explicitly. Unless the WordNet for Windows&#8217;s WNHOME will confused cygwin&#8217;s WordNet.</p>
+<p>To install PyWordNet, type python setup.py install</p>
+<p>When you import wordnet module, you will see several warnings say:<br />
+<i>Exception exceptions.AttributeError: &#8220;DbfilenameShelf instance has no attribute &#8216;writeback'&#8221; in  ignored.</i><br />
+You haven&#8217;t did anything wrong, <a href="https://sourceforge.net/tracker/index.php?func=detail&#038;aid=1143590&#038;group_id=27422&#038;atid=390153">everybody faces this</a>. May be it will get fixed in next version of PyWordNet.</p>
+

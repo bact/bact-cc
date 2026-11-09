@@ -1,0 +1,98 @@
+[
+ {
+  "id": 3351,
+  "author": "Mk",
+  "url": "",
+  "date": "2009-06-02T14:05:06+07:00",
+  "html": "<p>มาเสริมให้อีกหน่อยครับตัว digital repository อีกตัวที่นิยมคือ Greenstone ถ้าจำไม่ผิด STKS จะใช้ของค่ายนี้ ส่วน DSpace ในไทยจะเป็นของค่าย AITMARC/MODS เมืองไทยมีใช้ที่เดียวคือ มสธ.เรื่องมาตรฐาน คนที่รู้เรื่องนี้ดีมากคนนึงคือ ไกลก้อง ซึ่งเรียนมาทางนี้โดยตรงที่ มสธ. (เคยพาผมกับเก่งไปคุยกับ อ. เขา ก็เยี่ยมมากเช่นกัน) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3352,
+  "author": "Mk",
+  "url": "",
+  "date": "2009-06-02T14:06:30+07:00",
+  "html": "<p>อีกเรื่องคือ projectlib เค้าย้ายที่เป็น libraryhub.in.th แทนละ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3353,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-06-02T19:25:05+07:00",
+  "html": "<p>mk: STKS น่าจะใช้ DSpace เป็น backend แล้วครอบด้วย Koha นะ<a href=\"http://library.stks.or.th:8080/dspace/\" rel=\"nofollow\">http://library.stks.or.th:8080/dspace/</a>Greenstone และ libraryhub เดี๋ยวไปดู แต้งกิ้ว </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3354,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-06-02T19:27:55+07:00",
+  "html": "<p>เหมือน Greenstone จะออกไปทาง digital libraryส่วน DSpace กับ EPrints นั้นเป็น IR(แต่ทาง EPrints ก็บอกว่า DSpace เป็น digital library ถ้าใช้ทำ IR จริง ๆ ต้องปรับจูนอีก) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3355,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-06-02T20:04:17+07:00",
+  "html": "<p>เอ หรือ Koha กับ DSpace ของสวทช. ที่ STKS ทำมันจะต่างคนต่างอยู่ว่า เริ่มไม่ชัวร์ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3356,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-06-05T02:54:45+07:00",
+  "html": "<p>ลืมลิงก์ <strong>Distributed Proofreaders</strong><a href=\"http://www.pgdp.net/c/\" rel=\"nofollow\">http://www.pgdp.net/c/</a>(ขอบคุณ @thai101) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3357,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-06-05T11:57:52+07:00",
+  "html": "<p>follow <a href=\"http://twitter.com/stksthailand\" rel=\"nofollow\">@stksthailand</a> and <a href=\"http://twitter.com/lisnews\" rel=\"nofollow\">LISNews</a> for (digital) library updateslatest update:<a href=\"http://lisnews.org/query_free_federated_search\" rel=\"nofollow\">&ldquo;Query-free&rdquo; federated search</a> </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3358,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-06-07T19:51:53+07:00",
+  "html": "<p>สอนใช้งาน OCRopus<a href=\"http://ocrocourse.iupr.com/\" rel=\"nofollow\">http://ocrocourse.iupr.com/</a>OCRopus รุ่น 0.4 ออกแล้ว ดาวน์โหลดได้ที่เว็บไซต์ OCRopus ครับ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3365,
+  "author": "บุญเลิศ อรุณพิบูลย์",
+  "url": "",
+  "date": "2009-07-16T22:14:50+07:00",
+  "html": "<p>อ่านแล้วขออนุญาตชี้แจงและเสริมดังนี้ครับ</p>\n<p>1) Institutional Repository, Digital Collection, Digital Archives เป็น sub-set ของ Digital Library </p>\n<p>โดย IR เน้นการเก็บเอกสารที่เป็นผลงานทางวิชาการของบุคลากรในสถานบัน (มักเป็นสถาบันการศึกษา) เช่น งานวิจัย วิทยานิพนธ์</p>\n<p>Digital Collection เก็บทุกอย่างที่เป็น Digital Media</p>\n<p>Digital Archives ก็เน้นเก็บเอกสารจดหมายเหตุที่แปลงเป็นดิจิทัลแล้ว</p>\n<p>2) STKS ใช้ Greenstone (GS) ทำ Digital Collection เพื่อทำ LiveDL ให้กับผู้ใช้ที่ไม่พร้อมเรื่องเครือข่าย เพราะจุดเด่น Greenstone คือ Export to DVD ได้เจ๋ง</p>\n<p>และใช้ GS เป็นเครื่องมือประกอบการแนะนำเรืื่องมาตรฐานการเตรียมสื่อดิจิทัล และเมทาดาทา เพราะรองรับเมทาดาทาได้ทุกค่ายที่มี</p>\n<p>3) มสธ. ใช้ Greenstone ทำพิพิธภัณฑ์พระบาทสมเด็จพระปกเกล้า แต่เลือกใช้ MODS/METS เป็นเมทาดาทาแทน DC</p>\n<p>4) STKS ไ่ม่สนับสนุนให้ใช้ DC เพียงเมทาดาทาเดียว ต้องพิจารณาจากลักษณะงานด้วย เช่น ถ้าทำ e-Museum ก็แนะนำให้เลือก CDWA โดยรายละเอียดศึกษาได้จากเว็บ stks ค้น &quot;รอบรู้เมทาดาทา&quot;</p>\n<p>5) STKS ไม่ได้ใช้ DSpace แล้วนำ Koha มาครอบ เพราะเป็นคนละโปรแกรม คนละหลักการบรรณารักษ์</p>\n<p>DSpace เป็นซอฟต์แวร์ในกลุ่ม DL ที่สนับสนุน IR ในขณะที่ Koha เป็นซอฟต์แวร์ในกลุ่ม Automated Library แบบ ILS (Integrated Library System)  เป็นคนละเรื่องกันเลยครับ</p>\n<p>ดังนั้น DSpace ก็ส่วน DSpace และ Koha ก็ส่วน Koha ครับ </p>\n<p>้http://stks.or.th/nstdair เป็น IR ที่ำทำด้วย Dspace</p>\n<p><a href=\"http://stks.or.th/library\" rel=\"nofollow ugc\">http://stks.or.th/library</a> เป็น Automated Libs ที่ทำด้วย Koha ให้บริการยืมคืนหนังสือตัวเล่ม/วารสารของห้องสมุด</p>\n<p>แต่ AIT นำ VuFind มาครอบทั้ง Koha และ DSpace เป็นโครงการ Kids-D</p>\n<p>ประมาณนี้ก่อนนะครับ เพราะอยากให้เนื้อหาสาขาวิชาบรรณารักษ์/สารสนเทศ ไม่เพี้ยนนะครับ</p>\n",
+  "replies": []
+ },
+ {
+  "id": 3366,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2009-07-17T05:33:04+07:00",
+  "html": "<p>ขอนำเนื้อหาที่เขียนใน <a href=\"http://bact.blogspot.com/2009/06/on-various-things-digital-this-and.html\" rel=\"nofollow\"></a><a href=\"http://bact.blogspot.com/2009/06/on-various-thing\" rel=\"nofollow ugc\">http://bact.blogspot.com/2009/06/on-various-thing</a>&#8230; มาชี้แจงครับ   &#8230;เว็บ DegreeTutor แนะนำโอเพ่นซอร์ส ILS (integrated library system) 3 ตัว ได้แก่ Koha, Evergreen ILS, และ VuFind ทุกตัวทำงานกับ OPAC (open public access catalog) ได้หมด : &#8230;.1) OPAC เป็นโมดูลหนึ่งของ ILS (รายละเอียดอ่านได้ที่ stks.or.th/wiki เทคโนโลยีห้องสมุด) 2) Koha, Evergreen เป็น OSS ILS มีความสามารถเท่ากัน3) VuFind ไม่ใช่ ILS แต่เป็น Library Resource Portal ที่มาครอบ ILS เพื่อขยายความสามารถของ OPAC ให้เป็น OPAC 2.04) ดังนั้น Koha, Evergreen และ VuFind ไม่ใช่ทำงานกับ OPAC ได้หมด นะครับ   &#8230;.Koha OPAC รุ่นเล็ก ติดตั้งง่าย มีหลายที่ในเมืองไทยใช้แล้ว เช่น ห้องสมุดดิจิทัลของ STKS (โชว์ในงาน LibCamp), ห้องสมุดวุฒิสภา, ม.อุบลก็กำลังเตรียมใช้, บล็อก STKS สวทช. เขียนถึงเยอะเหมือนกัน&#8230;.1) Koha ไม่ใช่ OPAC รุ่นเล็ก เพราะ Koha เป็น ILS โดย OPAC เป็นโมดูลหนึ่งของ ILS ที่ต้องมี 2) Koha ไม่ใช่รุ่นเล็ก เพราะเทียบเท่ากับ Commercial ILS ระดับ VTLS, InnoPAC, Horizon 3) ILS รุ่นเล็ก คือ OpenBiblio และ PHPMyLibraryตัวช่วยในการ catalog ตอนนี้ STKS กำลังรณรงค์ 2D Barcode (QR Code) (รายละเอียดในเว็บ stks เช่น) โดยคาดหวังว่าสำนักพิมพ์ซึ่งต้องขอ CIP (ค้นจาก stks แล้วกันครับ) จากหอสมุดแห่งชาติ จะต้องพิมพ์นำ CIP มาพิมพ์เป็น 2D Barcode ในหนังสือ พอห้องสมุดได้หนังสือ ก็ยิงด้วย Barcode Reader โปรแกรมก็จะดึงข้้อมูล CIP ที่เป็น 2D Barcode ไป Fill ใน ILS ให้อัตโนมัติ แต่ยังไม่ก้าวเท่าไร เพราะติดที่หอสมุดแห่งชาติ&#8230;..ข้อกำหนดเมตาดาต้าที่ได้รับนิยมนำไปปรับใช้มากที่สุดในเว็บนั้น คือ Dublin Core Metadata Initiative (DMCI) &#8230;..ขณะนี้ DCMI ก็ยอมรับแล้วว่า DC ไม่ใช่มาตรฐานเดียวที่ใช้ได้ มีการทำ Cross กับเมทาดาทาอื่นแล้ว ลองหาอ่านได้จาก DC conference ต่างๆ ได้ครับ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3367,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-07-17T05:41:01+07:00",
+  "html": "<p>ขอบคุณครับที่ชี้แจงจุดที่ยังไม่เข้าใจและไม่แน่ใจหลายประเด็นผมสนใจในแนวของ AIT ที่มีตัวอะไรซักอย่างมาครอบ เพื่อให้ผู้ใช้ค้นหาได้จากอินเทอร์เฟซเดียวไม่ต้องเข้าหลายอันระบบห้องสมุดปัจจุบันของมหาลัยจำนวนมากที่เคยใช้ ผมคิดว่ามันโยนภาระที่ไม่จำเป็นไปให้ผู้ใช้ คือผู้ใช้ต้องทราบว่า สิ่งที่ต้องการจะหา เป็นเอกสารประเภทไหน ถ้าไม่ทราบก็ต้องหามันทีละฐานข้อมูลสำหรับผู้ใช้ที่ต้องการจะหาตามประเด็น ไม่ใช่หาตามประเภทเอกสาร ก็ต้องไล่ทุกฐานข้อมูลเองปัญหาลักษณะเดียวกันนี้พบกับฐานข้อมูลของศูนย์มานุษยวิทยาสิรินธรเช่นกัน คือมีฐานข้อมูลวิจัยตามประเด็นอย่างน้อยหกเจ็ดฐาน มีฐานข้อมูลวิจัยตามลักษณะของทุนวิจัยอีกสี่ฐาน สมมติผู้ใช้ต้องการจะหาข้อมูลเช่นเรื่อง &quot;มอญ&quot; ก็อาจจะต้องค้นในฐานข้อมูลชาติพันธุ์ ฐานข้อมูลมอญศึกษา ฐานข้อมูลงานวิจัยขนาดเล็ก ฯลฯ ซึ่งก็พบว่าไม่สะดวกเท่าไหร่ในมุมมองผู้ใช้ ผมคิดว่าถ้าอินเทอร์เฟซสามารถลดความสะดวกเหล่านั้นไปได้ backend ข้างใต้จะเป็นอะไร หลากหลายเท่าไหน ก็น่าจะไม่มีปัญหาครับทั้งนี้ก็คงจะต้องมี vocaburary เพื่อจะลิงก์เทียบข้อมูลจากฐานที่มีระบบ classification ไม่เหมือนกันด้วย (คล้าย ๆ ontology ในสายเวชสารสนเทศ) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3368,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2009-07-17T14:40:00+07:00",
+  "html": "<p>เห็นด้วยอย่างยิ่งครับ และเป็นความหวังของชาวบรรณารักษ์ด้วยครับที่จะมีเครื่องมือทำ union search ให้เค้าครับผม (เฉพาะหน่วยงานที่เปิดระบบนะครับ เพราะมีอีกเยอะที่ปิดตั้งแต่ใจแล้วครับ) </p>\n",
+  "replies": []
+ }
+]

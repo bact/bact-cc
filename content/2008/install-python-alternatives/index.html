@@ -1,0 +1,41 @@
+---
+title: "install Python alternatives"
+date: "2008-04-14T00:32:00+07:00"
+lastmod: "2008-04-14T00:32:00+07:00"
+type: "post"
+url: "/2008/install-python-alternatives/"
+description: "สวัสดีปีใหม่ — 12-14 เม.ย. ผมและเพื่อน ๆ อยู่ที่ Thai Firefox L10n sprint po2moz ใช้กับ Python 2.5 ไม่ได้ ต้องเป็นรุ่นต่ำกว่านั้น ลง Python (และโปรแกรมอื่น ๆ) หลาย ๆ รุ่นในเครื่อง และวิธีตั้งค่ารุ่นปริยาย ลงที่รุ่นที่อยากได้ apt-get install python2.4 บอกเครื่อง ว่าเรามีหลายรุ่นนะ update-alternatives"
+tag: ["how-to", "linux", "localization", "python", "ubuntu"]
+lang: "th"
+wpid: 2324
+---
+<p><strong>สวัสดีปีใหม่</strong> &mdash; 12-14 เม.ย. ผมและเพื่อน ๆ อยู่ที่ <strong><a href="http://poakpong.com/1130">Thai Firefox L10n sprint</a></strong></p>
+<p><a href="http://translate.sourceforge.net/wiki/toolkit/moz2po">po2moz</a> ใช้กับ Python 2.5 ไม่ได้ ต้องเป็นรุ่นต่ำกว่านั้น</p>
+<p>ลง Python (และโปรแกรมอื่น ๆ) หลาย ๆ รุ่นในเครื่อง และวิธีตั้งค่ารุ่นปริยาย</p>
+<p>ลงที่รุ่นที่อยากได้</p>
+<pre>
+apt-get install python2.4
+</pre>
+<p>บอกเครื่อง ว่าเรามีหลายรุ่นนะ</p>
+<pre>
+update-alternatives --install /usr/lib/python python /usr/lib/python2.3 9
+update-alternatives --install /usr/lib/python python /usr/lib/python2.4 5
+update-alternatives --install /usr/lib/python python /usr/lib/python2.5 1
+</pre>
+<p>(&#8211;install ลิงก์คำสั่งปริยาย ชื่อคำสั่ง ลิงก์ไปหารุ่นที่ระบุ ลำดับความสำคัญ)</p>
+<p>จากนั้นก็เลือกรุ่นที่อยากใช้</p>
+<pre>
+update-alternatives --config python
+</pre>
+<p>จะเมนูขึ้น เลือก</p>
+<hr />
+<p>เอามาจาก <a href="http://ubuntuforums.org/archive/index.php/t-315362.html">Ubuntu Forums</a> อีกแล้ว</p>
+<hr />
+<p><strong>***</strong> ในเวลาเดียวกันนี้ ที่ IRC ห้อง #tlwg <a href="irc://irc.linux.in.th#tlwg">irc://irc.linux.in.th#tlwg</a> ก็มี <strong>OSS glossary sprint</strong> ด้วย &mdash; จัดการเก็บกวาด <a href="http://www.opentle.org/ossglossary/">คลังศัพท์กลาง Glossary for Open Source Software</a> ไปแจมกันได้</p>
+<p>รายละเอียด ข้อมูลเกี่ยวกับการแปล/localization ดูได้ที่ <a href="http://l10n.opentle.org/">l10n.opentle.org</a></p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/Ubuntu" rel="tag">Ubuntu</a>,<br />
+<a href="http://technorati.com/tag/Linux" rel="tag">Linux</a>,<br />
+<a href="http://technorati.com/tag/Python" rel="tag">Python</a><br />
+</small></p>
+

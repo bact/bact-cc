@@ -1,0 +1,16 @@
+---
+title: "Co-Occurrence Constraints in RELAX NG"
+date: "2005-07-28T19:28:00+07:00"
+lastmod: "2005-07-28T19:28:00+07:00"
+type: "post"
+url: "/2005/co-occurrence-constraints-in-relax-ng/"
+description: "วิธีกำหนดเงื่อนไข &ldquoปรากฏร่วม” ใน RELAX NG: ถ้าค่าของโหนดนี้ เป็นแบบนี้ ตัวข้อมูลที่เหลือจะต้องเป็นแบบนี้ … เช่น ในอิลิเมนต์ person ถ้าเกิดแอตทริบิวต์ type มีค่าเป็น “author” ตัวอิลิเมนต์ person จะต้องมีอิลิเมนต์ลูก ชื่อ dead ด้วยนะ; แต่ถ้าแอตทริบิวต์ type มีค่าเป็น “character” ตัวอิลิเมนต์ลูกที"
+tag: ["relax-ng", "schema", "xml"]
+lang: "th"
+wpid: 920
+---
+<p><a href="http://books.xmlschemata.org/relaxng/relax-CHP-7-SECT-2.html">วิธีกำหนดเงื่อนไข &#038;ldquoปรากฏร่วม&rdquo;</a> ใน <a href="http://en.wikipedia.org/wiki/RELAX_NG">RELAX NG</a>: ถ้าค่าของโหนดนี้ เป็นแบบนี้ ตัวข้อมูลที่เหลือจะต้องเป็นแบบนี้ &#8230; เช่น ในอิลิเมนต์  <em>person</em> ถ้าเกิดแอตทริบิวต์ <em>type</em> มีค่าเป็น &ldquo;author&rdquo; ตัวอิลิเมนต์ <em>person</em> จะต้องมีอิลิเมนต์ลูก ชื่อ <em>dead</em> ด้วยนะ; แต่ถ้าแอตทริบิวต์ <em>type</em> มีค่าเป็น &ldquo;character&rdquo; ตัวอิลิเมนต์ลูกที่ต้องมี ก็จะเปลี่ยนไป</p>
+<p>เงื่อนไขลักษณะนี้ ทำด้วย DTD ไม่ได้เลย. ส่วน W3C XML Schema นี่ พอทำได้บ้าง แต่ยุ่งยาก</p>
+<p>คำถามก็คือ แล้วทำไมไม่สร้างอิลิเมนต์แยกกันไปเลยล่ะ ? -_-&#8221; อย่างในตัวอย่างข้างบน ก็ทำเป็นสองอิลิเมนต์ไปเลย ก็น่าจะได้รึเปล่า ? หรือว่าทำแบบนี้แล้ว มันทำให้ดูทั่ว ๆ ไป (generic) มากขึ้น ?</p>
+<p>อันนี้ก็ต้องแล้วแต่คนออกแบบ schema แล้วล่ะ ว่าจะเอาไง. ตัว <a href="http://www.cobase.cs.ucla.edu/tech-docs/dongwon/ucla-200008.html">schema language</a> (อย่าง Relax NG) นั้น เปิดช่องให้ทำได้, แต่จะทำไม่ทำก็แล้วแต่.</p>
+

@@ -1,0 +1,43 @@
+---
+title: "Gant – Groovy Ant"
+date: "2007-12-05T12:20:00+07:00"
+lastmod: "2007-12-05T12:20:00+07:00"
+type: "post"
+url: "/2007/gant-groovy-ant/"
+description: "“A Groovy-based build system that uses Ant tasks, but no XML.” Gant เป็นเครื่องมือประกอบสร้างซอฟต์แวร์ (build system) ที่ใช้ Ant ทำงาน และใช้ภาษา Groovy กำหนดค่าต่าง ๆ (แทนที่จะใช้ภาษา XML) ตัวอย่าง (จากเว็บไซต์ Gant): includeTargets"
+tag: ["ant", "groovy", "programming"]
+lang: "th"
+wpid: 2221
+---
+<blockquote cite="http://gant.codehaus.org/">
+<p>&ldquo;A Groovy-based build system that uses Ant tasks, but no XML.&rdquo;</p>
+</blockquote>
+<p><a href="http://gant.codehaus.org/">Gant</a> เป็นเครื่องมือประกอบสร้างซอฟต์แวร์ (build system) ที่ใช้ Ant ทำงาน และใช้ภาษา Groovy กำหนดค่าต่าง ๆ (แทนที่จะใช้ภาษา XML)</p>
+<p>ตัวอย่าง (จากเว็บไซต์ Gant):</p>
+<p><code></p>
+<pre>
+includeTargets < < gant.targets.Clean
+cleanPattern << [ '**/*~' ,  '**/*.bak' ]
+cleanDirectory << 'build'
+
+target ( 'default' : 'The default target.' ) {
+  println ( 'Default' )
+  depends ( clean )
+  Ant.echo ( message : 'A default message from Ant.' )
+  otherStuff ( )
+}
+
+target ( otherStuff : 'Other stuff' ) {
+  println ( 'OtherStuff' )
+  Ant.echo ( message : 'Another message from Ant.' )
+  clean ( )
+}
+</pre>
+<p></code></p>
+<p>แนวการพัฒนาของ Groovy/Grails อย่างหนึ่งที่ต่างจาก Ruby/Rails ที่พอสังเกตได้ก็คือ Groovy/Grails จะพยายามใช้/หรือทำงานร่วมกับเครื่องมือ/ไลบรารีที่มีอยู่แล้ว เช่น Jetty, Hibernate หรือกรณี Ant ในที่นี้ (ซึ่งแต่ละแนวก็มีข้อดีข้อด้อยต่างกัน)</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/Ant" rel="tag">Ant</a>,<br />
+<a href="http://technorati.com/tag/Gant" rel="tag">Gant</a>,<br />
+<a href="http://technorati.com/tag/Groovy" rel="tag">Groovy</a><br />
+</small></p>
+

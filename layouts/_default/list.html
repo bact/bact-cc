@@ -1,0 +1,6 @@
+{{ define "main" }}
+<h1>{{ if eq .Kind "term" }}{{ if eq .Data.Plural "tag" }}Tag: {{ else }}On: {{ end }}{{ end }}{{ .Title }}</h1>
+{{ with .Description }}<p>{{ . }}</p>{{ end }}
+{{ range (.Paginate .Pages.ByDate.Reverse).Pages }}{{ partial "summary.html" . }}{{ end }}
+{{ partial "pagination.html" . }}
+{{ end }}

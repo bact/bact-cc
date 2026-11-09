@@ -1,0 +1,18 @@
+---
+title: "Charset in MySQL 5"
+date: "2005-11-14T19:37:00+07:00"
+lastmod: "2005-11-14T19:37:00+07:00"
+type: "post"
+url: "/2005/charset-in-mysql-5/"
+description: "MySQL 5 – Connection Character Sets and Collations มีปัญหา จะใช้ PEAR::MDB2 อ่านข้อความ utf-8 จาก MySQL (โพสต์ไว้ที่ Narisa.com) ปรากฏว่าข้อความ(ภาษาไทย, ภาษา non-Latin1)กลายเป็น ??? หมดเลย หาในเน็ตอยู่นาน ปรากฏว่า ต้องเพิ่มคำสั่งนี้เข้าไปก่อนจะเริ่ม query SELECT $db->query(“SET CHARACTER SET utf8”)"
+tag: ["character-set", "mysql", "php", "thai", "utf-8"]
+lang: "th"
+wpid: 1065
+---
+<p>MySQL 5 &#8211; <a href="http://dev.mysql.com/doc/refman/5.0/en/charset-connection.html">Connection Character Sets and Collations</a></p>
+<p>มีปัญหา จะใช้ <a href="http://pear.php.net/package/MDB2/">PEAR::MDB2</a> อ่านข้อความ utf-8 จาก MySQL (โพสต์ไว้ที่ <a href="http://www.narisa.com/forums/index.php?showtopic=9800">Narisa.com</a>) ปรากฏว่าข้อความ(ภาษาไทย, ภาษา non-Latin1)กลายเป็น ??? หมดเลย</p>
+<p>หาในเน็ตอยู่นาน ปรากฏว่า ต้องเพิ่มคำสั่งนี้เข้าไปก่อนจะเริ่ม query SELECT</p>
+<p><code>$db->query("SET CHARACTER SET utf8");</code></p>
+<p>แต่ทำแบบนี้ก็กลายเป็นว่า ไม่รู้จะใช้ MDB2 (database abstraction layer) ไปทำไม เพราะ query นี้มันมีเฉพาะ MySQL ! 🙁</p>
+<p>มีคนแจ้ง <a href="http://pear.php.net/bugs/bug.php?id=4666">&ldquo;บั๊ก&rdquo;</a> (ขอเพิ่มฟีเจอร์) ไว้แล้ว</p>
+

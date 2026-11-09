@@ -1,0 +1,11 @@
+{{- /* Archived WordPress comments (static, read-only). Context: dict "nodes" ... */ -}}
+<ol class="comments">
+{{ range .nodes }}
+  <li id="comment-{{ .id }}">
+    <p class="meta"><strong>{{ if .url }}<a href="{{ .url }}" rel="nofollow ugc noopener">{{ .author }}</a>{{ else }}{{ .author }}{{ end }}</strong>
+      · <a href="#comment-{{ .id }}"><time datetime="{{ .date }}">{{ (time.AsTime .date).Format "2 Jan 2006" }}</time></a></p>
+    <div class="comment-body">{{ .html | safeHTML }}</div>
+    {{ if .replies }}{{ partial "comments.html" (dict "nodes" .replies) }}{{ end }}
+  </li>
+{{ end }}
+</ol>

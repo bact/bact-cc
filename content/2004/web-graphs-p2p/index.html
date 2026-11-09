@@ -1,0 +1,26 @@
+---
+title: "Web Graphs and P2P"
+date: "2004-01-13T01:38:00+07:00"
+lastmod: "2011-05-10T20:33:01+07:00"
+type: "post"
+url: "/2004/web-graphs-p2p/"
+description: "Web Graphs All people in computer science and some fields of engineering (e.g. industrial engineering?) are very familiar with “Graphs” — those nodes and arcs. And, actually, we can represent the web as a [huge] graph. Where node=webpage, arc=(hyper)link. From this representation, it gives us a way "
+categories: ["informatics", "internet"]
+tag: ["graphs", "p2p", "search-engines", "web", "whatwewant"]
+lang: "en"
+wpid: 37
+---
+<p><strong>Web Graphs</strong></p>
+<p>All people in computer science and some fields of engineering (e.g. industrial engineering?) are very familiar with &#8220;Graphs&#8221; &#8212; those nodes and arcs. And, actually, we can represent the web as a [huge] graph. Where node=webpage, arc=(hyper)link.</p>
+<p>From this representation, it gives us a way to understand the characteristic of the web better (as we do well with normal graphs).</p>
+<p><a href="http://www9.org/w9cdrom/160/160.html">graph structure in the web</a> | <a title="C. Cooper, A. M. Frieze. (2001), A general model of web graphs" href="http://www.dcs.kcl.ac.uk/staff/ccooper/store/ESA2001.ps">web graph</a> | <a href="http://www.dcs.kcl.ac.uk/staff/ccooper/papers.html">more on web graph</a></p>
+<p><strong>Peer-to-Peer</strong></p>
+<p>Talking about representing document/site as a node in a graph, <a title="P2P" href="http://www.openp2p.com/">Peer-to-Peer</a> people already done this since their early day.</p>
+<p>Making it more relevant to this blog, one of the most popular P2P application is obviously an IR-like system &#8212; search for mp3 song or DivX movie, given a title or singer&#8217;s name.</p>
+<p>Searching things on P2P network is not like a traditional search engine searching its database (which is a snapshot of a part of the web at a particular time, collected by spiders/web spiders).</p>
+<p>Rather, the P2P search visits each node, doing searching in that node, jump to other node .. and so on, in &#8220;real time&#8221;. Clearly, it is impossible to visits every nodes in the network, there are just too many nodes out there. To decide which node it will make a visit or not, it needs a routing algorithm.</p>
+<p>As a result, we can simplified a search problem in P2P network as a routing problem, loosely.</p>
+<p>[ to find a document is to find a way to that document ]</p>
+<p>There are even some more advance routing algorithm that use <a title="Arturo Crespo, Hector Garcia-Molina (2002), Semantic Overlay Networks for P2P Systems" href="http://citeseer.nj.nec.com/garcia02semantic.html">semantics</a>!</p>
+<p><span style="color: #666666;"><strong>bact&#8217;:</strong> I used to think about using NLP with P2P routing. But it just &#8220;thinking&#8221; anyway, never do .. lazy me 🙁</span></p>
+

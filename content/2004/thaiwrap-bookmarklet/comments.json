@@ -1,0 +1,66 @@
+[
+ {
+  "id": 378,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-12-02T18:46:00+07:00",
+  "html": "<p>ชอบมากๆ :)ทำเป็น extension ให้รันเองนี่จะเป็นไปได้รึเปล่า?ไม่งั้นเราอาจจะลองดึง javascript ออกมาแล้วเรียกใช้ด้วย body onload=&quot;&quot; คนดูจะได้เห็นทุกคน มันทำได้มั๊ยอ่ะ?chris </p>\n",
+  "replies": []
+ },
+ {
+  "id": 379,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-12-03T05:20:00+07:00",
+  "html": "<p>ใช้เป็น onload ก็น่าจะได้นะเรื่องทำ extension นี่ทำไม่เป็น 😛 </p>\n",
+  "replies": []
+ },
+ {
+  "id": 380,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-12-03T21:30:00+07:00",
+  "html": "<p>T_T ใช้กับ Opera ไม่ได้Oakyman </p>\n",
+  "replies": []
+ },
+ {
+  "id": 381,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-12-05T08:28:00+07:00",
+  "html": "<p>มันว่ายังไงบ้างครับ? </p>\n",
+  "replies": []
+ },
+ {
+  "id": 389,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-12-06T15:07:00+07:00",
+  "html": "<p>ไม่ว่ายังไงเลยครับเหมือนไม่มีอะไรเกิดขึ้นอ้อๆ เพิ่งเปิด JavaScript Console มาดูครับนี่ครับ (ยาวหน่อยนะครับ)Javascript URL thread: &quot;javascript:thaiWrap();&quot;Error:name: SyntaxErrormessage: Statement on line 44: RegExp.prototype.compile: syntax error in pattern or stringBacktrace:  Line 44 of inline#1 script in &lt;a href=&quot;<a href=\"http://siit.net/members/art/thaiwrap.htmlhttp://siit.net/members/art/thaiwrap.html&lt;br\" rel=\"nofollow ugc\">http://siit.net/members/art/thaiwrap.htmlhttp://siit.net/members/art/thaiwrap.html&lt;br</a> /&gt;    r[6] = RegExp(&quot;([u0e30u0e32-u0e3a])(?=.([u0e30-u0e3ax00e47u0e4e]))&quot;);  Line 1 of unknown script     thaiWrap(); </p>\n",
+  "replies": []
+ },
+ {
+  "id": 392,
+  "author": "poonlap",
+  "url": "",
+  "date": "2004-12-07T04:13:00+07:00",
+  "html": "<p>ผมเอาลองเอาโค้ดไปใช้ในบล็อก, ทำเป็นลิงค์ไว้ครับ. ขอบคุณครับ. </p>\n",
+  "replies": []
+ },
+ {
+  "id": 393,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-12-07T05:35:00+07:00",
+  "html": "<p>เอาเลยครับ / ขอบคุณครับ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 818,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2005-07-02T02:44:00+07:00",
+  "html": "<p>มีคนเอาไปทำเป็น User JavaScript ของ Opera แล้วนะครับตามลิงก์ที่<a href=\"http://siit.net/members/art/thaiwrap.html\" rel=\"nofollow\">ThaiWrap bookmarklet</a>รอคนเอาไปทำเป็น greasemonkey อยู่ 😛 </p>\n",
+  "replies": []
+ }
+]

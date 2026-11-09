@@ -1,0 +1,30 @@
+---
+title: "burn a bootable (live) USB drive on Mac OS X"
+date: "2011-04-27T16:00:36+07:00"
+lastmod: "2011-05-05T12:01:13+07:00"
+type: "post"
+url: "/2011/burn-bootable-usb-mac/"
+description: "เบิร์นแผ่นติดตั้งอูบุนตูลงไดรฟ์ยูเอสบี ให้บูตจากยูเอสบีได้ ด้วยแมค ผมไม่ประสบความสำเร็จในการใช้ Disk Utility (GUI) ของ Mac OS X ในการ burn bootable USB สำหรับติดตั้ง Ubuntu (เท่าที่ค้นดูในเน็ต ก็ไม่ค่อยมีใครประสบความสำเร็จ ไม่รู้ทำไม) ถ้าอยู่บน Windows หรือ Linux จะมีโปรแกรมสุดง่าย ชื่อ UNetbootin ใ"
+categories: ["computer"]
+tag: ["how-to", "mac-os-x", "ubuntu"]
+lang: "th"
+wpid: 2498
+---
+<p><em>เบิร์นแผ่นติดตั้งอูบุนตูลงไดรฟ์ยูเอสบี ให้บูตจากยูเอสบีได้ ด้วยแมค</em></p>
+<p>ผมไม่ประสบความสำเร็จในการใช้ <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Disk_Utility">Disk Utility</a> (GUI) ของ Mac OS X ในการ burn bootable USB สำหรับติดตั้ง <a href="http://www.ubuntu.com/netbook/get-ubuntu/download" title="Ubuntu Netbook Edition">Ubuntu</a> (เท่าที่ค้นดูในเน็ต ก็ไม่ค่อยมีใครประสบความสำเร็จ ไม่รู้ทำไม)</p>
+<p>ถ้าอยู่บน Windows หรือ Linux จะมีโปรแกรมสุดง่าย ชื่อ <a href="http://unetbootin.sourceforge.net/">UNetbootin</a> ให้ใช้ .. แต่บน Mac มันไม่มี</p>
+<p>เลยใช้ diskutil + dd ทางคอมมานด์ไลน์ละกัน<br />
+วิธีทั้งหมดดูได้จาก <a href="http://www.webupd8.org/2009/04/4-ways-to-create-bootable-live-usb.html">4 ways to create bootable Live USB (Windows, Linux, Mac OS X)</a></p>
+<ol>
+<li>เตรียมแฟ้มอิมเมจมาก่อน .iso หรือ .img</li>
+<li>ที่ Terminal สั่ง<br />
+<code>diskutil list</code><br />
+ดูว่าไดร์ฟยูเอสบีเรา mount เชื่อมอยู่ตรงไหน (เช่น /dev/disk1) &#8211; อาจจะดูจากชื่อหรือขนาด &#8211; ถ้าไม่ชัวร์ ก็ถอดยูเอสบีออกมาก่อน แล้ว diskutil list ดูทีนึง แล้วเสียบ USB เข้าไป แล้ว diskutil list ดูอีกที ดูว่ามันมีอะไรเพิ่มมา</li>
+<li><code>diskutil unmountDisk /dev/disk<em>N</em></code><br />
+(N ตัวสุดท้ายนี่ แล้วแต่ว่าไดร์ฟเราอยู่ที่ไหน)</li>
+<li><code>sudo dd if=/path/to/image.iso of=/dev/diskN bs=1m</code><br />
+(if= คือแฟ้มอิมเมจ of= คือไดร์ฟยูเอสบี)</li>
+<li><code>diskutil eject /dev/diskN</code><br />
+แล้วก็ถอดไดร์ฟยูเอสบีออกได้ &#8211; เสร็จ</li>
+</ol>
+

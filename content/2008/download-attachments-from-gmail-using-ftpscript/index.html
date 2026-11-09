@@ -1,0 +1,107 @@
+---
+title: "download attachments from Gmail using FTP/script"
+date: "2008-09-21T13:33:00+07:00"
+lastmod: "2011-01-12T04:12:40+07:00"
+type: "post"
+url: "/2008/download-attachments-from-gmail-using-ftpscript/"
+description: "(เอ เรามี Python66 ป่าวหว่า ? แบบอันนี้เขียนลง Django66 ได้ป่ะ ?) สรุปว่าเอาไปลง Pylons66 ครับ ดาวน์โหลดแฟ้มจาก Gmail ด้วย FTP (หรือสคริปต์) ง่าย ๆ ไม่ซับซ้อน แค่เรียกตัว ftp daemon (Gmail-FTP proxy) ให้ทำงาน, แล้วก็ใช้โปรแกรม FTP อะไรก็ได้ไปดึงแฟ้มมา. โดยแฟ้มที่จะดึงมาได้นั้น จะต้องเป็นแฟ้มแนบ (att"
+tag: ["gmail", "programming", "python"]
+lang: "th"
+wpid: 2394
+---
+<p><em>(เอ เรามี Python66 ป่าวหว่า ? แบบอันนี้เขียนลง <a href="http://django66.com/">Django66</a> ได้ป่ะ ?)</em><br />
+สรุปว่าเอาไปลง <a href="http://www.pylons66.com/blog/?p=11">Pylons66</a> ครับ</p>
+<p>ดาวน์โหลดแฟ้มจาก Gmail ด้วย FTP (หรือสคริปต์)</p>
+<p>ง่าย ๆ ไม่ซับซ้อน แค่เรียกตัว ftp daemon (Gmail-FTP proxy) ให้ทำงาน, แล้วก็ใช้โปรแกรม FTP อะไรก็ได้ไปดึงแฟ้มมา.<br />
+โดยแฟ้มที่จะดึงมาได้นั้น จะต้องเป็นแฟ้มแนบ (attachment) ที่อยู่ในจดหมายที่ติดป้ายว่า &lsquo;ftp&rsquo;.</p>
+<p>ตัวโปรแกรม ftp daemon ที่ว่านี้ คือสคริปต์ไพธอน (Python) เล็ก ๆ ที่ชื่อว่า gmailftpd.py<br />
+มันอยู่ในแพคเกจ <a href="http://sourceforge.net/project/showfiles.php?group_id=113492">libgmail-docs</a> ของ <strong><a href="http://libgmail.sourceforge.net/">libgmail</a>.</strong></p>
+<p>ก่อนจะใช้งาน gmailftpd นี้ เราจำเป็นต้องมี libgmail กับ <a href="http://wwwsearch.sourceforge.net/mechanize/">mechanize</a> ลงอยู่ในเครื่องก่อน.<br />
+ถ้าใช้ Ubuntu/Debian ก็สั่ง sudo apt-get install python-libgmail python-mechanize ได้เลย.</p>
+<p>วิธีใช้งาน เราก็เรียก ftp daemon ขึ้นมาก่อน ให้มันทำหน้าที่เป็นเซิร์ฟเวอร์.<br />
+เรียกใช้ gmailftpd.py โดยสั่ง python gmailftpd.py ได้เลย.</p>
+<p>หลังเรียกให้ ftp daemon ทำงานแล้ว หน้าจอจะประมาณด้านล่าง &#8211; จะเห็นว่ามันจะไม่ทำอะไรต่อ จนกว่าจะมี client ติดต่อเข้ามา:</p>
+<p>หน้าจอฝั่งแม่ข่าย (ftp daemon &#8211; gmailftpd)</p>
+<pre>
+bact@edin:~/libgmail$ python demos/gmailftpd.py
+FTPServer started at Sun Sep 21 12:32:39 2008
+        Local addr: ('127.0.0.1', 8021)
+</pre>
+<p>ทีนี้ถ้าเราอยากจะได้แฟ้มอะไรจาก Gmail ก็ใช้โปรแกรม FTP เรียกไปที่ไอพี 127.0.0.1 (localhost) พอร์ต 8021.</p>
+<p>ในทีนี้จะใช้ wget เพราะสะดวกดี. วิธีใช้ wget คร่าว ๆ ก็คือ <em>wget &#8211;user=ชื่อผู้ใช้ &#8211;password=รหัสผ่าน -c โปรโตคอล://ที่อยู่:พอร์ต/ชื่อแฟ้ม</em> เจ้า -c นี่ใส่ไปให้มันโหลดต่อให้ กรณีหลุดกลางทาง จะได้ไม่ต้องเริ่มใหม่หมด.</p>
+<p>หลังจากเรียก wget มันก็จะทำอะไรไปตามเรื่องตามราว ประมาณหน้าจอนี้:</p>
+<p>หน้าจอฝั่งลูกข่าย (ftp client &#8211; wget)</p>
+<pre>
+bact@edin:~/test$ wget --user=uabc --password=pxyz -c ftp://127.0.0.1:8021/anthro.txt
+--12:35:55--  ftp://127.0.0.1:8021/anthro.txt
+           => `anthro.txt'
+Connecting to 127.0.0.1:8021... connected.
+Logging in as uabc ... Logged in!
+==> SYST ... 
+Server error, can't determine system type.
+==> PWD ... done.
+==> TYPE I ... done.  ==> CWD not needed.
+==> PASV ... done.    ==> RETR anthro.txt ... done.
+
+    [     < =>                             ] 375           94.27B/s             
+
+12:36:03 (94.25 B/s) - `anthro.txt' saved [375]
+
+bact@edin:~/test$ 
+</pre>
+<p>ลอง ls ดู ก็จะเห็นว่าได้แฟ้มมาตามที่ต้องการแล้ว:</p>
+<pre>
+bact@edin:~/test$ ls -la anthro.txt 
+-rw-r--r-- 1 arthit arthit 375 2008-09-21 12:36 anthro.txt
+</pre>
+<p>ทีนี้ฝั่งเซิร์ฟเวอร์แม่ข่าย เขาทำอะไรกัน ลองไปดู:</p>
+<p>หน้าจอฝั่งแม่ข่าย (ftp daemon &#8211; gmailftpd) ระหว่างที่ลูกข่าย (ftp client) ติดต่อเข้ามา</p>
+<pre>
+<font color="grey">bact@edin:~/libgmail$ python demos/gmailftpd.py
+FTPServer started at Sun Sep 21 12:32:39 2008
+        Local addr: ('127.0.0.1', 8021)</font>
+
+Incoming connection from ('127.0.0.1', 57054)
+Peer: ('127.0.0.1', 57054)
+Data: 'USER uabc'
+Data: 'PASS pxyz'
+Data: 'SYST'
+Data: 'PWD'
+Data: 'TYPE I'
+Data: 'PASV'
+DataChannel started at Sun Sep 21 12:35:59 2008
+        Local addr: ('127.0.0.1', 9021)
+
+Data: 'RETR anthro.txt'
+Reading `anthro.txt`.
+</pre>
+<p>จะเห็นว่าตัวแม่ข่ายหรือ gmailftpd มันได้รับชื่อผู้ใช้รหัสผ่านจากลูกข่ายหรือ wget, ซึ่ง gmailftpd มันจะเอาข้อมูลนี้ไปล็อกอิน &mdash; ตาม API คือใช้ ga.login() โดย ga เป็นออบเจกต์ของคลาส GmailAccount ที่สร้างโดย ga = libgmail.GmailAccount(username, password) ) &mdash; จากนั้นก็หาแฟ้มที่ร้องขอ, และส่งไปให้ลูกข่าย</p>
+<p>อยากรู้ว่ามันหาแฟ้มได้ยังไง ก็ต้องไปดูในโค้ด gmailftpd.py ตรงเมธอด get_filelist().</p>
+<pre>
+    def get_filelist(self):
+        r = self.ga.getMessagesByLabel('ftp')
+        for th in r:
+            for m in th:
+                for a in m.attachments:
+                    self.filenames[a.filename] = a
+</pre>
+<p>คือมันใช้เมธอด getMessagesByLabel() ของคลาส GmailAccount เพื่อหาเฉพาะอีเมลฉบับที่ติดป้ายว่า &lsquo;ftp&rsquo;, พอได้ผลลัพธ์มาแล้วก็วนลูป for ไปเพื่อเก็บชื่อแฟ้มทั้งหมด</p>
+<p>ในโค้ด: r คือ ออบเจกต์ของ GmailSearchResult ซึ่งจะประกอบด้วยชุดของ threads, th คือ thread, m คือ message, a คือ attachment</p>
+<p>ถ้าอยากให้มันไปดึงจากที่อื่นมาด้วย ก็แก้ตรงนี้ได้ เช่นเอาจากโฟลเดอร์ก็ใช้ getMessagesByFolder() แต่ระวังมันเยอะเกินละกัน.</p>
+<p>เท่าที่ลองกับสองแฟ้ม พบว่า แฟ้มเล็ก ๆ น่าจะสบาย ๆ, แต่กับแฟ้มขนาดใหญ่ (6.4 MB) จะมีปัญหา โหลดไม่ได้ คือ gmailftpd มันจะฟ้อง exception ซะเฉย ๆ แล้วก็ไม่ทำอะไรต่อ &mdash; ไม่แน่ใจว่าเป็นเพราะตัวแฟ้มไม่ดีเองรึเปล่า error message มันฟ้องเกี่ยวกับ decode อะไรซักอย่าง อ่านไม่รู้เรื่อง :p</p>
+<blockquote>
+<p>error: uncaptured python exception, closing channel <__main__ .FTPChannel connected 127.0.0.1:43982 at 0xb7d102ec> (<type 'exceptions.UnicodeDecodeError'>:&#8217;utf8&#8242; codec can&#8217;t decode byte 0xac in position 11: unexpected code byte [/usr/lib/python2.5/asyncore.py|read|68] [/usr/lib/python2.5/asyncore.py|handle_read_event|390] [/usr/lib/python2.5/asynchat.py|handle_read|137] [demos/gmailftpd.py|found_terminator|106] [demos/gmailftpd.py|ftp_RETR|181] [demos/gmailftpd.py|handle_RETR|313] [/home/arthit/dev/libgmail/libgmail.py|_getContent|1507] [/home/arthit/dev/libgmail/libgmail.py|_retrievePage|358] [/usr/lib/python2.5/encodings/utf_8.py|decode|16])</type></__main__></p>
+</blockquote>
+<p>การประยุกต์ใช้ ทำได้หลากหลายมาก แล้วแต่จินตนาการเลย<br />
+เช่น อาจเขียนสคริปต์ให้มันดาวน์โหลดแฟ้มแนบใหม่ ๆ มาเก็บไว้ในเครื่องเราไว้<br />
+หรือให้ดาวน์โหลดแฟ้มแนบ .pdf จากอีเมลหรือหัวข้อที่กำหนด (เช่นโจทย์การบ้านจากอาจารย์) หรือเอาเฉพาะ .mp3</p>
+<p>วิธีทำ อาจจะใช้เชลล์สคริปต์ไปเรียก ftp ผ่าน gmailftpd ก็ได้, หรือจะเขียนไพธอนไปเลยก็ได้ เท่าที่ดู API ของ libgmail มันก็น่าเล่นอยู่.<br />
+ทั้งนี้ยังสามารถผสมกับการตั้งค่า filter ใน Gmail ได้ด้วย, คือถ้าคิดว่าแก้สคริปต์มันยุ่งเกิน ก็ไปตั้งค่า filter ใน Gmail ก็ได้ แล้วก็ให้มันติดป้ายอัตโนมัติ, จากนั้นก็ไปแก้เมธอด get_filelist() นิดหน่อย ให้มันดึงจากป้ายที่เราอยากได้.</p>
+<p>และ libgmail นี่ทำได้มากกว่าดาวน์โหลดแฟ้มแนบนะ ลองเล่นดู มีอะไรน่าสนก็บอกกันมั่ง 🙂</p>
+<p>(สุดท้ายก็ยังหาวิธีดาวน์โหลดเจ้าแฟ้ม 6.4 MB นั่นออกมาไม่ได้ ทำไงดีเนี่ย&#8230;. เน็ตก็ห๊วยห่วย &#8211; -&#8220;)</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/libgmail" rel="tag">libgmail</a>,<br />
+<a href="http://technorati.com/tag/Gmail" rel="tag">Gmail</a>,<br />
+<a href="http://technorati.com/tag/ftp" rel="tag">ftp</a><br />
+</small></p>
+

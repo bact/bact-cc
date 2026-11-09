@@ -1,0 +1,50 @@
+[
+ {
+  "id": 224,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2004-08-17T17:41:00+07:00",
+  "html": "<p>Sawasdee Krub Khun bact,I am a regular (but not too often) browser of the Planet TLWG. Just today I encountered your comment, which hits my interest.To quote part of your posting :-&quot; ใครทำเรื่อง information retrieval/extraction หรือ lexical chain, coreference resolution พวกนี้ ก็เอาไปคิดต่อกันเองนะครับ 😉 &quot;I am interested in that, although I am not a programmer, rather a Molecular Biologist who just know a bit of Perl, some Java, just to play around with the  &quot;GATC&quot; text of the genomes.Can you kindly help me clarifying the terms &quot;lexical chain, coreference resolution&quot; a bit, or point me to some websites ?  I am interested in Thai language since I see (continuous) similarity of the laguages of the genetic codes and Thai.Thanks,Burachai <a href=\"mailto:[email hidden]@yahoo.com\">[email hidden]@yahoo.com</a> </p>\n",
+  "replies": []
+ },
+ {
+  "id": 225,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-08-18T02:33:00+07:00",
+  "html": "<p>&#039;lexical chain&#039; is a kind of &#039;data structure&#039; that try to represent a topic talking in a document na&#039; krub.by picking up one keyword and then finding for another word that related to the first one, link them together, and finding for next word .. in the end we will come up with a chain of related words. in other words, we can say that this chain represent a topic of interest in that document. there is possible, and normally it is, more than one chain for a given document.just try to google &quot;lexical chain&quot; krub :)&#8212;-litterally, &quot;coreference resolution&quot; is a technique to resolve &#039;coreferences&#039;.one normal type of coreferences is those of &quot;he, she, it, they&quot;.given two sentences:I don&#039;t like winter. It is cold.if we like to understand the second one,we have to know what is &quot;It&quot;.&#8211;&gt; so we will get &quot;Winter is cold.&quot;.this is what coreference resolution is for.the case given above is quite simple(&quot;It&quot; = last noun seen),but not for the two below:John borrow a book from Tim. He don&#039;t have it.John borrow a book from Tim. He don&#039;t use it.How can we know that what &quot;He&quot; represents?assume that both John and Tim are male.He = John?He = Tim?&#8230; quite interesting? :)There are also other coreferences more than &quot;he, she, it..&quot;.Like this example,Arsenal denies Viera move. The team&#039;s manager said on &#8230;.How can we know that &quot;The team&quot; is represent &quot;Arsenal&quot; ?(we have to have a &#039;world knowledge&#039; that Arsenal is a (football) team first. then some English language knowledge that &quot;The&quot; is for referring to the thing that you have mentioned before.)orStriker Emile Heskey was today forced to withdraw from the England squad.The Birmingham forward took part in Monday&#039;s &#8230;How can we link &quot;The Birmingham forward&quot; with &quot;Emile Heskey&quot; ?in this case we may able to use the clue &quot;Striker&quot; appears before &quot;Emile Heskey&quot;,but it still needs a knowledge of &quot;Striker&quot; = &quot;Forward&quot; (which lexical chain may helps) &#8212; and still difficult.anyway, in normal cases we don&#039;t even have such a clue.again, just search it &quot;coreference resolution&quot;or for a more specific case, &quot;anaphora resolution&quot; krub :)ACL Anthology is a good resourcehttp://acl.ldc.upenn.edu/:) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 226,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2004-08-18T02:36:00+07:00",
+  "html": "<p>also <a href=\"http://www.blogger.com/r?http%3A%2F%2Fportal.acm.org%2Ftoc.cfm%3Fid%3DSERIES278%26dl%3DACM%26dl%3DACM%26type%3Dseries%26idx%3D860435%26part%3DProceedings%26WantType%3DProceedings%26title%3DAnnual%2520ACM%2520Conference%2520on%2520Research%2520and%2520Development%2520in%2520Information%2520Retrieval%26CFID%3D22370424%26CFTOKEN%3D74868419\" rel=\"nofollow\">SIGIR</a>(lots of Bioinformatics applications here) </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3305,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2009-01-08T02:01:00+07:00",
+  "html": "<p>ผมเห็นคุณหนะ ชื่อตัวเอง ก็ พิมพ์ผิดประจำิbact &lt;&#8211; มีสระอิติดมาประจำไม่สังเกตให้ดี เลยเหรอ, เวลาพิมพ์ๆ หนะ.- -&#039;ไม่เข้าใจ ว่าทำไมแค่นี้ ก็ไม่สังเกตเห็น.&#8212;-อานนท์ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3306,
+  "author": "Anonymous",
+  "url": "",
+  "date": "2009-01-08T02:06:00+07:00",
+  "html": "<p>หรือ คุณใช้ windows?อืมๆๆ, ลองกับ windows แล้ว มันมองไม่เห็น สระลอย ที่พิมพ์เกินแฮะ.&#8212;-อานนท์ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 3307,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2009-01-08T11:35:00+07:00",
+  "html": "<p>เมื่อก่อนใช้วินโดวส์ครับแต่ถึงจะใช้ลีนุกซ์ก็พลาดได้เหมือนกันtextfield ในไฟร์ฟ็อกซ์มันไม่แสดงสระ/วรรณยุกต์บน/ล่างตัวแรกครับ </p>\n",
+  "replies": []
+ }
+]

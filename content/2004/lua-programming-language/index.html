@@ -1,0 +1,20 @@
+---
+title: "Lua programming language"
+date: "2004-11-03T05:18:00+07:00"
+lastmod: "2004-11-03T05:18:00+07:00"
+type: "post"
+url: "/2004/lua-programming-language/"
+description: "Lua (อ่านว่า ลู-อา, ภาษาบราซิลเลี่ยนโปรตุกีส) เป็นภาษาโปรแกรมหน้าตาประหลาด ที่บังเอิญเจอในโฮมเพจของ Ubuntu Linux มีคู่มือด้วย Programming in Lua เป็นเล่มๆ ก็มี อ่านออนไลน์ก็ได้ อันนี้น่าสนใจ function as a value มี multiple assignment ..ทำให้เขียนโปรแกรมสั้นลงได้ (แต่ทำให้งงขึ้น?) x, y = y, x — สลับค"
+tag: ["programming"]
+lang: "th"
+wpid: 420
+---
+<p>Lua (อ่านว่า ลู-อา, ภาษาบราซิลเลี่ยนโปรตุกีส) เป็นภาษาโปรแกรมหน้าตาประหลาด ที่บังเอิญเจอในโฮมเพจของ <a href="http://www.ubuntulinux.org/">Ubuntu Linux</a></p>
+<p>มีคู่มือด้วย <a href="http://www.inf.puc-rio.br/~roberto/book/">Programming in Lua</a> เป็นเล่มๆ ก็มี อ่านออนไลน์ก็ได้</p>
+<p>อันนี้น่าสนใจ <a href="http://www.lua.org/pil/6.html">function as a value</a></p>
+<p>มี multiple assignment ..ทำให้เขียนโปรแกรมสั้นลงได้ (แต่ทำให้งงขึ้น?)</p>
+<pre><tt>x, y = y, x  -- สลับค่า 'x' กะ 'y'</tt></pre>
+<pre><tt>a, b = f()   -- ฟังก์ชั่น 'f()' ส่งค่ากลับ 2 ตัว, เอาใส่ 'a' กะ 'b'</tt></pre>
+<p>&#8216;<tt>--</tt>&#8216; นี่คือเอาไว้เริ่มต้นคอมเมนต์, ถ้าเป็นคอมเมนต์แบบบล็อก ให้เริ่มด้วย &#8216;<tt>--[[</tt>&#8216; จบด้วย &#8216;<tt>--]]</tt>&#8216;</p>
+<p>ทีัมสร้าง Lua ตั้งใจให้เป็นภาษาสำหรับเอาไปฝังในแอพพลิเคชั่นอื่นอีกที (เพื่อให้ผู้ใช้ขยายความสามารถของโปรแกรมได้) ตัวเอนจิ้นของ Lua เขียนด้วย ANSI C ใช้ MIT license (GPL-compatible)</p>
+

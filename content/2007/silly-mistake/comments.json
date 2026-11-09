@@ -1,0 +1,34 @@
+[
+ {
+  "id": 2308,
+  "author": "deans4j",
+  "url": "",
+  "date": "2007-04-02T17:19:00+07:00",
+  "html": "<p>เข้ามาบอกว่า ถ้าใช้ Java 6 รู้สึกว่าไม่ต้อง forName แล้วนะมัน scan ทั้ง classpath หา Driver ให้เราเลย </p>\n",
+  "replies": []
+ },
+ {
+  "id": 2309,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2007-04-02T17:42:00+07:00",
+  "html": "<p>ผมก็ใช้ Java 6 นะถ้าไม่ประกาศ Class.forName(ไดรเวอร์).newInstance() ขึ้นมาก่อนก็จะไม่ได้อ่ะ:java.sql.SQLException: No suitable driver found for jdbc:mysql://&#8230; </p>\n",
+  "replies": []
+ },
+ {
+  "id": 2310,
+  "author": "deans4j",
+  "url": "",
+  "date": "2007-04-02T17:55:00+07:00",
+  "html": "<p>งั้นผมคงจำผิด อาจจะต้องเป็น Driver  jdbc 4.0 ด้วยตอนนี้ที่เป็น 4.0 มีแต่ Derby แหละ </p>\n",
+  "replies": []
+ },
+ {
+  "id": 2311,
+  "author": "bact&#039;",
+  "url": "",
+  "date": "2007-04-02T23:26:00+07:00",
+  "html": "<p>น่าจะเป็นอย่างนั้นdriver ที่ใช้ (MySQL Connector/J 5.0) เป็น JDBC 3.0 </p>\n",
+  "replies": []
+ }
+]

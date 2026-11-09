@@ -1,0 +1,31 @@
+---
+title: "Fixing Java GUI on Hardy Heron"
+date: "2008-02-07T16:35:00+07:00"
+lastmod: "2008-02-07T16:35:00+07:00"
+type: "post"
+url: "/2008/fixing-java-gui-on-hardy-heron/"
+description: "เพิ่งลง Hardy Heron เมื่อคืนก่อน ปรากฎว่า NetBeans 6.0 รันไม่ได้ ปัญหาอยู่ที่ libmawt ของ JVM มันลิงก์กันไม่ได้กับ libxcb/libX11 ของ Hardy Heron แนว ๆ นี้ ดูจาก backtrace อ่ะนะ เราก็ไม่รู้ว่าจะแก้ยังไงหรอก ไปเจอ workaround ที่ Ubuntu Forums ลองดูแล้ว ใช้ได้ เอามาแบ่งกัน If you have problem with Java"
+tag: ["fix", "gwt", "how-to", "java", "linux", "netbeans", "ubuntu"]
+lang: "th"
+wpid: 2275
+---
+<p>เพิ่งลง <a href="https://wiki.ubuntu.com/HardyHeron">Hardy Heron</a> เมื่อคืนก่อน ปรากฎว่า NetBeans 6.0 รันไม่ได้</p>
+<p>ปัญหาอยู่ที่ libmawt ของ JVM มันลิงก์กันไม่ได้กับ libxcb/libX11 ของ Hardy Heron แนว ๆ นี้ ดูจาก backtrace อ่ะนะ เราก็ไม่รู้ว่าจะแก้ยังไงหรอก</p>
+<p>ไปเจอ <a href="http://ubuntuforums.org/archive/index.php/t-621864.html">workaround ที่ Ubuntu Forums</a> ลองดูแล้ว ใช้ได้ เอามาแบ่งกัน</p>
+<p>If you have problem with Java GUI apps (for example, NetBeans) on Hardy Heron (Ubuntu 8.04 LTS pre-release), try run this line in your terminal (as root) รันคำสั่งนี้ในเทอร์มินัล:</p>
+<p>for 32-bit Ubuntu:<br />
+<code><font color="grey">$</font> <strong>sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/<font color="green">java-6-sun-1.6.0.04</font>/jre/lib/<font color="blue">i386</font>/xawt/libmawt.so</strong></code></p>
+<p>for 64-bit Ubuntu:<br />
+<code><font color="grey">$</font> <strong>sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/<font color="green">java-6-sun-1.6.0.04</font>/jre/lib/<font color="blue">amd64</font>/xawt/libmawt.so</strong></code></p>
+<p>(<strong>Notes:</strong> the path name may not be exactly as ones shown above, you may need to change to <font color="green"><em>version number</em></font> and/or the <font color="blue"><em>architecture</em></font> of your JVM. Look your <tt>/usr/lib/jvm</tt> for the exact name to use. อย่าลืมเปลี่ยนชื่อพาธให้ตรงกับ JVM ที่อยู่ในเครื่องของเรา)</p>
+<p>If that doesn&#8217;t work for you, try add this line into your <tt>.bash_profile</tt> file ถ้าไม่เวิร์กก็ลองเพิ่มบรรทัดนี้เข้าไปที่ <tt>.bash_profile</tt>:</p>
+<p><code><strong>export LIBXCB_ALLOW_SLOPPY_LOCK=true</strong></code></p>
+<p>ผมลองวิธีแล้วแล้วมันใช้ได้นะ NetBeans 6.0 + JVM 1.6.0.04 + Hardy Heron Alpha 4 &mdash; WORKSFORME</p>
+<p>ตอนนี้กำลังลองเล่น <a href="http://code.google.com/webtoolkit/">Google Web Toolkit</a> มี<a href="https://gwt4nb.dev.java.net/">สำหรับ NetBeans</a> ด้วยนะ (gwt4nb)</p>
+<p>สวัสดีปีใหม่จีน</p>
+<p><small>technorati tags:<br />
+<a href="http://technorati.com/tag/Java" rel="tag">Java</a>,<br />
+<a href="http://technorati.com/tag/Ubuntu" rel="tag">Ubuntu</a>,<br />
+<a href="http://technorati.com/tag/workaround" rel="tag">workaround</a><br />
+</small></p>
+
