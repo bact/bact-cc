@@ -1,0 +1,28 @@
+{
+  // Lint config for the migrated blog content. Rules that make no sense for
+  // converted WordPress posts are off; everything else is auto-fixable style.
+  "config": {
+    "default": true,
+    "MD013": false,   // line length: one paragraph per line is fine
+    "MD033": false,   // inline HTML (embeds, <span>, <u>, <sup> ...) is intentional
+    "MD041": false,   // posts do not start with an H1 (title is front matter)
+    "MD025": false,   // multiple H1s occur in old posts
+    "MD024": false,   // duplicate headings occur in old posts
+    "MD026": false,   // trailing punctuation in headings
+    "MD036": false,   // bold used as a heading in old posts
+    "MD034": false,   // bare URLs
+    "MD045": false,   // images without alt text exist in old posts
+    "MD051": false,   // link fragments
+    "MD059": false,   // generic link text ("here")
+    "MD060": false,
+    // Auto-fixing these would change what readers see, so they stay off:
+    "MD001": false,   // heading level increments (would change heading levels)
+    "MD014": false,   // "$ " prompts in code blocks (would delete characters)
+    "MD029": false    // ordered-list numbering (would renumber visible lists)
+  },
+  "globs": ["content/**/*.md"],
+  "ignores": ["node_modules/**"],
+  "gitignore": true,
+  "noBanner": true,
+  "noProgress": true
+}

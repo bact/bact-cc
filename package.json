@@ -3,9 +3,12 @@
   "private": true,
   "description": "Static site for bact.cc (Hugo). npm is used only for the Pagefind search index.",
   "scripts": {
-    "build": "hugo --gc --minify && pagefind --site public --force-language th"
+    "build": "hugo --gc --minify && pagefind --site public --force-language th",
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "python3 tools/lint_markdown.py"
   },
   "devDependencies": {
+    "markdownlint-cli2": "0.24.0",
     "pagefind": "1.6.0"
   }
 }
