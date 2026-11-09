@@ -56,6 +56,8 @@ def clean_html(h):
     h = re.sub(r'(<img[^>]+src=")http://(upload\.wikimedia\.org)', r"\1https://\2", h)
     h = re.sub(r"<img(?![^>]*\sloading=)", '<img loading="lazy"', h)
     h = h.replace("/wp-content/uploads/", "/f/")
+    # categories deleted from WordPress long ago (already HTTP 500 on the live site): keep text, drop link
+    h = re.sub(r'<a href="/on/(?:bangkokmetro|whatwewant)/">(.*?)</a>', r"\1", h)
     return h
 
 EMAIL = re.compile(r"[\w.+-]+@([\w-]+(?:\.[\w-]+)+)")

@@ -10,6 +10,9 @@
 /:year/:slug/feed/     /:year/:slug/  301
 /:year/:slug/amp/      /:year/:slug/  301
 
+# Old WordPress slugs that WP used to redirect
+/2007/bloggers-handbook-in-thai/  /2007/bloggers-handbook-thai/  301
+
 # Misc WordPress endpoints
 /author/bact/          /about/      301
 /author/bact/feed/     /index.xml   301
