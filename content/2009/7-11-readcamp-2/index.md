@@ -22,17 +22,11 @@ Facebook: [facebook.com/readcamp](http://www.facebook.com/ReadCamp)
 YouTube: [youtube.com/readcamptv](http://www.youtube.com/ReadCampTV)  
 เมลกลุ่ม: [readcamp (at) googlegroups.com](http://groups.google.com/group/readcamp/)
 
-
 <object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/TcuEaKSTlmA&#038;hl=en&#038;fs=1&#038;"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
-
-
 
 <object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/i9ZthCbWIAk&#038;hl=en&#038;fs=1&#038;color1=0xe1600f&#038;color2=0xfebd01"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
 
-
-
 <object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/xKuxO34Zu30&#038;hl=en&#038;fs=1&#038;color1=0xcc2550&#038;color2=0xe87a9f"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
-
 
 <span class="small">technorati tags:  
 [ReadCamp](http://technorati.com/tag/ReadCamp),  

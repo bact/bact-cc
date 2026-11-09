@@ -12,9 +12,7 @@ wpid: 2380
 ---
 Welcome to [BarCamp Bangkok](http://barcampbangkok.org/), the unconference, where you can show off *any*thing to the people just like *you*.
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/ESUf-L3gVlQ&#038;hl=en&#038;fs=1"></param><param name="allowFullScreen" value="true"></param></object>
-
 
 <span class="small">([vdo page link](http://www.youtube.com/watch?v=ESUf-L3gVlQ) … [another action](http://www.rerngrit.com/content/do-anything-barcampbangkok-2) by [@rerngrit](http://twitter.com/rerngrit))</span>
 
@@ -24,9 +22,7 @@ Welcome to [BarCamp Bangkok](http://barcampbangkok.org/), the unconference, wher
 
 งานเป็นสองภาษา ไทย-อังกฤษ ไม่ต้องกลัว 🙂 เน้นว่าขอให้สนุกเข้าไว้ แล้วมันจะดีเอง
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/kIAe2Z2l2p0&#038;hl=en&#038;fs=1"></param><param name="allowFullScreen" value="true"></param></object>
-
 
 <span class="small">([vdo page link](http://www.youtube.com/watch?v=kIAe2Z2l2p0))</span>
 

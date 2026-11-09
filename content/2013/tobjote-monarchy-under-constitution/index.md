@@ -17,14 +17,13 @@ wpid: 3281
 
 <iframe loading="lazy" src="https://www.youtube.com/embed/vKkxmj45bms" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-
 รายการ “ตอบโจทย์ประเทศไทย” หัวข้อ “สถาบันพระมหากษัตริย์ ภายใต้รัฐธรรมณูญ”
 
-1.  คุยกับ สุรเกียรติ์ เสถียรไทย (11 มี.ค. 2556) <http://youtu.be/PTbpij7MLYk>
-2.  คุยกับ สมศักดิ์ เจียมธีรสกุล (12 มี.ค. 2556) <http://youtu.be/_gYdzaa_JXc>
-3.  คุยกับ วสิษฐ เดชกุญชร (13 มี.ค. 2556) <http://youtu.be/KOZM6JZAPzY>
-4.  คุยกับ สมศักดิ์ เจียมธีรสกุล และ สุลักษณ์ ศิวรักษ์ (14 มี.ค. 2556) <http://youtu.be/vgE1sS8gqRc>
-5.  คุยกับ สมศักดิ์ เจียมธีรสกุล และ สุลักษณ์ ศิวรักษ์ (~~ยังไม่ได้ออกอากาศ~~ 18 มี.ค. 2556, กำหนดเดิมคือ 15 มี.ค.) <http://youtu.be/vKkxmj45bms>
+1. คุยกับ สุรเกียรติ์ เสถียรไทย (11 มี.ค. 2556) <http://youtu.be/PTbpij7MLYk>
+2. คุยกับ สมศักดิ์ เจียมธีรสกุล (12 มี.ค. 2556) <http://youtu.be/_gYdzaa_JXc>
+3. คุยกับ วสิษฐ เดชกุญชร (13 มี.ค. 2556) <http://youtu.be/KOZM6JZAPzY>
+4. คุยกับ สมศักดิ์ เจียมธีรสกุล และ สุลักษณ์ ศิวรักษ์ (14 มี.ค. 2556) <http://youtu.be/vgE1sS8gqRc>
+5. คุยกับ สมศักดิ์ เจียมธีรสกุล และ สุลักษณ์ ศิวรักษ์ (~~ยังไม่ได้ออกอากาศ~~ 18 มี.ค. 2556, กำหนดเดิมคือ 15 มี.ค.) <http://youtu.be/vKkxmj45bms>
 
 **ข่าวที่เกี่ยวข้อง** (ปรับปรุง 21 มี.ค. 2556):
 
@@ -88,8 +87,6 @@ Media Inside Out เชิญร่วมเสวนา
 
 —-
 
-
 <iframe loading="lazy" src="https://www.youtube.com/embed/dHHgQSeYEis" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
 
 [“ภิญโญ ไตรสุริยธรรมา” ชำแหละสื่อไทย](http://news.voicetv.co.th/thailand/17602.html) ในงานสัมมนา “นโยบายสื่อภายใต้รัฐบาลใหม่ : ปิดกั้น แทรกแซง หรือ เสรี?” จัดโดยมหาวิทยาลัยธุรกิจบัณฑิตย์ เมื่อ 3 ก.ย. 2554

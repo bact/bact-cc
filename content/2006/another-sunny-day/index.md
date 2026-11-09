@@ -17,7 +17,6 @@ Belle & Sebastian – [*Another Sunny Day*](http://www.belleandsebastian.com/rec
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/oeKI6NRUxxY"></param><param name="wmode" value="transparent"></param></object>
 
-
 > You missed my eye, I wonder why, I didn’t complain  
 > You missed my eye, I wonder why, please do it again
 

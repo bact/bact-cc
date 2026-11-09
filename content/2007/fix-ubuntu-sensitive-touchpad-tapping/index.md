@@ -28,23 +28,15 @@ wpid: 2093
 แต่ก่อนจะใช้ได้ ต้องไปแก้ /etc/X11/xorg.conf ก่อน,  
 โดยมองหา
 
- 
-
     Section "InputDevice"
      Identifier "Synaptics Touchpad"
      Driver  "synaptics"
      ...
     EndSection
 
- 
-
 แล้วเพิ่มบรรทัดนี้
 
- 
-
      Option  "SHMConfig"  "true"
-
- 
 
 ต่อท้าย (ก่อน EndSection)
 

@@ -13,7 +13,6 @@ wpid: 2412
 
 \[ต้องเปิดใช้ JavaScript เพื่อดูคลิป Flash เปิดใช้ JavaScript แล้วเปิดหน้านี้อีกครั้งหนึ่ง\]
 
-
 <script type="text/javascript">
  document.getElementById("player1").style.display = "";
  var s1 = new SWFObject("http://www.iam.in.th/iamblog/wp-content/plugins/flv-embed/flvplayer.swf","player1","480","292","7");
@@ -21,13 +20,12 @@ wpid: 2412
  s1.addParam("allowscriptaccess","always");
  s1.addParam("allowfullscreen","true");
  s1.addVariable("height","292");
- s1.addVariable("width","480"); 
+ s1.addVariable("width","480");
  s1.addVariable("file","http://www.iam.in.th/clip/readcamp.flv");
  s1.addVariable("image","http://www.iam.in.th/clip/readcamp.jpg");
  s1.addVariable("link","http://www.iam.in.th/clip/readcamp.flv");
  s1.write("player1");
 </script>
-
 
 \[ ลิงก์ [iam.in.th](http://www.iam.in.th/iamblog/2008/11/17/readcamp/ "ReadCamp ทุกอย่างอ่านได้") \]
 

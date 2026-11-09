@@ -16,10 +16,10 @@ wpid: 1787
 
   **สัมมนางานวิจัยหัวข้อ “Incentive Structure and Mechanism Design”**
 
-  1.  **“แรงจูงใจของนักการเมือง บทบาทของการเลือกตั้ง และทางเลือกของนโยบายสาธารณะ”**  
+  1. **“แรงจูงใจของนักการเมือง บทบาทของการเลือกตั้ง และทางเลือกของนโยบายสาธารณะ”**  
       (Politicians’ Motivation, Role of Elections, and Policy Choices)  
       อ.ดร.พงษ์ธร วราศัย \[[เอกสารประกอบ](http://www.econ.tu.ac.th/seminar/seminar_dec13_phongthorn.pdf "seminar_dec13_phongthorn.pdf เอกสารประกอบ (PDF)")\]
-  2.  **“การสร้างแบบจำลองการตัดสินใจเรื่องไม่สำคัญ”**  
+  2. **“การสร้างแบบจำลองการตัดสินใจเรื่องไม่สำคัญ”**  
       (Modeling Unimportant Decision)  
       อ.ภาวิน ศิริประภานุกูล \[[เอกสารประกอบ](http://www.econ.tu.ac.th/seminar/seminar_dec13_pawin.pdf "seminar_dec13_pawin.pdf เอกสารประกอบ (PDF)")\]
 

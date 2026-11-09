@@ -12,11 +12,11 @@ wpid: 2149
 ---
 19 สิงหาใกล้มา หลายคนอาจมีข้อกังขาเหล่านี้อยู่ในใจ …
 
-1.  [โหวตล้มรัฐธรรมนูญ ผิดกฎหมายหรือไม่ ?](http://www.wevoteno.net/web/archives/14)
-2.  [โหวตล้มรัฐธรรมนูญ จะได้อะไร ?](http://www.wevoteno.net/web/archives/15)
-3.  [โหวตล้มรัฐธรรมนูญ ร่วมกับใคร ?](http://www.wevoteno.net/web/archives/17)
-4.  [โหวตล้มรัฐธรรมนูญ เลือกตั้งล่าช้าหรือไม่ ?](http://www.wevoteno.net/web/archives/22)
-5.  [โหวตล้มรัฐธรรมนูญ อาจจะได้รัฐธรรมนูญที่ถอยหลังกว่าเดิม ?](http://www.wevoteno.net/web/archives/23)
+1. [โหวตล้มรัฐธรรมนูญ ผิดกฎหมายหรือไม่ ?](http://www.wevoteno.net/web/archives/14)
+2. [โหวตล้มรัฐธรรมนูญ จะได้อะไร ?](http://www.wevoteno.net/web/archives/15)
+3. [โหวตล้มรัฐธรรมนูญ ร่วมกับใคร ?](http://www.wevoteno.net/web/archives/17)
+4. [โหวตล้มรัฐธรรมนูญ เลือกตั้งล่าช้าหรือไม่ ?](http://www.wevoteno.net/web/archives/22)
+5. [โหวตล้มรัฐธรรมนูญ อาจจะได้รัฐธรรมนูญที่ถอยหลังกว่าเดิม ?](http://www.wevoteno.net/web/archives/23)
 
 รับฟังข้อมูล หาคำตอบ และตัดสินใจให้ตัวคุณเอง ที่เว็บ [wevoteno.net](http://www.wevoteno.net/)
 

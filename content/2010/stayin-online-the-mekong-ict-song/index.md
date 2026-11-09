@@ -16,17 +16,11 @@ A song from a performance by Mekong ICT Camp 2010 facilitators:
 
 **Stayin’ Alive** (source)
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/IHWeuQyFouo&amp;hl=en_US&amp;fs=1&amp;" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /></object>
-
 
 **Stayin’ ONLINE!** (remixed – The Mekong ICT Song)
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/z46IWcCogAI&amp;hl=en_US&amp;fs=1&amp;color1=0x234900&amp;color2=0x4e9e00" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /></object>
-
-
- 
 
 Well, you can tell by the way I use the net,  
 I’m digital kid, data to get.

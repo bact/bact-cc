@@ -11,7 +11,6 @@ wpid: 2349
 ---
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/8gLWTtlMwo4&#038;hl=en"></param><param name="wmode" value="transparent"></param></object>
 
-
 [Fiona Apple](http://en.wikipedia.org/wiki/Fiona_Apple) – [The Beatle](http://en.wikipedia.org/wiki/The_Beatles)‘s [Across the Universe](http://en.wikipedia.org/wiki/Across_the_Universe)
 
 เขียนเสร็จ ก็เพิ่งจะนึกได้ว่า [เคยโพสต์ไปแล้ว](http://bact.blogspot.com/2006/11/mind-of-emptiness.html)นี่นา

@@ -14,9 +14,7 @@ We all need one — **[Free Hugs](http://www.free-hugs.com/)**
 
 เราล้วนต้องการมัน — [โอบกอดเสรี](http://www.free-hugs.com/)
 
-
 <iframe loading="lazy" width="480" height="390" src="https://www.youtube.com/embed/vr3x_RRJdd4" frameborder="0" allowfullscreen></iframe>
-
 
 > อย่ายืนไกลห่างจากฉันนัก  
 > โปรดอย่า “เว้นวรรค” จักได้ไหม  

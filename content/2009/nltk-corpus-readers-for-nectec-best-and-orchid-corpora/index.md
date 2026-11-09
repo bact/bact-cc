@@ -44,7 +44,6 @@ wpid: 2448
 2\. พิมพ์ คำ/ชนิดคำ จาก 5 “ประโยค” แรกของคลัง ORCHID  
 โปรดสังเกตว่า เราใช้ชุดชนิดคำ (POS/tagset) แบบง่าย สามารถสลับชุดชนิดคำได้โดยสลับค่า simplify_tags :
 
-
 <pre><code>
 for sent in orchid.tagged_sents(<span style="color: red;">simplify_tags=True</span>)[0:5]:
     print "[",
@@ -52,7 +51,6 @@ for sent in orchid.tagged_sents(<span style="color: red;">simplify_tags=True</sp
         print word + "/" + tag,
     print "]"
 </code></pre>
-
 
 ผลลัพธ์ :
 
@@ -65,7 +63,6 @@ for sent in orchid.tagged_sents(<span style="color: red;">simplify_tags=True</sp
 3\. หาค่าการกระจายของสองคำ “การ” และ “ความ” ใน 4 หมวดของคลัง BEST  
 โปรดสังเกตว่า ตรงคำที่เราจะป้อนเข้าไปให้ฟังก์ชั่นต่าง ๆ ของ NLTK เราจะแปลงมันเป็น utf-8 encoded str ก่อน :
 
-
 <pre><code>
 cfd = nltk.ConditionalFreqDist(
         (genre, word)
@@ -75,7 +72,6 @@ genres = ['news', 'encyclopedia', 'novel', 'article']
 prefixs = [<span style="color: red;">w.encode("utf-8")</span> for w in [u'การ', u'ความ']]
 cfd.tabulate(conditions=genres, samples=prefixs)
 </code></pre>
-
 
 ผลลัพธ์ :
 

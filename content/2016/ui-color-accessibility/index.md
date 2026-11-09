@@ -52,10 +52,10 @@ wpid: 3449
 ตัวอย่าง CSS filter ที่ใช้กันมาก
 
 `[*|html|body|Element] {`  
-`    -webkit-filter: grayscale(100%);`  
-`    filter: grayscale(100%);`  
-`    filter: url('grayscale.svg#grayscale');`  
-`    filter: gray;`  
+`-webkit-filter: grayscale(100%);`  
+`filter: grayscale(100%);`  
+`filter: url('grayscale.svg#grayscale');`  
+`filter: gray;`  
 `}`
 
 คุณ Fufu Dogu [สรุปปัญหาที่พบบนเบราว์เซอร์ต่างๆ](https://www.facebook.com/photo.php?fbid=10210729431290157&set=a.1688461009623.2096666.1180647606) ไว้ดังนี้
@@ -101,9 +101,7 @@ wpid: 3449
 
 สำหรับผู้ที่ต้องการแปลงรูปจำนวนมากให้เป็นขาวดำ บน Windows มีโปรแกรมฟรีอย่าง [IrfanView](http://www.irfanview.com/) และ [XnView](http://www.xnview.com/) ช่วยได้ (สามารถปรับขนาด ตัดภาพ แปลงฟอร์แมต เปลี่ยนสีรูป เปลี่ยนชื่อรูป ได้ทีละเยอะๆ) ดูตัวอย่างการใช้ฟังก์ชัน batch processing จากคลิปนี้
 
-
 <iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/q-MmHwOxBvI?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-GB&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
-
 
 สำหรับคนใช้ OS X (หรือ macOS .. ฮ่วย) และถนัด Automator (มากับโอเอสอยู่แล้ว) ลองทำ Workflow ตามรูปนี้ (กล่องล่างสุดคือ Apply ColorSync Profile: Gray Tone ถ้าไม่มี ใช้ Apply Quartz Composition Filter: Black and White แทนก็ได้ แต่มันจะออกแนวทำรูปเก่า ไม่ใช่ปรับสีเทาอย่างเดียว)
 
@@ -146,10 +144,6 @@ wpid: 3449
 - ถ้าทำได้ ควรมีโหมดปกติให้ผู้ใช้สลับกลับมาได้ด้วย (เช่นที่เว็บไซต์ [Jeban.com](http://www.jeban.com/) ทำ)
 - หากมีเวลา ลอง(ขอเวลาจากบอส)ศึกษา [Web Content Accessibility Guidelines](https://www.w3.org/WAI/) เพื่อการทำเว็บที่ทุกคนเข้าถึงได้
 
- 
-
 *ขอให้ทุกคนผ่านช่วงนี้ไปด้วยกัน ใช้โอกาสนี้เรียนรู้การอยู่ร่วมกันระหว่างนี้และหลังจากนี้ ไม่ว่าจะเห็นสีเหมือนกันหรือไม่ก็ตาม*
-
- 
 
 (“โลกของเราขาวไม่เท่ากัน” เป็นชื่อหนังสือที่ ม.ล.ปริญญากร วรวรรณ และ วรพจน์ พันธุ์พงศ์ เขียนร่วมกัน – สำนักพิมพ์ openbooks)

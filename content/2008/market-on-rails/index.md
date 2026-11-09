@@ -11,13 +11,9 @@ wpid: 2288
 ---
 งงไปเลย ตลาดรถไฟ! … emergence, innovative land use, intensively-shared space
 
-
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/xSqNx7vJLDE&#038;rel=1&#038;border=0"></param><param name="wmode" value="transparent"></param></object>
 
-
-
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/wA4BKpArVHc&#038;rel=1&#038;border=0"></param><param name="wmode" value="transparent"></param></object>
-
 
 \[ ผ่าน [ThaiBB](http://daytag.net/webboard/read.php?Topic_ID=270 "Thai students in Berlin and Brandenburg") \]
 

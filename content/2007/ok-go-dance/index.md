@@ -11,9 +11,7 @@ wpid: 1915
 ---
 **พี [จิกกะบาล](http://jiggaban.com/)** แนะนำมา, เราก็จัดไป:
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/pv5zWaTEVkI"></param><param name="wmode" value="transparent"></param></object>
-
 
 เอ็มวีเพลง “Here It Goes Again” ของวง **[OK Go](http://okgo.net/)**, เจ๋งดี
 
@@ -26,9 +24,7 @@ wpid: 1915
 
 ตัวอย่างจากทางบ้าน เพลง “A Million Ways” ของ OK Go
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/Jd3xnp5Nnkk"></param><param name="wmode" value="transparent"></param></object>
-
 
 สนุกดีครับ โลกของคุณ ๆ
 

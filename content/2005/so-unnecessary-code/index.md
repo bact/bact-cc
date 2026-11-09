@@ -43,7 +43,6 @@ something like:
 
 (Note: the following code is just an idea, I’m pretty sure it’s not going to work.)
 
-
     function process(objects, loop, test, trueAction, falseAction) {
       loop (objects, function (object) {
           if (test(object)) {
@@ -63,7 +62,6 @@ something like:
     }
 
 and then you call:
-
 
     process(dom, traverseEveryNode, isNoun, markYellow, false);
 

@@ -12,9 +12,7 @@ wpid: 1696
 [Super Furry Animals](http://en.wikipedia.org/wiki/Super_Furry_Animals) — *Juxtaposed with U*  
 <span class="small">[at YouTube](http://www.youtube.com/watch?v=3jw7u4f-Ujg)</span>
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/3jw7u4f-Ujg"></param><param name="wmode" value="transparent"></param></object>
-
 
 สวยดี
 

@@ -18,9 +18,7 @@ wpid: 2460
 
 ระหว่างถ่าย ก็ได้โอกาสเก็บภาพรถราที่ไม่ยอมเสียเวลาแม้แต่น้อย วิ่งฝ่าทางม้าลายตลอดเวลา แม้ไฟคนข้ามจะเขียวอยู่ แม้จะมีคนกำลังข้ามอยู่
 
-
 <object width="480" height="295" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube-nocookie.com/v/ZIiAuAFeJqo&amp;hl=en&amp;fs=1&amp;" /><param name="allowfullscreen" value="true" /></object>
-
 
 เมืองเป็นที่อยู่ของคน  
 **คนก่อน รถทีหลัง**  

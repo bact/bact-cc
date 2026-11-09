@@ -17,24 +17,20 @@ wpid: 1902
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/7qRJ-UTBScI"></param><param name="wmode" value="transparent"></param></object>
 
-
 เอ็มวี [Star Guitar](http://en.wikipedia.org/wiki/Star_Guitar) ของ [The Chemical Brothers](http://en.wikipedia.org/wiki/The_Chemical_Brothers) [\[+\]](http://www.youtube.com/watch?v=ssJutXkpSlY "link")  
 ห้อง ห้อง คอกีต้าร์ เกมดีเจ  
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/ssJutXkpSlY"></param><param name="wmode" value="transparent"></param></object>
-
 
 เอ็มวี [Around The World](http://en.wikipedia.org/wiki/Around_the_World_%28Daft_Punk_song%29) ของ [Daft Punk](http://bact.blogspot.com/2007/01/interstella-5555.html) [\[+\]](http://www.youtube.com/watch?v=e56vQ0kmaYg "link")  
 หมุนวน จังหวะ เคลื่อนไหว  
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/e56vQ0kmaYg"></param><param name="wmode" value="transparent"></param></object>
 
-
 เอ็มวี [Come into My World](http://en.wikipedia.org/wiki/Come_into_My_World) ของ Kylie Minogue [\[+\]](http://www.youtube.com/watch?v=LTrO6LYSHQQ "link")  
 เมืองของฉัน ฉัน ฉัน …  
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/LTrO6LYSHQQ"></param><param name="wmode" value="transparent"></param></object>
-
 
 โฆษณาชุด Holiday ของ GAP (เครื่องแต่งกายแนวลำลอง,ท้องถนน)  
 [\[+\]](http://www.youtube.com/watch?v=Z-_U3vzGAS4 "link")  
@@ -47,24 +43,20 @@ wpid: 1902
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/N94XVlCRvrg"></param><param name="wmode" value="transparent"></param></object>
 
-
 เอ็มวี [Fell in Love with a Girl](http://en.wikipedia.org/wiki/Fell_in_Love_with_a_Girl) ของ The White Stripes (อีกที) [\[+\]](http://www.youtube.com/watch?v=J6TcX_TKLcg "link")  
 ต่อ ต่อ  
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/J6TcX_TKLcg"></param><param name="wmode" value="transparent"></param></object>
-
 
 เอ็มวี Let Forever Be ของ The Chemical Brothers (อีกทีเหมือนกัน) [\[+\]](http://www.youtube.com/watch?v=Hmpxsk3dHaA "link")  
 เป็น ทุกอย่าง พร้อม ๆ กัน  
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/Hmpxsk3dHaA"></param><param name="wmode" value="transparent"></param></object>
 
-
 เอ็มวี Les Cailloux ของ [Oui Oui](http://en.wikipedia.org/wiki/Oui_Oui) (Gondry เป็นมือกลองของวงนี้) [\[+\]](http://www.youtube.com/watch?v=hghFCkIKmPY "link")  
 เป็นอีกแนว น่ารัก ๆ มีอะไรให้คิด  
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/hghFCkIKmPY"></param><param name="wmode" value="transparent"></param></object>
-
 
 เอ็มวี Beachelorette ของ [Björk](http://en.wikipedia.org/wiki/Bj%C3%B6rk) [\[+\]](http://www.youtube.com/watch?v=bOkUD4ZcEXc "link")  
 เล่าเรื่อง เล่าซ้ำ  

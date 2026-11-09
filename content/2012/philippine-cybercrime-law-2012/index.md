@@ -27,9 +27,9 @@ wpid: 3228
 
 เรื่องโทษก็น่าสนใจ คือมีการกำหนดระดับของโทษที่ต่างกัน เมื่อเกิดออนไลน์/ออฟไลน์ เกิดความเสียหายแล้ว/ยังไม่เกิด
 
-1.  ความผิดเรื่องข้อมูลคอมพิวเตอร์ปลอม (Computer-related Fraud) และการขโมยเอกลักษณ์ (Computer-related Identity Theft) กรณีที่ยังไม่ก่อให้เกิดความเสียหาย โทษจะลดลงหนึ่งขั้น — “Provided, That if no damage has yet been caused, the penalty imposable shall be one (1) degree lower.”
-2.  การเผยแพร่ภาพโป๊เด็กออนไลน์ จะมีโทษหนักขึ้นหนึ่งขั้น เทียบกับออฟไลน์ (อ้างอิงกฎหมาย Anti-Child Pornography Act of 2009 ที่มีอยู่เดิม)
-3.  โทษอื่นๆ ตามประมวลกฎหมายอาญา ที่ถูกกระทำผ่านหรือด้วยเครื่องมือไอซีที จะมีโทษหนักขึ้นหนึ่งขั้น (ข้อนี้ผมอ่านแล้วยังงงๆ อยู่ ยังไงใครพอรู้ช่วยที เขาว่างี้ “SEC. 6. All crimes defined and penalized by the Revised Penal Code, as amended, and special laws, if committed by, through and with the use of information and communications technologies shall be covered by the relevant provisions of this Act: <em>Provided, </em>That the penalty to be imposed shall be one (1) degree higher than that provided for by the Revised Penal Code, as amended, and special laws, as the case may be.”)
+1. ความผิดเรื่องข้อมูลคอมพิวเตอร์ปลอม (Computer-related Fraud) และการขโมยเอกลักษณ์ (Computer-related Identity Theft) กรณีที่ยังไม่ก่อให้เกิดความเสียหาย โทษจะลดลงหนึ่งขั้น — “Provided, That if no damage has yet been caused, the penalty imposable shall be one (1) degree lower.”
+2. การเผยแพร่ภาพโป๊เด็กออนไลน์ จะมีโทษหนักขึ้นหนึ่งขั้น เทียบกับออฟไลน์ (อ้างอิงกฎหมาย Anti-Child Pornography Act of 2009 ที่มีอยู่เดิม)
+3. โทษอื่นๆ ตามประมวลกฎหมายอาญา ที่ถูกกระทำผ่านหรือด้วยเครื่องมือไอซีที จะมีโทษหนักขึ้นหนึ่งขั้น (ข้อนี้ผมอ่านแล้วยังงงๆ อยู่ ยังไงใครพอรู้ช่วยที เขาว่างี้ “SEC. 6. All crimes defined and penalized by the Revised Penal Code, as amended, and special laws, if committed by, through and with the use of information and communications technologies shall be covered by the relevant provisions of this Act: <em>Provided, </em>That the penalty to be imposed shall be one (1) degree higher than that provided for by the Revised Penal Code, as amended, and special laws, as the case may be.”)
 
 นอกจากนี้ยังมีการระบุถึงความรับผิดของนิติบุคคลด้วย ใน Sec. 9. Corporate Liability.
 

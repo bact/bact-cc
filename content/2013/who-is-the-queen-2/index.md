@@ -12,7 +12,6 @@ wpid: 3318
 ---
 <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/MR_5ah7EKfo" height="360" width="640" allowfullscreen="" frameborder="0"></iframe>
 
-
 “ผมว่ามันถึงเวลาแล้วน่ะ ที่จะมีเพลงชาติใหม่ คุณนึกออกมั๊ย  
 เพลงที่ผมรู้สึกว่ามันเกี่ยวข้องกับตัวผม
 

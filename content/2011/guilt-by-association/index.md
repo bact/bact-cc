@@ -20,8 +20,6 @@ wpid: 3098
 
 +– **[ข้อสังเกตบางประการต่อคำสารภาพเรื่องแผงผังล้มเจ้า](http://www.enlightened-jurists.com/blog/36)** – สาวตรี สุขศรี. นิติราษฎร์ ฉบับที่ 23, 2 มิ.ย. 2554
 
-
 <iframe loading="lazy" src="https://player.vimeo.com/video/24993746?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23" width="499" height="283" frameborder="0"></iframe>
-
 
 +– **[แถลงข่าวเรื่อง จดหมายเปิดผนึกถึงเพื่อนนักเขียนทั่วประเทศ ว่าด้วย มาตรา 112](http://vimeo.com/24993746)** – แปดลบหนึ่งนักเขียน. 7 มิ.ย. 2554

@@ -14,9 +14,7 @@ wpid: 1895
 
 บางเพลงอาจจะคุ้น ๆ เพราะถูกนำไปเป็นเพลงประกอบโฆษณา หรือประกอบอะไรอย่างอื่น ล่าสุดก็โนเกีย รุ่นฟังเพลง สีขาวส้ม อันเล็ก ๆ น่ะ (เพลง [Digital Love](http://en.wikipedia.org/wiki/Digital_Love))
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/N689QWwYJj4"></param><param name="wmode" value="transparent"></param></object>
-
 
 ทั้งหมด ทุกตอน [มีให้ดูใน YouTube](http://www.youtube.com/results?search_query=interstella+5555) แต่ต้องกดไล่ไปทีละตอนเองนะ ถ้าอยากดูแบบต่อเนื่อง ก็ต้องไปหาดีวีดีล่ะ
 

@@ -26,9 +26,7 @@ btw ใครสนใจจะสมัคร
 <a href="http://www.scribd.com/doc/45863757/สื่อและขบวนการทางสังคมในมาเลเซีย-กรณีศึกษา-หนังสือพิมพ์มาเลเซียกีนี" style="margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block; text-decoration: underline;" title="View สื่อและขบวนการทางสังคมในมาเลเซีย: กรณีศึกษา หนังสือพิมพ์มาเลเซียกีนี on Scribd">สื่อและขบวนการทางสังคมในมาเลเซีย: กรณีศึกษา หนังสือพิมพ์มาเลเซียกีนี</a>  
 (ถ้าอ่านแล้วฟอนต์มันโย้ ๆ ไป[ดาวน์โหลดฟอนต์ TH Sarabun PSK](http://www.f0nt.com/release/13-free-fonts-from-sipa/) มาติดตั้งก่อนนะครับ)
 
-
 <object id="doc_906443478296733" name="doc_906443478296733" height="600" width="100%" type="application/x-shockwave-flash" data="http://d1.scribdassets.com/ScribdViewer.swf" style="outline:none;" ><param name="movie" value="http://d1.scribdassets.com/ScribdViewer.swf"></param><param name="wmode" value="opaque"></param><param name="bgcolor" value="#ffffff"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><param name="FlashVars" value="document_id=45863757&#038;access_key=key-z5pa470z4dq2177xlqg&#038;page=1&#038;viewMode=list"></param></object>
-
 
 *รายงานวิชา “ขบวนการทางสังคม” ภาคการศึกษา 1/2552 หลักสูตรสังคมวิทยาและมานุษยวิทยามหาบัณฑิต สาขาวิชามานุษยวิทยา มหาวิทยาลัยธรรมศาสตร์ (อาจารย์ผู้สอน: นลินี ตันธุวนิตย์) – 19 ต.ค. 2552 (ปรับปรุงเล็กน้อยเพื่อเผยแพร่ 25 ธ.ค. 2553)*
 

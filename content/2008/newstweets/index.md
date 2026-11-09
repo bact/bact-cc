@@ -60,9 +60,7 @@ And, for Arsenal fans (like us!), this is the best thing: [@bbcarsenal](http://t
 
 **Twitter ? อะไรคือทวิตเตอร์ ?**
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/ddO9idmax0o&amp;hl=en&amp;fs=1"></param><param name="allowFullScreen" value="true"></param></object>
-
 
 ------------------------------------------------------------------------
 

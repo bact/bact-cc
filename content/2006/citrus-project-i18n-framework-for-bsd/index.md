@@ -18,10 +18,10 @@ from its website …
 **Purpose:**  
 To create for the existing BSD series of PC-UNIX (FreeBSD, NetBSD, OpenBSD, BSD/OS) the following things:
 
-1.  Locale/iconv implementation to conform to ISO C/SUSV2
-2.  Non-GPL gettext and POSIX NLS catalog implementation
-3.  It is a goal to develop system standard multi-script encoding by internationalization of file name
-4.  Design and implement multi-script framework.
+1. Locale/iconv implementation to conform to ISO C/SUSV2
+2. Non-GPL gettext and POSIX NLS catalog implementation
+3. It is a goal to develop system standard multi-script encoding by internationalization of file name
+4. Design and implement multi-script framework.
 
 For now, our goal is the same level of functionality as [Solaris 7 supports](http://docs.sun.com/app/docs/doc/805-4123/6j3tmpc62?a=view).
 

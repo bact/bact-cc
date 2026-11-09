@@ -11,9 +11,7 @@ wpid: 1888
 ---
 เคยโพสต์ถึงเพลงนี้ไว้เมื่อ [16 ก.ค. 2547](http://bact.blogspot.com/2004/07/who-is-queen.html) เพลงจากหนัง *[Human Traffic](http://en.wikipedia.org/wiki/Human_Traffic)* หนังอีกเรื่องที่ชอบ ดูไม่ค่อยรู้เรื่องเท่าไหร่ แต่มันมันดี
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/l-NZM-ribi4"></param><param name="wmode" value="transparent"></param></object>
-
 
 ทำนองเพลง เอามาจากเพลงชาติสหราชอาณาจักร [“God Save the Queen”](http://en.wikipedia.org/wiki/God_Save_the_Queen)  
 แต่ท่าทางเนื้อเพลงชาติ มันก็ควรจะเป็นเรื่องของคนในชาติ หนังเรื่องนี้เลยจัดการเปลี่ยนเนื้อร้องเสียใหม่ ให้เป็นเรื่องใกล้ตัว เรื่องที่บอกเล่าความรู้สึกนึกคิดของคนส่วนหนึ่งช่วงอายุหนึ่งในชาติ (กรณีนี้คือวัยรุ่น) อย่างที่ตัวละครในเรื่องพูดไว้:

@@ -11,9 +11,7 @@ wpid: 1867
 ---
 เอารุ่นน้องมาขายอีกแล้วนะครับ (สนุก)
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/wxnSuZ90Pyo"></param><param name="wmode" value="transparent"></param></object>
-
 
 ดูทุกตอน ตั้งแต่รอบแรก จนถึงรอบสุดท้าย ได้ที่:  
 [www.zrushayee.co.nr](http://www.zrushayee.co.nr/)

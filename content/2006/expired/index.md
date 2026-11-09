@@ -12,9 +12,7 @@ wpid: 1812
 ---
 **ระวัง! หมดอายุ**
 
-
 <iframe loading="lazy" width="500" height="405" src="https://www.youtube.com/embed/wpDIFsCpNfw" frameborder="0" allowfullscreen></iframe>
-
 
 อุปสรรคขัดขวางแล้วเธอไม่ยอมทำอะไร — ระวังหมดอายุ  
 เดิน ๆ ตามความฝันแล้วเธอก็ทำครึ่ง ๆ กลาง ๆ — ระวังหมดอายุ  

@@ -14,7 +14,6 @@ wpid: 2955
 
 <iframe loading="lazy" width="500" height="405" src="https://www.youtube.com/embed/XZp2kCoC9hM" frameborder="0" allowfullscreen></iframe>
 
-
 [ติ๊ก ชีโร่ – รักไม่ยอมเปลี่ยนแปลง](http://www.youtube.com/watch?v=NrbH7oLwGoQ)  
 
 <iframe loading="lazy" width="500" height="314" src="https://www.youtube.com/embed/NrbH7oLwGoQ" frameborder="0" allowfullscreen></iframe>

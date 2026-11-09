@@ -16,11 +16,9 @@ wpid: 2284
 
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/ywEjbAfDtDw&#038;rel=0&#038;color1=0x234900&#038;color2=0x4e9e00&#038;border=0"></param><param name="wmode" value="transparent"></param></object>
 
-
 **[Thai Politics is So Boring…. (เลือกเบอร์อะไรดี)](http://youtube.com/watch?v=JzONTs7nxvI)**  
 
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/JzONTs7nxvI&#038;rel=0&#038;color1=0xe1600f&#038;color2=0xfebd01&#038;border=0"></param><param name="wmode" value="transparent"></param></object>
-
 
 [www.fanrosana.com](http://www.fanrosana.com/)
 

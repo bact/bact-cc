@@ -21,7 +21,7 @@ It is [this difficult](https://help.ubuntu.com/community/RenameUSBDrive) to rena
 ผมใช้เป็น FAT32 ก็ต้องลง mtools (`sudo apt-get install mtools`)  
 แล้วใช้โปรแกรมชื่อ mlabel ในการเปลี่ยนชื่อ ประมาณนี้:
 
-`sudo mlabel -i `*`/dev/sdd1`*` ::`*`GO-BACT`*
+`sudo mlabel -i`*`/dev/sdd1`*`::`*`GO-BACT`*
 
 เปลี่ยน */dev/sdd1* เป็น device ที่จะเปลี่ยน (ใน Ubuntu ลอง ls /dev/disk ดูได้)  
 เปลี่ยน *GO-BACT* เป็นชื่อที่อยากได้

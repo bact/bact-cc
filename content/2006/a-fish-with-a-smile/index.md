@@ -11,7 +11,6 @@ wpid: 1783
 ---
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/haUYU037UmI"></param><param name="wmode" value="transparent"></param></object>
 
-
 สั้น สวย ง่าย งาม … เหงา และ อบอุ่น
 
 “คนป่วย” พูดถึงอนิเมชั่นเรื่องนี้ ของ **[จิมมี่ เหลียว](http://www.jimmyspa.com/)**  

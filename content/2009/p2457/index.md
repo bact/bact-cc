@@ -18,13 +18,13 @@ wpid: 2457
 
 เมื่อเว็บไซต์พบ url ที่ผู้ใช้ใส่เข้ามา ก็จะวิ่งไปถามตัวผู้ให้บริการสื่อชิ้นนั้น ว่าควรจะใช้โค้ด html แบบไหน แล้วจัดการที่เหลือให้อัตโนมัติ เช่น:
 
-1.  ผู้ใช้แปะลิงก์รูป *http://www.flickr.com/photos/bees/2341623661/* ในเว็บบอร์ด
+1. ผู้ใช้แปะลิงก์รูป *http://www.flickr.com/photos/bees/2341623661/* ในเว็บบอร์ด
 
-2.  เว็บบอร์ดพบว่า ลิงก์ดังกล่าว เข้าแก๊ป URL scheme: *http://\*.flickr.com/photos/\** ซึ่งแปลว่าเป็น embed representation ซึ่งเชื่อมอยู่กับ API endpoint: *http://www.flickr.com/services/oembed/*
+2. เว็บบอร์ดพบว่า ลิงก์ดังกล่าว เข้าแก๊ป URL scheme: *http://\*.flickr.com/photos/\** ซึ่งแปลว่าเป็น embed representation ซึ่งเชื่อมอยู่กับ API endpoint: *http://www.flickr.com/services/oembed/*
 
-3.  เว็บบอร์ดจึงถามข้อมูลของ embed ตัวนี้ ไปที่ API endpoint โดยใช้ request ดังนี้ *http://www.flickr.com/services/oembed/?url=http%3A//www.flickr.com/photos/bees/2341623661/*
+3. เว็บบอร์ดจึงถามข้อมูลของ embed ตัวนี้ ไปที่ API endpoint โดยใช้ request ดังนี้ *http://www.flickr.com/services/oembed/?url=http%3A//www.flickr.com/photos/bees/2341623661/*
 
-4.  ตัว API ส่งข้อมูลกลับมาให้เว็บบอร์ด เป็น XML หรือ JSON เช่น
+4. ตัว API ส่งข้อมูลกลับมาให้เว็บบอร์ด เป็น XML หรือ JSON เช่น
 
         {
          "version": "1.0",
@@ -39,7 +39,7 @@ wpid: 2457
          "provider_url": "http://www.flickr.com/"
         }
 
-5.  ตัวเว็บบอร์ด ก็จะเอาข้อมูลตรงนี้ ไปสร้างโค้ด embed ให้เอง
+5. ตัวเว็บบอร์ด ก็จะเอาข้อมูลตรงนี้ ไปสร้างโค้ด embed ให้เอง
 
 ในมุมมองของผู้ใช้แล้ว แบบนี้ง่ายกว่าเยอะ
 

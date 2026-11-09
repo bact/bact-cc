@@ -32,8 +32,6 @@ The Anthem เป็นหนังสั้น เป็นเพลงที�
 >
 > — [Quiet Bubble](http://quietbubble.typepad.com/quiet_bubble/2007/09/tiff-capsule-2-.html)
 
- 
-
 ------------------------------------------------------------------------
 
 [ร่วมให้กำลังใจ “นายโชติศักดิ์ อ่อนสูงและเพื่อน”](http://www.sameskybooks.org/2008/04/21/not-standing-is-nocrime/)  

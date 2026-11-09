@@ -18,10 +18,10 @@ wpid: 2275
 If you have problem with Java GUI apps (for example, NetBeans) on Hardy Heron (Ubuntu 8.04 LTS pre-release), try run this line in your terminal (as root) รันคำสั่งนี้ในเทอร์มินัล:
 
 for 32-bit Ubuntu:  
-`$ `**`sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/java-6-sun-1.6.0.04/jre/lib/i386/xawt/libmawt.so`**
+`$`**`sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/java-6-sun-1.6.0.04/jre/lib/i386/xawt/libmawt.so`**
 
 for 64-bit Ubuntu:  
-`$ `**`sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/java-6-sun-1.6.0.04/jre/lib/amd64/xawt/libmawt.so`**
+`$`**`sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/java-6-sun-1.6.0.04/jre/lib/amd64/xawt/libmawt.so`**
 
 (**Notes:** the path name may not be exactly as ones shown above, you may need to change to *version number* and/or the *architecture* of your JVM. Look your `/usr/lib/jvm` for the exact name to use. อย่าลืมเปลี่ยนชื่อพาธให้ตรงกับ JVM ที่อยู่ในเครื่องของเรา)
 

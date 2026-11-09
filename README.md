@@ -102,6 +102,18 @@ were reverted to HTML. Results and reasons: `MARKDOWN_CONVERSION_REPORT.txt`.
 Markdown typographer and auto-linking are disabled in `hugo.toml` so Markdown renders exactly what is written.
 The original HTML versions are in the git history (commit before the Markdown conversion).
 
+## Markdown linting
+
+[markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) (pinned in `package.json`, config in `.markdownlint-cli2.jsonc`) checks all
+`content/**/*.md` and runs in CI.
+
+```sh
+npm run lint:md        # check
+npm run lint:md:fix    # auto-fix, then re-render and keep only fixes that leave every page's output unchanged
+```
+`lint:md:fix` needs a clean `content/` in git. Rules that would change what readers see (heading levels, list numbering, `$` prompts
+in code) are off; three rules are off because the "problem" is in the original posts (see comments in the config).
+
 ## Re‑running the migration
 
 ```sh

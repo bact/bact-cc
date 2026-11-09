@@ -12,7 +12,6 @@ wpid: 3234
 ---
 <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/1RheetYP55g" frameborder="0" allowfullscreen></iframe>
 
-
 สิ่งที่ข้าพเจ้าพบเห็นในปี 2012: ความรัก ความฝัน ผู้คนเป็นล้านๆ  
 Let’s breaking out the door. Let’s dancing on the floor.
 

@@ -24,9 +24,7 @@ Not just only sounds of [air raids in the past](http://en.wikipedia.org/wiki/Bom
 
 การจัดแสดงที่คำนึงถึง และมอบประสบการณ์แก่ผู้เข้า ‘ร่วม’ ที่ไม่เพียงเป็นผู้เข้า ‘ชม’. เราคิดว่านี่เป็นตัวอย่างที่น่าสนใจของ interface/interaction design, museum design.
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/AHLobipEwBI&#038;hl=en_US&#038;fs=1&#038;color1=0x3a3a3a&#038;color2=0x999999"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
-
 
 [![Touched Echo by Markus Kison](https://farm3.static.flickr.com/2543/4162592782_0615240b76.jpg)](http://www.flickr.com/photos/arthit/4162592782/ "Touched Echo by Markus Kison, on Flickr")
 

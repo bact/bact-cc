@@ -23,15 +23,15 @@ But, still, who’re the Experts ? Why they are considered Experts ?
 
 ### Symposia
 
-1.  Professions, expertise and knowledge in ICT contexts
-2.  Communication between experts and laypersons
-3.  Competence
-4.  Domain-specific expertise
-5.  Finance
-6.  Expertise and memory
-7.  Groups
-8.  Expertise in Professional Learning and Development
-9.  Study on invention
+1. Professions, expertise and knowledge in ICT contexts
+2. Communication between experts and laypersons
+3. Competence
+4. Domain-specific expertise
+5. Finance
+6. Expertise and memory
+7. Groups
+8. Expertise in Professional Learning and Development
+9. Study on invention
 10. Eliciting and Representing the Knowledge of Experts
 11. Networked expertise
 12. Theory

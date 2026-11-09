@@ -99,8 +99,6 @@ Cinelerra ปัจจุบันมีสอง “flavours”, คือต�
 
 เราก็จะได้เอ็มวีแบบบ้าน ๆ [เช่นนี้](http://www.myspace.com/video/vid/12534256):
 
-
 <object width="425px" height="360px" ><param name="allowFullScreen" value="true"/><param name="wmode" value="transparent"/><param name="movie" value="http://mediaservices.myspace.com/services/media/embed.aspx/m=12534256,t=1,mt=video"/></object>
-
 
 <span class="small">technorati tags: [Linux](http://technorati.com/tag/Linux), [Cinelerra](http://technorati.com/tag/Cinelerra), [video editing](http://technorati.com/tag/video_editing)</span>

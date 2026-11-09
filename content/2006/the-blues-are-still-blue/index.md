@@ -25,9 +25,7 @@ wpid: 1702
 [Belle & Sebastian](http://th.wikipedia.org/wiki/Belle_%26_Sebastian "Belle & Sebastian ที่วิกิพีเดียไทย")‘s **The Blues are Still Blue**  
 [MV](http://youtube.com/watch?v=NM2637_waoI), [lyrics](http://www.belleandsebastian.com/recordings.php?release=36&view=lyrics&lyrics=414)
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/NM2637_waoI&#038;hl=en&#038;fs=1"></param><param name="allowFullScreen" value="true"></param></object>
-
 
 Look at the kid from school  
 He’s teaching mamas and papas how to be a little cool  

@@ -17,9 +17,7 @@ wpid: 2307
 ที่ Duocore <http://duocore.tv/> (ตอนพิเศษ [xxx.kapook.com](http://duocore.ch7.com/xxxkapookcom/))  
 ที่ FukDuk <http://fukduk.tv/> (รอ 1 เม.ย. รายการ “กำไข่ ใส่ข่าว”)
 
-
 <object width='480' height='290' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0'><param name='movie' value='http://duocore.ch7.com/wp-content/plugins/wordtube/flvplayer.swf' /><param name='bgcolor' value='#ffffff' /><param name='menu' value='false' /></object>
-
 
 เชิญดูและพิจารณานะครับ ความเห็นของผู้คนต่าง ๆ น่าจะพอเห็นใน [blogosphere](http://technorati.com/tag/xxx+kapook?authority=n&language=n "technorati tag: xxx+kapook") บ้างแล้ว
 

@@ -24,6 +24,4 @@ This is possible by using [CSS @media rule](http://msdn.microsoft.com/workshop/a
 
 ` `
 
- 
-
 ประหยัดกระดาษได้เหมือนกันนะ

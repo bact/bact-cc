@@ -14,9 +14,7 @@ wpid: 1917
 
 (ควรดู[ต้นฉบับ](http://youtube.com/watch?v=RbdbVhBGETQ)ก่อนมาดูอันนี้)
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/EiFOu-mVRRg"></param><param name="wmode" value="transparent"></param></object>
-
 
 รู้แล้ว ว่าทำไมถึงได้รางวัล “Holy S\*%T Award” !
 

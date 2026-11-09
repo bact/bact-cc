@@ -11,9 +11,7 @@ wpid: 1941
 ---
 [The Cloud Room](http://www.myspace.com/thecloudroom) — Hey Now Now
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/3aAza2nwa8Y"></param><param name="wmode" value="transparent"></param></object>
-
 
 (งง วีดิโอไม่ขึ้นอ่ะ — [link to YouTube](http://youtube.com/watch?v=3aAza2nwa8Y))
 

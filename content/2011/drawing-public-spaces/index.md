@@ -22,7 +22,6 @@ wpid: 3080
 
 <iframe loading="lazy" width="500" height="314" src="https://www.youtube.com/embed/2lXh2n0aPyw" frameborder="0" allowfullscreen></iframe>
 
-
 กำแพงคือวิหารของศิลปินข้างถนน – งานกราฟิตี้ชิ้นใหม่จาก [Banksy](http://www.banksy.co.uk/)  
 [![Street cathedral by Banksy](/f/2011/05/banksy-street-cathedral.jpg "Street cathedral by Banksy")](http://www.streetartutopia.com/?p=2831)
 

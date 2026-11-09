@@ -77,7 +77,7 @@ ICU ที่มากับ macOS ไม่มีไฟล์ header มาด�
 
 ตัวอย่างการเรียกใช้งานจาก command line:
 
-> **`tesseract`**` input.png output --oem 1 -l tha -c preserve_interword_spaces=1 --tessdata-dir ./tessdata_best/`
+> **`tesseract`**`input.png output --oem 1 -l tha -c preserve_interword_spaces=1 --tessdata-dir ./tessdata_best/`
 
 - **tesseract** — เป็นชื่อโปรแกรมที่เราใช้จาก command line
 - **input.png** — ตรงนี้จะเป็นชื่อภาพอะไรก็ได้ ได้ทั้งฟอร์แมต TIFF, PNG, JPG

@@ -16,11 +16,7 @@ wpid: 1652
 โดย [นักเทศน์ข้างถนนคลุ้มคลั่ง](http://en.wikipedia.org/wiki/Manic_Street_Preachers "Manic Street Preachers")  
 อัลบั้ม [นี่คือความจริงของฉัน บอกของคุณสิ](http://en.wikipedia.org/wiki/This_Is_My_Truth_Tell_Me_Yours "This Is My Truth Tell Me Yours")
 
-
 <iframe loading="lazy" width="420" height="315" src="https://www.youtube.com/embed/B7dBBCHYcZs" frameborder="0" allowfullscreen></iframe>
-
-
- 
 
 อนาคตสอนคุณ ให้อยู่โดดเดี่ยว  
 ปัจจุบัน ให้หวาดกลัว และเลือดเย็น  

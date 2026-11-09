@@ -11,7 +11,6 @@ wpid: 2510
 ---
 <object width="450" height="261"><param name="movie" value="http://en.tackfilm.se/loader.swf?shareID=1267030914750RA93&#038;folder=12670"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
 
-
 คุณได้ยินฉันไหม ?
 
 ในเวลาเช่นขณะนี้…  

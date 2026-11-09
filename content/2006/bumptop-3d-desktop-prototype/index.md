@@ -12,9 +12,7 @@ wpid: 1514
 ---
 สนุกไปหน่อยนะเนี่ย 😛
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/M0ODskdEPnQ"></param></object>
-
 
 > [BumpTop](http://honeybrown.ca/Pubs/BumpTop.html) aims to enrich the desktop metaphor with expressive, lightweight techniques found in the real world.
 

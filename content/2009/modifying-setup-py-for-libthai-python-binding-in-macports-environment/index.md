@@ -15,19 +15,17 @@ wpid: 2444
 
 เนื่องจากผมติดตั้ง **[libthai](http://linux.thai.net/projects/libthai)** ผ่านทาง [MacPorts](http://www.macports.org/) (ด้วยคำสั่ง `sudo port install libthai`) ดังนั้นแฟ้มไลบรารี (libthai.a) กับแฟ้ม include (\*.h) ทั้งหลาย จึงไม่ได้อยู่ในตำแหน่งปกติที่ apple-gcc จะวิ่งไปหา (ผมใช้ i686-apple-darwin9-gcc-4.0.1 ลองใช้ gcc-4.2, gcc-mp-4.4 ที่อยู่ในเครื่องแล้ว มันบอกไม่รู้จัก flag โน้น flag นี้ ผมก็เซ็ตไม่เป็นด้วย เลยใช้ gcc ตัวที่เขาให้มาแต่เดิมนี่แหละ) จึงจำเป็นต้องแก้ไข setup.py นิดหน่อย เพื่อบอกตำแหน่งของ include_dirs และ library_dirs ใหม่ ตามนี้ :
 
-
 <pre><code>
 from distutils.core import setup, Extension
 setup(name="libthai", version="0.0.1",
-      ext_modules=[ 
-        Extension('libthai', 
+      ext_modules=[
+        Extension('libthai',
                   <font color="red">include_dirs = ['/opt/local/include'],</font>
                   libraries = ['thai'],
                   <font color="red">library_dirs = ['/opt/local/lib'],</font>
                   sources = ['libthai.c']
 )])
 </code></pre>
-
 
 ก็จะสามารถ build และ install ได้ครับ – ของใครอยู่ที่อื่น ก็แก้ไปตามนั้นครับ –  
 ผมดูตัวอย่างจากเอกสารหน้านี้ : [3. Building C and C++ Extensions with distutils](http://docs.python.org/extending/building.html)

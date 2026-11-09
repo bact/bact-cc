@@ -63,17 +63,11 @@ K700i เครื่องนี้เป็นหลายอย่าง
 
 ประวัติศาสตร์บุคคล ผ่านโทรศัพท์มือถือ :p
 
-
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0262590255&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
-
 
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0415367441&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
-
-
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0773532307&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
 
 <span class="small">technorati tags:  
 [material](http://technorati.com/tag/material),  

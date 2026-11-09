@@ -20,9 +20,9 @@ Andreas Gohr (นักพัฒนา [DokuWiki](http://www.splitbrain.org/proj
 >
 > Here are the rules:
 >
-> 1.  Draw a Bunny (or more)
-> 2.  Post it to your blog with the rules
-> 3.  Name three other bloggers that should draw a bunny
+> 1. Draw a Bunny (or more)
+> 2. Post it to your blog with the rules
+> 3. Name three other bloggers that should draw a bunny
 >
 > You can draw your bunny however you like. Use pencil and paper, a drawing tablet or just your mouse. It doesn’t matter. It also doesn’t matter if it looks crappy or not. The important thing is the bunny!
 

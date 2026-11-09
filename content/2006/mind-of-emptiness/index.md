@@ -27,9 +27,7 @@ Fiona เอาเพลง The Beatles มาร้องใหม่ เพล
 > Nothings gonna change my world  
 > Nothings gonna change my world.
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/8gLWTtlMwo4"></param><param name="wmode" value="transparent"></param></object>
-
 
 สุข ทุกข์ อยู่ที่ตัวเรา เนอะ
 

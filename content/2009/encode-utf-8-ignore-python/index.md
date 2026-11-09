@@ -26,7 +26,6 @@ wpid: 2445
 
 เช่น จาก
 
-
 <pre><code>
 PyObject *txt_cp874 =
     PyUnicode_Encode(s1, s1_len, "CP874", <span style="color: red;">NULL</span>);
@@ -34,9 +33,7 @@ tok =
     PyUnicode_Decode(buffer, tok_len, "CP874", <span style="color: red;">NULL</span>);
 </code></pre>
 
-
 เป็น
-
 
 <pre><code>
 PyObject *txt_cp874 =
@@ -44,7 +41,6 @@ PyObject *txt_cp874 =
 tok =
     PyUnicode_Decode(buffer, tok_len, "CP874", <span style="color: red;">"ignore"</span>);
 </code></pre>
-
 
 แล้ว sudo python setup.py install ใหม่อีกรอบ (อย่าลืมล้าง build เก่าทิ้งก่อน) ก็น่าจะใช้ได้แล้วครับ
 

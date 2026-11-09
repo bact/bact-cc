@@ -56,9 +56,7 @@ wpid: 1981
 ถ้าเราเชื่อคุณ คุณก็ประสบความสำเร็จ  
 แต่คุณไม่ได้กล่าวอ้างถึงความเป็นจริง
 
-
 <object width="340" height="123"><param name="movie" value="http://panther1.last.fm/webclient//defaultEmbedPlayer.swf" /><param name=FlashVars value="viral=true&#038;lfmMode=playlist&#038;resourceID=1046088&#038;resourceType=9&#038;restTitle=Belle+and+Sebastian+%E2%80%93+Storytelling&#038;albumArt=http://images.amazon.com/images/P/B00005OM56.01._SCMZZZZZZZ_.jpg" /></object>
-
 
 Picture a scene in your mind  
 Looks at all the people and take note of the setting behind  

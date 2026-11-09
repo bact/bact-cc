@@ -27,12 +27,8 @@ wpid: 3303
 
 ไม่งั้นก็ออกไปจากประเทศนี้ครับ ง่ายๆ
 
-
 <iframe loading="lazy" width="640" height="480" src="https://www.youtube-nocookie.com/embed/DAOvsgvw-qo" frameborder="0" allowfullscreen></iframe>
 
-
-
 <iframe loading="lazy" width="640" height="360" src="http://mpora.com/videos/492n3jZsF/embed" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
 
 RIP

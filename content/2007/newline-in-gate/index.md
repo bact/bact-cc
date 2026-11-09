@@ -23,7 +23,6 @@ LF คือ [Line Feed](http://en.wikipedia.org/wiki/Line_feed) — เลื�
 
 นอกเรื่องซะไกล อ่ะ เขียนโค้ดได้อย่างนี้ (ตรงที่เป็นตัวหนา)
 
-
 <pre><code>
 int nllen = 1;
 <strong>String nl = (String) document.getFeatures().get("docNewLineType");</strong>
@@ -31,7 +30,6 @@ if (nl.equals("CRLF") || nl.equals("LFCR")) {
   nllen = 2;
 }
 </code></pre>
-
 
 ผมหาเจ้าความยาวของอักขระขึ้นบรรทัดใหม่ (nllen) นี่ไป เพื่อไปชดเชยออฟเซตเวลาประมวลผลเอกสาร  
 คือ ผมใช้เมทธอด readLine() ในคลาส \*Reader ซึ่งมันจะอ่านทีละบรรทัดให้อัตโนมัติ สบายดี  

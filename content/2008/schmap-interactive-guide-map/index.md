@@ -24,9 +24,7 @@ wpid: 2360
 
 โอ๊ย อยากเที่ยวววว
 
-
 <iframe id="schmapplet" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" allowTransparency="true" style="border-style:none; border-width:0px;"width="400" height="400" src="http://www.schmap.com/templates/t011py.html?uid=berlin&#038;sid=home&#038;ultranarrow=true&#038;si=SCHMAP-020608555551#mapview=Map&#038;tab=map&#038;topleft=52.5080206,13.3624176&#038;bottomright=52.5361014,13.4121244&#038;c=f6f6f6A72122A62122A62122FFF88FFAF5BBffffffFFF88Fd8d8d8A4A7A6A621226990ffECEBBD0000005C5A4E5C5A4E000000929292F0EFDA"></iframe>
-
 
 <span class="small">technorati tags:  
 [guide](http://technorati.com/tag/guide),  

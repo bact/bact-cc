@@ -33,7 +33,6 @@ You’ll be one of us when the night comes
 
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/TGyCTgOqj6c"></param><param name="wmode" value="transparent"></param></object>
 
-
 **tags:**  
 [I’m from Barcelona](http://technorati.com/tag/Im_from_Barcelona) \|  
 [We’re from Barcelona](http://technorati.com/tag/Were_from_Barcelona) \|  

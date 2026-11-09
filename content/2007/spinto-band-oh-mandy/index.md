@@ -13,9 +13,7 @@ wpid: 1916
 
 วง [Spinto Band](http://www.myspace.com/thespintoband/) เพลง Oh Mandy
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/y1nDy1aS9oM"></param><param name="wmode" value="transparent"></param></object>
-
 
 <span class="small">technorati tags:  
 [Spinto Band](http://technorati.com/tag/Spinto_Band),  

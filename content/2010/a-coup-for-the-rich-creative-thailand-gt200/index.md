@@ -23,8 +23,6 @@ wpid: 2503
 
 ข่าว 3 มิติ ก็พูดถึงเรื่องนี้
 
-
 <object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/Y2Q1XTcj_0o&amp;hl=en_US&amp;fs=1&amp;" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /></object>
-
 
 <span class="small">technorati tags: [GT200](http://technorati.com/tag/GT200), [bomb detector](http://technorati.com/tag/bomb+dectector), [Thailand](http://technorati.com/tag/Thailand), [coup](http://technorati.com/tag/coup)</span>

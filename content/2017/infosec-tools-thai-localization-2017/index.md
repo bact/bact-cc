@@ -30,7 +30,6 @@ Thanks [COCONET: Southeast Asia Digital Rights Camp](https://www.engagemedia.org
 
 - <strong>KeePassXC</strong> โปรแกรมจัดการรหัสผ่าน \[71%\]  
   <https://www.transifex.com/keepassxc/keepassxc/>  
-   
 
 - <strong>Tor</strong>, <strong>Tor Browser</strong> เบราว์เซอร์ช่วยเข้าถึงเน็ตอย่างเป็นส่วนตัวมากขึ้น \[58%\]  
   <https://www.transifex.com/otf/torproject/>
@@ -38,24 +37,18 @@ Thanks [COCONET: Southeast Asia Digital Rights Camp](https://www.engagemedia.org
   - มีโปรแกรมย่อยๆ อีก เช่น TorBirdy ส่วนเสริมให้ Thunderbird ส่งเมลผ่าน Tor
   - ดูรายละเอียดเพิ่มที่วิกิ <https://wiki.localizationlab.org/index.php/Tor>
 
-   
-
 - <strong>Lantern</strong> แอปทำนอง VPN \[49%\]  
   <https://www.transifex.com/otf/lantern/>  
-   
 
 - <strong>ooniprobe</strong> แอปช่วยทดสอบความเร็วและการเข้าถึงเน็ต \[41%\]  
   <https://www.transifex.com/otf/ooniprobe/>  
-   
 
 - <strong>Duplicati</strong> โปรแกรมช่วยสำรองข้อมูล \[5%\]  
   <https://www.transifex.com/duplicati/duplicati/>  
-   
 
 - <strong>VeraCrypt</strong> โปรแกรมช่วยให้เก็บข้อมูลในเครื่องอย่างปลอดภัย \[0%\]  
   <https://github.com/veracrypt/VeraCrypt/tree/master/Translations>  
   <em>— Update 2018-01-04: เปิดให้แปลภาษาไทยได้แล้ว [ผ่าน Transifex (private)](https://www.transifex.com/otf/veracrypt-1/)</em>  
-   
 
 ## รอให้ทางโครงการเพิ่มภาษาไทย
 
@@ -65,14 +58,10 @@ Thanks [COCONET: Southeast Asia Digital Rights Camp](https://www.engagemedia.org
   - มีโปรแกรมย่อยอีก 4 ตัวคือ GnuPG (โปรแกรมเข้ารหัสลับ), Kleopatra (โปรแกรมจัดการกุญแจ), GpgOL (ปลั๊กอินสำหรับ Outlook – เข้ารหัสลับอีเมล), GpgEx (ปลั๊กอินสำหรับ Windows Explorer – เข้ารหัสลับแฟ้ม)
   - อาจจะมีทางให้ [Localization Lab](https://www.localizationlab.org/) ช่วยจัดการให้แปลผ่าน Transifex ได้
 
-   
-
 - <strong>GPG Suite</strong> ชุดโปรแกรมสำหรับเข้ารหัสลับแบบ PGP (macOS) <em>— Update 2018-01-05: เปิดให้แปลภาษาไทยได้แล้ว</em>  
   <https://www.transifex.com/gpgtools/public/>
 
   - มีโปรแกรมย่อยอีก 4 ตัวคือ libmacgpg (โปรแกรมเข้ารหัสลับ), GPG Keychain (โปรแกรมจัดการกุญแจ), GPGMail (ปลั๊กอินสำหรับ Mail.app), GPGPerferences (ส่วนการตั้งค่า)
-
-   
 
 - <strong>Orbot, Orfox</strong> แอปช่วยเข้าถึงเน็ตอย่างเป็นส่วนตัวมากขึ้น (Android)  
   <https://www.transifex.com/otf/orbot/> (เทียบได้กับ Tor) <em>— Update 2018-01-10: เปิดให้แปลภาษาไทยได้แล้ว</em>  

@@ -11,7 +11,6 @@ wpid: 2194
 ---
 <object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/b4UxxgKkBFs&#038;hl=en_US&#038;fs=1&#038;"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
 
-
 สนุกดี นั่งไล่หาว่า “Paris, Texas” ในเพลง [New Amsterdam](http://www.last.fm/music/Travis/_/New+Amsterdam "@ Last.fm") ของ [Travis](http://th.wikipedia.org/wiki/Travis "a Scottish alternative rock band from Glasgow") คืออะไร
 
 เริ่มแรกสำหรับ Paris ก็สงสัย [Paris Hilton](http://en.wikipedia.org/wiki/Paris_Hilton "a celebutante") ก่อนใคร เพราะชื่อก่อนหน้าทั้งหมด เป็นชื่อคนที่เกี่ยวข้องกับนิวยอร์ก  

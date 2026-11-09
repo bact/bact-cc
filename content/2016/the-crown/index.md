@@ -12,7 +12,6 @@ wpid: 3482
 ---
 <iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/Pl4Lm9uDhk4?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-GB&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
 
-
 เข้าใจว่า [The Crown](https://en.wikipedia.org/wiki/The_Crown_(TV_series)) ในชื่อซีรีส์ มันไม่ใช่มงกุฎ แต่หมายถึงหน่วยทางการเมือง เป็น Crown เดียวกับ [Crown](https://en.wikipedia.org/wiki/The_Crown) ใน Crown prosecutor (อัยการ, ทำนองเดียวกับ public prosecutor), [Crown Estate](https://en.wikipedia.org/wiki/Crown_Estate) (UK) หรือ [Crown Property Bureau](https://en.wikipedia.org/wiki/Crown_Property_Bureau) (สำนักงานทรัพย์สินส่วนพระมหากษัตริย์ ของไทย)
 
 The Crown เป็นแนวคิดที่เริ่มพัฒนาในอังกฤษ เพื่อแยกอำนาจที่ใช้ผ่านกษัตริย์ (crown) ออกมาจากตัวกษัตริย์ (monarch)

@@ -13,15 +13,15 @@ wpid: 1078
 
 To install any of them to your Eclipse IDE:
 
-1.  Click on Help → Software Updates → Find/Install from file menu in Eclipse.
-2.  Select the radio button labeled, “search for new features to install”.
-3.  Click on the “New Remote Site” button.
-4.  Enter a name, and the url (any/all of these)
+1. Click on Help → Software Updates → Find/Install from file menu in Eclipse.
+2. Select the radio button labeled, “search for new features to install”.
+3. Click on the “New Remote Site” button.
+4. Enter a name, and the url (any/all of these)
     - **Ruby:** http://rubyeclipse.sf.net/updatesite
     - **Python:** http://pydev.sf.net/updates
     - **PHP:** http://download.pipestone.com/eclipse/updates
     - **Perl:** http://e-p-i-c.sf.net/updates
-5.  Click on “Finish”.
-6.  A list of features will be presented, open the list and check the one labeled “RubyEclipse” / “PyDev for Eclipse”/ “phpeclipse” / “EPIC”.
-7.  Click on “Next”.
-8.  Follow the onscreen instructions to finish the automatic install.
+5. Click on “Finish”.
+6. A list of features will be presented, open the list and check the one labeled “RubyEclipse” / “PyDev for Eclipse”/ “phpeclipse” / “EPIC”.
+7. Click on “Next”.
+8. Follow the onscreen instructions to finish the automatic install.

@@ -21,15 +21,15 @@ Read the Act from [NLA website](http://library2.parliament.go.th/giventake/conte
 
 มีสามเรื่องหลักที่กฎหมายที่กำหนด คือ
 
-1.  ขยายหน้าที่ของ **สถาบันนิติวิทยาศาสตร์ กระทรวงยุติธรรม** (หมวด 1) เช่น มาตรา 5 (5) “ส่งเสริมและพัฒนาการให้บริการด้านนิติวิทยาศาสตร์ของเอกชน”
-2.  กำหนดให้ข้อมูลจากบริการนิติวิทยาศาสตร์ต้องเป็นความลับ กำหนดวิธีการเก็บรักษา การทำลาย และการเปิดเผย (หมวด 2)
-3.  ตั้ง **คณะกรรมการกำกับการให้บริการด้านนิติวิทยาศาสตร์** เพื่อกำกับดูแลเรื่องมาตรฐาน ค่าบริการ การอุทธรณ์ และการแลกเปลี่ยนข้อมูล (หมวด 3)หมวด 2 เรื่องข้อมูล มีสองมาตรา ว่าด้วยการจัดเก็บและทำลายข้อมูล (มาตรา 8) และการเปิดเผยข้อมูล (มาตรา 9) แต่รายละเอียดยังไม่มี ต้องรอคณะกรรมการฯประกาศ
+1. ขยายหน้าที่ของ **สถาบันนิติวิทยาศาสตร์ กระทรวงยุติธรรม** (หมวด 1) เช่น มาตรา 5 (5) “ส่งเสริมและพัฒนาการให้บริการด้านนิติวิทยาศาสตร์ของเอกชน”
+2. กำหนดให้ข้อมูลจากบริการนิติวิทยาศาสตร์ต้องเป็นความลับ กำหนดวิธีการเก็บรักษา การทำลาย และการเปิดเผย (หมวด 2)
+3. ตั้ง **คณะกรรมการกำกับการให้บริการด้านนิติวิทยาศาสตร์** เพื่อกำกับดูแลเรื่องมาตรฐาน ค่าบริการ การอุทธรณ์ และการแลกเปลี่ยนข้อมูล (หมวด 3)หมวด 2 เรื่องข้อมูล มีสองมาตรา ว่าด้วยการจัดเก็บและทำลายข้อมูล (มาตรา 8) และการเปิดเผยข้อมูล (มาตรา 9) แต่รายละเอียดยังไม่มี ต้องรอคณะกรรมการฯประกาศ
 
 Three main things this Act is doing are:
 
-1.  Expanding duties of Ministry of Justice’s **[Central Institute of Forensic Science](http://www.cifs.moj.go.th/eng/) (สถาบันนิติวิทยาศาสตร์)** (Chapter 1)
-2.  Specifying how the forensic data should be handled (Chapter 2)
-3.  Establishing **Forensic Service Oversight Committee (คณะกรรมการกำกับการให้บริการด้านนิติวิทยาศาสตร์)** who will regulating forensic standards, fees, appeal process, and the exchange of forensic data. (Chapter 3)
+1. Expanding duties of Ministry of Justice’s **[Central Institute of Forensic Science](http://www.cifs.moj.go.th/eng/) (สถาบันนิติวิทยาศาสตร์)** (Chapter 1)
+2. Specifying how the forensic data should be handled (Chapter 2)
+3. Establishing **Forensic Service Oversight Committee (คณะกรรมการกำกับการให้บริการด้านนิติวิทยาศาสตร์)** who will regulating forensic standards, fees, appeal process, and the exchange of forensic data. (Chapter 3)
 
 According to **Section 3** of the Act, *“data”* in this Act means “Any data that comes from the forensic service”.
 

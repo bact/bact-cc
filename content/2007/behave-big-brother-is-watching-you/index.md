@@ -31,14 +31,14 @@ wpid: 2145
 
 หลักพื้นฐานทั่วไปอันหนึ่ง ที่น่าจะใช้เป็นแนวทางพิจารณาตรวจสอบขอบเขตอำนาจกฏกระทรวงอันนี้ได้ ว่าล้ำเส้นเกินไปหรือไม่ คือ [หลักการให้ความคุ้มครองข้อมูลส่วนบุคคลของ OECD](http://www.uhoh.org/oecd-privacy-personal-data.PDF "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data") ซึ่งมีสาระสำคัญดังนี้ (อ้าง [ศูนย์เทคโนโลยีสารสนเทศ สำนักงานเศรษฐกิจการคลัง](http://e-fpo.fpo.go.th/it-center/IT-LAW/Law4.html)):
 
-1.  หลักข้อจำกัดในการเก็บรวบรวมข้อมูล (Collection Limitation Principle)
-2.  หลักคุณภาพของข้อมูล (Data Quality Principle)
-3.  หลักการกำหนดวัตถุประสงค์ในการจัดเก็บ (Purpose Specification Principle)
-4.  หลักในการนำไปใช้ (Use Limitation)
-5.  หลักการรักษาความปลอดภัยข้อมูล (Security Safeguards Principle)
-6.  หลักการเปิดเผยข้อมูล (Openness Principle)
-7.  หลักการมีส่วนร่วมของบุคคล (Individual Participation Principle)
-8.  หลักการความรับผิดชอบ (Accountability Principle)
+1. หลักข้อจำกัดในการเก็บรวบรวมข้อมูล (Collection Limitation Principle)
+2. หลักคุณภาพของข้อมูล (Data Quality Principle)
+3. หลักการกำหนดวัตถุประสงค์ในการจัดเก็บ (Purpose Specification Principle)
+4. หลักในการนำไปใช้ (Use Limitation)
+5. หลักการรักษาความปลอดภัยข้อมูล (Security Safeguards Principle)
+6. หลักการเปิดเผยข้อมูล (Openness Principle)
+7. หลักการมีส่วนร่วมของบุคคล (Individual Participation Principle)
+8. หลักการความรับผิดชอบ (Accountability Principle)
 
 ช่วยกันดูครับ พูด ตอนที่ยังพูดได้
 

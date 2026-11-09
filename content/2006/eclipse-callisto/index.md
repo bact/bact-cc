@@ -14,8 +14,8 @@ the [Callisto Simultaneous Release](http://www.eclipse.org/projects/callisto.php
 
 Install latest release of 10 major Eclipse plug-ins with ease:
 
-1.  Install Eclipse 3.2 **M5<u>a</u>** (or newer)
-2.  Points the Update Manager to the Callisto update site  
+1. Install Eclipse 3.2 **M5<u>a</u>** (or newer)
+2. Points the Update Manager to the Callisto update site  
     <http://download.eclipse.org/callisto/releases>  
     and select any/all features you like to install
 

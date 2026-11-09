@@ -29,9 +29,7 @@ wpid: 2533
 
 Morozov คุยถึงเนื้อหาจากหนังสือเล่มนี้ กับอาจารย์ทางด้านรัฐศาสตร์และความสัมพันธ์ระหว่างประเทศ อีกสองคน ที่ Open Society Institute นิวยอร์ก:
 
-
 <iframe loading="lazy" title="YouTube video player" width="560" height="349" src="https://www.youtube.com/embed/uqvRdA1aMPs" frameborder="0" allowfullscreen></iframe>
-
 
 [Morozov คุยหัวข้อเดียวกัน ที่ Carnegie Council](http://www.policyinnovations.org/ideas/video/data/000369) (วีดิโอ + บันทึกเป็นข้อความ)
 
@@ -41,8 +39,6 @@ Morozov คุยถึงเนื้อหาจากหนังสือเ
 
 อนิเมชั่นเรื่องขบวนการเคลื่อนไหวทางสังคมและอินเทอร์เน็ต พากษ์โดย Morozov:
 
-
 <iframe loading="lazy" title="YouTube video player" width="560" height="349" src="https://www.youtube.com/embed/Uk8x3V-sUgU" frameborder="0" allowfullscreen></iframe>
-
 
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=1586488740&#038;ref=tf_til&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe> <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=0307269930&#038;ref=tf_til&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe> <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=9004146253&#038;ref=tf_til&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe> <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=0262514354&#038;ref=tf_til&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>

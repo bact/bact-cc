@@ -16,9 +16,7 @@ wpid: 1717
 > Closing time  
 > You don’t have to go home but you can’t stay here
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/KdmLmIArqWM"></param><param name="wmode" value="transparent"></param></object>
-
 
 > I know who I want to take me home  
 > I know who I want to take me home  

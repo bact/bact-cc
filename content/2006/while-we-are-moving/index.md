@@ -17,9 +17,7 @@ wpid: 1728
 > The music is soothing  
 > Troubles we thought had begun
 
-
 <iframe loading="lazy" width="420" height="315" src="https://www.youtube.com/embed/syOK6zmpOe0" frameborder="0" allowfullscreen></iframe>
-
 
 [Spiller](http://en.wikipedia.org/wiki/Spiller "Italian DJ") feat. [Sophie Ellis-Bextor](http://en.wikipedia.org/wiki/Sophie_Ellis-Bextor "English pop singer/songwriter") — [Groovejet (If This Ain’t Love)](http://en.wikipedia.org/wiki/Groovejet_%28If_This_Ain%27t_Love%29 "#1 UK, Ireland, NZ, Australia") ([mv](http://youtu.be/syOK6zmpOe0 "Groovejet music video"))
 

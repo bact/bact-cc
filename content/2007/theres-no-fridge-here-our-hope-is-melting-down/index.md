@@ -11,7 +11,6 @@ wpid: 2096
 ---
 <iframe border=0 src="http://www.prachatai.com/05web/th/special/200705videoabbott1.html" frameBorder=0 width=320 scrolling=no height=240 bgcolor="#ffffff" scrollbar="no"></iframe>
 
-
 (คลิปจาก[ประชาไท](http://www.prachatai.com/05web/th/home/page2.php?mod=mod_ptcms&ContentID=8024&SystemModuleKey=HilightNews&SystemLanguage=Thai))
 
 > โดยปกติผู้ติดเชื้อที่ดื้อยาต้านไวรัสสูตรพื้นฐาน ต้องหันมาใช้ยาต้านไวรัสสูตรสำรอง

@@ -12,18 +12,12 @@ wpid: 2392
 ---
 <span class="small">*ascii art courtesy of carleLdi, killerkrayon08, and others from [YouTube](http://www.youtube.com/watch?v=E-o2GfXzRWs)*</span>
 
- 
-
     „¸¨°º¤ø„¸¸„ø¤º°¨¸„ø¤º°¨
     ¨°º¤ø„The Killers¸„ø¤º°¨
     ¸„ø¤º°¨ ROCKS ``°º¤ø
     ¸„ø¤º°¨¸„ø¤º°¨¨°º¤ø„¸
 
- 
-
-
 <iframe loading="lazy" width="500" height="314" src="https://www.youtube.com/embed/gGdGFtwCNBE" frameborder="0" allowfullscreen></iframe>
-
 
 I’m coming out of my cage  
 And I’ve been doing just fine  

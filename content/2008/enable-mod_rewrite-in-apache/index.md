@@ -33,7 +33,6 @@ wpid: 2318
 
 ตัวอย่างเช่น:
 
-
 <pre>
 &lt;Directory /var/www/&gt;
     Options Indexes FollowSymLinks MultiViews
@@ -42,7 +41,6 @@ wpid: 2318
     allow from all
 &lt;/Directory&gt;
 </pre>
-
 
 **ขั้นสาม:** รีสตาร์ท apache
 

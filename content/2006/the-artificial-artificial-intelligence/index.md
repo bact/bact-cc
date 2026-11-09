@@ -21,5 +21,5 @@ I’m thinking of Matrix…
 
 Notes:
 
-1.  in a sense that you don’t have to wait until someone can come up with an intelligent algorithm that can solve your problem. why wait ? as human can solve it, now.
-2.  you’ve to pay for each answer, and Amazon takes 10% out of it. that’s a business model.
+1. in a sense that you don’t have to wait until someone can come up with an intelligent algorithm that can solve your problem. why wait ? as human can solve it, now.
+2. you’ve to pay for each answer, and Amazon takes 10% out of it. that’s a business model.

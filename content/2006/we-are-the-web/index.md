@@ -12,7 +12,6 @@ wpid: 1639
 ---
 <object id="videoPlayer" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="365" height="330" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="wmode" value="transparent" /><param name="movie" value="http://www.wearetheweb.org/embededPlayers/theVideo.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /></object>
 
-
 [We are the Web](http://wearetheweb.org/) — [Save the Internet](http://www.savetheinternet.com/)
 
 Fighting for **[Net Neutrality](http://en.wikipedia.org/wiki/Network_neutrality)** and **[Internet Freedom](http://en.wikipedia.org/wiki/Internet_Freedom)**

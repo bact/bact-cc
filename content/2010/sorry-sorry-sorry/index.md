@@ -24,29 +24,19 @@ wpid: 2534
 
 > [“There is nothing equivocal. There are no ambiguities. What happened on Bloody Sunday was both unjustified and unjustifiable. It was wrong.”](http://www.guardian.co.uk/news/blog/2010/jun/15/bloodysunday-northernireland)
 
-
 <object width="420" height="237" data="http://www.voicetv.co.th/fplayer/player.swf?version=20100120" type="application/x-shockwave-flash"><param name="flashvars" value="config=http%3A%2F%2Fwww.voicetv.co.th%2Ffplayer%2Fconfig.php%3Fvkey%3Daadbd118443e92685853%26embed%3D1" /><param name="movie" value="http://www.voicetv.co.th/fplayer/player.swf?version=20100120" /><param name="allowfullscreen" value="true" /><param name="bgcolor" value="#000000" /></object>
-
 
 [ซอรี่ ซอรี่ ซอรี่ …](http://www.youtube.com/watch?v=_43TO_OPj-8)
 
-
 <object width="420" height="340"><param name="movie" value="http://www.youtube.com/v/_43TO_OPj-8?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
-
 
 แต่พูดซอรี่นี่ เดี๋ยวก็โดน [“เสียใจ แต่ไม่ขอโทษ”](https://encrypted.google.com/search?q=%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B9%83%E0%B8%88+%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%82%E0%B8%AD%E0%B9%82%E0%B8%97%E0%B8%A9) ได้ :p
 
-
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=B002A59VU8&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
-
 
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0802138799&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
-
-
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0300106823&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
 
 <span class="small">technorati tags:  
 [apology](http://technorati.com/tag/apology),  

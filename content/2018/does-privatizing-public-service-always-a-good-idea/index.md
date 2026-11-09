@@ -23,15 +23,11 @@ wpid: 3656
 >
 > — Frank Pasquale (@FrankPasquale) [14 เมษายน 2561](https://twitter.com/FrankPasquale/status/985218246788993024?ref_src=twsrc%5Etfw)
 
-
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ในสหรัฐอเมริกายังมีอีกตัวอย่างคือ คุกเอกชน ที่ก็มีคนไปพบว่าในเอกชนชี้ชวนการลงทุน แสดงให้เห็นว่ามุมมองในการบริหารคุกเอกชนจะไม่ใช่การพยายามไม่ให้นักโทษกลับมาเข้าคุกอีก เพราะนั่นคือการเสียรายได้ในระยะยาว นอกจากนี้[บริษัทคุกเอกชนวิ่งเต้นให้ผ่านกฎหมายที่จะทำให้มีโทษจำคุกเพิ่มขึ้น](https://www.washingtonpost.com/posteverything/wp/2015/04/28/how-for-profit-prisons-have-become-the-biggest-lobby-no-one-is-talking-about/) ทั้งในแง่ลักษณะโทษที่จะมีโทษจำคุกและเวลาจำคุก
 
-
 <iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/_Pz3syET3DY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-GB&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
-
 
 ถ้าเมืองไทยนี่นึกถึงการลงทะเบียนแรงงานต่างด้าว ถ้าทำให้ง่าย บริษัทนายหน้าและธุรกิจที่เกี่ยวข้องคงได้รับผลกระทบ
 

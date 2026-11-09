@@ -18,9 +18,7 @@ wpid: 2508
 
 ใครไม่เคยไป นึกไม่ออก หน้าตารี้ดแคมป์มันเป็นประมาณนี้ (ขอบคุณ Thoth Media):
 
-
 <object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/xKuxO34Zu30&#038;hl=en_US&#038;fs=1&#038;color1=0x006699&#038;color2=0x54abd6"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object>
-
 
 ผมว่าจะไป ‘อ่าน’ [ภาษา ‘Newspeak’](http://en.wikipedia.org/wiki/Newspeak) (จากนิยาย 1984) ใครสนใจไปแจมกันได้
 

@@ -18,15 +18,11 @@ it will looks something like this ดูตัวอย่าง ประมา
 
 **Frozen Grand Central**, New York (จำได้ว่ากล้าเคยเอามาเป็นคลิปปิดท้าย [duocore](http://duocore.tv/) ด้วย… ไม่ค่อยแน่ใจ แต่น่าจะใช่ ตอนได้ดูตอนแรกนี่ โอ้ววว ตัวสั่น)
 
-
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/jwMj3PJDxuo&#038;hl=en"></param><param name="wmode" value="transparent"></param></object>
-
 
 **Frozen Berlin Alexanderplatz** (เบอร์ลินตะวันออก)
 
-
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/MYboJljTudQ&#038;hl=en"></param><param name="wmode" value="transparent"></param></object>
-
 
 \[ ลิงก์ [viralthing.ning.com](http://viralthai.ning.com/) \| ผ่าน [PaePae](http://paepae.exteen.com/20080407/20-freeze-5/) \]
 

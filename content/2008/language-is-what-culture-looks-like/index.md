@@ -12,7 +12,6 @@ wpid: 2314
 ---
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/2o1U4o1bc2k&#038;hl=en"></param><param name="wmode" value="transparent"></param></object>
 
-
 [Typographics](http://youtube.com/watch?v=2o1U4o1bc2k)  
 อนิเมชันโดย Boca (a.k.a. Marcos Ceravolo) และ Ryan Uhrich หลักสูตรออกแบบดิจิทัล [Vancouver Film School](http://www.vfs.com/)
 
@@ -34,11 +33,9 @@ wpid: 2314
 
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/syf8olcM0z4&#038;hl=en"></param><param name="wmode" value="transparent"></param></object>
 
-
 [Tramp Typography](http://youtube.com/watch?v=Z3vaxlJ86vk):  
 
 <object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/Z3vaxlJ86vk&#038;hl=en"></param><param name="wmode" value="transparent"></param></object>
-
 
 สนใจเรื่องไทโปกราฟี ลองค้นเน็ตดู มีเยอะแยะ อันนี้เป็นอันนึงที่เจอ **[I Love Typography](http://ilovetypography.com/)**
 

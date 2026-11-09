@@ -17,15 +17,15 @@ from Ubuntu Forums – [HOWTO: Tahoma Font in Breezy](http://ubuntuforums.org/ar
 
 วิธีติดตั้งฟอนต์ Tahoma บน Ubuntu (กนู/ลีนุกซ์ดิสโทรอื่น ๆ ก็ปรับ ๆ เอานะครับ)
 
-1.  ลงแพคเกจ msttcorefonts ก่อน :  
+1. ลงแพคเกจ msttcorefonts ก่อน :  
     `sudo apt-get install msttcorefonts`
-2.  ดาวน์โหลดฟอนต์ Tahoma จาก <http://download.microsoft.com/download/ie6sp1/finrel/6_sp1/W98NT42KMeXP/EN-US/IELPKTH.CAB> :  
+2. ดาวน์โหลดฟอนต์ Tahoma จาก <http://download.microsoft.com/download/ie6sp1/finrel/6_sp1/W98NT42KMeXP/EN-US/IELPKTH.CAB> :  
     `wget http://download.microsoft.com/download/ie6sp1/finrel/6_sp1/W98NT42KMeXP/EN-US/IELPKTH.CAB`
-3.  แตกแฟ้ม IELPKTH.CAB ออกมา, ในที่นี้เราจะใส่ไว้โฟลเดอร์ชั่วคราว tahomafont :  
+3. แตกแฟ้ม IELPKTH.CAB ออกมา, ในที่นี้เราจะใส่ไว้โฟลเดอร์ชั่วคราว tahomafont :  
     `cabextract -d tahomafont IELPKTH.CAB`
-4.  คัดลอกแฟ้มฟอนต์ทั้งหมดไปที่โฟลเดอร์ฟอนต์ msttcorefonts ของ Ubuntu :  
+4. คัดลอกแฟ้มฟอนต์ทั้งหมดไปที่โฟลเดอร์ฟอนต์ msttcorefonts ของ Ubuntu :  
     `sudo cp tahomafont/*.ttf /usr/share/fonts/truetype/msttcorefonts/`
-5.  ลบโฟลเดอร์ชั่วคราว tahomafont เมื่อสักครู่นั้นทิ้ง :  
+5. ลบโฟลเดอร์ชั่วคราว tahomafont เมื่อสักครู่นั้นทิ้ง :  
     `rm -rf tahomafont`
 
 เสร็จ

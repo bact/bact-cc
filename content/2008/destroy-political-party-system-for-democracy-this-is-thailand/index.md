@@ -13,9 +13,7 @@ wpid: 2312
 **ชู-พิดคิดตามวัน: บ้านเมืองไม่ใช่ของเรา** ตอนใหม่มาแล้ว  
 [ยุบพรรค.. เพื่อประชาธิปไตย ?](http://www.prachatai.com/tv/chupitchtv/?ep=9)
 
-
 <object width="480" height="310" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"><param name="movie" value="http://www.prachatai.com/multi_inc/jw_flv_player/flvplayer.swf" /><param name="bgcolor" value="#ffffff" /><param name="menu" value="false" /></object>
-
 
 ถ้านับว่า พรรคการเมือง คือที่รวมของบุคคลที่มีอุดมการณ์ความคิดความเชื่อในทางเดียวกันแล้ว แม้ถึงที่สุดเราจะยุบพรรคการเมืองได้ แต่เราไม่สามารถยุบอุดมการณ์ความคิดความเชื่อเหล่านั้นได้ และกลุ่มบุคคลเหล่านั้นก็มีสิทธิในการรวมกลุ่มกันอีก-ในชื่อใหม่
 
@@ -34,9 +32,7 @@ wpid: 2312
 
 **[สมาคมหัวไม้](http://www.prachatai.com/tv/headline/?ep=7)** ตอนใหม่ก็มาแล้ว
 
-
 <object width="480" height="310" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"><param name="movie" value="http://www.prachatai.com/multi_inc/jw_flv_player/flvplayer.swf" /><param name="bgcolor" value="#ffffff" /><param name="menu" value="false" /></object>
-
 
 ข่าวเก่า: [ใครบอกว่าประชาธิปไตยพม่ากับไทยเทียบกันไม่ได้](http://prachatai.com/05web/th/home/11506)  
 (ร่างรธน.พม่า ที่กำหนดจะลงประชามติกันเร็ว ๆ นี้ กำหนดให้สมาชิกวุฒิสภา 75% มาจากการเลือกตั้ง อีก 25% นั้นแต่งตั้ง — รธน.50 ของไทย สมาชิกวุฒิสภา 50% มาจากการเลือกตั้ง .. น้อยกว่าพม่า —  

@@ -56,13 +56,8 @@ wpid: 2529
 [communicative power](http://technorati.com/tag/communicative+power)  
 </span>
 
-
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=1848600151&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
-
-
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0415952972&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
-
 
 <iframe src="http://rcm.amazon.com/e/cm?t=bacisanam-20&#038;o=1&#038;p=8&#038;l=bpl&#038;asins=0415976553&#038;fc1=000000&#038;IS2=1&#038;lt1=_blank&#038;m=amazon&#038;lc1=0000FF&#038;bc1=000000&#038;bg1=FFFFFF&#038;f=ifr" style="align:left;padding-top:5px;width:131px;height:245px;padding-right:5px;"align="left" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>

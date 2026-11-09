@@ -19,13 +19,13 @@ wpid: 2498
 เลยใช้ diskutil + dd ทางคอมมานด์ไลน์ละกัน  
 วิธีทั้งหมดดูได้จาก [4 ways to create bootable Live USB (Windows, Linux, Mac OS X)](http://www.webupd8.org/2009/04/4-ways-to-create-bootable-live-usb.html)
 
-1.  เตรียมแฟ้มอิมเมจมาก่อน .iso หรือ .img
-2.  ที่ Terminal สั่ง  
+1. เตรียมแฟ้มอิมเมจมาก่อน .iso หรือ .img
+2. ที่ Terminal สั่ง  
     `diskutil list`  
     ดูว่าไดร์ฟยูเอสบีเรา mount เชื่อมอยู่ตรงไหน (เช่น /dev/disk1) – อาจจะดูจากชื่อหรือขนาด – ถ้าไม่ชัวร์ ก็ถอดยูเอสบีออกมาก่อน แล้ว diskutil list ดูทีนึง แล้วเสียบ USB เข้าไป แล้ว diskutil list ดูอีกที ดูว่ามันมีอะไรเพิ่มมา
-3.  `diskutil unmountDisk /dev/disk`*`N`*  
+3. `diskutil unmountDisk /dev/disk`*`N`*  
     (N ตัวสุดท้ายนี่ แล้วแต่ว่าไดร์ฟเราอยู่ที่ไหน)
-4.  `sudo dd if=/path/to/image.iso of=/dev/diskN bs=1m`  
+4. `sudo dd if=/path/to/image.iso of=/dev/diskN bs=1m`  
     (if= คือแฟ้มอิมเมจ of= คือไดร์ฟยูเอสบี)
-5.  `diskutil eject /dev/diskN`  
+5. `diskutil eject /dev/diskN`  
     แล้วก็ถอดไดร์ฟยูเอสบีออกได้ – เสร็จ

@@ -22,9 +22,9 @@ As most UNIX systems already has gcc, I will discussed only about Mac OS X
   
 (if your system already has gcc (or Xcode), skip this).
 
-1.  Install [Xcode 1.5](http://developer.apple.com/tools/xcode/), for a latest gcc from Apple.  
+1. Install [Xcode 1.5](http://developer.apple.com/tools/xcode/), for a latest gcc from Apple.  
     (You need an Apple Developer Connection account to download this)
-2.  Check if your gcc need a patch or not.  
+2. Check if your gcc need a patch or not.  
     At a command line, type `gcc -v`  
     If the build number is 1666 or lower, you have to install a [November2004gccupdater](http://developer.apple.com/tools/xcode/) package to fix Apple’s gcc bug.
 
@@ -33,20 +33,20 @@ As most UNIX systems already has gcc, I will discussed only about Mac OS X
 If your system already has Python 2.4 (or newer) and a working Tkinter, skip this.  
 To test it, read (7).
 
-3.  Install [PantherPythonFix](http://homepages.cwi.nl/~jack/macpython/beta.html)
-4.  Install [Tcl/Tk Aqua](http://tcltkaqua.sf.net/)
-5.  Install [Python 2.4 for Mac OS X](http://python.org/) from source
-    1.  [download the source code]()
-    2.  unzip it
-    3.  ./configure
-    4.  make
-    5.  sudo make install
-6.  change Python path and links
-    1.  symbolic links
-    2.  set PYTHOHPATH in .profile
-    3.  test if the default Python is Python 2.4  
+3. Install [PantherPythonFix](http://homepages.cwi.nl/~jack/macpython/beta.html)
+4. Install [Tcl/Tk Aqua](http://tcltkaqua.sf.net/)
+5. Install [Python 2.4 for Mac OS X](http://python.org/) from source
+    1. [download the source code]()
+    2. unzip it
+    3. ./configure
+    4. make
+    5. sudo make install
+6. change Python path and links
+    1. symbolic links
+    2. set PYTHOHPATH in .profile
+    3. test if the default Python is Python 2.4  
         `python -V`
-7.  test if the Python + Tcl/Tk works?  
+7. test if the Python + Tcl/Tk works?  
     run Example 2-1 of  
     http://www.pythonware.com/library/tkinter/introduction/hello-tkinter.htm
 
@@ -54,14 +54,14 @@ To test it, read (7).
 
 read http://nltk.sourceforge.net/install.html
 
-1.  install [Numarray](http://www.stsci.edu/resources/software_hardware/numarray)
-    1.  sudo python setup.py install
-2.  install [NLTK](http://nltk.sourceforge.net/)
-    1.  sudo python setup.py install
-3.  install [NLTK Data Package](http://nltk.sourceforge.net/)
-    1.  extract to …
-    2.  change *NLTK_CORPORA* environment variable in your *.profile* file to that path
-4.  install [NLTK Contributions Package](http://nltk.sourceforge.net/) (optional)
+1. install [Numarray](http://www.stsci.edu/resources/software_hardware/numarray)
+    1. sudo python setup.py install
+2. install [NLTK](http://nltk.sourceforge.net/)
+    1. sudo python setup.py install
+3. install [NLTK Data Package](http://nltk.sourceforge.net/)
+    1. extract to …
+    2. change *NLTK_CORPORA* environment variable in your *.profile* file to that path
+4. install [NLTK Contributions Package](http://nltk.sourceforge.net/) (optional)
 
 ## Install PyWordNet & WordNet
 

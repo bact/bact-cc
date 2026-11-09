@@ -14,9 +14,7 @@ wpid: 2387
 
 เลยงอกออกมาเป็นดูโอคอร์ตอนพิเศษ อย่างน่าดีใจ
 
-
 <iframe loading="lazy" width="500" height="314" src="https://www.youtube.com/embed/5Gl-wuGazwU" frameborder="0" allowfullscreen></iframe>
-
 
 ร่วมแสดงความคิดเห็นได้ที่ [channel.duocore.tv/new-media-in-chiang-mai](http://channel.duocore.tv/new-media-in-chiang-mai/)
 

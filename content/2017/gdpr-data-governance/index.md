@@ -49,5 +49,4 @@ Peter บอกว่าหลักการคุ้มครองข้อ�
 >
 > — ICO (@ICOnews) [February 7, 2017](https://twitter.com/ICOnews/status/828984505306378240)
 
-
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

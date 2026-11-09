@@ -38,9 +38,7 @@ wpid: 2465
 
 ดารณี ชาญเชิงศิลปกุล
 
-
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/DEvgmDD4_VI&amp;hl=en&amp;fs=1&amp;" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /></object>
-
 
 <span class="small">technorati tags:  
 [lese majeste](http://technorati.com/tag/lese+majeste),  

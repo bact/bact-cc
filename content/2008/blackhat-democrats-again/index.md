@@ -12,8 +12,6 @@ wpid: 2354
 ---
 เทพไท เสนพงศ์ (ประชาธิปัตย์) <u>อย่ามั่ว</u>
 
- 
-
 <span class="small">technorati tags:  
 [blackhat](http://technorati.com/tag/blackhat),  
 [SEO](http://technorati.com/tag/SEO),  

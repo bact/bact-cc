@@ -23,6 +23,10 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Lint Markdown
+        run: |
+          npm ci
+          npm run lint:md
       - name: Build site + search index
         run: |
           npm ci --ignore-scripts=false

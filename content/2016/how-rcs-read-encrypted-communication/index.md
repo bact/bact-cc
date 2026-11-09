@@ -76,11 +76,9 @@ RCS ไม่ใช่อุปกรณ์หรือระบบถอดร�
 <figcaption>RCS Exploit Portal</figcaption>
 </figure>
 
- 
-
 ## คำถาม-ข้อกังวลที่ต้องตอบ
 
-คำถามเร็วๆ ตอนนี้คือ 
+คำถามเร็วๆ ตอนนี้คือ
 
 1\) ใครเป็นคนควบคุมระบบนี้? ใช้อำนาจตามกฎหมายใด?
 
@@ -92,11 +90,8 @@ RCS ไม่ใช่อุปกรณ์หรือระบบถอดร�
 
 วิดีโอโฆษณาของ Hacking Team
 
-
 <iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/8oilhYYj8_g?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-GB&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
 
-
 วิดีโอสาธิต RCS Galileo บน Windows
-
 
 <iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/a1_6bVAUjRQ?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-GB&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>

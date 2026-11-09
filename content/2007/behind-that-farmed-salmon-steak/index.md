@@ -13,9 +13,9 @@ wpid: 2127
 แปล/เรียบเรียงโดย วิทวัส ศักดา, ท้องถิ่นสนทนา www.localtalk2004.com  
 จาก “What lurks behind that farmed salmon steak ?” และ “137 species rely on pacifiec salmon” โดย ecotrust
 
-1.  [รู้จักแซลมอน – ก่อนเป็นเมนูขึ้นโต๊ะ](http://localtalk2004.com/V2005/detail.php?file=1&code=s2_30052007_01)
-2.  [หลากชีวิตที่พึ่งพาแซลมอน](http://localtalk2004.com/V2005/detail.php?file=1&code=s2_08062007_01)
-3.  [ราคา (ซ่อนเงื่อน) ที่คุณต้องจ่าย](http://localtalk2004.com/V2005/detail.php?file=1&code=s2_15062007_01)
+1. [รู้จักแซลมอน – ก่อนเป็นเมนูขึ้นโต๊ะ](http://localtalk2004.com/V2005/detail.php?file=1&code=s2_30052007_01)
+2. [หลากชีวิตที่พึ่งพาแซลมอน](http://localtalk2004.com/V2005/detail.php?file=1&code=s2_08062007_01)
+3. [ราคา (ซ่อนเงื่อน) ที่คุณต้องจ่าย](http://localtalk2004.com/V2005/detail.php?file=1&code=s2_15062007_01)
 
 ดูภาพการ์ตูนแซลมอนน่ารัก ๆ มากมายที่ [SectionZ](http://www.sectionz.info/ISSUE_1/)
 

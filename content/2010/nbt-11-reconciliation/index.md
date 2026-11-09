@@ -15,9 +15,7 @@ wpid: 2513
 
 เพื่อสุขภาวะสังคม อย่าไปยอมมันสิจ๊ะ – เรามีหลายวิธี…
 
-
 <object width="425" height="344" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/gdnt2m5VoQc&amp;hl=en_US&amp;fs=1&amp;color1=0x402061&amp;color2=0x9461ca" /><param name="allowfullscreen" value="true" /></object>
-
 
 นี่คือ “media literacy” ที่รัฐจะไม่สนับสนุน
 

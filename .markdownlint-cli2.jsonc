@@ -18,7 +18,11 @@
     // Auto-fixing these would change what readers see, so they stay off:
     "MD001": false,   // heading level increments (would change heading levels)
     "MD014": false,   // "$ " prompts in code blocks (would delete characters)
-    "MD029": false    // ordered-list numbering (would renumber visible lists)
+    "MD029": false,
+    // Left as in the original posts (fixing would change structure or content). Review by hand if desired:
+    "MD028": false,   // blank line between two adjacent blockquotes = two separate quotes in the source
+    "MD042": false,   // links that were already empty (<a href="">) in WordPress
+    "MD039": false    // spaces inside link text in a handful of old posts    // ordered-list numbering (would renumber visible lists)
   },
   "globs": ["content/**/*.md"],
   "ignores": ["node_modules/**"],

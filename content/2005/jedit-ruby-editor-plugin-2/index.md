@@ -14,12 +14,12 @@ Ruby Editor Plugin สำหรับ jEdit
 
 [ความสามารถ](http://jedit.org/ruby/features/)หลัก ๆ ของ jEdit Ruby Editor Plugin
 
-1.  syntax highlighting แสดงสีไวยากรณ์
-2.  error list บอกที่ผิด
-3.  structure browser แสดงโครงสร้างโปรแกรม
-4.  online API documentation คู่มือ API สด
-5.  code completion ช่วยเติมโค้ด
-6.  more และอื่น ๆ
+1. syntax highlighting แสดงสีไวยากรณ์
+2. error list บอกที่ผิด
+3. structure browser แสดงโครงสร้างโปรแกรม
+4. online API documentation คู่มือ API สด
+5. code completion ช่วยเติมโค้ด
+6. more และอื่น ๆ
 
 นอกจาก FreeRIDE กับ SciTE ที่มากับชุดติดตั้ง Ruby แล้ว  
 IDE อีกตัวที่เหมือนจะมีคนนิยม คือ [Mondrian Ruby IDE](http://www.mondrian-ide.com/) ยังเป็นเบต้าอยู่ เขียนด้วย Ruby + FOX toolkit  

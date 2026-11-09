@@ -13,9 +13,9 @@ Compiled from OOo mailing lists (dev-help@ja, dev@l10n)
 
 Additional Resources:
 
-1.  [openoffice.s16.xrea.com](http://openoffice.s16.xrea.com:8080/pukiwiki/pukiwiki.php?Microsoft_Visual_C%2B%2B_Toolkit_2003) (VC++ Toolkit 2003 with OOo) <span class="small">\[Japanese\]</span>
-2.  [dev-help@ja](http://ja.openoffice.org/servlets/ReadMsg?listName=dev&msgNo=2483)
-3.  [IZ \#27980](http://www.openoffice.org/issues/show_bug.cgi?id=27980) (Visual Studio 2003)
+1. [openoffice.s16.xrea.com](http://openoffice.s16.xrea.com:8080/pukiwiki/pukiwiki.php?Microsoft_Visual_C%2B%2B_Toolkit_2003) (VC++ Toolkit 2003 with OOo) <span class="small">\[Japanese\]</span>
+2. [dev-help@ja](http://ja.openoffice.org/servlets/ReadMsg?listName=dev&msgNo=2483)
+3. [IZ \#27980](http://www.openoffice.org/issues/show_bug.cgi?id=27980) (Visual Studio 2003)
 
 [MS Visual C++ Toolkit 2003](http://msdn.microsoft.com/visualc/vctoolkit2003/)  
 **do has:** C++ command-line compiler and linker (the same as in VS 2003), Standard C++ libraries (including STL)  

@@ -28,5 +28,4 @@ Suriyawongkul, Arthit. 2011. **“It’s moving”: Digital Migrations and Ident
 
 **อะไรคือ Horizon Scanning ?** ดูตามสไลด์ละกันนะครับ ผมก็ไม่แม่น
 
-
 <iframe src='https://www.slideshare.net/slideshow/embed_code/543507' width='425' height='348' sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>

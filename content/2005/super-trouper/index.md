@@ -20,9 +20,9 @@ Wishing every routine was the last routine
 
 *Trouper* <span class="small"></span><span class="small">(American Heritage, 4th Ed.)</span>:
 
-1.  A member of a theatrical company.
-2.  A veteran actor or performer.
-3.  A reliable, uncomplaining, often hard-working person.
+1. A member of a theatrical company.
+2. A veteran actor or performer.
+3. A reliable, uncomplaining, often hard-working person.
 
 Super Trouper คงแปลเป็นไทยได้ว่า “โคตรถึก” (น.) หรือสั้น ๆ ว่า “ควาย” (น.) แนว ๆ นั้น  
 (แต่ไม่ได้อยู่ในซีรี่ส์ “ถึกควายทุย” นะ :P)

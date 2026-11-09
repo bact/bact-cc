@@ -14,9 +14,7 @@ wpid: 3110
 There Are Some People Who Don’t Like Change …  
 For everyone else? There’s [Wikileaks](http://www.wikileaks.org/).
 
-
 <iframe loading="lazy" src="https://player.vimeo.com/video/25412550?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="500" height="281"></iframe>
-
 
 [What Does it Cost to Change the World?](http://vimeo.com/25412550) from [WikiLeaks](http://vimeo.com/wikileaks) on [Vimeo](http://vimeo.com).
 

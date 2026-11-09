@@ -14,9 +14,7 @@ wpid: 2181
 >
 > — เป็นเอก รัตนเรือง (ผู้กำกับภาพยนตร์)
 
-
 <object width='490' height='410'><param name='movie' value='http://video.mthai.com/Flash_player/player.swf?idMovie=11M1187414251M0'></param></object>
-
 
 วิดีโอรณรงค์เครือข่ายเพื่อเสรีภาพภาพยนตร์ไทย [Free Thai Cinema Movement](http://www.petitiononline.com/nocut/petition.html)  
 (ได้ดูครั้งแรกในงาน Thai Short Film and Video Festival ที่แกรนด์อีจีวี สยามดิสคัฟเวอรี งานมีถึง 26 นี้ — โปรแกรมวันศุกร์ 19:00 น่าดูมาก ๆ เป็นหนังสั้นต้านรัฐประหาร 😛 หลายเรื่อง)

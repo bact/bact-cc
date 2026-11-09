@@ -14,11 +14,11 @@ wpid: 1207
 - [ใช้ Linux ใน Windows](http://poonlap.blogspot.com/2005/08/linux-windows.html)
 - [เหตุที่ใช้ coLinux](http://poonlap.blogspot.com/2005/10/colinux.html)
 
-1.  [ติดตั้ง](http://poonlap.blogspot.com/2005/09/colinux.html)
-2.  [ปรับแต่งเน็ตเวิร์ก](http://poonlap.blogspot.com/2005/09/colinux-2.html)
-3.  [อัปเดทซอฟต์แวร์](http://poonlap.blogspot.com/2005/09/colinux-3.html)
-4.  [X Windows](http://poonlap.blogspot.com/2005/09/colinux-4-x-windows.html)
-5.  [Service ใน Windows](http://poonlap.blogspot.com/2005/09/colinux-5-service-windows.html)
+1. [ติดตั้ง](http://poonlap.blogspot.com/2005/09/colinux.html)
+2. [ปรับแต่งเน็ตเวิร์ก](http://poonlap.blogspot.com/2005/09/colinux-2.html)
+3. [อัปเดทซอฟต์แวร์](http://poonlap.blogspot.com/2005/09/colinux-3.html)
+4. [X Windows](http://poonlap.blogspot.com/2005/09/colinux-4-x-windows.html)
+5. [Service ใน Windows](http://poonlap.blogspot.com/2005/09/colinux-5-service-windows.html)
 
 - [อ่านเขียนไฟล์ใน Windows จาก coLinux](http://poonlap.blogspot.com/2005/10/windows-colinux.html)
 - [จัดระเบียบ ssh, smbfs ใน coLinux](http://poonlap.blogspot.com/2005/10/ssh-smbfs-colinux.html)

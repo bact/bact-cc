@@ -13,7 +13,6 @@ wpid: 3220
 ---
 <iframe loading="lazy" src="https://www.youtube.com/embed/WzSJyFVQlTU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-
 *ดูแปลไทยที่ <https://prachatai.com/journal/2012/12/44161> (ประชาไท, 10 ธ.ค. 2555) — พร้อมลิงก์ไปยังข่าวและคดีที่ถูกอ้างถึงในสัมภาษณ์*
 
 *English transcript (source: [Rush transcript of the 10 Dec 2012 Abhisit’s interview with BBC World News](https://www.facebook.com/notes/prachatai/rush-transcript-of-the-10-dec-2012-abhisits-interview-with-bbc-world-news/10151223724438893), Prachatai Facebook page, 10 Dec 2012)*

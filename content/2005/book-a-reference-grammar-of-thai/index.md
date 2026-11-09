@@ -16,15 +16,15 @@ Cambridge University Press.
 
 **Contents**
 
-1.  Introduction
-2.  The structure of words
-3.  Personal reference terms
-4.  The structure of noun phrases
-5.  Numeral classifiers
-6.  Demonstratives
-7.  Adjectives
-8.  Adverbs and adverbial phrases
-9.  Verbs and transitivity
+1. Introduction
+2. The structure of words
+3. Personal reference terms
+4. The structure of noun phrases
+5. Numeral classifiers
+6. Demonstratives
+7. Adjectives
+8. Adverbs and adverbial phrases
+9. Verbs and transitivity
 10. Challengeability marker: /cå/
 11. Modality
 12. Aspect

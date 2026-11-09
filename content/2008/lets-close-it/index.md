@@ -48,7 +48,6 @@ Let’s close [Firefox Thai bug reports](https://bugzilla.mozilla.org/show_bug.c
 
 <object width='480' height='290' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0'><param name='movie' value='http://duocore.ch7.com/wp-content/plugins/wordtube/flvplayer.swf' /><param name='bgcolor' value='#ffffff' /><param name='menu' value='false' /></object>
 
-
 <span class="small">technorati tags:  
 [Thai](http://technorati.com/tag/Thai),  
 [Mozilla](http://technorati.com/tag/Mozilla),  

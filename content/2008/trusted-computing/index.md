@@ -12,7 +12,6 @@ wpid: 2379
 ---
 <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/XgFbqSYdNK4&#038;hl=en&#038;fs=1"></param><param name="allowFullScreen" value="true"></param></object>
 
-
 <span class="small">([vdo page link](http://www.youtube.com/watch?v=XgFbqSYdNK4))</span>
 
 An animated short story questioning [Trusted Computing](http://en.wikipedia.org/wiki/Trusted_Computing), created by [LAFKON](http://www.lafkon.net/tc/) (under [Creative Commons Sampling+ license](http://creativecommons.org/licenses/sampling+/1.0/))

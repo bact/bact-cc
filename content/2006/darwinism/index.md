@@ -20,15 +20,15 @@ wpid: 1571
 
 > <strong>5 Responses to “เหตุผล”</strong>
 >
-> 1.  <strong>ม่อน:</strong> อะไรเป็นสิ่งที่ตัดสินว่าของนัี้้้้นดีหรือไม่ดี \[[Postmodernism?](http://en.wikipedia.org/wiki/Postmodernism)\]
+> 1. <strong>ม่อน:</strong> อะไรเป็นสิ่งที่ตัดสินว่าของนัี้้้้นดีหรือไม่ดี \[[Postmodernism?](http://en.wikipedia.org/wiki/Postmodernism)\]
 >
-> 2.  <strong>bact’:</strong> “ถ้ามันไม่ดีแล้วมันจะอยู่มานานไ้ด้ยังไง”  
+> 2. <strong>bact’:</strong> “ถ้ามันไม่ดีแล้วมันจะอยู่มานานไ้ด้ยังไง”  
 >     [Darwin](http://en.wikipedia.org/wiki/Darwinism) นะ
 >
-> 3.  <strong>lewcpe:</strong> bact’ – มันเลยกำลังโดน [Select](http://en.wikipedia.org/wiki/Natural_selection) ทิ้งไปอย่างในทุกวันนี้ไงครับ
+> 3. <strong>lewcpe:</strong> bact’ – มันเลยกำลังโดน [Select](http://en.wikipedia.org/wiki/Natural_selection) ทิ้งไปอย่างในทุกวันนี้ไงครับ
 >
-> 4.  <strong>bact’:</strong>ก็แสดงว่าวันนี้มันไม่ดีแล้ว  
->     แต่มันก็เคยดีไง เมื่อวาน วันก่อน 
+> 4. <strong>bact’:</strong>ก็แสดงว่าวันนี้มันไม่ดีแล้ว  
+>     แต่มันก็เคยดีไง เมื่อวาน วันก่อน
 >
 >     คือมันตอบได้ทั้ง  
 >     “ถ้า(เมื่อก่อน)มันไม่ดีแล้วมันจะอยู่มานาน(จนถึงวันนี้)ไ้ด้ยังไง”  
@@ -42,7 +42,7 @@ wpid: 1571
 >     วัฒนธรรม มันน่าจะเก็บ/กู้ง่ายกว่า พันธุกรรม  
 >     หายเรียบไปแล้วตอนนี้ ถ้ามันคลิ๊กขึ้นมาอีก เดี๋ยวก็กลับมา
 >
-> 5.  <strong>bact’:</strong> คือผมคิดว่าประโยคที่ ลิ่ว กะ คนพวกนั้น ว่า  
+> 5. <strong>bact’:</strong> คือผมคิดว่าประโยคที่ ลิ่ว กะ คนพวกนั้น ว่า  
 >     มันสามารถเป็นจริงได้ในเวลาเดียวกัน กับของอย่างเดียวกันเลยน่ะ
 
 <strong>tags:</strong> [tradition](http://technorati.com/tag/tradition), [culture](http://technorati.com/tag/culture), [meme](http://technorati.com/tag/meme), [Darwinism](http://technorati.com/tag/darwinism), [natural selection](http://technorati.com/tag/naturalselection)

@@ -12,8 +12,6 @@ wpid: 1811
 ---
 นิด ไอ้นิดซำบายดีบ่? 😛
 
-
 <iframe loading="lazy" width="500" height="405" src="https://www.youtube.com/embed/TqtDf_rF5CQ" frameborder="0" allowfullscreen></iframe>
-
 
 <span class="small">**technorati tags:** [mv](http://technorati.com/tag/mv), [Thai](http://technorati.com/tag/thai), [funny](http://technorati.com/tag/funny)</span>

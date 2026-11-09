@@ -13,9 +13,7 @@ wpid: 1870
 
 พลังสร้างสรรค์ไร้ขีดจำกัด … บนไหล่ของคนอื่น! 😉
 
-
 <object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/JqczCN8LtdI"></param><param name="wmode" value="transparent"></param></object>
-
 
 [ปูนาขาเก Final Fantasy](http://www.youtube.com/watch?v=JqczCN8LtdI)
 

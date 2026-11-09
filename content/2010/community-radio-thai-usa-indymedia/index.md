@@ -20,8 +20,6 @@ wpid: 2499
 
 ถ่ายทอดเสียง [www.prachatai.com/live](http://www.prachatai.com/live "ประชาไท ถ่ายทอดสด") และ [www.media4democracy.com](http://www.media4democracy.com/)
 
-
 <object id="Torrent-Team Music" classid="clsid:6bf52a52-394a-11d3-b153-00c04f79faa6" width="400" height="64" align="center">&nbsp;<param name="URL" value="http://203.150.231.23:8005" /><param name="Volume" value="80" /><param name="rate" value="1" /><param name="balance" value="0" /><param name="currentPosition" value="0" /><param name="defaultFrame" /><param name="playCount" value="1" /><param name="autoStart" value="-1" /><param name="currentMarker" value="0" /><param name="invokeURLs" value="-1" /><param name="baseURL" /><param name="mute" value="0" /><param name="uiMode" value="mini" /><param name="stretchToFit" value="0" /><param name="windowlessVideo" value="0" /><param name="enabled" value="-1" /><param name="enableContextMenu" value="0" /><param name="fullScreen" value="0" /><param name="SAMIStyle" /><param name="SAMILang" /><param name="SAMIFilename" /><param name="captioningID" /><param name="enableErrorDialogs" value="0" /></object>
-
 
 <span class="small">technorati tags: [community radio](http://technorati.com/tag/community+radio), [Campaign for Popular Media Reform](http://technorati.com/tag/Campaign+for+Popular+Media+Reform), [community media](http://technorati.com/tag/community+media)</span>

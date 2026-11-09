@@ -15,12 +15,10 @@ Run Java jar file from Windows 2000/XP command-line like a native executable. A 
 
 At a command-line, type these two commands:
 
-
 <pre>
 assoc .jar=jarfile
 ftype jarfile=<em>(JAVA_HOME)</em>\bin\java -jar %1 %*
 </pre>
-
 
 Then, change PATHEXT and PATH environment variables.  
 Right-clicking on *My Computer*, select *Properties*. Select *Advanced* tab, then *Environment Variables*.

@@ -36,6 +36,4 @@ Also these initiatives:
 - [Internet-Draft – Freedom of Association on the Internet](https://tools.ietf.org/id/draft-tenoever-hrpc-association-00.html)
 - [W3C Privacy](https://www.w3.org/Privacy/)
 
- 
-
 (photo by [thierry ehrmann](https://www.flickr.com/photos/home_of_chaos/7631016874/). Creative Commons Attribution License)

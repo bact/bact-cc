@@ -37,9 +37,9 @@ wpid: 3542
 
 การแบ่ง OTT ตามประเด็นในการกำกับกิจการนั้น เช่นที่ [Body of European Regulators for Electronic Communications (BEREC)](http://berec.europa.eu/) ซึ่งเป็นองค์การกลางของหน่วยงานกำกับกิจการสื่อสารอิเล็กทรอนิกส์ของสหภาพยุโรป แบ่งบริการ OTT เป็น 3 ประเภทคือ
 
-1.  บริการ OTT ที่ถือเป็น “บริการสื่อสารอิเล็กทรอนิกส์” (electronic communications service – ECS)
-2.  บริการ OTT ที่ไม่ถือเป็น ECS แต่มีศักยภาพจะแข่งขันกับ ECS และ
-3.  บริการ OTT อื่นๆ
+1. บริการ OTT ที่ถือเป็น “บริการสื่อสารอิเล็กทรอนิกส์” (electronic communications service – ECS)
+2. บริการ OTT ที่ไม่ถือเป็น ECS แต่มีศักยภาพจะแข่งขันกับ ECS และ
+3. บริการ OTT อื่นๆ
 
 สาเหตุที่ BEREC แบ่งประเภทเช่นนี้ เพราะคำว่า OTT นั้น[ไม่มีสถานะทางกฎหมายในระดับสหภาพยุโรป](http://berec.europa.eu/eng/document_register/subject_matter/berec/reports/5751-berec-report-on-ott-services) และกิจการที่ BEREC กำกับได้ตามกฎหมายนั้นมีเพียงบริการสื่อสารอิเล็กทรอนิกส์ (ECS) เท่านั้น การแบ่งตามสถานะทางกฎหมายที่ BEREC อาจเข้าไปกำกับได้ จึงเป็นการแบ่งขั้นต้นที่สะดวกสำหรับการทำงาน
 

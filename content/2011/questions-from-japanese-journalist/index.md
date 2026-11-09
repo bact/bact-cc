@@ -12,9 +12,7 @@ wpid: 2639
 ---
 [วิดีโอ สำนักงานกฎหมายอัมสเตอร์ดัมแอนด์พีรอฟฟ์ ร่วมกับ นปช. แถลงข่าว การยื่นคำร้องต่อศาลอาญาระหว่างประเทศ (2011.01.31)](http://www.youtube.com/watch?v=dCQStp5suyc)
 
-
 <iframe loading="lazy" title="YouTube video player" class="youtube-player" type="text/html" width="480" height="390" src="https://www.youtube.com/embed/dCQStp5suyc" frameborder="0" allowFullScreen></iframe>
-
 
 ระหว่างการถามตอบข้อสงสัย นักข่าวญี่ปุ่น ยามาดะ จากหนังสือพิมพ์อาซาฮี ชิมบุน ถามอัมสเตอร์ดัมว่า จะทำให้อำนาจอื่น ๆ ในโครงสร้างอำนาจในสังคมไทย รับผิดชอบต่อเหตุการณ์นี้ได้อย่างไร?  
 *\[ชั่วโมงที่ 2:11; แปลอังกฤษ 2:12; ไทย (แปลไม่เต็ม) 2:13\]*
