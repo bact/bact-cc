@@ -1,5 +1,9 @@
 {{ define "main" }}
-<article lang="{{ .Params.lang }}">
+<article lang="{{ .Params.lang }}" data-pagefind-body>
+  <meta data-pagefind-meta="date[content]" content="{{ .Date.Format "2006-01-02" }}">
+  <meta data-pagefind-filter="year[content]" content="{{ .Date.Format "2006" }}">
+  {{ range .GetTerms "categories" }}<meta data-pagefind-filter="category[content]" content="{{ .Title }}">{{ end }}
+  {{ with .Params.image }}<meta data-pagefind-meta="image[content]" content="{{ . }}">{{ end }}
   <header><h1>{{ .Title }}</h1><p class="meta">{{ partial "meta.html" . }}</p></header>
   <div class="content">{{ .Content }}</div>
   {{ with .GetTerms "tag" }}<p class="tags">{{ range . }}<a href="{{ .RelPermalink }}">#{{ .Title }}</a> {{ end }}</p>{{ end }}

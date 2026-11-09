@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<noscript><p>Search needs JavaScript. Or browse the <a href="/2004/">archive</a>, <a href="/on/">categories</a> and <a href="/tag/">tags</a>.</p></noscript>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<div id="search"></div>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    var ui = new PagefindUI({ element: "#search", showSubResults: true, showImages: false, autofocus: true,
+      translations: { placeholder: "Search posts (Thai or English)" } });
+    var q = new URLSearchParams(location.search).get("q");
+    if (q) ui.triggerSearch(q);
+  });
+</script>
+{{ end }}

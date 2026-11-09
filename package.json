@@ -1,0 +1,11 @@
+{
+  "name": "bact-cc",
+  "private": true,
+  "description": "Static site for bact.cc (Hugo). npm is used only for the Pagefind search index.",
+  "scripts": {
+    "build": "hugo --gc --minify && pagefind --site public --force-language th"
+  },
+  "devDependencies": {
+    "pagefind": "1.6.0"
+  }
+}

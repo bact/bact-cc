@@ -55,3 +55,7 @@ disableKinds = []
   name = "Publications"
   url = "/pub/"
   weight = 4
+[[menus.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 5

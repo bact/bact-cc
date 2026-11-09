@@ -19,7 +19,13 @@ jobs:
           curl -fsSL -O "$base/hugo_${HUGO_VERSION}_checksums.txt"
           grep " $f\$" "hugo_${HUGO_VERSION}_checksums.txt" | sha256sum -c -
           tar xzf "$f" hugo && sudo mv hugo /usr/local/bin/
-      - name: Build
-        run: hugo --gc --minify
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Build site + search index
+        run: |
+          npm ci --ignore-scripts=false
+          npm run build
       - name: Check internal links and images
         run: python3 tools/check_links.py
