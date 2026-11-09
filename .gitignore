@@ -28,3 +28,6 @@ node_modules/
 /static/f/2020/04/20171215-good-man-concluding-present.pdf
 /static/f/2020/10/fcem-media-governance-report-bangkok-new-media-agenda.zip
 /static/f/2022/10/202012-ai-gov-framework-dga.pdf
+# Python bytecode
+__pycache__/
+*.pyc
