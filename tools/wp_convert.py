@@ -124,7 +124,7 @@ def main():
             "categories": [catslug[i] for i in p["categories"] if i in catslug],
             "tag": [tagslug[i] for i in p["tags"] if i in tagslug],
             "image": feat,
-            "lang": "th" if thai_ratio(body) > 0.25 else "en",
+            "textlang": "th" if thai_ratio(body) > 0.25 else "en",
             "wpid": p["id"],
         }
         write(f"{base}/index.html", front_matter(fm) + body + "\n")
@@ -145,7 +145,7 @@ def main():
         d = slug_dir(pg["slug"], pg["id"])
         fm = {"title": html.unescape(pg["title"]["rendered"]), "date": pg["date"] + TZ,
               "lastmod": pg["modified"] + TZ, "type": "page", "url": path,
-              "lang": "th" if thai_ratio(body) > 0.25 else "en", "wpid": pg["id"],
+              "textlang": "th" if thai_ratio(body) > 0.25 else "en", "wpid": pg["id"],
               "weight": pg.get("menu_order") or None}
         write(f"{CONTENT}/pages/{d}/index.html", front_matter(fm) + body + "\n")
         idmap[str(pg["id"])] = path

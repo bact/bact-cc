@@ -1,0 +1,13 @@
+---
+title: "TweakHound’s Super XP Tweaking Guide"
+date: "2004-05-17T19:17:00+07:00"
+lastmod: "2011-05-05T20:13:23+07:00"
+type: "post"
+url: "/2004/tweakhounds-super-xp-tweaking-guide/"
+description: "Boosted up your Windows XP."
+categories: ["computer"]
+tag: ["how-to", "windows"]
+textlang: "en"
+wpid: 123
+---
+[Boosted up your Windows XP.](http://tweakhound.com/xp/xptweaks/supertweaks1.htm)

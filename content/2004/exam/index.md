@@ -1,0 +1,13 @@
+---
+title: "Exam"
+date: "2004-04-20T07:56:00+07:00"
+lastmod: "2011-04-20T16:51:16+07:00"
+type: "post"
+url: "/2004/exam/"
+description: "AIPJ exam, tomorrow."
+categories: ["life"]
+tag: ["me"]
+textlang: "en"
+wpid: 67
+---
+AIPJ exam, tomorrow.

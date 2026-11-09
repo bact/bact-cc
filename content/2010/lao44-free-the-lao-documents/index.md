@@ -1,0 +1,34 @@
+---
+title: "Lao44 – Free the Lao documents"
+date: "2010-06-24T13:41:00+07:00"
+lastmod: "2011-05-13T15:46:01+07:00"
+type: "post"
+url: "/2010/lao44-free-the-lao-documents/"
+description: "Lao44 or Coalition for Lao Information, Communication and Knowledge is the largest repository of documents in Lao language. The number 44 in Lao44 refers to Article 44 in the Constitution of Lao PDR, which says: Lao citizens have the right and freedom of speech, press and assembly; and have the righ"
+categories: ["cultures", "internet", "politics"]
+tag: ["free-speech", "freedom-of-expression", "freedom-of-information", "knowledge-management", "languages", "laos", "open-public-data"]
+textlang: "en"
+wpid: 2524
+---
+**[Lao44](http://lao44.org/)** or Coalition for Lao Information, Communication and Knowledge is the largest repository of documents in Lao language.
+
+The number 44 in Lao44 refers to Article 44 in the [Constitution of Lao PDR](http://www.na.gov.la/index.php?Itemid=54&id=30&option=com_content&task=view), which says: “Lao citizens have the right and freedom of speech, press and assembly; and have the right to set up associations and to stage demonstrations which are not contrary to the laws.”
+
+**[ลาว44](http://lao44.org/)** เป็นเว็บไซต์ที่เก็บรวมรวมเอกสารสาธารณะต่าง ๆ ที่เป็นภาษาลาว
+
+เลขที่ 44 หมายถึงสิทธิพื้นฐานอันหนึ่งของพลเมืองลาวดังที่ระบุไว้ในรัฐธรรมนูญของ ส.ป.ป.ลาว มาตรา 44 ที่ว่า: “พลเมืองลาวมีสิทธิเสรีภาพในการพูด, ขีดเขียน, รวมชุมนุม, จัดตั้งสมาคมและเดินขบวนที่ไม่ขัดกับระเบียบกฎหมาย”
+
+> ຍີນ​ດີ​ຕ້ອນຮັບ​ເຂົ້າສູ່ ລາວ44.
+>
+> ເລກທີ 44 ຫມາຍ​ເຖີງສິດ​ພື້ນຖານ​ອັນ​ຫນື່ງຂອງ​ພົນລະ​ເມືອງ​ລາວ​ດັ່ງ​ທີ່​ລະບຸ​ໄວ້​ໃນ​ [ລັດຖະທຳ​ມະນູ​ນ ຂອງ ສ.ປ.ປ ລາວ](https://secure.wikimedia.org/wikipedia/lo/wiki/Lao44)  
+> ມາດ​ຕາ​44 ທີ່​ວ່າ: “ພົນ​ລະ​ເມືອງ​ລາວ​ມີ​ສິດ​ເສ​ລີ​ພາບ​ໃນ​ການ​ປາກ​ເວົ້າ​, ຂີດ​ຂຽນ​, ໂຮມ​ຊຸມ​ນຸມ​, ຈັດ​ຕັ້ງ​ສະ​ມາ​ຄົມ​ແລະ​ເດີນ​ຂະບວນ​ທີ່​ບໍ່​ຂັດ​ກັບ​ລະ​ບຽບ​ກົດ​ໝາຍ​”
+>
+> ໂດຍ ​ອີງ​ໃສ່​ນະ​ໂຍບາຍ​ຂອງ​ພັກ ແລະ ລັດຖະບານດ້ານ​ຂໍ້​ມູນ​ຂ່າວສານ ແລະ ການ​ສື່ສານ ດັ່ງ​ທີ່​ໄດ້​ລະບຸ​ໃນ​ແຜນ​ພັດທະນາ​ເສດຖະກິດ-ສັງຄົມ (2006-2010), ລາວ 44 ປະກອບສ່ວນ​ເຂົ້າ​ໃນ​ການ​ສ້າງ​ຄວາມ​ເຂັ້ມ​ແຂງ​ພ້ອມ​ທັງ​ຊຸກຍູ້​ການ​ມີ​ສ່ວນ​ ຮ່ວມ​ຂອງ​ປວງ​ຊົນ​ເຂົ້າ​ໃນ​ວຽກງານ​ການປົກ​ປັກ​ຮັກສາ ແລະ ສ້າງສາ​ປະ​ເທ​ດຊາດ ໂດຍ​ການ​ເປັນແຫ​ລ່ງຂໍ້​ມູນ​ຂ່າວສານ​ພາສາ​ລາວ ຂອງທຸກໆຂະ​ແຫນງ​ການ​ທົ່ວ​ປະ​ເທດ ເຊັ່ນ: ກະສິກຳ-ປ່າ​ໄມ້, ສຸຂະພາບ, ການ​ສຶກສາ, ພູມ​ປັນຍາ​ທ້ອງ​ຖີ່​ນ, ບົດບາດ ​ຍີ​ງ-ຊາຍ ແລະ ຮວມ​ໄປ​ເຖີງລະບຽບກົດ​ຫມາຍ, ແຜນການ ແລະ ນະ​ໂຍບາຍຕ່າງໆຂ​ອງ ລັດຖະບານ. ຂໍ້​ມູນ​ຂ່າວສານ​ປະກອບມີ​ຫລາຍ​ຮູບ​ຫລາຍ​ສີ​ເຊັ່ນ: ຟ້າຍເອກະສານ, ວິ​ດິ​ໂອ, ຮູບ​ພາບ ແລະ ການ​ສົນທະນາ​ກະທູ້​ຕ່າງໆ ເຊິ່ງຂໍ້​ມູນ​ຂ່າວສານທັງ​ຫມົດ​ເປັນ​ຮູບ​ແບບ​ດິຈີ​ຕ້ອນ.
+>
+> ລາວ 44 ໄດ້​ຖືກ​ສ້າງ​ຂື້ນ ແລະ ບໍລິຫານ​ຮ່ວມ​ກັນໂດຍອົງການ Helvetas, ອົງການ​ບ້ານ​ຈຸດ​ສູ​ມສາກົນ (VFI), CRWRC, ອົງການ​ມິ​ດຕະພາບ​ເມັນ​ໂນ​ນາຍ (MCC), CIDSE, DED, ອົງການພັດທະນາປະເທດເນເທີແລນ (SNV), ກູ່​ມພັດທະ ນາບົດບາດ​ຍີ​ງ- ຊາຍ (GDG), ສະມາຄົມພັດທະນາກະສິກຳ ແລະ ສີ່ງແວດລ້ອມແບບຍືືນຍົງ (SAEDA), ສະມາຄົມພັດທະນາ ແລະ ຫລຸດຜ່ອນຄວາມທຸກຈົນ (PORDEA), ບໍລິສັດ ທີ່ປຶກສາດ້ານພັດທະນາ & ວິສາຫະກິດ ຈຳກັດ (EDC), ແລະ ສູນອົບຮົມຮ່ວມພັດທະນາ (PADETC) ໂດຍການສະຫນັບສະຫນູນຈາກກອງ​ສົ່ງ​ເສີມ​ກະ​ສິກຳ ແລະ ປ່າ​ໄມ້ (NAFES), ສະ​ຖາ​ບັນ​ຄົ້ນຄວ້າ​ວິທະຍາສາ​ດ ແລະ ເຕັກນິກກະ​ສິກຳ ແລະ ປ່າ​ໄມ້ (NAFRI) ແລະ ​ໂຄງການສົ່ງເສີມກະສິກຳ (LEAP).
+
+ขอบคุณเพื่อน ๆ ในทวิตเตอร์ [@tewson](http://twitter.com/tewson) [@au8ust](http://twitter.com/au8ust) [@kengggg](http://twitter.com/kengggg) [@amaudy](http://twitter.com/amaudy) [@lewcpe](http://twitter.com/lewcpe) สำหรับคำอ่านคำแปลพาสาลาวครับ 🙂
+
+แถม: [อ่านลาว](http://lewcpe.com/blog/archives/1060/%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7/) – Chrome extension แปลงอักษรลาวเป็นอักษรไทย
+
+<span class="small">technorati tags: [document repository](http://technorati.com/tag/document+repository), [Laos](http://technorati.com/tag/Laos), [freedom of information](http://technorati.com/tag/freedom+of+information)</span>

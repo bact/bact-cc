@@ -1,0 +1,12 @@
+---
+title: "QuirksMode"
+date: "2004-12-02T01:10:00+07:00"
+lastmod: "2004-12-02T01:10:00+07:00"
+type: "post"
+url: "/2004/quirksmode/"
+description: "In a world of browser incompatibilities. This website is your guide to JavaScript and CSS tips & tricks."
+categories: ["something"]
+textlang: "en"
+wpid: 487
+---
+In a world of browser incompatibilities. This website is your guide to JavaScript and CSS tips & tricks.

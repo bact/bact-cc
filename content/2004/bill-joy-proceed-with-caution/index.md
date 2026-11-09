@@ -1,0 +1,16 @@
+---
+title: "Bill Joy: Proceed With Caution"
+date: "2004-06-07T01:48:00+07:00"
+lastmod: "2004-06-07T01:48:00+07:00"
+type: "post"
+url: "/2004/bill-joy-proceed-with-caution/"
+description: "Stirred the water back then in 2000 with his article, Why the future doesn’t need us. Now he’s back, giving an interview to NYTimes, on terrorism, genetic engineering, and bioweapons. Who is Bill Joy ? — A former chief scientist of Sun Microsystems, also a co-founder of the company. Prior to Sun, he"
+tag: ["future", "idols", "sun"]
+textlang: "en"
+wpid: 180
+---
+Stirred the water back then in 2000 with his article, [Why the future doesn’t need us](http://www.wired.com/wired/archive/8.04/joy.html). Now he’s back, giving an interview to NYTimes, [on terrorism, genetic engineering, and bioweapons.](http://www.nytimes.com/2004/06/06/magazine/06ENCOUNTER.html?ex=1087099200&en=ea67a9062e1e2144&ei=5062&partner=GOOGLE)
+
+Who is Bill Joy ? — A former chief scientist of [Sun Microsystems](http://www.sun.com/), also a co-founder of the company. Prior to Sun, he wrote vi and TCP/IP stack, and designed BSD. At Sun, he designed NFS, co-designed SPARC, Java, Jini, and JXTA.
+
+My idol.

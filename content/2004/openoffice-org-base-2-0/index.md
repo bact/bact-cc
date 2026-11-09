@@ -1,0 +1,17 @@
+---
+title: "OpenOffice.org Base 2.0"
+date: "2004-08-13T06:39:00+07:00"
+lastmod: "2004-08-13T06:39:00+07:00"
+type: "post"
+url: "/2004/openoffice-org-base-2-0/"
+description: "Something comparable to MS Access, a small, self-containted, database for ‘personal’ (stand-alone) use. OO.o Base will use HSQLDB as its engine (not final yet). Discussions on SQLite support are also taking place in so-ooo mailing list. โปรแกรมฐานข้อมูลใน OO.o 2.0 จะมาพร้อมกับความสามารถในการจัดการฐา"
+tag: ["openoffice-org"]
+textlang: "th"
+wpid: 330
+---
+Something comparable to MS Access, a small, self-containted, database for ‘personal’ (stand-alone) use.
+
+OO.o Base will use [HSQLDB](http://hsqldb.sourceforge.net/) as its engine (not final yet). Discussions on [SQLite support](http://www.openoffice.org/issues/show_bug.cgi?id=32117) are also taking place in so-ooo mailing list.
+
+โปรแกรมฐานข้อมูลใน OO.o 2.0 จะมาพร้อมกับความสามารถในการจัดการฐานข้อมูลด้วยตัวเอง, โดยไม่ต้องพึ่งโปรแกรมภายนอก (อย่างใน 1.x).  
+การพัฒนาในตอนนี้ ใช้ HSQLDB เป็นหลัก, แต่อาจจะเพิ่มการสนับสนุน [SQLite](http://sqlite.org/) เข้าไปในอนาคต

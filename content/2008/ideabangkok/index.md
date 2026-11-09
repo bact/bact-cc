@@ -1,0 +1,13 @@
+---
+title: "IdeaBangkok"
+date: "2008-09-17T00:45:00+07:00"
+lastmod: "2011-01-12T07:46:42+07:00"
+type: "post"
+url: "/2008/ideabangkok/"
+description: "ใครมีความคิดอะไรสำหรับกรุงเทพฯ ไปเสนอได้ที่ IdeaBangkok.com ให้ทุกคนมาช่วยกันโหวต แสดงความคิดเห็น วิพากษ์วิจารณ์ เพื่อกรุงเทพที่น่าอยู่"
+categories: ["places"]
+tag: ["bangkok", "bangkokmetro", "ideas"]
+textlang: "th"
+wpid: 14
+---
+ใครมีความคิดอะไรสำหรับกรุงเทพฯ ไปเสนอได้ที่ **[IdeaBangkok.com](http://ideabangkok.com/)** ให้ทุกคนมาช่วยกันโหวต แสดงความคิดเห็น วิพากษ์วิจารณ์ เพื่อกรุงเทพที่น่าอยู่

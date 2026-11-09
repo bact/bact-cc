@@ -1,0 +1,25 @@
+---
+title: "SWT vs Swing"
+date: "2005-03-24T01:08:00+07:00"
+lastmod: "2005-03-24T01:08:00+07:00"
+type: "post"
+url: "/2005/swt-vs-swing/"
+description: "Eclipse is fast, NetBeans is slow. SWT is fast, Swing is slow. Myths? The blog above said new NetBeans is getting faster, while new Eclipse is getting slower. My own experience on NetBeans 3.x on Window, it is unacceptable slow. But for NetBeans 4.0 (also 4.1 Beta), it is a lot faster, responsive. I"
+tag: ["eclipse", "java", "netbeans"]
+textlang: "en"
+wpid: 637
+---
+Eclipse is fast, NetBeans is slow.  
+SWT is fast, Swing is slow.
+
+[Myths?](http://cld.blog-city.com/read/1126337.htm)
+
+The blog above said new NetBeans is getting faster, while new Eclipse is getting slower.
+
+My own experience on NetBeans 3.x on Window, it is unacceptable slow. But for NetBeans 4.0 (also 4.1 Beta), it is a lot faster, responsive. It still takes few seconds to loaded up, but after that everything goes fine.
+
+For Eclipse, Eclipse 2.0 on Windows and Linux is very fast, especially if you compare it with NetBeans in that time. For Eclipse 3.0, on Windows it is ok — not very fast but not too bad. On Linux, it is very slow and sometimes close itself without warning (this happended many times during my thesis time, hell).
+
+Anyway, in general, I still recommend Eclipse for people who start develop Java. But as the project grows up, you may want to look for other IDE. JBuilder, IntelliJ, NetBeans, etc. Each IDE has its strength and weakness. Only few of them is suitable for your project (and when you change project, you may want to change IDE as well .. well, few people like to do that :P).
+
+On another blog, [OpenGL improvement in Java 2D makes Swing faster by 15%](http://weblogs.java.net/blog/campbell/archive/2005/03/strcrazy_improv_1.html).

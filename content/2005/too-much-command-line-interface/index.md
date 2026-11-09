@@ -1,0 +1,14 @@
+---
+title: "Too much command-line interface ?"
+date: "2005-11-30T03:31:00+07:00"
+lastmod: "2005-11-30T03:31:00+07:00"
+type: "post"
+url: "/2005/too-much-command-line-interface/"
+description: "ตะกี้พยายามจะออกจากหน้าต่าง MSN Messenger ด้วยการพิมพ์ exit -_-\""
+categories: ["something"]
+textlang: "th"
+wpid: 1090
+---
+ตะกี้พยายามจะออกจากหน้าต่าง MSN Messenger ด้วยการพิมพ์ `exit`
+
+-\_-"

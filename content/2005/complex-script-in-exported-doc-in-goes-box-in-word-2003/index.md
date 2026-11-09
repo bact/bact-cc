@@ -1,0 +1,19 @@
+---
+title: "Complex script in exported .doc in goes \"box\" in Word 2003"
+date: "2005-03-27T18:52:00+07:00"
+lastmod: "2005-03-27T18:52:00+07:00"
+type: "post"
+url: "/2005/complex-script-in-exported-doc-in-goes-box-in-word-2003/"
+description: "ใครมี Word 2003 ก็ช่วยดูบั๊กนี้หน่อยนะคร้าบ Complex script runs in exported .doc file are undisplayable in Word 2003 ถ้ามันเป็นกะคนอื่นด้วย ผมจะได้ยืนยัน (เปลี่ยนช่อง status เป็น “CONFIRMED”) เค้าไป แบบว่าไม่มีอ่ะ Word 2003 -_-“ ขอบคุณครับ 🙂"
+tag: ["openoffice-org"]
+textlang: "th"
+wpid: 651
+---
+ใครมี Word 2003 ก็ช่วยดูบั๊กนี้หน่อยนะคร้าบ  
+[Complex script runs in exported .doc file are undisplayable in Word 2003](http://www.openoffice.org/issues/show_bug.cgi?id=46087)
+
+ถ้ามันเป็นกะคนอื่นด้วย ผมจะได้ยืนยัน (เปลี่ยนช่อง status เป็น “CONFIRMED”) เค้าไป
+
+แบบว่าไม่มีอ่ะ Word 2003 -\_-“
+
+ขอบคุณครับ 🙂

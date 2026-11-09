@@ -20,3 +20,4 @@ h1{line-height:1.25;font-size:1.9rem}h2{line-height:1.3}
 .comments li{margin:1rem 0}.comment-body p{margin:.3rem 0}
 .terms{columns:2;list-style:none;padding:0}
 .site-footer{border-top:1px solid var(--line);margin-top:3rem;padding:1.5rem 0;color:var(--mut);font-size:.9rem}
+.small{font-size:.875em}

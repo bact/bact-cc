@@ -1,0 +1,12 @@
+---
+title: "The Seventh National Software Contest – NSC 2005"
+date: "2004-09-22T19:17:00+07:00"
+lastmod: "2004-09-22T19:17:00+07:00"
+type: "post"
+url: "/2004/the-seventh-national-software-contest-nsc-2005/"
+description: "ประกาศผลข้อเสนอโครงการที่ผ่านเข้ารอบ: 30 กันยายน 2547"
+tag: ["national-software-contest", "siit"]
+textlang: "th"
+wpid: 370
+---
+ประกาศผลข้อเสนอโครงการที่ผ่านเข้ารอบ: **30 กันยายน 2547**

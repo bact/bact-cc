@@ -1,0 +1,14 @@
+---
+title: "CiteULike – an online citation manager"
+date: "2005-03-02T23:00:00+07:00"
+lastmod: "2005-03-02T23:00:00+07:00"
+type: "post"
+url: "/2005/citeulike-an-online-citation-manager/"
+description: "Chris told me about this a week ago. A very handy tool for a researcher. Cites I Like."
+tag: ["reading", "references", "researches"]
+textlang: "en"
+wpid: 603
+---
+[Chris](http://ichris.ws/) told me about this a week ago. A very handy tool for a researcher.
+
+[Cites I Like](http://www.citeulike.org/user/arthit/).

@@ -1,0 +1,12 @@
+---
+title: "Trusted Solaris and Sun Rays being used by US military"
+date: "2004-07-05T23:40:00+07:00"
+lastmod: "2004-07-05T23:40:00+07:00"
+type: "post"
+url: "/2004/trusted-solaris-and-sun-rays-being-used-by-us-military/"
+description: "in U.S. Joint Forces Command"
+tag: ["solaris"]
+textlang: "en"
+wpid: 259
+---
+in U.S. Joint Forces Command

@@ -1,0 +1,18 @@
+---
+title: "Multiple \"Run\" profiles"
+date: "2005-05-18T14:06:00+07:00"
+lastmod: "2005-05-18T14:06:00+07:00"
+type: "post"
+url: "/2005/multiple-run-profiles/"
+description: "Eclipse has this. NetBeans don’t. Eclipse allows you to choose different run/debug profiles, while NetBeans has only one “Run/Debug Main Project”. Probably this is the feature I missed the most. Vote → Issue 49636 – Build/run configurations for j2seproject’s"
+tag: ["netbeans"]
+textlang: "en"
+wpid: 754
+---
+![](https://www.netbeans.org/nonav/issues/showattachment.cgi/22172/multiple-run-profiles.jpg)  
+Eclipse has this. NetBeans don’t.
+
+Eclipse allows you to choose different run/debug profiles, while NetBeans has only one “Run/Debug Main Project”.  
+Probably this is the feature I missed the most.
+
+Vote → [Issue 49636 – Build/run configurations for j2seproject’s](http://www.netbeans.org/issues/show_bug.cgi?id=49636)

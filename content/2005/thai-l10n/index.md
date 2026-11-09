@@ -1,0 +1,14 @@
+---
+title: "Thai L10n"
+date: "2005-11-14T20:40:00+07:00"
+lastmod: "2011-05-12T00:31:42+07:00"
+type: "post"
+url: "/2005/thai-l10n/"
+description: "ไ10ท for ไocalizatioท (Thai Localization)"
+categories: ["computer", "cultures"]
+tag: ["localization", "thai"]
+textlang: "en"
+wpid: 1066
+---
+**ไ10ท** for ไocalizatioท  
+(Thai Localization)

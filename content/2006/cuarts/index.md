@@ -1,0 +1,15 @@
+---
+title: "cuarts"
+date: "2006-03-20T22:58:00+07:00"
+lastmod: "2011-05-08T00:45:18+07:00"
+type: "post"
+url: "/2006/cuarts/"
+description: "cuarts: Columbia University’s Portal to the Arts On Campus and Beyond Lots of news and pointers. Including info on NYC Arts scence and Arts Forum."
+categories: ["cultures"]
+tag: ["arts", "columbia-university", "new-york"]
+textlang: "en"
+wpid: 1351
+---
+[cuarts](http://cuarts.com/): Columbia University’s Portal to the Arts On Campus and Beyond
+
+Lots of news and pointers. Including info on NYC Arts scence and Arts Forum.

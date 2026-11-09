@@ -1,0 +1,12 @@
+---
+title: "Pladao Office 3.1 source code"
+date: "2005-02-14T06:34:00+07:00"
+lastmod: "2005-02-14T06:34:00+07:00"
+type: "post"
+url: "/2005/pladao-office-3-1-source-code/"
+description: "ซอร์สโค้ด ของ ปลาดาวออฟฟิศ 3.1"
+categories: ["something"]
+textlang: "th"
+wpid: 560
+---
+[ซอร์สโค้ด](http://www.pladao.org/files/3.1/PladaoOffice3.1-src.tar.gz) ของ ปลาดาวออฟฟิศ 3.1

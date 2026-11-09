@@ -8,14 +8,17 @@ Static version of <https://bact.cc>, migrated from WordPress.
 | Path | What |
 |---|---|
 | `hugo.toml` | Site config (permalinks, taxonomies, menu) |
-| `content/<year>/<slug>/index.html` | Posts. Body is the original WordPress HTML (lossless). `comments.json` beside it holds archived comments |
+| `content/<year>/<slug>/index.md` | Posts, converted to Markdown (and verified, see below). `comments.json` beside it holds archived comments. 49 posts that could not be converted safely stay `index.html` |
 | `content/pages/*` | About, Courses, Media, Publications |
 | `content/categories`, `content/tag` | Term titles/descriptions |
 | `layouts/`, `assets/css/` | Own minimal theme (no third‑party theme/submodule) |
 | `static/f/` | Uploaded files — same `/f/YYYY/MM/…` URLs as WordPress |
 | `static/_redirects`, `static/_headers`, `static/robots.txt` | Cloudflare Pages config |
 | `functions/index.js` | Optional: `/?p=123` old short‑link redirect |
+| `package.json` | Pins Pagefind (search). `npm run build` = Hugo + search index |
 | `tools/` | Migration + verification scripts |
+| `MARKDOWN_CONVERSION_REPORT.txt` | Which posts are pure Markdown / contain raw HTML / stayed HTML, and why |
+| `NOT_TRANSFERRED.txt` | Oversized and non-migrated items |
 
 ## URL preservation
 
@@ -37,8 +40,8 @@ Run `python3 tools/check_links.py` after `hugo` — it verifies every old URL ex
 ## Local use
 
 ```sh
-hugo server            # http://localhost:1313  (Hugo extended ≥ 0.152)
-hugo --gc --minify     # build to ./public
+hugo server            # http://localhost:1313  (Hugo extended ≥ 0.152; search index is not available here)
+npm ci && npm run build   # production build into ./public incl. Pagefind search index
 python3 tools/check_links.py
 ```
 
@@ -55,14 +58,14 @@ tag: [hugo]
 ---
 Markdown here.
 ```
-(Use `hugo new` or copy an existing post. Note the tag key is `tag`, and `type: post` is required.)
+(Note the tag key is `tag`, and `type: post` is required. Optional `textlang: th` marks Thai text for screen readers.)
 If you start a year that has no `content/<year>/_index.md`, copy one from another year (it makes `/<year>/` exist).
 
 ## Deploying (Cloudflare Pages, free plan)
 
 1. Push this repo to GitHub.
 2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick the repo.
-3. Build settings: framework preset **Hugo**, build command `hugo --gc --minify`, output dir `public`,
+3. Build settings: framework preset **Hugo**, build command `npm ci && npm run build` (Hugo + Pagefind search index), output dir `public`,
    environment variable `HUGO_VERSION = 0.152.2` (plain text, not a secret).
 4. Deploy, check the `*.pages.dev` preview, then **Custom domains → bact.cc** (see cutover below).
 
@@ -81,9 +84,23 @@ No API tokens, passwords or keys are needed in the repo or in GitHub. Cloudflare
 
 * **Commenting** — static sites can't accept comments. Existing 3,530 comments are archived read‑only; commenter emails were never exported and any email address typed into a comment body is masked. To re‑enable comments later, add e.g. Giscus (GitHub Discussions) in `layouts/post/single.html`.
 * **Jetpack Stats** — replace with Cloudflare Web Analytics (free, cookie‑less; toggle in the Pages dashboard).
-* **Site search** — not included; Pagefind is the usual free static option.
 * **WordPress admin, plugins, xmlrpc, wp-json** — gone.
 * Third‑party embeds (YouTube etc.) are untouched; some very old ones (Amazon widgets, Digg) were already dead upstream.
+
+## Search
+
+`/search/` uses [Pagefind](https://pagefind.app) (free, runs entirely in the browser, no server). The index is built after Hugo
+(`npm run build`) into `public/pagefind/`. It is forced to a single language (`--force-language th`) so Thai and English are
+searched together and Thai words are segmented. Tip: Thai queries work best with spaces between words
+(Pagefind segments the pages, not what the visitor types).
+
+## Markdown conversion
+
+`tools/wp_to_markdown.py` converted the WordPress HTML bodies with pandoc and **verified each page by rendering it with Hugo and
+comparing it to the original** (all text, link targets, images, embeds, emphasis, lists/tables/headings). Pages that did not match
+were reverted to HTML. Results and reasons: `MARKDOWN_CONVERSION_REPORT.txt`.
+Markdown typographer and auto-linking are disabled in `hugo.toml` so Markdown renders exactly what is written.
+The original HTML versions are in the git history (commit before the Markdown conversion).
 
 ## Re‑running the migration
 
@@ -91,6 +108,7 @@ No API tokens, passwords or keys are needed in the repo or in GitHub. Cloudflare
 python3 tools/wp_export.py https://bact.cc   # public REST API only, no credentials → _export/
 python3 tools/wp_convert.py                  # → content/ (overwrites it!)
 python3 tools/fetch_media.py                 # → static/f/ (resumable)
+python3 tools/wp_to_markdown.py              # HTML → Markdown + verification (needs pandoc + hugo on PATH)
 ```
 `_export/` is git‑ignored. Do not re‑run `wp_convert.py` after hand‑editing content — it regenerates `content/`.
 

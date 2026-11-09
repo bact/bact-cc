@@ -1,0 +1,13 @@
+---
+title: "Reading blogs without leaving NetBeans"
+date: "2005-03-25T21:34:00+07:00"
+lastmod: "2005-03-25T21:34:00+07:00"
+type: "post"
+url: "/2005/reading-blogs-without-leaving-netbeans/"
+description: "อ่ะนะ คนเราก็ช่าง.. ดูวิธีอ่านบล็อกใน NetBeans"
+tag: ["netbeans"]
+textlang: "th"
+wpid: 643
+---
+อ่ะนะ คนเราก็ช่าง..  
+[ดูวิธีอ่านบล็อกใน NetBeans](http://blogs.sun.com/roller/page/alexismp/20050322#read_blogs_without_leaving_netbeans)

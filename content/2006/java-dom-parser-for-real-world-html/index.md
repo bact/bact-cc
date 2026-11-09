@@ -1,0 +1,17 @@
+---
+title: "Java DOM parser for real-world HTML"
+date: "2006-01-30T06:02:00+07:00"
+lastmod: "2006-01-30T06:02:00+07:00"
+type: "post"
+url: "/2006/java-dom-parser-for-real-world-html/"
+description: "JTidy can be used as a tool for cleaning up malformed and faulty HTML. In addition, JTidy provides a DOM interface to the document that is being processed, which effectively makes you able to use JTidy as a DOM parser for real-world HTML. เฮ้ อันนี้น่าสนใจ เผื่อเอามาดึงเว็บไปอ่านได้ HTML DOM นี่ไม่ค"
+tag: ["java"]
+textlang: "th"
+wpid: 1233
+---
+[JTidy](http://jtidy.sourceforge.net/) can be used as a tool for cleaning up malformed and faulty HTML. In addition, JTidy provides a DOM interface to the document that is being processed, which effectively makes you able to use **JTidy as a DOM parser for real-world HTML**.
+
+เฮ้ อันนี้น่าสนใจ เผื่อเอามาดึงเว็บไปอ่านได้
+
+HTML DOM นี่ไม่ค่อยเจอแฮะ หมายถึงที่เป็น API/lib ให้เอามาสร้างโปรแกรมได้น่ะ  
+เจอแต่ XML DOM แล้วถ้าเอกสารมันไม่ well-formed ก็มักจะมีปัญหา

@@ -1,0 +1,25 @@
+---
+title: "\"read more\" New Blogger Hack"
+date: "2007-04-19T22:58:00+07:00"
+lastmod: "2007-04-19T22:58:00+07:00"
+type: "post"
+url: "/2007/read-more-new-blogger-hack/"
+description: "Blogger มันไม่มี “read more” เหมือนกับพวก WordPress หรือ Drupal แต่ถ้าอยากทำ ก็ทำได้ ใช้ JavaScript + CSS + DOM แฮ็คเอา Hackosphere : Blogger hack: Expandable posts with Peekaboo view จดไว้ก่อน เดี๋ยวจะลองดู เท่าที่ดูวิธีผ่าน ๆ ยังไม่ได้ดูโค้ด น่าจะใช้วิธี ‘ซ่อน’ ฉบับเต็ม (span id=”fullpost”) เอาไว้"
+tag: ["css", "dom", "hacks", "javascript", "new-blogger"]
+textlang: "th"
+wpid: 2035
+---
+Blogger มันไม่มี “read more” เหมือนกับพวก WordPress หรือ Drupal
+
+แต่ถ้าอยากทำ ก็ทำได้ ใช้ JavaScript + CSS + DOM แฮ็คเอา
+
+Hackosphere : [Blogger hack: Expandable posts with Peekaboo view](http://hackosphere.blogspot.com/2006/09/expandable-posts-with-peekaboo-view.html)
+
+จดไว้ก่อน เดี๋ยวจะลองดู
+
+เท่าที่ดูวิธีผ่าน ๆ ยังไม่ได้ดูโค้ด น่าจะใช้วิธี ‘ซ่อน’ ฉบับเต็ม (span id=”fullpost”) เอาไว้ด้วย CSS แล้วพอกด “read more” JavaScript ก็จะไปเปลี่ยน CSS จากที่ซ่อนเป็นแสดง … เดาเอานะ
+
+<span class="small">technorati tags:  
+[New Blogger](http://technorati.com/tag/New_Blogger),  
+[hacks](http://technorati.com/tag/hacks)  
+</span>

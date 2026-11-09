@@ -1,0 +1,18 @@
+---
+title: "Managing Gigabytes (Book)"
+date: "2004-02-03T22:25:00+07:00"
+lastmod: "2011-01-12T00:37:36+07:00"
+type: "post"
+url: "/2004/managing-gigabytes/"
+description: "Sometimes it’s more than just ‘search’. We may want it ‘faster’, and many times we want it ‘smaller’. (And for the case of database/index size, smaller one is probably the faster one — less things to looking for.) Managing Gigabytes: Compressing and Indexing Documents and Images by Ian H. Witten, Al"
+tag: ["books", "information-retrieval", "whatwewant"]
+textlang: "en"
+wpid: 28
+---
+Sometimes it’s more than just ‘search’. We may want it ‘faster’, and many times we want it ‘smaller’.
+
+(And for the case of database/index size, smaller one is probably the faster one — less things to looking for.)
+
+*[Managing Gigabytes: Compressing and Indexing Documents and Images](http://www.cs.mu.oz.au/mg/)* by Ian H. Witten, Alistair Moffat, and Timothy C. Bell. ([read reviews](http://www.cs.waikato.ac.nz/~singlis/mg.html))
+
+From the authors of the book, [MG](http://www.mds.rmit.edu.au/mg/), an open-source indexing and retrieval system for text, images, and textual images.

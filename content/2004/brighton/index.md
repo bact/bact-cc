@@ -1,0 +1,19 @@
+---
+title: "Brighton"
+date: "2004-09-17T04:38:00+07:00"
+lastmod: "2004-09-17T04:38:00+07:00"
+type: "post"
+url: "/2004/brighton/"
+description: "Will go to Brighton this Sunday. From a northern part to the very south of UK. It will, surely, takes around 9 hours to go there, train-ing. And it will, hopefully, takes me another 3 years there, training. Still fighting 😉"
+categories: ["something"]
+textlang: "en"
+wpid: 369
+---
+Will go to Brighton this Sunday.
+
+From a northern part to the very south of UK.
+
+It will, surely, takes around 9 hours to go there, train-ing.  
+And it will, hopefully, takes me another 3 years there, training.
+
+Still fighting 😉

@@ -1,0 +1,16 @@
+---
+title: "wake-up call"
+date: "2006-12-12T06:55:00+07:00"
+lastmod: "2011-05-05T19:51:12+07:00"
+type: "post"
+url: "/2006/wake-up-call/"
+description: "nope, it’s too early… get fresh all day!! (anyway) 🙂"
+categories: ["life"]
+textlang: "en"
+wpid: 1795
+---
+nope, it’s too early…
+
+get fresh all day!! (anyway)
+
+🙂

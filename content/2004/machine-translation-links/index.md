@@ -1,0 +1,14 @@
+---
+title: "Machine Translation links"
+date: "2004-10-27T19:43:00+07:00"
+lastmod: "2011-05-05T20:43:10+07:00"
+type: "post"
+url: "/2004/machine-translation-links/"
+description: "The European Association for Machine Translation The British Computer Society, Natural Language Translation Specialist Group"
+categories: ["coling", "informatics"]
+tag: ["machine-translation", "natural-language-processing"]
+textlang: "en"
+wpid: 409
+---
+- [The European Association for Machine Translation](http://www.eamt.org/)
+- [The British Computer Society, Natural Language Translation Specialist Group](http://www.bcs.org.uk/siggroup/nalatran/index.htm)

@@ -1,0 +1,24 @@
+---
+title: "Science Film Festival 2007"
+date: "2007-11-19T02:22:00+07:00"
+lastmod: "2011-05-07T23:39:52+07:00"
+type: "post"
+url: "/2007/science-film-festival-2007/"
+description: "เทศกาลภาพยนตร์วิทยาศาสตร์ 2550 13-23 พ.ย. 2550 @ ท้องฟ้าจำลอง เอกมัย, พิพิธภัณฑ์วิทยาศาสตร์ คลองห้า, พิพิธภัณฑ์เด็ก สวนจตุจักร, TK Park [ ลิงก์ goethe.de | ผ่าน biolawcom.de ] technorati tags: science, film, festival"
+categories: ["science"]
+tag: ["festivals", "films"]
+textlang: "th"
+wpid: 2209
+---
+**[เทศกาลภาพยนตร์วิทยาศาสตร์ 2550](http://www.goethe.de/ins/th/prj/wif/thindex.htm)**  
+13-23 พ.ย. 2550
+
+@ ท้องฟ้าจำลอง เอกมัย, พิพิธภัณฑ์วิทยาศาสตร์ คลองห้า, พิพิธภัณฑ์เด็ก สวนจตุจักร, TK Park
+
+\[ ลิงก์ [goethe.de](http://www.goethe.de/ins/th/prj/wif/thindex.htm) \| ผ่าน [biolawcom.de](http://www.biolawcom.de/blog/726/always-in-filmfestival-in-munich-in-germany.html "เหมือนเคย : The Way We Live") \]
+
+<span class="small">technorati tags:  
+[science](http://technorati.com/tag/science),  
+[film](http://technorati.com/tag/film),  
+[festival](http://technorati.com/tag/festival)  
+</span>

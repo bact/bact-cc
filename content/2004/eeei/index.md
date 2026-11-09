@@ -1,0 +1,13 @@
+---
+title: "เอ้ย!!"
+date: "2004-04-22T02:24:00+07:00"
+lastmod: "2011-04-20T16:51:16+07:00"
+type: "post"
+url: "/2004/eeei/"
+description: "เอ้ย!!"
+categories: ["life"]
+tag: ["me"]
+textlang: "th"
+wpid: 68
+---
+เอ้ย!!

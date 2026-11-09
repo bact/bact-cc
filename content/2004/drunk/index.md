@@ -1,0 +1,13 @@
+---
+title: "เมา"
+date: "2004-06-27T10:12:00+07:00"
+lastmod: "2011-04-21T15:57:10+07:00"
+type: "post"
+url: "/2004/drunk/"
+description: "Diggity"
+categories: ["life"]
+tag: ["clubbing"]
+textlang: "en"
+wpid: 236
+---
+[Diggity](http://diggityclub.com/)

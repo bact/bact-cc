@@ -1,0 +1,23 @@
+---
+title: "Common Locale Data Repository"
+date: "2005-02-19T21:26:00+07:00"
+lastmod: "2011-05-17T14:31:00+07:00"
+type: "post"
+url: "/2005/common-locale-data-repository/"
+description: "Common Locale Data Repository (CLDR) จัดทำโดยองค์กร Unicode เป็นฐานข้อมูล locale data กลาง ให้โปรแกรมอื่นๆ นำไปใช้ต่อ เพื่อให้แต่ละโปรแกรม มี locale data ที่ถูกต้องตรงกัน ใช้งานร่วมกันได้ และไม่สับสน อ้างอิง L10n.opentle.org เพิ่มเติม: พี่เทพ ตอบคำถาม เรื่องข้อมูลที่ OOo กับ CLDR ไม่ตรงกัน และบางแห่"
+categories: ["computer"]
+tag: ["localization", "open-source", "thai", "unicode"]
+textlang: "th"
+wpid: 580
+---
+[Common Locale Data Repository (CLDR)](http://www.unicode.org/cldr/) จัดทำโดยองค์กร Unicode เป็นฐานข้อมูล locale data กลาง ให้โปรแกรมอื่นๆ นำไปใช้ต่อ เพื่อให้แต่ละโปรแกรม มี locale data ที่ถูกต้องตรงกัน ใช้งานร่วมกันได้ และไม่สับสน
+
+อ้างอิง [L10n.opentle.org](http://l10n.opentle.org/wiki/index.php/Common_Locale_Data_Repository)
+
+เพิ่มเติม: พี่เทพ [ตอบคำถาม](http://linux.thai.net/wwwboard/devel/msg07012.php) เรื่องข้อมูลที่ OOo กับ CLDR ไม่ตรงกัน และบางแห่งน่าจะผิด
+
+เพิ่มเติม 2: พี่สัมพันธ์ ให้ความเห็น และ [อธิบายลักษณะข้อมูล](http://linux.thai.net/wwwboard/devel/msg07038.php) ว่าจะเข้าไปดูได้ยังไง และให้ช่วยกันดู+แก้ไขหน่อย 🙂
+
+[Thai locale data in CLDR](http://www.unicode.org/cldr/data/diff/main/th_TH.html)  
+มีข้อมูลจากหลายแหล่ง ทั้งข้อมูลกลาง (Common), Windows, Sun JDK, IBM JDK, OpenOffice.org, AIX, และ Linux (ไม่มี Solaris? .. เอ แปลก)  
+ถ้าเกิดว่า ทุกๆ อันถูกต้อง และตรงกันหมด อันนั้นคือ เยี่ยม

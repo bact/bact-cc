@@ -1,0 +1,15 @@
+---
+title: "Last life in the universe"
+date: "2004-05-11T03:53:00+07:00"
+lastmod: "2011-04-21T15:28:04+07:00"
+type: "post"
+url: "/2004/last-life-in-the-universe/"
+description: "เรื่องรัก น้อยนิด มหาศาล My fav film. Also one of not many books that I brought oversea with me."
+categories: ["cultures", "life"]
+textlang: "en"
+wpid: 105
+---
+เรื่องรัก น้อยนิด มหาศาล
+
+My fav film.  
+Also one of not many books that I brought oversea with me.

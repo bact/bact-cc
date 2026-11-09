@@ -1,0 +1,13 @@
+---
+title: "Cités du monde – Bangkok"
+date: "2004-08-05T00:06:00+07:00"
+lastmod: "2011-01-12T07:47:43+07:00"
+type: "post"
+url: "/2004/cites-du-monde-bangkok/"
+description: "A French TV5’s perspective of Thailand’s capital."
+categories: ["places"]
+tag: ["bangkok"]
+textlang: "en"
+wpid: 306
+---
+A French TV5’s perspective of Thailand’s capital.

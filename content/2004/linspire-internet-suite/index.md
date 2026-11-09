@@ -1,0 +1,12 @@
+---
+title: "Linspire Internet Suite"
+date: "2004-11-17T20:42:00+07:00"
+lastmod: "2004-11-17T20:42:00+07:00"
+type: "post"
+url: "/2004/linspire-internet-suite/"
+description: "เห็นแล้วอยากได้มั่ง ทั้งตรวจตัวสะกดอัตโนมัติ ทั้งค้นหาคำศัพท์ ฯลฯ"
+categories: ["something"]
+textlang: "th"
+wpid: 462
+---
+เห็นแล้วอยากได้มั่ง ทั้งตรวจตัวสะกดอัตโนมัติ ทั้งค้นหาคำศัพท์ ฯลฯ

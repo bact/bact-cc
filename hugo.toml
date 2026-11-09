@@ -37,7 +37,12 @@ disableKinds = []
   priority = 0.5
 
 [markup.goldmark.renderer]
-  unsafe = true              # allow raw HTML in (new) Markdown posts
+  unsafe = true              # allow raw HTML inside Markdown posts
+# Keep Markdown rendering faithful to what was written: no smart quotes/dashes, no auto-linking of bare URLs.
+[markup.goldmark.extensions.typographer]
+  disable = true
+[markup.goldmark.extensions]
+  linkify = false
 
 [[menus.main]]
   name = "About"

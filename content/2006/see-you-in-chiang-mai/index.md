@@ -1,0 +1,13 @@
+---
+title: "See you in Chiang Mai …"
+date: "2006-03-28T07:52:00+07:00"
+lastmod: "2011-01-12T07:48:20+07:00"
+type: "post"
+url: "/2006/see-you-in-chiang-mai/"
+description: "Okie Dookie."
+categories: ["places"]
+tag: ["chiang-mai"]
+textlang: "en"
+wpid: 1373
+---
+Okie Dookie.

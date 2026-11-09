@@ -1,0 +1,15 @@
+---
+title: "Civil disobedience (more)"
+date: "2006-04-18T04:56:00+07:00"
+lastmod: "2006-04-18T04:56:00+07:00"
+type: "post"
+url: "/2006/civil-disobedience-more/"
+description: "ขอ ดื้อแพ่ง กันอีกรอบ (ก็มันดื้อนี่นา) ดื้อแพ่ง ประชาธิปไตยทาง ตรงผ่านกระบวนการศาล โดย Tanusz อารยะขัดขืน ขัดขืนอย่างอารยะ มองอารยะขัดขืนผ่านแว่น “กฎหมายอาญา” โดย ratio scripta"
+categories: ["something"]
+textlang: "th"
+wpid: 1431
+---
+ขอ ดื้อแพ่ง กันอีกรอบ (ก็มันดื้อนี่นา)
+
+- [ดื้อแพ่ง](http://nazkull.blogspot.com/2006/04/blog-post.html) ประชาธิปไตยทาง ตรงผ่านกระบวนการศาล โดย Tanusz
+- [อารยะขัดขืน ขัดขืนอย่างอารยะ](http://ratioscripta.blogspot.com/2006/04/blog-post_114450295412893908.html) มองอารยะขัดขืนผ่านแว่น “กฎหมายอาญา” โดย ratio scripta

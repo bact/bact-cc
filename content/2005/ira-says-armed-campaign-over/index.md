@@ -1,0 +1,12 @@
+---
+title: "IRA says ‘armed campaign over’"
+date: "2005-07-28T19:19:00+07:00"
+lastmod: "2005-07-28T19:19:00+07:00"
+type: "post"
+url: "/2005/ira-says-armed-campaign-over/"
+description: "BBC reports: “ The IRA has formally ordered an end to its armed campaign and is to pursue exclusively peaceful political means. … ”"
+categories: ["something"]
+textlang: "en"
+wpid: 919
+---
+[BBC reports](http://news.bbc.co.uk/2/hi/uk_news/northern_ireland/4720863.stm): “ The IRA has formally ordered an end to its armed campaign and is to pursue exclusively peaceful political means. … ”

@@ -1,0 +1,17 @@
+---
+title: "Penn Treebank in XML format"
+date: "2004-06-19T20:42:00+07:00"
+lastmod: "2004-06-19T20:42:00+07:00"
+type: "post"
+url: "/2004/penn-treebank-in-xml-format/"
+description: "Vee, you may interest in this one. No instant noodle here. Still have to work something out, but it shouldn’t be a difficult task. TIGERRegistry PTB -> TIGER XML filter, included in TIGERSearch, a treebank explorer package. TIGER API, Java lib for accessing corpus in TIGER XML format."
+tag: ["corpora", "java", "xml"]
+textlang: "en"
+wpid: 220
+---
+Vee, you may interest in this one.
+
+No instant noodle here. Still have to work something out, but it shouldn’t be a difficult task.
+
+TIGERRegistry PTB -\> TIGER XML filter, included in [TIGERSearch](http://www.ims.uni-stuttgart.de/projekte/TIGER/TIGERSearch/), a treebank explorer package.  
+[TIGER API](http://www.coli.uni-sb.de/~oeze/tigerapi/), Java lib for accessing corpus in TIGER XML format.

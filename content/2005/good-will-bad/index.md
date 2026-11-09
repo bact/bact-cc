@@ -1,0 +1,16 @@
+---
+title: "( good [ WILL ) bad ]"
+date: "2005-06-02T02:50:00+07:00"
+lastmod: "2005-06-02T02:50:00+07:00"
+type: "post"
+url: "/2005/good-will-bad/"
+description: "มีเรื่องที่ จะ มากมายในหัว แปลว่า ยังไม่ได้ทำ will หวัง, will จะ, will คือ ยังไม่ทำ จึง ยังไม่มี"
+categories: ["something"]
+textlang: "th"
+wpid: 778
+---
+มีเรื่องที่ จะ มากมายในหัว
+
+แปลว่า ยังไม่ได้ทำ
+
+will หวัง, will จะ, will คือ ยังไม่ทำ จึง ยังไม่มี

@@ -1,0 +1,14 @@
+---
+title: "It’s a Cheat Sheets Festival"
+date: "2005-08-10T22:39:00+07:00"
+lastmod: "2005-08-10T22:39:00+07:00"
+type: "post"
+url: "/2005/its-a-cheat-sheets-festival/"
+description: "Late night coders don’t do breakfast. A fast break, they adore. From AS/400 commands to OpenGL, keyboard shortcuts to OSI quick reference, plus Japanese emoticons!"
+categories: ["something"]
+textlang: "en"
+wpid: 959
+---
+Late night coders don’t do breakfast. [A fast break](http://searchsmb.techtarget.com/sDefinition/0,,sid44_gci826135,00.html), they adore.
+
+From AS/400 commands to OpenGL, keyboard shortcuts to OSI quick reference, plus Japanese emoticons!

@@ -1,0 +1,17 @@
+---
+title: "วารสารศาสตร์ ข้อมูล และคอมพิวเตอร์"
+date: "2011-05-02T16:35:53+07:00"
+lastmod: "2011-05-02T16:35:53+07:00"
+type: "post"
+url: "/2011/journalism-data-computation/"
+description: "สัปดาห์ที่ผ่านมาขยันเขียนบล็อก (ที่อื่น) มีสองอันเกี่ยวกะการใช้คอมพิวเตอร์ช่วยในการทำข่าวและรายงานข่าว วารสารศาสตร์เชิงคำนวณ: จะผลักข่าวไปข้างหน้า คอมพิวเตอร์ต้องเป็นมากกว่าเครื่องพิมพ์ดีด [datajournalism.in.th] (@dr_mana เสริมว่า และนักข่าวต้องเป็นมากกว่าคนจดข่าวหรือคนอัดเทปถอดเทป) 5 เครื่องมือสำหร"
+categories: ["informatics", "media"]
+tag: ["computational-journalism", "data-journalism", "information-visualization"]
+textlang: "th"
+wpid: 2722
+---
+สัปดาห์ที่ผ่านมาขยันเขียนบล็อก (ที่อื่น) มีสองอันเกี่ยวกะการใช้คอมพิวเตอร์ช่วยในการทำข่าวและรายงานข่าว
+
+[วารสารศาสตร์เชิงคำนวณ: จะผลักข่าวไปข้างหน้า คอมพิวเตอร์ต้องเป็นมากกว่าเครื่องพิมพ์ดีด](http://datajournalism.in.th/2011/04/computational-journalism/) \[datajournalism.in.th\] ([@dr_mana](https://twitter.com/dr_mana "มานะ ตรีรยาภิวัฒน์") เสริมว่า และนักข่าวต้องเป็นมากกว่าคนจดข่าวหรือคนอัดเทปถอดเทป)
+
+[5 เครื่องมือสำหรับสำรวจขุดค้นและแสดงภาพข้อมูล](http://opendream.co.th/blog/2011/05/tools-for-open-data-exploration-visualization) \[opendream.co.th/blog\]

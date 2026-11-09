@@ -1,0 +1,16 @@
+---
+title: "JPF – Java Plugin Framework"
+date: "2007-08-03T02:03:00+07:00"
+lastmod: "2007-08-03T02:03:00+07:00"
+type: "post"
+url: "/2007/jpf-java-plugin-framework/"
+description: "Java Plugin Framework จะช่วยให้เราสามารถโหลดไลบรารีเข้า/ออก ได้ตามต้องการ/เฉพาะเวลาที่ต้องการใช้ ทำให้ประหยัดหน่วยความจำ นอกจากนี้ยังทำให้เราสามารถจัดการไลบรารีได้สะดวกขึ้น technorati tags: Java"
+tag: ["java", "programming"]
+textlang: "th"
+wpid: 2169
+---
+[Java Plugin Framework](http://jpf.sourceforge.net/) จะช่วยให้เราสามารถโหลดไลบรารีเข้า/ออก ได้ตามต้องการ/เฉพาะเวลาที่ต้องการใช้ ทำให้ประหยัดหน่วยความจำ นอกจากนี้ยังทำให้เราสามารถจัดการไลบรารีได้สะดวกขึ้น
+
+<span class="small">technorati tags:  
+[Java](http://technorati.com/tag/Java)  
+</span>

@@ -1,0 +1,22 @@
+---
+title: "NewsMonster"
+date: "2004-05-13T01:41:00+07:00"
+lastmod: "2011-05-05T12:21:58+07:00"
+type: "post"
+url: "/2004/newsmonster/"
+description: "เพิ่งโหลดมาตะกี้ เดี๋ยวลองแล้วจะมาบอก เป็น webblog manager, news aggregator ประมาณนั้น รันบน Mozilla platform —- อัพเดท: ดูเหมือนจะมีปัญหากับ Firefox แฮะ อดใช้ 😛"
+categories: ["informatics", "media"]
+tag: ["news"]
+textlang: "th"
+wpid: 112
+---
+เพิ่งโหลดมาตะกี้  
+เดี๋ยวลองแล้วจะมาบอก
+
+เป็น webblog manager, news aggregator ประมาณนั้น  
+รันบน [Mozilla platform](http://www.mozilla.org/projects/xul/xre.html)
+
+—-
+
+อัพเดท: ดูเหมือนจะมีปัญหากับ Firefox แฮะ  
+อดใช้ 😛

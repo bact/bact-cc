@@ -1,0 +1,18 @@
+---
+title: "ฮ่วย ขาแข็ง"
+date: "2006-01-15T02:31:00+07:00"
+lastmod: "2011-05-08T00:56:55+07:00"
+type: "post"
+url: "/2006/huai-kha-khaeng/"
+description: "เปิดห้วยขาแข้งเป็นสถานที่ท่องเที่ยว ? มาด้วยกัน: อธิบดีฮิ “เปิดปุ๊บ ติดปั๊บ” สืบ นาคะเสถียร"
+categories: ["politics"]
+tag: ["environment", "huai-kha-khaeng", "thailand", "tourism"]
+textlang: "th"
+wpid: 1186
+---
+เปิดห้วยขาแข้งเป็นสถานที่ท่องเที่ยว ?
+
+มาด้วยกัน:
+
+- [อธิบดีฮิ “เปิดปุ๊บ ติดปั๊บ”](http://www.onopen.com/2005/01/41)
+- [สืบ นาคะเสถียร](http://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B7%E0%B8%9A_%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%96%E0%B8%B5%E0%B8%A2%E0%B8%A3)

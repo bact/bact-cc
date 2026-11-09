@@ -1,0 +1,17 @@
+---
+title: "Shinobi"
+date: "2004-07-17T22:37:00+07:00"
+lastmod: "2004-07-17T22:37:00+07:00"
+type: "post"
+url: "/2004/shinobi/"
+description: "Ninja tools (Sorry, I can’t read Japanese either :P) ไม่รู้เหมือนกันว่าเกี่ยวกะอะไร อ่านไม่ออก ขายอุปกรณ์นินจา? อาวุธลับ? ซื้อมาแล้วมีคู่มือให้ด้วยป่าว 😛"
+categories: ["something"]
+textlang: "th"
+wpid: 290
+---
+Ninja tools  
+(Sorry, I can’t read Japanese either :P)
+
+ไม่รู้เหมือนกันว่าเกี่ยวกะอะไร อ่านไม่ออก  
+ขายอุปกรณ์นินจา? อาวุธลับ?  
+ซื้อมาแล้วมีคู่มือให้ด้วยป่าว 😛

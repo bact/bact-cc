@@ -1,0 +1,17 @@
+---
+title: "Microformats"
+date: "2006-03-16T21:28:00+07:00"
+lastmod: "2006-03-16T21:28:00+07:00"
+type: "post"
+url: "/2006/microformats/"
+description: "FOAF, XFN, and other microformats. semantic web for typical human. Designed for humans first and machines second, microformats are a set of simple, open data formats built upon existing and widely adopted standards. — microformats.org"
+tag: ["microformats"]
+textlang: "en"
+wpid: 1333
+---
+[FOAF](http://en.wikipedia.org/wiki/FOAF_%28software%29), [XFN](http://en.wikipedia.org/wiki/XHTML_Friends_Network), and [other microformats](http://en.wikipedia.org/wiki/Microformats).
+
+semantic web for typical human.
+
+> Designed for humans first and machines second, microformats are a set of simple, open data formats built upon existing and widely adopted standards.  
+> — [microformats.org](http://microformats.org/)

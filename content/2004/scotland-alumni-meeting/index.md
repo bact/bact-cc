@@ -1,0 +1,16 @@
+---
+title: "ศิษย์เก่าสก็อตแลนด์ นัดเจอกัน 11 ธันวา"
+date: "2004-10-27T08:42:00+07:00"
+lastmod: "2011-04-21T16:24:26+07:00"
+type: "post"
+url: "/2004/scotland-alumni-meeting/"
+description: "ช่วยประชาสัมพันธ์ / ตัวเองนี่ท่าจะไปไม่ได้หรอก เสาร์ 11 ธันวาคม 2547 หกโมงเย็น ร้าน Londoner’s สุขุมวิท 33 (ยังไม่มี Edinburgher’s หรือ Glasgowian’s)"
+categories: ["misc"]
+tag: ["scotland"]
+textlang: "th"
+wpid: 407
+---
+ช่วยประชาสัมพันธ์ / ตัวเองนี่ท่าจะไปไม่ได้หรอก
+
+เสาร์ 11 ธันวาคม 2547 หกโมงเย็น ร้าน Londoner’s สุขุมวิท 33  
+(ยังไม่มี Edinburgher’s หรือ Glasgowian’s)

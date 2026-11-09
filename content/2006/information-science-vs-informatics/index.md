@@ -1,0 +1,31 @@
+---
+title: "information science vs informatics"
+date: "2006-06-26T02:20:00+07:00"
+lastmod: "2011-01-12T07:43:56+07:00"
+type: "post"
+url: "/2006/information-science-vs-informatics/"
+description: "Not to be confused with Library science. Not to be confused with Information science. Not to be confused with Informatics. Not to be confused with Computer science (or Computing science). A long talk, in Wikipedia, on the topic of “information science” vs “informatics”. เท่าที่อ่าน ก็ประมาณว่า คำว่า"
+categories: ["informatics"]
+tag: ["artificial-intelligence", "cognitive-sciences"]
+textlang: "th"
+wpid: 1512
+---
+*Not to be confused with [Library science](http://en.wikipedia.org/wiki/Library_science).*
+
+*Not to be confused with [Information science](http://en.wikipedia.org/wiki/Information_science).*
+
+*Not to be confused with [Informatics](http://en.wikipedia.org/wiki/Informatics).*
+
+*Not to be confused with [Computer science](http://en.wikipedia.org/wiki/Computing_science) (or Computing science).*
+
+A [long talk](http://en.wikipedia.org/wiki/Talk:Information_science), in Wikipedia, on the topic of “information science” vs “informatics”.
+
+เท่าที่อ่าน ก็ประมาณว่า คำว่า informatics และ information science ตามรูปศัพท์ มันก็น่าจะมีความหมายเหมือน ๆ กัน แต่ในสหรัฐเนี่ย เค้าว่ามันไม่เหมือนกัน คำหลังเนี่ย มันใช้มานานแล้วในสหรัฐ โดยใช้ในความหมายไปทางสารสนเทศที่เกี่ยวกับมนุษย์และสังคม คือออกไปทาง library (and information) science ทีนี้ พอคนทำด้าน computer science ที่ไม่ได้ทำเกี่ยวกับตัวคอมพิวเตอร์โดยตรง แต่เกี่ยวกับสารสนเทศมากกว่า (แต่ยังเป็นสารสนเทศในเครื่องจักรอยู่) อยากจะหาคำใหม่ที่มันใช้อธิบายงานของตัวเองได้ดีขึ้น จะใช้คำว่า information science มันก็ซ้ำ ก็เลยนำคำว่า informatics มาใช้ แต่ทีนี้ สำหรับทางฝั่งสหราชอาณาจักร ความหมายของ informatics นี่มันกินรวมทั้งการประมวลผล คือ computing science (เกือบจะเหมือน computer science เป็นศัพท์ของทางยูเคเค้า) ไปจนถึงสารสนเทศทั้งในสิ่งมีชีวิตและสิ่งที่ถูกสร้างขึ้นมาด้วย เช่น cognitive science, artificial intelligence และรวมไปถึงสภาพแวดล้อมรอบ ๆ นั่นคือกินรวมไปถึงสิ่งที่ทางฝั่งสหรัฐเรียกว่า information science
+
+ความที่ทั้งสองประเทศ ต่างก็พูดภาษาอังกฤษทั้งคู่ พอใช้คำที่หน้าตาเหมือนกัน แต่ความหมายดันไม่เหมือน ก็เลยงงกันใหญ่ ไม่รู้จะเอาไงดี อีกทั้งตัวสาขา informatics (และ information science) ก็มีการพัฒนาอยู่ตลอด ก็เลยทับกันไปกันมา … ตอนนี้เท่าที่อ่านในวิกิพีเดียก็เหมือนยังจะตกลงกันไม่ได้
+
+(ส่วนในยุโรปที่ไม่ใช่ยูเค ใช้คำว่า informatique (ฝรั่งเศส) / informatik (เยอรมัน) แต่คำว่า informatik นี่ก็สับสนเหมือนกัน เพราะ (ในวิกิพีเดีย) บางที่ก็แปลเป็น computer science บางที่ก็เป็น information technology)
+
+ภาษาไทยนี่เอาคำว่าไรดี ? 😛
+
+**tags:** [Wikipedia](http://technorati.com/tag/wikipedia) [confusion](http://technorati.com/tag/confusion) [library science](http://technorati.com/tag/libraryscience) [information science](http://technorati.com/tag/informationscience) [informatics](http://technorati.com/tag/informatics) [computer science](http://technorati.com/tag/computerscience)

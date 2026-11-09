@@ -1,0 +1,24 @@
+---
+title: "Apache Harmony 5.0 M1"
+date: "2007-05-07T15:37:00+07:00"
+lastmod: "2011-05-17T14:35:47+07:00"
+type: "post"
+url: "/2007/apache-harmony-5-0-m1/"
+description: "มาแว้ว~ อาปาเช่ฮาร์โมนี จาวารันไทม์ในสัญญาอนุญาตแบบอาปาเช่ (ตัวที่ซันโอเพนซอร์สนั้น ใช้ GPL) Apache Harmony 5.0 นี้ ตั้งเป้าให้เป็น “compatible, independent implementation” ของสเปค Java SE 5 (เช่นเดียวกับของที่ Sun, IBM, BEA ฯลฯ ทำ) โดยใช้ Apache License v2 นอกจากนี้ ยังเสนอสถาปัตยกรรมรันไทม์แบบแยกช"
+categories: ["computer"]
+tag: ["apache-harmony", "free-softwares", "java", "jdk", "open-source"]
+textlang: "th"
+wpid: 2063
+---
+มาแว้ว\~ [อาปาเช่ฮาร์โมนี](http://harmony.apache.org/) จาวารันไทม์ในสัญญาอนุญาตแบบอาปาเช่ (ตัวที่ซันโอเพนซอร์สนั้น ใช้ GPL)
+
+Apache Harmony 5.0 นี้ ตั้งเป้าให้เป็น “compatible, independent implementation” ของสเปค Java SE 5 (เช่นเดียวกับของที่ Sun, IBM, BEA ฯลฯ ทำ) โดยใช้ Apache License v2
+
+นอกจากนี้ ยังเสนอสถาปัตยกรรมรันไทม์แบบแยกชิ้นส่วนได้ (modular runtime) ทั้งในส่วนของ VM และ class library, ตัวอย่างเช่น สามารถนำ class library ของ Apache Harmony ไปใช้กับ JRockit VM ของ BEA ได้
+
+ดู Java stack ทางฝั่งที่ใช่สัญญาอนุญาตแบบอาปาเช่แล้ว ครบครันจริง ๆ
+
+\[ลิงก์ [Apache Harmony](http://harmony.apache.org/) \| ผ่าน [OSNews.com](http://osnews.com/story.php/17858/Apache-Harmony-Releases-First-Milestone "Apache Harmony Releases First Milestone")\]
+
+<span class="small">technorati tags: [Java](http://technorati.com/tag/Java), [open source](http://technorati.com/tag/open_source)  
+</span>
