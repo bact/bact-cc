@@ -1,0 +1,131 @@
+MIGRATION: FILES NOT TRANSFERRED / OVERSIZED   (bact.cc WordPress -> Hugo)
+========================================================================
+
+1. OVERSIZED FILES (over Cloudflare Pages' 25 MiB per-file limit) - NOT in the repo
+   One oversized file makes the whole Pages deploy fail, so these were left out.
+   Links to them are DEAD on the new site until you host them elsewhere.
+
+   File      : 20171215-good-man-concluding-present.pdf
+   Size      : 33.2 MiB
+   Old URL   : https://bact.cc/f/2020/04/20171215-good-man-concluding-present.pdf   (still live on WordPress until you cancel hosting)
+   Repo path : static/f/2020/04/20171215-good-man-concluding-present.pdf   (git-ignored on purpose)
+   Linked from: /2020/good-man/
+
+   File      : fcem-media-governance-report-bangkok-new-media-agenda.zip
+   Size      : 29.2 MiB
+   Old URL   : https://bact.cc/f/2020/10/fcem-media-governance-report-bangkok-new-media-agenda.zip   (still live on WordPress until you cancel hosting)
+   Repo path : static/f/2020/10/fcem-media-governance-report-bangkok-new-media-agenda.zip   (git-ignored on purpose)
+   Linked from: /2020/convergence-media-governance/
+
+   File      : 202012-ai-gov-framework-dga.pdf
+   Size      : 29.3 MiB
+   Old URL   : https://bact.cc/f/2022/10/202012-ai-gov-framework-dga.pdf   (still live on WordPress until you cancel hosting)
+   Repo path : static/f/2022/10/202012-ai-gov-framework-dga.pdf   (git-ignored on purpose)
+   Linked from: /2022/thailand-ai-regulations/
+
+   What to do: (a) upload to Cloudflare R2 / other storage and add a 301 line in
+   static/_redirects, e.g.  /f/2022/10/202012-ai-gov-framework-dga.pdf  https://files.example/...  301
+   or (b) compress below 25 MiB and put it back at the repo path above.
+   Local copies (temporary, this session only): /tmp/claude-0/large/
+   Re-download any time:  curl -O https://bact.cc<Old URL path>  (before WordPress is shut down!)
+
+2. NOT TRANSFERRED BY DESIGN (no file; feature or data differs)
+   - Comments form / new comments: static site cannot accept them (3,530 old ones archived read-only).
+   - Email addresses typed inside comment bodies: masked as [email hidden]@domain (7 comments).
+   - Commenter emails / IPs / gravatar hashes: never exported.
+   - Jetpack Stats, Jetpack sharing/likes, AMP versions, WordPress search, wp-json, xmlrpc, wp-admin.
+   - Monthly archive pages (/YYYY/MM/): redirect to the yearly page /YYYY/.
+   - Author page /author/bact/: redirects to /about/.
+   - 41 tags that had zero posts (empty pages): not created.
+   - Resized image variants (e.g. -300x200.jpg): markup now points at originals.
+
+3. NOT AVAILABLE FROM THE PUBLIC API (you must back these up privately, NOT on GitHub)
+   - Draft, private, scheduled and trashed posts; post revisions
+   - WordPress users/emails, plugin and theme settings, Jetpack data
+   - Media files not in the media library and not linked from any published post
+   - Any redirects set by a WordPress redirect plugin
+
+4. LEFT AS EXTERNAL LINKS (not copied; may break over time - link rot risk)
+   Images hotlinked from other sites, by host (count of <img> tags):
+       44  farm3.static.flickr.com
+       37  static.flickr.com
+       20  farm4.static.flickr.com
+       18  cc.in.th
+       17  farm1.static.flickr.com
+       10  siit.net
+        8  farm6.static.flickr.com
+        6  lh4.google.com
+        6  lh5.ggpht.com
+        6  farm2.static.flickr.com
+        5  lh5.google.com
+        5  upload.wikimedia.org
+        5  ilaw.or.th
+        4  lh3.google.com
+        4  www.flickr.com
+        4  www.prachatai.com
+        3  photos13.flickr.com
+        3  lh3.ggpht.com
+        3  2.bp.blogspot.com
+        3  farm8.staticflickr.com
+        3  facthai.files.wordpress.com
+        2  lh6.google.com
+        2  www.rama9art.org
+        2  photos6.flickr.com
+        2  photos4.flickr.com
+        2  photos8.flickr.com
+        2  photos22.flickr.com
+        2  photos17.flickr.com
+        2  photos32.flickr.com
+        2  photos26.flickr.com
+        2  news.bbc.co.uk
+        2  1.bp.blogspot.com
+        2  lh6.ggpht.com
+        2  4.bp.blogspot.com
+        2  lh4.ggpht.com
+        2  www.bbspot.com
+        1  www.ibelieveinadv.com
+        1  www.thinkgeek.com
+        1  www.banksy.co.uk
+        1  www.greenmyapple.org
+        1  www.gyoko.com
+        1  www.semapedia.org
+        1  infosthetics.com
+        1  twitpic.com
+        1  www.thainetizen.org
+        1  photos18.flickr.com
+        1  photos23.flickr.com
+        1  www.joelf.com
+        1  photos11.flickr.com
+        1  photos16.flickr.com
+        1  photos7.flickr.com
+        1  photos5.flickr.com
+        1  photos9.flickr.com
+        1  photos3.flickr.com
+        1  photos10.flickr.com
+        1  www.siit.tu.ac.th
+        1  www.nerdtests.com
+        1  www.netbeans.org
+        1  www.openoffice.org
+        1  photos14.flickr.com
+        1  qrcode.kaywa.com
+        1  www.spreadfirefox.com
+        1  marketing.openoffice.org
+        1  www.gamarjobat.com
+        1  images.quizilla.com
+        1  im.rediff.com
+        1  lh6.googleusercontent.com
+        1  thainetizen.org
+        1  i296.photobucket.com
+        1  thaiindie.com
+        1  www.blogthingsimages.com
+        1  farm9.staticflickr.com
+        1  farm7.staticflickr.com
+        1  www.tcdc.or.th
+        1  www.informationarchitects.jp
+        1  www.noooxml.org
+        1  newsimg.bbc.co.uk
+        1  culturelab.in.th
+        1  thaipood.com
+   Also: ~22 old Amazon affiliate iframes (rcm.amazon.com), YouTube/Vimeo embeds, and PDFs hosted by other sites.
+
+5. Download problems: 0 missing (all 281 local media files fetched). See _export/media-missing.txt (empty).
